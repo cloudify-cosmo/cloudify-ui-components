@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Checkmark Basic 1`] = `
+<i
+  aria-hidden="true"
+  className="square outline icon"
+  onClick={[Function]}
+  title="No"
+/>
+`;
+
+exports[`Storyshots Checkmark Checked 1`] = `
+<i
+  aria-hidden="true"
+  className="checkmark box icon"
+  onClick={[Function]}
+  title="Yes"
+/>
+`;
+
+exports[`Storyshots Checkmark Unchecked 1`] = `
+<i
+  aria-hidden="true"
+  className="square outline icon"
+  onClick={[Function]}
+  title="No"
+/>
+`;
+
+exports[`Storyshots Loading Basic 1`] = `
+<div
+  className="ui basic segment loadingSegment"
+>
+  <div
+    className="ui active transition visible inverted dimmer"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="ui text loader"
+      >
+        Loading
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Loading Custom 1`] = `
+<div
+  className="ui basic segment loadingSegment"
+>
+  <div
+    className="ui active transition visible inverted dimmer"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="ui text loader"
+      >
+        Loading files
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier",
+        "prettier/react",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": ["error"]
+    },
+    "overrides": [
+        {
+            "files": "test/**",
+            "env": {
+                "jest": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "cloudify-ui-components",
+  "version": "1.0.0-alpha.1",
+  "description": "Cloudify UI React components library",
+  "homepage": "https://github.com/cloudify-cosmo/cloudify-ui-components#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudify-cosmo/cloudify-ui-components.git"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Jakub Niezgoda",
+    "email": "jakub.niezgoda@cloudify.co",
+    "url": "https://github.com/qooban"
+  },
+  "files": [
+    "es"
+  ],
+  "module": "es/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel ./src --delete-dir-on-start --out-dir es",
+    "lint": "eslint --ext js,jsx src",
+    "test": "jest test --coverage",
+    "storybook": "start-storybook --docs -p 9001",
+    "build-storybook": "build-storybook --docs -c .storybook"
+  },
+  "keywords": [
+    "react",
+    "shared",
+    "components",
+    "cloudify",
+    "ui"
+  ],
+  "bugs": {
+    "url": "https://cloudify.co/slack/"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-docs": "^5.2.4",
+    "@storybook/addon-storyshots": "^5.2.4",
+    "@storybook/react": "^5.2.4",
+    "@storybook/theming": "^5.2.4",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "cross-env": "^6.0.3",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.6.2",
+    "react-dom": "^16.6.2",
+    "react-test-renderer": "^16.10.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.6.2",
+    "react-dom": "^16.6.2",
+    "semantic-ui-react": "^0.84.0",
+    "semantic-ui-css": "^2.4.1"
+  }
+}
