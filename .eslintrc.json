@@ -3,20 +3,14 @@
         "airbnb",
         "prettier",
         "prettier/react",
+        "plugin:jest/recommended",
         "plugin:react/recommended"
     ],
     "plugins": [
+        "jest",
         "prettier"
     ],
     "rules": {
         "prettier/prettier": ["error"]
-    },
-    "overrides": [
-        {
-            "files": "test/**",
-            "env": {
-                "jest": true
-            }
-        }
-    ]
+    }
 }

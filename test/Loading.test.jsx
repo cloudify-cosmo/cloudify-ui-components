@@ -1,22 +1,22 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Loading from '../src/components/Loading/Loading';
+import Loading from '../src/components/elements/Loading';
 
-describe('Loading', () => {
-    let wrapper = mount(<Loading />);
-
+describe('<Loading />', () => {
     test('renders properly', () => {
-        expect(wrapper).toBeDefined();
+        const wrapper = mount(<Loading />);
+        expect(wrapper.exists()).toEqual(true);
     });
 
     test('shows loading spinner with default message', () => {
-        expect(wrapper.find('.ui.active.transition.visible.inverted.dimmer').exists()).toBeTruthy();
+        const wrapper = mount(<Loading />);
+        expect(wrapper.exists('.ui.active.transition.visible.inverted.dimmer')).toEqual(true);
         expect(wrapper.find('.ui.text.loader').text()).toEqual('Loading');
     });
 
     test('shows square icon for false value', () => {
-        wrapper = mount(<Loading message="Loading files" />);
-        expect(wrapper.find('.ui.active.transition.visible.inverted.dimmer').exists()).toBeTruthy();
+        const wrapper = mount(<Loading message="Loading files" />);
+        expect(wrapper.exists('.ui.active.transition.visible.inverted.dimmer')).toEqual(true);
         expect(wrapper.find('.ui.text.loader').text()).toEqual('Loading files');
     });
 });

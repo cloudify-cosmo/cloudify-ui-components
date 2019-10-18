@@ -3,7 +3,7 @@ import React from 'react';
 import Loading from './Loading';
 
 export default {
-    title: 'Loading',
+    title: 'Elements/Loading',
     component: Loading
 };
 
@@ -11,7 +11,4 @@ export const basic = () => <Loading />;
 basic.story = {
     name: 'Default'
 };
-export const custom = () => <Loading message="Loading files" />;
-custom.story = {
-    name: 'Custom message'
-};
+export const customMessage = () => <Loading message="Loading files" />;

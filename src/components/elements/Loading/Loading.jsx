@@ -1,10 +1,5 @@
-/**
- * Created by kinneretzin on 01/01/2017.
- */
-
-import PropTypes from 'prop-types';
-
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Segment, Dimmer, Loader } from 'semantic-ui-react';
 
 /**

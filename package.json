@@ -19,7 +19,7 @@
   "module": "es/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production babel ./src --ignore '**/*.stories.jsx' --delete-dir-on-start --out-dir es",
-    "lint": "eslint --ext js,jsx src",
+    "lint": "eslint --ext js,jsx src test",
     "test": "jest test --coverage",
     "storybook": "start-storybook --docs -p 9001",
     "build-storybook": "build-storybook --docs -c .storybook"
@@ -54,23 +54,30 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.19.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^24.9.0",
+    "lodash": "^4.17.15",
     "prettier": "^1.18.2",
     "prop-types": "^15.6.1",
-    "react": "^16.6.2",
-    "react-dom": "^16.6.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.1"
   },
   "peerDependencies": {
+    "lodash": "^4.17.15",
     "prop-types": "^15.6.1",
-    "react": "^16.6.2",
-    "react-dom": "^16.6.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "semantic-ui-react": "^0.84.0",
     "semantic-ui-css": "^2.4.1"
+  },
+  "dependencies": {
+    "react-copy-to-clipboard": "^5.0.1"
   }
 }
