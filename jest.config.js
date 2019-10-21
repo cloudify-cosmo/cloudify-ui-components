@@ -13,6 +13,7 @@ module.exports = {
     moduleNameMapper: {
         '\\.css$': path.resolve(__dirname, '.jest/stub.js')
     },
+    transformIgnorePatterns: ['node_modules/(?!react-syntax-highlighter)'],
     setupFiles: [path.resolve(__dirname, '.jest/register-context.js')],
     setupFilesAfterEnv: [path.resolve(__dirname, '.jest/enzyme.js')]
 };

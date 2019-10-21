@@ -91,6 +91,1483 @@ exports[`Storyshots Buttons/CopyToClipboardButton Custom 1`] = `
 </button>
 `;
 
+exports[`Storyshots Data/HighlightText Bash 1`] = `
+<pre
+  style={
+    Object {
+      "background": "#fff",
+      "color": "#000",
+      "display": "block",
+      "overflowX": "auto",
+      "padding": "0.5em",
+    }
+  }
+>
+  <code
+    style={
+      Object {
+        "whiteSpace": "pre-wrap",
+        "wordBreak": "break-word",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#808000",
+        }
+      }
+    >
+      #!/bin/bash
+    </span>
+    
+
+    <span
+      style={
+        Object {
+          "color": "#808080",
+          "fontStyle": "italic",
+        }
+      }
+    >
+      # declare STRING variable
+    </span>
+    
+STRING=
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "Hello World"
+    </span>
+    
+
+    <span
+      style={
+        Object {
+          "color": "#808080",
+          "fontStyle": "italic",
+        }
+      }
+    >
+      #print variable on a screen
+    </span>
+    
+
+    <span
+      className="hljs-built_in"
+      style={Object {}}
+    >
+      echo
+    </span>
+     
+    <span
+      style={
+        Object {
+          "color": "#660e7a",
+        }
+      }
+    >
+      $STRING
+    </span>
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Data/HighlightText Basic 1`] = `
+<pre
+  style={
+    Object {
+      "background": "#fff",
+      "color": "#000",
+      "display": "block",
+      "overflowX": "auto",
+      "padding": "0.5em",
+    }
+  }
+>
+  <code
+    style={
+      Object {
+        "whiteSpace": "pre-wrap",
+        "wordBreak": "break-word",
+      }
+    }
+  >
+    {
+    
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "employee"
+    </span>
+    : {
+        
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "name"
+    </span>
+    :       
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "sonoo"
+    </span>
+    ,
+        
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "salary"
+    </span>
+    :      
+    <span
+      style={
+        Object {
+          "color": "#0000ff",
+          "fontWeight": "normal",
+        }
+      }
+    >
+      56000
+    </span>
+    ,
+        
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "married"
+    </span>
+    :    
+    <span
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      true
+    </span>
+    
+    }
+}
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Data/HighlightText JSON 1`] = `
+<pre
+  style={
+    Object {
+      "background": "#fff",
+      "color": "#000",
+      "display": "block",
+      "overflowX": "auto",
+      "padding": "0.5em",
+    }
+  }
+>
+  <code
+    style={
+      Object {
+        "whiteSpace": "pre-wrap",
+        "wordBreak": "break-word",
+      }
+    }
+  >
+    {
+    
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "employee"
+    </span>
+    : {
+        
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "name"
+    </span>
+    :       
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "sonoo"
+    </span>
+    ,
+        
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "salary"
+    </span>
+    :      
+    <span
+      style={
+        Object {
+          "color": "#0000ff",
+          "fontWeight": "normal",
+        }
+      }
+    >
+      56000
+    </span>
+    ,
+        
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      "married"
+    </span>
+    :    
+    <span
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      true
+    </span>
+    
+    }
+}
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Data/HighlightText Java Script 1`] = `
+<pre
+  style={
+    Object {
+      "background": "#fff",
+      "color": "#000",
+      "display": "block",
+      "overflowX": "auto",
+      "padding": "0.5em",
+    }
+  }
+>
+  <code
+    style={
+      Object {
+        "whiteSpace": "pre-wrap",
+        "wordBreak": "break-word",
+      }
+    }
+  >
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
+      <span
+        style={
+          Object {
+            "color": "#000080",
+            "fontWeight": "bold",
+          }
+        }
+      >
+        function
+      </span>
+       
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontWeight": "normal",
+          }
+        }
+      >
+        ask
+      </span>
+      (
+      <span
+        className="hljs-params"
+        style={Object {}}
+      >
+        question, yes, no
+      </span>
+      ) 
+    </span>
+    {
+  
+    <span
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      if
+    </span>
+     (confirm(question)) yes()
+  
+    <span
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      else
+    </span>
+     no();
+}
+
+
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
+      <span
+        style={
+          Object {
+            "color": "#000080",
+            "fontWeight": "bold",
+          }
+        }
+      >
+        function
+      </span>
+       
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontWeight": "normal",
+          }
+        }
+      >
+        showOk
+      </span>
+      (
+      <span
+        className="hljs-params"
+        style={Object {}}
+      />
+      ) 
+    </span>
+    {
+  alert( 
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "You agreed."
+    </span>
+     );
+}
+
+
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
+      <span
+        style={
+          Object {
+            "color": "#000080",
+            "fontWeight": "bold",
+          }
+        }
+      >
+        function
+      </span>
+       
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontWeight": "normal",
+          }
+        }
+      >
+        showCancel
+      </span>
+      (
+      <span
+        className="hljs-params"
+        style={Object {}}
+      />
+      ) 
+    </span>
+    {
+  alert( 
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "You canceled the execution."
+    </span>
+     );
+}
+
+
+    <span
+      style={
+        Object {
+          "color": "#808080",
+          "fontStyle": "italic",
+        }
+      }
+    >
+      // usage: functions showOk, showCancel are passed as arguments to ask
+    </span>
+    
+ask(
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "Do you agree?"
+    </span>
+    , showOk, showCancel);
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Data/HighlightText Python 1`] = `
+<pre
+  style={
+    Object {
+      "background": "#fff",
+      "color": "#000",
+      "display": "block",
+      "overflowX": "auto",
+      "padding": "0.5em",
+    }
+  }
+>
+  <code
+    style={
+      Object {
+        "whiteSpace": "pre-wrap",
+        "wordBreak": "break-word",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      import
+    </span>
+     whois
+
+data = raw_input(
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      "Enter a domain: "
+    </span>
+    )
+w = whois.whois(data)
+
+
+    <span
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      print
+    </span>
+     w
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Data/HighlightText YAML 1`] = `
+<pre
+  style={
+    Object {
+      "background": "#fff",
+      "color": "#000",
+      "display": "block",
+      "overflowX": "auto",
+      "padding": "0.5em",
+    }
+  }
+>
+  <code
+    style={
+      Object {
+        "whiteSpace": "pre-wrap",
+        "wordBreak": "break-word",
+      }
+    }
+  >
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      tosca_definitions_version:
+    </span>
+     
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      cloudify_dsl_1_3
+    </span>
+    
+
+
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      description:
+    </span>
+     
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      &gt;
+  This blueprint installs a simple web server on the manager VM using Cloudify's script plugin.
+
+
+    </span>
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      imports:
+    </span>
+    
+
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+        - http:
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      //www.getcloudify.org/spec/cloudify/4.5.5.dev1/types.yaml
+    </span>
+    
+
+
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+      inputs:
+    </span>
+    
+
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+        server_ip:
+    </span>
+    
+
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+          description:
+    </span>
+     
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      &gt;
+      The ip of the server the application will be deployed on.
+
+    </span>
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+        agent_user:
+    </span>
+    
+
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+          description:
+    </span>
+     
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      &gt;
+      User name used when SSH-ing into the started machine.
+
+    </span>
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+        agent_private_key_path:
+    </span>
+    
+
+    <span
+      className="hljs-attr"
+      style={Object {}}
+    >
+          description:
+    </span>
+     
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      &gt;
+      Path to a private key that resides on the management machine.
+      SSH-ing into agent machines will be done with this key.
+    </span>
+  </code>
+</pre>
+`;
+
+exports[`Storyshots Data/KeyIndicator Executions 1`] = `
+<div
+  style={
+    Object {
+      "height": 150,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "overflow": "hidden",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="ui statistic"
+      style={
+        Object {
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+          "whiteSpace": "nowrap",
+        }
+      }
+    >
+      <div
+        className="value"
+      >
+        <i
+          aria-hidden="true"
+          className="cogs icon"
+          onClick={[Function]}
+        />
+         
+        6
+      </div>
+      <div
+        className="label"
+      >
+        Running Executions
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/KeyIndicator Plugins 1`] = `
+<div
+  style={
+    Object {
+      "height": 150,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "overflow": "hidden",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="ui statistic"
+      style={
+        Object {
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+          "whiteSpace": "nowrap",
+        }
+      }
+    >
+      <div
+        className="value"
+      >
+        <i
+          aria-hidden="true"
+          className="plug icon"
+          onClick={[Function]}
+        />
+         
+        3
+      </div>
+      <div
+        className="label"
+      >
+        Plugins
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/KeyIndicator User Stars 1`] = `
+<div
+  style={
+    Object {
+      "height": 150,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "overflow": "hidden",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="ui statistic"
+      style={
+        Object {
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+          "whiteSpace": "nowrap",
+        }
+      }
+    >
+      <div
+        className="value"
+      >
+        <i
+          aria-hidden="true"
+          className="star icon"
+          onClick={[Function]}
+        />
+         
+        54
+      </div>
+      <div
+        className="label"
+      >
+        User Stars
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/NodesTree Collapsed 1`] = `
+<ul
+  className="rc-tree rc-tree-show-line"
+  role="tree"
+  unselectable="on"
+>
+  <li
+    className="rc-tree-treenode-switcher-close"
+    role="treeitem"
+  >
+    <span
+      className="rc-tree-switcher rc-tree-switcher_close"
+      onClick={[Function]}
+    />
+    <span
+      className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close"
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDoubleClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      title="Encyclopaedia"
+    >
+      <span
+        className="rc-tree-title"
+      >
+        Encyclopaedia
+      </span>
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Data/NodesTree Expanded 1`] = `
+<ul
+  className="rc-tree rc-tree-show-line"
+  role="tree"
+  unselectable="on"
+>
+  <li
+    className="rc-tree-treenode-switcher-open"
+    role="treeitem"
+  >
+    <span
+      className="rc-tree-switcher rc-tree-switcher_open"
+      onClick={[Function]}
+    />
+    <span
+      className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDoubleClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      title="Encyclopaedia"
+    >
+      <span
+        className="rc-tree-title"
+      >
+        Encyclopaedia
+      </span>
+    </span>
+    <ul
+      className="rc-tree-child-tree rc-tree-child-tree-open"
+      data-expanded={true}
+      role="group"
+    >
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher-noop"
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Science"
+        >
+          <span
+            className="rc-tree-title"
+          >
+            Science
+          </span>
+        </span>
+      </li>
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher_open"
+          onClick={[Function]}
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Culture"
+        >
+          <span
+            className="rc-tree-title"
+          >
+            Culture
+          </span>
+        </span>
+        <ul
+          className="rc-tree-child-tree rc-tree-child-tree-open"
+          data-expanded={true}
+          role="group"
+        >
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Art"
+            >
+              <span
+                className="rc-tree-title"
+              >
+                Art
+              </span>
+            </span>
+          </li>
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Craft"
+            >
+              <span
+                className="rc-tree-title"
+              >
+                Craft
+              </span>
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Data/NodesTree Selectable 1`] = `
+<ul
+  className="rc-tree rc-tree-show-line"
+  role="tree"
+  unselectable="on"
+>
+  <li
+    className="rc-tree-treenode-switcher-open"
+    role="treeitem"
+  >
+    <span
+      className="rc-tree-switcher rc-tree-switcher_open"
+      onClick={[Function]}
+    />
+    <span
+      className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDoubleClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      title="Encyclopaedia"
+    >
+      <span
+        className="rc-tree-title"
+      >
+        Encyclopaedia
+      </span>
+    </span>
+    <ul
+      className="rc-tree-child-tree rc-tree-child-tree-open"
+      data-expanded={true}
+      role="group"
+    >
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher-noop"
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Science"
+        >
+          <span
+            className="rc-tree-title"
+          >
+            Science
+          </span>
+        </span>
+      </li>
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher_open"
+          onClick={[Function]}
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Culture"
+        >
+          <span
+            className="rc-tree-title"
+          >
+            Culture
+          </span>
+        </span>
+        <ul
+          className="rc-tree-child-tree rc-tree-child-tree-open"
+          data-expanded={true}
+          role="group"
+        >
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Art"
+            >
+              <span
+                className="rc-tree-title"
+              >
+                Art
+              </span>
+            </span>
+          </li>
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Craft"
+            >
+              <span
+                className="rc-tree-title"
+              >
+                Craft
+              </span>
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Data/NodesTree With Icons 1`] = `
+<ul
+  className="rc-tree rc-tree-show-line"
+  role="tree"
+  unselectable="on"
+>
+  <li
+    className="rc-tree-treenode-switcher-open"
+    role="treeitem"
+  >
+    <span
+      className="rc-tree-switcher rc-tree-switcher_open"
+      onClick={[Function]}
+    />
+    <span
+      className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDoubleClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      title="Encyclopaedia"
+    >
+      <span
+        className="rc-tree-iconEle rc-tree-icon__open"
+      />
+      <span
+        className="rc-tree-title"
+      >
+        Encyclopaedia
+      </span>
+    </span>
+    <ul
+      className="rc-tree-child-tree rc-tree-child-tree-open"
+      data-expanded={true}
+      role="group"
+    >
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher-noop"
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Science"
+        >
+          <span
+            className="rc-tree-iconEle rc-tree-icon__docu"
+          />
+          <span
+            className="rc-tree-title"
+          >
+            Science
+          </span>
+        </span>
+      </li>
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher_open"
+          onClick={[Function]}
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Culture"
+        >
+          <span
+            className="rc-tree-iconEle rc-tree-icon__open"
+          />
+          <span
+            className="rc-tree-title"
+          >
+            Culture
+          </span>
+        </span>
+        <ul
+          className="rc-tree-child-tree rc-tree-child-tree-open"
+          data-expanded={true}
+          role="group"
+        >
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Art"
+            >
+              <span
+                className="rc-tree-iconEle rc-tree-icon__docu"
+              />
+              <span
+                className="rc-tree-title"
+              >
+                Art
+              </span>
+            </span>
+          </li>
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Craft"
+            >
+              <span
+                className="rc-tree-iconEle rc-tree-icon__docu"
+              />
+              <span
+                className="rc-tree-title"
+              >
+                Craft
+              </span>
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Data/NodesTree With Tree Data 1`] = `
+<ul
+  className="rc-tree rc-tree-show-line"
+  role="tree"
+  unselectable="on"
+>
+  <li
+    className="rc-tree-treenode-switcher-open"
+    role="treeitem"
+  >
+    <span
+      className="rc-tree-switcher rc-tree-switcher_open"
+      onClick={[Function]}
+    />
+    <span
+      className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDoubleClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      title="Encyclopaedia"
+    >
+      <span
+        className="rc-tree-title"
+      >
+        Encyclopaedia
+      </span>
+    </span>
+    <ul
+      className="rc-tree-child-tree rc-tree-child-tree-open"
+      data-expanded={true}
+      role="group"
+    >
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher-noop"
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Science"
+        >
+          <span
+            className="rc-tree-title"
+          >
+            Science
+          </span>
+        </span>
+      </li>
+      <li
+        className="rc-tree-treenode-switcher-open"
+        role="treeitem"
+      >
+        <span
+          className="rc-tree-switcher rc-tree-switcher_open"
+          onClick={[Function]}
+        />
+        <span
+          className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDoubleClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          title="Culture"
+        >
+          <span
+            className="rc-tree-title"
+          >
+            Culture
+          </span>
+        </span>
+        <ul
+          className="rc-tree-child-tree rc-tree-child-tree-open"
+          data-expanded={true}
+          role="group"
+        >
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Art"
+            >
+              <span
+                className="rc-tree-title"
+              >
+                Art
+              </span>
+            </span>
+          </li>
+          <li
+            className="rc-tree-treenode-switcher-open"
+            role="treeitem"
+          >
+            <span
+              className="rc-tree-switcher rc-tree-switcher-noop"
+            />
+            <span
+              className="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              onDoubleClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              title="Craft"
+            >
+              <span
+                className="rc-tree-title"
+              >
+                Craft
+              </span>
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
 exports[`Storyshots Elements/Checkmark Basic 1`] = `
 <i
   aria-hidden="true"
