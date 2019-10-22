@@ -27,11 +27,11 @@ SyntaxHighlighter.registerLanguage('yaml', yaml);
  * * YAML
  */
 export default function HighlightText(props) {
-    const { children, className } = props;
+    const { children, language } = props;
 
     return (
         <SyntaxHighlighter
-            language={className}
+            language={language}
             style={idea}
             codeTagProps={{ style: { whiteSpace: 'pre-wrap', wordBreak: 'break-word' } }}
         >
@@ -48,10 +48,10 @@ HighlightText.propTypes = {
     /**
      * Language name to be used as a base for syntax highlighter
      */
-    className: PropTypes.oneOf(['bash', 'javascript', 'json', 'python', 'yaml'])
+    language: PropTypes.oneOf(['bash', 'javascript', 'json', 'python', 'yaml'])
 };
 
 HighlightText.defaultProps = {
     children: '',
-    className: 'json'
+    language: 'json'
 };

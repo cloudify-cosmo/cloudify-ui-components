@@ -41,7 +41,7 @@ export default function PopupMenu(props) {
             open={disabled ? false : opened}
             onClose={() => setOpened(false)}
             onOpen={() => setOpened(true)}
-            onClick={e => /* istanbul ignore next */ {
+            onClick={e => {
                 e.stopPropagation();
                 setOpened(false);
             }}

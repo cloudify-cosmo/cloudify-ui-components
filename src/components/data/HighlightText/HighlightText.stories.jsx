@@ -21,7 +21,7 @@ basic.story = {
     name: 'Default'
 };
 export const bash = () => (
-    <HighlightText className="bash">
+    <HighlightText language="bash">
         {`#!/bin/bash
 # declare STRING variable
 STRING="Hello World"
@@ -30,7 +30,7 @@ echo $STRING`}
     </HighlightText>
 );
 export const javaScript = () => (
-    <HighlightText className="javascript">
+    <HighlightText language="javascript">
         {`function ask(question, yes, no) {
   if (confirm(question)) yes()
   else no();
@@ -49,7 +49,7 @@ ask("Do you agree?", showOk, showCancel);`}
     </HighlightText>
 );
 export const JSON = () => (
-    <HighlightText className="json">
+    <HighlightText language="json">
         {`{
     "employee": {
         "name":       "sonoo",
@@ -60,7 +60,7 @@ export const JSON = () => (
     </HighlightText>
 );
 export const python = () => (
-    <HighlightText className="python">
+    <HighlightText language="python">
         {`import whois
 
 data = raw_input("Enter a domain: ")
@@ -70,7 +70,7 @@ print w`}
     </HighlightText>
 );
 export const YAML = () => (
-    <HighlightText className="yaml">
+    <HighlightText language="yaml">
         {`tosca_definitions_version: cloudify_dsl_1_3
 
 description: >
