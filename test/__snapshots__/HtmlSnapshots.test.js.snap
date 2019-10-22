@@ -91,6 +91,131 @@ exports[`Storyshots Buttons/CopyToClipboardButton Custom 1`] = `
 </button>
 `;
 
+exports[`Storyshots Cloudify/ResourceVisibility Changeable 1`] = `
+<span>
+  <i
+    aria-hidden="true"
+    className="red lock bordered link icon"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  />
+</span>
+`;
+
+exports[`Storyshots Cloudify/ResourceVisibility Unchangeable 1`] = `
+<i
+  aria-hidden="true"
+  className="green user bordered disabled icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityField Changeable 1`] = `
+<i
+  aria-hidden="true"
+  className="red lock link icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  title={null}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityField Disallow Global 1`] = `
+<i
+  aria-hidden="true"
+  className="red lock link icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  title={null}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityField Unchangeable 1`] = `
+<i
+  aria-hidden="true"
+  className="blue globe disabled icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  title={null}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityIcon Global Visibility 1`] = `
+<i
+  aria-hidden="true"
+  className="blue globe icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityIcon Invalid Visibility 1`] = `
+<i
+  aria-hidden="true"
+  className="grey question icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityIcon Private Visibility 1`] = `
+<i
+  aria-hidden="true"
+  className="red lock icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityIcon Tenant Visibility 1`] = `
+<i
+  aria-hidden="true"
+  className="green user icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;
+
+exports[`Storyshots Cloudify/VisibilityIcon Unknown Visibility 1`] = `
+<i
+  aria-hidden="true"
+  className="grey question icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;
+
 exports[`Storyshots Data/HighlightText Bash 1`] = `
 <pre
   style={
@@ -1633,7 +1758,7 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
       className="text"
       role="alert"
     >
-      Option 1
+      Blue
     </div>
     <i
       aria-hidden="true"
@@ -1649,7 +1774,7 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
         aria-selected={true}
         className="active selected item"
         onClick={[Function]}
-        option-value="option1"
+        option-value="blue"
         role="option"
         style={
           Object {
@@ -1660,7 +1785,7 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
         <span
           className="text"
         >
-          Option 1
+          Blue
         </span>
       </div>
       <div
@@ -1668,7 +1793,7 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
         aria-selected={false}
         className="item"
         onClick={[Function]}
-        option-value="option2"
+        option-value="red"
         role="option"
         style={
           Object {
@@ -1679,7 +1804,7 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
         <span
           className="text"
         >
-          Option 2
+          Red
         </span>
       </div>
       <div
@@ -1687,7 +1812,7 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
         aria-selected={false}
         className="item"
         onClick={[Function]}
-        option-value="option3"
+        option-value="white"
         role="option"
         style={
           Object {
@@ -1698,7 +1823,174 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
         <span
           className="text"
         >
-          Option 3
+          White
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Dropdown Empty 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+    }
+  }
+>
+  <div
+    aria-expanded={false}
+    className="ui dropdown"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    role="listbox"
+    tabIndex={0}
+  >
+    <div
+      aria-atomic={true}
+      aria-live="polite"
+      className="text"
+      role="alert"
+    />
+    <i
+      aria-hidden="true"
+      className="dropdown icon"
+      onClick={[Function]}
+    />
+    <div
+      className="menu transition"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Dropdown With Empty Option 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+    }
+  }
+>
+  <div
+    aria-expanded={false}
+    className="ui search selection dropdown"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    role="combobox"
+  >
+    <input
+      aria-autocomplete="list"
+      autoComplete="off"
+      className="search"
+      onChange={[Function]}
+      style={
+        Object {
+          "width": undefined,
+        }
+      }
+      tabIndex={0}
+      type="text"
+      value=""
+    />
+    <div
+      aria-atomic={true}
+      aria-live="polite"
+      className="text"
+      role="alert"
+    >
+      Blue
+    </div>
+    <i
+      aria-hidden="true"
+      className="dropdown icon clear"
+      onClick={[Function]}
+    />
+    <div
+      className="menu transition"
+      role="listbox"
+    >
+      <div
+        aria-checked={true}
+        aria-selected={true}
+        className="active selected item"
+        onClick={[Function]}
+        option-value="blue"
+        role="option"
+        style={
+          Object {
+            "pointerEvents": "all",
+          }
+        }
+      >
+        <span
+          className="text"
+        >
+          Blue
+        </span>
+      </div>
+      <div
+        aria-checked={false}
+        aria-selected={false}
+        className="item"
+        onClick={[Function]}
+        option-value="red"
+        role="option"
+        style={
+          Object {
+            "pointerEvents": "all",
+          }
+        }
+      >
+        <span
+          className="text"
+        >
+          Red
+        </span>
+      </div>
+      <div
+        aria-checked={false}
+        aria-selected={false}
+        className="item"
+        onClick={[Function]}
+        option-value="white"
+        role="option"
+        style={
+          Object {
+            "pointerEvents": "all",
+          }
+        }
+      >
+        <span
+          className="text"
+        >
+          White
+        </span>
+      </div>
+      <div
+        aria-checked={false}
+        aria-selected={false}
+        className="item"
+        onClick={[Function]}
+        option-value="empty-option"
+        role="option"
+        style={
+          Object {
+            "pointerEvents": "all",
+          }
+        }
+      >
+        <span
+          className="text"
+        >
+          
         </span>
       </div>
     </div>
@@ -1854,7 +2146,13 @@ exports[`Storyshots Elements/ErrorMessage Errors List 1`] = `
 
 exports[`Storyshots Elements/Loading Basic 1`] = `
 <div
-  className="ui basic segment loadingSegment"
+  className="ui basic segment"
+  style={
+    Object {
+      "height": "100%",
+      "zIndex": 5,
+    }
+  }
 >
   <div
     className="ui active transition visible inverted dimmer"
@@ -1875,7 +2173,13 @@ exports[`Storyshots Elements/Loading Basic 1`] = `
 
 exports[`Storyshots Elements/Loading Custom Message 1`] = `
 <div
-  className="ui basic segment loadingSegment"
+  className="ui basic segment"
+  style={
+    Object {
+      "height": "100%",
+      "zIndex": 5,
+    }
+  }
 >
   <div
     className="ui active transition visible inverted dimmer"

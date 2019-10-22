@@ -18,12 +18,18 @@ export default function Confirm(props) {
             open={open}
             confirmButton={confirmButton}
             cancelButton={cancelButton}
-            className={`confirmModal ${className}`}
+            className={className}
+            style={{
+                fontSize: '1.3em',
+                lineHeight: '1.28571429em',
+                fontWeight: 700
+            }}
             /* eslint-disable-next-line react/jsx-props-no-spreading */
             {...rest}
         />
     );
 }
+
 Confirm.propTypes = {
     /**
      * confirm modal message

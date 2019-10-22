@@ -13,17 +13,17 @@ describe('<Confirm />', () => {
 
     it('shows up', () => {
         const wrapper = mount(<Confirm content="test title" open={false} />);
-        expect(wrapper.exists('.confirmModal.active')).toEqual(false);
+        expect(wrapper.exists('.modal.active')).toEqual(false);
         wrapper.setProps({ open: true });
-        expect(wrapper.exists('.confirmModal.active')).toEqual(true);
-        expect(wrapper.find('.confirmModal .content').text()).toEqual('test title');
+        expect(wrapper.exists('.modal.active')).toEqual(true);
+        expect(wrapper.find('.modal .content').text()).toEqual('test title');
     });
 
     it('clicks ok button', () => {
         const wrapper = mount(<Confirm content="test title" open />);
         const confirmCallback = jest.fn();
         wrapper.setProps({ onConfirm: confirmCallback, onCancel: () => {} });
-        wrapper.find('.confirmModal .actions .ui.button.primary').simulate('click');
+        wrapper.find('.modal .actions .ui.button.primary').simulate('click');
         expect(confirmCallback).toHaveBeenCalled();
     });
 
@@ -32,7 +32,7 @@ describe('<Confirm />', () => {
         const cancelCallback = jest.fn();
         wrapper.setProps({ onCancel: cancelCallback, onConfirm: () => {} });
         wrapper
-            .find('.confirmModal .actions .ui.button')
+            .find('.modal .actions .ui.button')
             .first()
             .simulate('click');
         expect(cancelCallback).toHaveBeenCalled();
@@ -41,6 +41,6 @@ describe('<Confirm />', () => {
     it('unmounts', () => {
         const wrapper = mount(<Confirm content="test title" open />);
         wrapper.unmount();
-        expect(wrapper.exists('.ui.dimmer .confirmModal')).toEqual(false);
+        expect(wrapper.exists('.ui.dimmer .modal')).toEqual(false);
     });
 });

@@ -1,0 +1,23 @@
+/* Popup Menu */
+
+.popupMenu {
+    padding: 0 !important;
+}
+
+.popupMenu .ui.menu {
+    border: none !important;
+    width: inherit !important;
+    min-width: 12rem;
+}
+
+.popupMenu .ui.menu a:hover {
+    text-decoration: none !important;
+}
+
+.popupMenu .ui.vertical.menu .menu .item {
+    color: #000000;
+}
+
+.popupMenu .ui.vertical.menu .menu .item:hover {
+    background: rgba(0,0,0,.03);
+}

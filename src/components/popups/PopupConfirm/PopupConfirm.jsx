@@ -42,11 +42,11 @@ export default function PopupConfirm(props) {
             <Header>{canConfirm || content}</Header>
 
             {canConfirm ? (
-                <div className="rightFloated">
+                <div style={{ float: 'right' }}>
                     <Button icon="checkmark" content="Ok" color="green" onClick={handleCancel} />
                 </div>
             ) : (
-                <div className="rightFloated">
+                <div style={{ float: 'right' }}>
                     <Button icon="remove" content="Cancel" basic onClick={handleCancel} />
                     <Button icon="checkmark" content="Ok" color="green" onClick={handleConfirm} />
                 </div>

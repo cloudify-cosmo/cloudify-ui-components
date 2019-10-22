@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Modal } from 'semantic-ui-react';
+import './ReadmeModal.css';
 
 /**
  * ReadmeModal is a component to present HTML content in Modal component.

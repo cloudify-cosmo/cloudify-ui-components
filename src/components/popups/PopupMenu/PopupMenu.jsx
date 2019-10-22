@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { Icon } from 'semantic-ui-react';
 import Popup from '../Popup';
+import './PopupMenu.css';
 
 /**
  * PopupMenu is a component which uses [Popup](https://react.semantic-ui.com/modules/popup) component to create

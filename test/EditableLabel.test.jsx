@@ -48,6 +48,18 @@ describe('<EditableLabel />', () => {
             expect(wrapper.exists('label')).toEqual(false);
             expect(wrapper.exists('input')).toEqual(true);
 
+            // Write something
+            wrapper
+                .find('input')
+                .first()
+                .simulate('keydown', { key: 'X' });
+            expect(editDoneCallback).not.toHaveBeenCalled();
+            wrapper
+                .find('input')
+                .first()
+                .simulate('keydown', { key: 'Y' });
+            expect(editDoneCallback).not.toHaveBeenCalled();
+
             // Enter key press
             wrapper
                 .find('input')
