@@ -1,0 +1,11 @@
+/* FormGroup.js */
+.ui.form .inline.fields .field:last-child{
+    padding-right: 0;
+}
+
+/*Handle smaller viewports*/
+@media only screen and (max-width: 1400px) {
+    .ui.flowing.popup {
+        left: 0 !important;
+    }
+}

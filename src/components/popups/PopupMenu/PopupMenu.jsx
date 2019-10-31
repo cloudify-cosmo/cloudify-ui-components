@@ -60,7 +60,7 @@ PopupMenu.propTypes = {
     /**
      * primary content
      */
-    children: PropTypes.element.isRequired,
+    children: PropTypes.node.isRequired,
     /**
      * position for the popover.
      */

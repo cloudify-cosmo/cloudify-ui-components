@@ -24,15 +24,15 @@ PopupHelp.propTypes = {
     /**
      * content help popup content
      */
-    content: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
+    content: PropTypes.node.isRequired,
     /**
      * help popup header
      */
-    header: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+    header: PropTypes.node,
     /**
      * help popup triggering element (on hover and focus)
      */
-    trigger: PropTypes.oneOfType([PropTypes.element, PropTypes.string])
+    trigger: PropTypes.node
 };
 
 PopupHelp.defaultProps = {

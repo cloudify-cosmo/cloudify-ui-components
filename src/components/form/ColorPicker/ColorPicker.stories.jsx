@@ -1,12 +1,12 @@
 import React from 'react';
-import ColorPicker from './ColorPicker';
+import Form from '../Form/Form';
 
 export default {
-    title: 'Form/ColorPicker',
-    component: ColorPicker
+    title: 'Form.ColorPicker',
+    component: Form.ColorPicker
 };
 
-export const basic = () => <ColorPicker />;
+export const basic = () => <Form.ColorPicker />;
 basic.story = {
     name: 'Default'
 };

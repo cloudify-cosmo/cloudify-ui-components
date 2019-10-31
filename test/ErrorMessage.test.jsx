@@ -35,4 +35,6 @@ describe('<ErrorMessage />', () => {
             .simulate('click', 1);
         expect(onDismissCallback).toHaveBeenCalled();
     });
+
+    // TODO:  https://jestjs.io/docs/en/timer-mocks
 });

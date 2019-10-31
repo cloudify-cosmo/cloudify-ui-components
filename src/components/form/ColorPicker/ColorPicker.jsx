@@ -6,6 +6,9 @@ import tinycolor from 'tinycolor2';
 
 /**
  * ColorPicker is a component showing CompactPicker component from [react-color](https://casesandberg.github.io/react-color/) library
+ *
+ * Accessible as `ColorPicker` or `Form.ColorPicker`.
+ *
  */
 export default function ColorPicker(props) {
     const { name, value, onChange } = props;

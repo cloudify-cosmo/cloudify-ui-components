@@ -59,7 +59,7 @@ PopupConfirm.propTypes = {
     /**
      * popup trigger
      */
-    trigger: PropTypes.element,
+    trigger: PropTypes.node,
     /**
      * popup content
      */
