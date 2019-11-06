@@ -3,7 +3,7 @@ import Form from './Form';
 import { FormFieldWithoutMemo } from './FormField';
 
 export default {
-    title: 'Form.Field',
+    title: 'Form/FormField',
     component: FormFieldWithoutMemo
 };
 

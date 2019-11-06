@@ -2,7 +2,7 @@ import React from 'react';
 import Form from './Form';
 
 export default {
-    title: 'Form.Divider',
+    title: 'Form/FormDivider',
     component: Form.Divider
 };
 

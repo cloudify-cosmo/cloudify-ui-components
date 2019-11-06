@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
-import { Form as FormSemanticUiReact, Radio, Button } from 'semantic-ui-react';
+import { Form as FormSemanticUiReact, Radio } from 'semantic-ui-react';
 
 import ErrorMessage from '../../elements/ErrorMessage';
 import Checkbox from '../Checkbox';
@@ -27,7 +27,46 @@ import './Form.css';
  * `Form` is customized version of [Semantic UI-React's Form component](https://react.semantic-ui.com/collections/form),
  * so all props of that component can be used here.
  *
- * errors prop can be just a string containing error message or an object with the following syntax:
+ * ## General structure
+ *
+ * Form component should be used to group form input fields. Each input field to have similar look should be wrapped with
+ * `Form.Field` component.
+ *
+ * ```
+ * <Form>
+ *   <Form.Field label="Username" required>
+ *     <Form.Input placeholder="Provide username" />
+ *   </Form.Field>
+ *   <Form.Field label="First name">
+ *     {...}
+ *   </Form.Field>
+ *   {...}
+ * </Form>
+ * ```
+ *
+ * ## Sub-components
+ *
+ * - `Form.Button` = Form button, see [Button](https://react.semantic-ui.com/elements/button)
+ * - `Form.Checkbox` = Form checkbox input, see `Checkbox`
+ * - `Form.ColorPicker` = Color picker input, see `ColorPicker`
+ * - `Form.DatePicker` = Calendar picker, see `DatePicker`
+ * - `Form.Date` = Calendar picker with input, see `DateInput`
+ * - `Form.DateRange` = Date range input, see `DateRangeInput`
+ * - `Form.Divider` = Form divider, see `FormDivider`
+ * - `Form.Dropdown` = Dropdown field, see `Dropdown`
+ * - `Form.Field` = Form field, see `FormField`
+ * - `Form.File` = Form file input, see `FileInput`
+ * - `Form.Group` = Form group, see `FormGroup`
+ * - `Form.Input` = Form input, see [Form.Input](https://react.semantic-ui.com/collections/form/)
+ * - `Form.Json` = Form JSON input, see `JsonInput`
+ * - `Form.Radio` = Form radio button, see [Input](https://react.semantic-ui.com/addons/radio)
+ * - `Form.TextArea` = Form text area input, see [TextArea](https://react.semantic-ui.com/addons/text-area)
+ * - `Form.Time` = Time picker input, see `TimeInput`
+ * - `Form.UrlOrFile` = Form URL or file input, see `UrlOrFileInput`
+ *
+ * ## Errors
+ *
+ * `errors` prop can be just a string containing error message or an object with the following syntax:
  *
  * ```
  * {
@@ -37,13 +76,8 @@ import './Form.css';
  * }
  * ```
  *
- * TODO: Write about Form.Field
- *
- * TODO: Write about errors
- *
- * TODO: Write about sub-components
- *
  */
+
 export default function Form({
     children,
     errors,
@@ -99,90 +133,23 @@ Form.fieldNameValue = field => {
     return { [name]: value };
 };
 
-/**
- * Form checkbox input, {@link Checkbox}
- */
+Form.Button = FormSemanticUiReact.Button;
 Form.Checkbox = Checkbox;
-
-/**
- * Form color picker input, see {@link ColorPicker}
- */
 Form.ColorPicker = ColorPicker;
-
-/**
- * Calendar picker, see {@link DatePicker}
- */
 Form.DatePicker = DatePicker;
-
-/**
- * Calendar picker with input, see {@link DateInput}
- */
 Form.Date = DateInput;
-
-/**
- * Date range input, see {@link DateRangeInput}
- */
 Form.DateRange = DateRangeInput;
-
-/**
- * Form divider, see {@link FormDivider}
- */
 Form.Divider = FormDivider;
-
-/**
- * Dropdown field, see {@link Dropdown}
- */
 Form.Dropdown = FormDropdown;
-
-/**
- * Form field, see {@link FormField}
- */
 Form.Field = FormField;
-
-/**
- * Form file input, see {@link FileInput}
- */
 Form.File = FileInput;
-
-/**
- * Form group, see {@link FormGroup}
- */
 Form.Group = FormSemanticUiReact.Group;
-
-/**
- * Form input, see [Form.Input](https://react.semantic-ui.com/collections/form/)
- */
 Form.Input = FormSemanticUiReact.Input;
-
-/**
- * Form JSON input, see {@link JsonInput}
- */
 Form.Json = JsonInput;
-
-/**
- * Form radio button, see [Input](https://react.semantic-ui.com/addons/radio)
- */
 Form.Radio = Radio;
-
-/**
- * Form text area input, see [TextArea](https://react.semantic-ui.com/addons/text-area)
- */
 Form.TextArea = FormSemanticUiReact.TextArea;
-
-/**
- * Form URL or file input, see {@link UrlOrFileInput}
- */
 Form.UrlOrFile = UrlOrFileInput;
-
-/**
- * Time picker input, see {@link TimeInput}
- */
 Form.Time = TimeInput;
-
-/**
- * Form checkbox input, see [Button](https://react.semantic-ui.com/elements/button)
- */
-Form.Button = Button;
 
 Form.propTypes = {
     ...FormSemanticUiReact.propTypes,
