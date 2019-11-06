@@ -9,7 +9,7 @@ export default {
 };
 
 // FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-export const Basic = () => {
+const Basic = () => {
     const [timeFilter, setTimeFilter] = useState(Form.DateRange.EMPTY_VALUE);
     return <Form.DateRange name="timeFilter" value={timeFilter} onChange={(e, { value }) => setTimeFilter(value)} />;
 };

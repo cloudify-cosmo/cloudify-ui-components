@@ -23,7 +23,7 @@ import DatePicker from '../DatePicker';
  * }
  * ```
  */
-export default class DateRangeInput extends React.Component {
+export default class DateRangeInput extends React.PureComponent {
     static isValidDate(dateTimeString) {
         return moment(dateTimeString || {}).isValid();
     }
@@ -70,10 +70,6 @@ export default class DateRangeInput extends React.Component {
     componentDidMount() {
         const state = DateRangeInput.initialState(this.props);
         this.setState(state);
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-        return !_.isEqual(this.props, nextProps) || !_.isEqual(this.state, nextState);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -272,7 +268,7 @@ export default class DateRangeInput extends React.Component {
                             </Grid.Column>
                         )}
                         <Grid.Column width={_.isEmpty(ranges) ? 8 : 6}>
-                            <Segment padded>
+                            <Segment padded className="start-date">
                                 <Label attached="top">From:</Label>
 
                                 <List>
@@ -306,7 +302,7 @@ export default class DateRangeInput extends React.Component {
                             </Segment>
                         </Grid.Column>
                         <Grid.Column width={_.isEmpty(ranges) ? 8 : 6}>
-                            <Segment padded>
+                            <Segment padded className="end-date">
                                 <Label attached="top">To:</Label>
 
                                 <List>

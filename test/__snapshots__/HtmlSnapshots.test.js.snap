@@ -4533,6 +4533,45 @@ exports[`Storyshots Form.Date Default Value 1`] = `
 </div>
 `;
 
+exports[`Storyshots Form.Date Invalid Value 1`] = `
+<div
+  className="ui error fluid action input"
+>
+  <input
+    name="value"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    placeholder="YYYY-MM-DD HH:mm"
+    type="text"
+    value="Invalid value"
+  />
+  <button
+    className="ui icon button"
+    onClick={[Function]}
+  >
+    <i
+      aria-hidden="true"
+      className="calendar icon"
+      onClick={[Function]}
+    />
+  </button>
+  <button
+    className="ui icon button"
+    onClick={[Function]}
+  >
+    <i
+      aria-hidden="true"
+      className="cancel icon"
+      onClick={[Function]}
+    />
+  </button>
+</div>
+`;
+
 exports[`Storyshots Form.Date Minimal And Maximal Date 1`] = `
 <div
   className="ui fluid action input"

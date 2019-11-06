@@ -10,7 +10,7 @@ import DatePicker from '../DatePicker';
 /**
  * `DateInput` is a component showing calendar input with datetime picker in popup
  */
-export default class DateInput extends React.Component {
+export default class DateInput extends React.PureComponent {
     constructor(props, context) {
         super(props, context);
 
@@ -42,10 +42,6 @@ export default class DateInput extends React.Component {
         }
 
         return { dirty: true, dateError: true, dateValue: undefined };
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-        return !_.isEqual(this.props, nextProps) || !_.isEqual(this.state, nextState);
     }
 
     handleDateChange(event, newValue) {

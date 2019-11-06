@@ -149,7 +149,7 @@ FileInput.propTypes = {
     /**
      * additional parameters for open file button, props for Button component
      */
-    openButtonParams: Button.propTypes,
+    openButtonParams: PropTypes.shape(Button.propTypes),
 
     /**
      * additional help information shown in Popup

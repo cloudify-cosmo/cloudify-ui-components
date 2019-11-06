@@ -52,3 +52,5 @@ const CustomTimeIntervals = () => {
     return <Form.Date name="date" value={date} onChange={(event, { value }) => setDate(value)} timeIntervals={30} />;
 };
 export const customTimeIntervals = () => <CustomTimeIntervals />;
+
+export const invalidValue = () => <Form.Date name="date" value="Invalid value" />;

@@ -35,7 +35,7 @@ const MinimalAndMaximalDate = () => {
 };
 export const minimalAndMaximalDate = () => <MinimalAndMaximalDate />;
 
-export const CustomTimeIntervals = () => {
+const CustomTimeIntervals = () => {
     const [date, setDate] = useState(moment());
     return <Form.DatePicker name="date" value={date} onChange={(e, { value }) => setDate(value)} timeIntervals={1} />;
 };

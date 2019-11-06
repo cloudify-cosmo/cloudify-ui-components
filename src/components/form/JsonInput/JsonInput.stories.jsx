@@ -30,7 +30,7 @@ const TextValue = () => {
 };
 export const textValue = () => <TextValue />;
 
-export const MarkedAsError = () => {
+const MarkedAsError = () => {
     const [value, setValue] = useState('{"webserver_port2":6,"webserver_port1":5}');
 
     return (

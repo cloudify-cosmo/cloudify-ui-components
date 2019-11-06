@@ -98,4 +98,5 @@ DatePickerWithoutMemo.defaultProps = {
 
 // eslint-disable-next-line react/display-name,react/jsx-props-no-spreading
 const DatePicker = React.memo(props => <DatePickerWithoutMemo {...props} />);
+DatePicker.displayName = 'DatePicker';
 export default DatePicker;

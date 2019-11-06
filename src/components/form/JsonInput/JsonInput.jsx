@@ -86,12 +86,12 @@ export default class JsonInput extends React.PureComponent {
         }
     }
 
-    onChangeJson(changeObject) {
+    onChangeJson({ updated_src: value }) {
         const { name, onChange } = this.props;
 
         onChange(null, {
             name,
-            value: getStringValue(changeObject.updated_src)
+            value: getStringValue(value)
         });
     }
 

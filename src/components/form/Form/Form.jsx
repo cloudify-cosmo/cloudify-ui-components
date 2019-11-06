@@ -21,13 +21,11 @@ import UrlOrFileInput from '../UrlOrFileInput';
 
 import './Form.css';
 
-// import FormTable from './EdiTable';
-
 /**
  * `Form` is a component to present HTML forms
  *
  * `Form` is customized version of [Semantic UI-React's Form component](https://react.semantic-ui.com/collections/form),
- * so all properties of that component can be used here.
+ * so all props of that component can be used here.
  *
  * errors prop can be just a string containing error message or an object with the following syntax:
  *
@@ -65,14 +63,6 @@ export default function Form({
         }
     }, [errors]);
 
-    const handleSubmit = (e, data) => {
-        e.preventDefault();
-        if (onSubmit) {
-            onSubmit(data.formData);
-        }
-        return false;
-    };
-
     let formattedErrors = errors;
     if (_.isString(errors)) {
         formattedErrors = [errors];
@@ -82,7 +72,7 @@ export default function Form({
 
     return (
         // eslint-disable-next-line react/jsx-props-no-spreading
-        <FormSemanticUiReact {...formProps} onSubmit={handleSubmit} error={!_.isEmpty(errors)}>
+        <FormSemanticUiReact {...formProps} onSubmit={onSubmit} error={!_.isEmpty(errors)}>
             <ErrorMessage header={errorMessageHeader} error={formattedErrors} onDismiss={onErrorsDismiss} />
             {children}
         </FormSemanticUiReact>
@@ -193,12 +183,6 @@ Form.Time = TimeInput;
  * Form checkbox input, see [Button](https://react.semantic-ui.com/elements/button)
  */
 Form.Button = Button;
-
-// /**
-//  * Form table input, see {@link EdiTable}
-//  */
-// Form.Table = FormTable;
-//
 
 Form.propTypes = {
     ...FormSemanticUiReact.propTypes,
