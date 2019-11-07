@@ -2268,241 +2268,6 @@ exports[`Storyshots Elements/Menu Example 1`] = `
 </div>
 `;
 
-exports[`Storyshots Form Basic 1`] = `
-<form
-  className="ui form"
-  onSubmit={[Function]}
->
-  <div
-    className="ui error message"
-  >
-    <i
-      aria-hidden="true"
-      className="close icon"
-      onClick={[Function]}
-    />
-    <div
-      className="header"
-    >
-      Errors in the form
-    </div>
-    <div
-      className="content"
-    />
-  </div>
-  <h4
-    className="ui dividing header"
-  >
-    User Data
-  </h4>
-  <div
-    className="required field"
-  >
-    <label>
-      Username
-       
-      <span>
-        <i
-          aria-hidden="true"
-          className="help circle icon"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-        />
-      </span>
-    </label>
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          name="username"
-          onChange={[Function]}
-          placeholder="Use only letters"
-          type="text"
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="required field"
-  >
-    <label>
-      E-mail
-       
-      <span>
-        <i
-          aria-hidden="true"
-          className="help circle icon"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-        />
-      </span>
-    </label>
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          name="email"
-          onChange={[Function]}
-          placeholder="abc@def.com"
-          type="text"
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="required field"
-  >
-    <label>
-      Password
-       
-      <span>
-        <i
-          aria-hidden="true"
-          className="help circle icon"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-        />
-      </span>
-    </label>
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          name="password"
-          onChange={[Function]}
-          placeholder="Make your password strong"
-          type="password"
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="required field"
-  >
-    <label>
-      Confirm Password
-       
-      <span>
-        <i
-          aria-hidden="true"
-          className="help circle icon"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-        />
-      </span>
-    </label>
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          name="confirmPassword"
-          onChange={[Function]}
-          placeholder="Confirm password"
-          type="password"
-        />
-      </div>
-    </div>
-  </div>
-  <h4
-    className="ui dividing header"
-  >
-    User Preferences
-  </h4>
-  <div
-    className="field"
-  >
-    <div
-      className="ui checkbox"
-      onChange={[Function]}
-      onClick={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-    >
-      <input
-        checked={false}
-        className="hidden"
-        readOnly={true}
-        tabIndex={0}
-        type="checkbox"
-      />
-      <label>
-        Newsletter
-         
-        <span>
-          <i
-            aria-hidden="true"
-            className="help circle icon"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          />
-        </span>
-      </label>
-    </div>
-  </div>
-  <div
-    className="field"
-  >
-    <div
-      className="ui checkbox"
-      onChange={[Function]}
-      onClick={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-    >
-      <input
-        checked={false}
-        className="hidden"
-        readOnly={true}
-        tabIndex={0}
-        type="checkbox"
-      />
-      <label>
-        Notifications
-         
-        <span>
-          <i
-            aria-hidden="true"
-            className="help circle icon"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          />
-        </span>
-      </label>
-    </div>
-  </div>
-</form>
-`;
-
 exports[`Storyshots Form.Checkbox Basic 1`] = `
 <div
   className="ui checkbox"
@@ -6624,137 +6389,6 @@ exports[`Storyshots Form.DateRange Default Value 1`] = `
 </div>
 `;
 
-exports[`Storyshots Form.Divider Basic 1`] = `
-<h4
-  className="ui dividing header"
->
-  User Data
-</h4>
-`;
-
-exports[`Storyshots Form.Field Error 1`] = `
-<form
-  className="ui form"
-  onSubmit={[Function]}
->
-  <div
-    className="error field"
-  >
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          onChange={[Function]}
-          placeholder="Provide username"
-          type="text"
-        />
-      </div>
-    </div>
-  </div>
-</form>
-`;
-
-exports[`Storyshots Form.Field Help 1`] = `
-<form
-  className="ui form"
-  onSubmit={[Function]}
->
-  <div
-    className="field"
-  >
-    <label>
-      Username
-       
-      <span>
-        <i
-          aria-hidden="true"
-          className="help circle icon"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-        />
-      </span>
-    </label>
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          onChange={[Function]}
-          placeholder="Provide username"
-          type="text"
-        />
-      </div>
-    </div>
-  </div>
-</form>
-`;
-
-exports[`Storyshots Form.Field Label 1`] = `
-<form
-  className="ui form"
-  onSubmit={[Function]}
->
-  <div
-    className="field"
-  >
-    <label>
-      Username
-       
-    </label>
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          onChange={[Function]}
-          placeholder="Provide username"
-          type="text"
-        />
-      </div>
-    </div>
-  </div>
-</form>
-`;
-
-exports[`Storyshots Form.Field Required 1`] = `
-<form
-  className="ui form"
-  onSubmit={[Function]}
->
-  <div
-    className="required field"
-  >
-    <label>
-      Username
-       
-    </label>
-    <div
-      className="field"
-    >
-      <div
-        className="ui input"
-      >
-        <input
-          onChange={[Function]}
-          placeholder="Provide username"
-          type="text"
-        />
-      </div>
-    </div>
-  </div>
-</form>
-`;
-
 exports[`Storyshots Form.File Basic 1`] = `
 <form
   className="ui form"
@@ -6877,6 +6511,241 @@ exports[`Storyshots Form.File No Reset 1`] = `
       onChange={[Function]}
       type="file"
     />
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form.Form Basic 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="ui error message"
+  >
+    <i
+      aria-hidden="true"
+      className="close icon"
+      onClick={[Function]}
+    />
+    <div
+      className="header"
+    >
+      Errors in the form
+    </div>
+    <div
+      className="content"
+    />
+  </div>
+  <h4
+    className="ui dividing header"
+  >
+    User Data
+  </h4>
+  <div
+    className="required field"
+  >
+    <label>
+      Username
+       
+      <span>
+        <i
+          aria-hidden="true"
+          className="help circle icon"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+      </span>
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          name="username"
+          onChange={[Function]}
+          placeholder="Use only letters"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="required field"
+  >
+    <label>
+      E-mail
+       
+      <span>
+        <i
+          aria-hidden="true"
+          className="help circle icon"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+      </span>
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          name="email"
+          onChange={[Function]}
+          placeholder="abc@def.com"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="required field"
+  >
+    <label>
+      Password
+       
+      <span>
+        <i
+          aria-hidden="true"
+          className="help circle icon"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+      </span>
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          name="password"
+          onChange={[Function]}
+          placeholder="Make your password strong"
+          type="password"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="required field"
+  >
+    <label>
+      Confirm Password
+       
+      <span>
+        <i
+          aria-hidden="true"
+          className="help circle icon"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+      </span>
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          name="confirmPassword"
+          onChange={[Function]}
+          placeholder="Confirm password"
+          type="password"
+        />
+      </div>
+    </div>
+  </div>
+  <h4
+    className="ui dividing header"
+  >
+    User Preferences
+  </h4>
+  <div
+    className="field"
+  >
+    <div
+      className="ui checkbox"
+      onChange={[Function]}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+    >
+      <input
+        checked={false}
+        className="hidden"
+        readOnly={true}
+        tabIndex={0}
+        type="checkbox"
+      />
+      <label>
+        Newsletter
+         
+        <span>
+          <i
+            aria-hidden="true"
+            className="help circle icon"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          />
+        </span>
+      </label>
+    </div>
+  </div>
+  <div
+    className="field"
+  >
+    <div
+      className="ui checkbox"
+      onChange={[Function]}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+    >
+      <input
+        checked={false}
+        className="hidden"
+        readOnly={true}
+        tabIndex={0}
+        type="checkbox"
+      />
+      <label>
+        Notifications
+         
+        <span>
+          <i
+            aria-hidden="true"
+            className="help circle icon"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          />
+        </span>
+      </label>
+    </div>
   </div>
 </form>
 `;
@@ -9724,6 +9593,137 @@ exports[`Storyshots Form.UrlOrFile Basic 1`] = `
         onChange={[Function]}
         type="file"
       />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/FormDivider Basic 1`] = `
+<h4
+  className="ui dividing header"
+>
+  User Data
+</h4>
+`;
+
+exports[`Storyshots Form/FormField Error 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="error field"
+  >
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Provide username"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/FormField Help 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="field"
+  >
+    <label>
+      Username
+       
+      <span>
+        <i
+          aria-hidden="true"
+          className="help circle icon"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        />
+      </span>
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Provide username"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/FormField Label 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="field"
+  >
+    <label>
+      Username
+       
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Provide username"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/FormField Required 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="required field"
+  >
+    <label>
+      Username
+       
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Provide username"
+          type="text"
+        />
+      </div>
     </div>
   </div>
 </form>

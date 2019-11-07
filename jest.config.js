@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    collectCoverageFrom: ['./src/**/*.jsx', '!./src/**/*.stories.jsx'],
+    collectCoverageFrom: ['./src/**/*.jsx', './src/**/*.js', '!./src/**/*.stories.jsx'],
     coverageThreshold: {
         global: {
             branches: 80,
