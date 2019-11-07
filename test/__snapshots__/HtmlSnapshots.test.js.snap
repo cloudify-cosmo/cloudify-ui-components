@@ -216,6 +216,2567 @@ exports[`Storyshots Cloudify/VisibilityIcon Unknown Visibility 1`] = `
 />
 `;
 
+exports[`Storyshots Data/DataSegment Action Buttons 1`] = `
+<div
+  className="segmentList "
+>
+  <div
+    className="ui small form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inline fields"
+    >
+      <div
+        className="field actionField"
+      >
+        <button
+          className="ui green button"
+          onClick={[Function]}
+        >
+          <i
+            aria-hidden="true"
+            className="rocket icon"
+            onClick={[Function]}
+          />
+          Deploy
+        </button>
+        <button
+          className="ui orange button"
+          onClick={[Function]}
+        >
+          <i
+            aria-hidden="true"
+            className="add icon"
+            onClick={[Function]}
+          />
+          Add
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        1
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        2
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        3
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        4
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataSegment Empty 1`] = `
+<div
+  className="segmentList "
+>
+  <div>
+    <div
+      className="ui icon message"
+    >
+      <i
+        aria-hidden="true"
+        className="ban icon"
+        onClick={[Function]}
+      />
+      <span>
+        No data available
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataSegment Pagination 1`] = `
+<div
+  className="segmentList "
+>
+  <div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        1
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        2
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        3
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        4
+      </h2>
+    </div>
+    <div
+      className="ui two column grid gridPagination"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="ui small form"
+        >
+          Page size: 
+          <div
+            aria-expanded={false}
+            className="ui compact search selection upward dropdown"
+            id="pageSizeField"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-atomic={true}
+              aria-live="polite"
+              className="text"
+              role="alert"
+            >
+              4
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked={true}
+                aria-selected={true}
+                className="active selected item"
+                onClick={[Function]}
+                option-value="4"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  4
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="3"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  3
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="6"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  6
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="9"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  9
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="15"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  15
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="30"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  30
+                </span>
+              </div>
+            </div>
+          </div>
+            
+          1
+           to 
+          4
+          <span>
+             of 
+            10
+             entries
+          </span>
+        </div>
+      </div>
+      <div
+        className="right aligned column"
+      >
+        <div
+          className="ui small pagination right floated menu"
+        >
+          <a
+            className="icon link item disabled"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle left icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+          <a
+            className="active item"
+            onClick={[Function]}
+          >
+            1
+          </a>
+          <a
+            className="item"
+            onClick={[Function]}
+          >
+            2
+          </a>
+          <a
+            className="item"
+            onClick={[Function]}
+          >
+            3
+          </a>
+          <a
+            className="icon link item"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle right icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataSegment Search Filter 1`] = `
+<div
+  className="segmentList "
+>
+  <div
+    className="ui small form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inline fields"
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="ui icon input"
+          >
+            <input
+              onChange={[Function]}
+              placeholder="Search..."
+              type="text"
+              value=""
+            />
+            <i
+              aria-hidden="true"
+              className="search icon"
+              onClick={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        1
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        2
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        3
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        4
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataSegment Selectable 1`] = `
+<div
+  className="segmentList "
+>
+  <div>
+    <div
+      className="ui secondary segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        1
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        2
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        3
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        4
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataSegment Simple 1`] = `
+<div
+  className="segmentList "
+>
+  <div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        1
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        2
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        3
+      </h2>
+    </div>
+    <div
+      className="ui segment"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <h2>
+        Item 
+        4
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Action Buttons 1`] = `
+<div
+  className="gridTable "
+>
+  <div
+    className="ui small form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inline fields"
+    >
+      <div
+        className="field actionField"
+      >
+        <button
+          className="ui green button"
+          onClick={[Function]}
+        >
+          <i
+            aria-hidden="true"
+            className="rocket icon"
+            onClick={[Function]}
+          />
+          Deploy
+        </button>
+        <button
+          className="ui red button"
+          onClick={[Function]}
+        >
+          <i
+            aria-hidden="true"
+            className="remove icon"
+            onClick={[Function]}
+          />
+          Remove
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            68
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            62
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            8
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            55
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            14
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-local
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Empty 1`] = `
+<div
+  className="gridTable "
+>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className=" center aligned"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "40%",
+              }
+            }
+          >
+            Name
+          </th>
+          <th
+            className=" center aligned"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "30%",
+              }
+            }
+          >
+            Date
+          </th>
+          <th
+            className="disabled center aligned"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "30%",
+              }
+            }
+          >
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className="noDataRow"
+        >
+          <td
+            className="center aligned"
+            colSpan={3}
+          >
+            <span>
+              No data available
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Expandable Row 1`] = `
+<div
+  className="gridTable "
+>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className=""
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "40%",
+              }
+            }
+          >
+            Name
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "30%",
+              }
+            }
+          >
+            Date
+          </th>
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "30%",
+              }
+            }
+          >
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            Drupal application
+          </td>
+          <td
+            className=""
+          >
+            2016-03-04
+          </td>
+          <td
+            className=""
+          >
+            description for portal
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            Wordpress blog
+          </td>
+          <td
+            className=""
+          >
+            2016-01-05
+          </td>
+          <td
+            className=""
+          >
+            description for blog
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            Joomla website
+          </td>
+          <td
+            className=""
+          >
+            2015-08-14
+          </td>
+          <td
+            className=""
+          >
+            description for website
+          </td>
+        </tr>
+        <tr
+          className=" active"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            Prestashop store
+          </td>
+          <td
+            className=""
+          >
+            2017-01-05
+          </td>
+          <td
+            className=""
+          >
+            description for e-commerce solution
+          </td>
+        </tr>
+        <tr
+          className="active"
+        >
+          <td
+            className=""
+            colSpan={3}
+          >
+            <div
+              className="ui segment"
+            >
+              Additional info when row becomes expanded
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Filter Inputs 1`] = `
+<div
+  className="gridTable "
+>
+  <div
+    className="ui small form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inline fields"
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="ui input"
+        >
+          <input
+            onChange={[Function]}
+            placeholder="Blueprint"
+            type="text"
+          />
+        </div>
+        <div
+          className="ui input"
+        >
+          <input
+            onChange={[Function]}
+            placeholder="Deployment"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            68
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            62
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            8
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            55
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            14
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-local
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Pagination 1`] = `
+<div
+  className="gridTable "
+>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            68
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            62
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            8
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            55
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            14
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-local
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      className="ui two column grid gridPagination"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="ui small form"
+        >
+          Page size: 
+          <div
+            aria-expanded={false}
+            className="ui compact search selection upward dropdown"
+            id="pageSizeField"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-atomic={true}
+              aria-live="polite"
+              className="text"
+              role="alert"
+            >
+              5
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked={true}
+                aria-selected={true}
+                className="active selected item"
+                onClick={[Function]}
+                option-value="5"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  5
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="10"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  10
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="15"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  15
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="25"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  25
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="50"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  50
+                </span>
+              </div>
+            </div>
+          </div>
+            
+          1
+           to 
+          5
+          <span>
+             of 
+            10
+             entries
+          </span>
+        </div>
+      </div>
+      <div
+        className="right aligned column"
+      >
+        <div
+          className="ui small pagination right floated menu"
+        >
+          <a
+            className="icon link item disabled"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle left icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+          <a
+            className="active item"
+            onClick={[Function]}
+          >
+            1
+          </a>
+          <a
+            className="item"
+            onClick={[Function]}
+          >
+            2
+          </a>
+          <a
+            className="icon link item"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle right icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Search Filter 1`] = `
+<div
+  className="gridTable "
+>
+  <div
+    className="ui small form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inline fields"
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="ui icon input"
+          >
+            <input
+              onChange={[Function]}
+              placeholder="Search..."
+              type="text"
+              value=""
+            />
+            <i
+              aria-hidden="true"
+              className="search icon"
+              onClick={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            68
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            62
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            8
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            55
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            14
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-local
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      className="ui two column grid gridPagination"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="ui small form"
+        >
+          Page size: 
+          <div
+            aria-expanded={false}
+            className="ui compact search selection upward dropdown"
+            id="pageSizeField"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-atomic={true}
+              aria-live="polite"
+              className="text"
+              role="alert"
+            >
+              5
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked={true}
+                aria-selected={true}
+                className="active selected item"
+                onClick={[Function]}
+                option-value="5"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  5
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="10"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  10
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="15"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  15
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="25"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  25
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="50"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  50
+                </span>
+              </div>
+            </div>
+          </div>
+            
+          1
+           to 
+          5
+          <span>
+             of 
+            10
+             entries
+          </span>
+        </div>
+      </div>
+      <div
+        className="right aligned column"
+      >
+        <div
+          className="ui small pagination right floated menu"
+        >
+          <a
+            className="icon link item disabled"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle left icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+          <a
+            className="active item"
+            onClick={[Function]}
+          >
+            1
+          </a>
+          <a
+            className="item"
+            onClick={[Function]}
+          >
+            2
+          </a>
+          <a
+            className="icon link item"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle right icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Selectable 1`] = `
+<div
+  className="gridTable "
+>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=" active"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            68
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            62
+          </td>
+          <td
+            className=""
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            8
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            55
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+          >
+            14
+          </td>
+          <td
+            className=""
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-local
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      className="ui two column grid gridPagination"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="ui small form"
+        >
+          Page size: 
+          <div
+            aria-expanded={false}
+            className="ui compact search selection upward dropdown"
+            id="pageSizeField"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-atomic={true}
+              aria-live="polite"
+              className="text"
+              role="alert"
+            >
+              5
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked={true}
+                aria-selected={true}
+                className="active selected item"
+                onClick={[Function]}
+                option-value="5"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  5
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="10"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  10
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="15"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  15
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="25"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  25
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                option-value="50"
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  50
+                </span>
+              </div>
+            </div>
+          </div>
+            
+          1
+           to 
+          5
+          <span>
+             of 
+            10
+             entries
+          </span>
+        </div>
+      </div>
+      <div
+        className="right aligned column"
+      >
+        <div
+          className="ui small pagination right floated menu"
+        >
+          <a
+            className="icon link item disabled"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle left icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+          <a
+            className="active item"
+            onClick={[Function]}
+          >
+            1
+          </a>
+          <a
+            className="item"
+            onClick={[Function]}
+          >
+            2
+          </a>
+          <a
+            className="icon link item"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="angle right icon"
+              onClick={[Function]}
+            />
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Data/HighlightText Bash 1`] = `
 <pre
   style={

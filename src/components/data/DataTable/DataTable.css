@@ -1,0 +1,21 @@
+.gridTable .noDataRow {
+    height: 50px;
+}
+
+.actionField {
+    margin-left: auto !important;
+    padding-right: 0 !important;
+}
+
+.actionField > button {
+    margin-right: 1em;
+}
+
+.actionField > button:last-child,
+.actionField > div:last-child button {
+    margin-right: 0 !important;
+ }
+
+.actionField > div {
+    display: inline-block;
+}

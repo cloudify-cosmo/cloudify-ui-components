@@ -1,0 +1,60 @@
+.segmentList .segments {
+    border: none !important;
+}
+
+.segmentList .segment {
+    box-shadow: none !important;
+}
+.segmentList .segment .nodeState .segment {
+    padding: 2px 0 !important;
+}
+
+.segmentList .segment .ui.inverted.darkyellow {
+    background-color: #ffa000 !important;
+    color: #ffffff !important;
+}
+
+.segmentList .segment .nodeState .icon {
+    margin-right: 0;
+}
+
+.segmentList .segment:hover {
+    background-color: #f3f4f5;
+}
+
+.segmentList .menuAction {
+    position: absolute;
+    right: 10px;
+}
+
+.segmentList .ui.icon.header {
+    color: inherit;
+}
+
+.segmentList .ui.icon.header .content {
+    margin-bottom:5px;
+}
+
+.segmentList .ui.icon.header .icon {
+    font-size: 2em;
+    margin-bottom:0;
+}
+
+.segmentList .ui.header  a {
+    color: inherit;
+}
+
+.segmentList .row.bottomDivider img {
+  width: auto;
+  max-width: 150px !important;
+  height: 70px;
+  display: inline-block;
+}
+
+.segmentList .row.bottomDivider .ui.header {
+  margin-left: 2rem;
+  margin-top: auto !important;
+  vertical-align: middle !important;
+  display: inline-block;
+  max-width: calc(100% - 150px);
+}

@@ -68,18 +68,22 @@ EditableLabel.propTypes = {
      * Label's default value
      */
     text: PropTypes.string,
+
     /**
-     * Label's value if text {@link EditableLabel.text} value is not set
+     * Label's value if text value is not set
      */
     placeholder: PropTypes.string,
+
     /**
      * Name of the style class to be added
      */
     className: PropTypes.string,
+
     /**
      * If 'true' make the label editable
      */
     isEditEnable: PropTypes.bool,
+
     /**
      * Function to call when value has changed (returns label's text as attribute)
      */

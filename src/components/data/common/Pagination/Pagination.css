@@ -1,0 +1,8 @@
+.gridPagination .pagination.menu .item {
+    padding-top: 0.78571429em !important;
+    padding-bottom: 0.78571429em !important;
+}
+
+.gridPagination .compact.dropdown {
+    min-width: 50px !important;
+}
