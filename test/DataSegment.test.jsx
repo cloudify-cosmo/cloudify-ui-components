@@ -78,7 +78,6 @@ describe('<DataSegment />', () => {
     });
 
     it('renders search filter', () => {
-        jest.useFakeTimers();
         const fetchDataMock = jest.fn();
         const wrapper = mount(
             <DataSegment fetchData={fetchDataMock} pageSize={25} sortColumn="col1" sortAscending={false} searchable>
@@ -86,6 +85,7 @@ describe('<DataSegment />', () => {
             </DataSegment>
         );
 
+        jest.useFakeTimers();
         wrapper.find('input[placeholder="Search..."]').simulate('change', { target: { value: 'test' } });
         expect(wrapper.state()).toEqual({ searchText: 'test', searching: true });
 

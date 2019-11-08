@@ -133,7 +133,6 @@ describe('<DataTable />', () => {
     });
 
     it('renders search box', () => {
-        jest.useFakeTimers();
         const fetchDataMock = jest.fn();
         const wrapper = mount(
             <DataTable fetchData={fetchDataMock} pageSize={25} sortColumn="col1" sortAscending={false}>
@@ -146,6 +145,7 @@ describe('<DataTable />', () => {
         wrapper.setProps({ searchable: true });
         expect(wrapper.find('.gridTable i.search').length).toEqual(1);
 
+        jest.useFakeTimers();
         wrapper.find('input[placeholder="Search..."]').simulate('change', { target: { value: 'test' } });
         expect(wrapper.state()).toEqual({
             searchText: 'test',
