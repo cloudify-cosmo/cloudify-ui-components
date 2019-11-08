@@ -63,16 +63,7 @@ export default class DataSegment extends Component {
     }
 
     render() {
-        const {
-            children,
-            totalSize,
-            fetchSize,
-            pageSize,
-            searchable,
-            className,
-            sizeMultiplier,
-            noDataMessage
-        } = this.props;
+        const { children, totalSize, pageSize, searchable, className, sizeMultiplier, noDataMessage } = this.props;
         const { searchText, searching } = this.state;
         let segmentAction = null;
         const segments = [];
@@ -111,19 +102,12 @@ export default class DataSegment extends Component {
                     pageSize={pageSize}
                     sizeMultiplier={sizeMultiplier}
                     fetchData={this.callFetchData}
-                    fetchSize={fetchSize}
                     ref={this.paginationRef}
                 >
-                    {totalSize <= 0 && fetchSize <= 0 && (totalSize === 0 || fetchSize === 0) ? (
+                    {totalSize === 0 ? (
                         <Message icon>
                             <Icon name="ban" />
-                            {fetchSize === 0 &&
-                            this.paginationRef.current &&
-                            this.paginationRef.current.state.currentPage > 1 ? (
-                                <span>No more data available</span>
-                            ) : (
-                                <span>{noDataMessage}</span>
-                            )}
+                            <span>{noDataMessage}</span>
                         </Message>
                     ) : (
                         segments
@@ -152,11 +136,6 @@ DataSegment.propTypes = {
      * total number of data segments, if not specified pagination will not be set. It is used to calculate pagination pages.
      */
     totalSize: PropTypes.number,
-
-    /**
-     * if total number is unknown size of fetched data can be provided. Pagination pages will be added dynamically until fetchSize is not equal to page size
-     */
-    fetchSize: PropTypes.number,
 
     /**
      * number of displayed rows on page
@@ -188,7 +167,6 @@ DataSegment.defaultProps = {
     className: '',
     fetchData: () => {},
     totalSize: -1,
-    fetchSize: -1,
     pageSize: 0,
     sizeMultiplier: 3,
     searchable: false,

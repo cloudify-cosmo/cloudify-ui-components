@@ -23,11 +23,7 @@ const Selectable = () => {
     return (
         <DataSegment>
             {[1, 2, 3, 4].map(item => (
-                <DataSegment.Item
-                    key={item}
-                    selected={item === selected}
-                    onClick={() => setSelected(item)}
-                >
+                <DataSegment.Item key={item} selected={item === selected} onClick={() => setSelected(item)}>
                     <h2>Item {item}</h2>
                 </DataSegment.Item>
             ))}
@@ -36,15 +32,25 @@ const Selectable = () => {
 };
 export const selectable = () => <Selectable />;
 
-export const pagination = () => (
-    <DataSegment pageSize={4} totalSize={10}>
-        {[1, 2, 3, 4].map(item => (
-            <DataSegment.Item key={item}>
-                <h2>Item {item}</h2>
-            </DataSegment.Item>
-        ))}
-    </DataSegment>
-);
+// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
+const Pagination = () => {
+    const [pageSize, setPageSize] = React.useState(3);
+
+    return (
+        <DataSegment
+            fetchData={({ gridParams: { pageSize: ps } }) => setPageSize(ps)}
+            totalSize={10}
+            pageSize={pageSize}
+        >
+            {[1, 2, 3, 4].map(item => (
+                <DataSegment.Item key={item}>
+                    <h2>Item {item}</h2>
+                </DataSegment.Item>
+            ))}
+        </DataSegment>
+    );
+};
+export const pagination = () => <Pagination />;
 
 export const searchFilter = () => (
     <DataSegment searchable>

@@ -114,7 +114,6 @@ export default class DataTable extends Component {
         const {
             children,
             totalSize,
-            fetchSize,
             pageSize,
             searchable,
             selectable,
@@ -183,7 +182,6 @@ export default class DataTable extends Component {
                     totalSize={totalSize}
                     pageSize={pageSize}
                     sizeMultiplier={sizeMultiplier}
-                    fetchSize={fetchSize}
                     fetchData={this.callFetchData}
                     ref={this.paginationRef}
                 >
@@ -198,18 +196,11 @@ export default class DataTable extends Component {
                             <Table.Header>
                                 <Table.Row>{headerColumns}</Table.Row>
                             </Table.Header>
-                            {noDataAvailable ||
-                            (totalSize <= 0 && fetchSize <= 0 && (totalSize === 0 || fetchSize === 0)) ? (
+                            {noDataAvailable || totalSize === 0 ? (
                                 <Table.Body>
                                     <Table.Row className="noDataRow">
                                         <td colSpan={headerColumns.length} className="center aligned">
-                                            {fetchSize === 0 &&
-                                            this.paginationRef.current &&
-                                            this.paginationRef.current.state.currentPage > 1 ? (
-                                                <span>No more data available</span>
-                                            ) : (
-                                                <span>{noDataMessage}</span>
-                                            )}
+                                            <span>{noDataMessage}</span>
                                         </td>
                                     </Table.Row>
                                 </Table.Body>
@@ -247,11 +238,6 @@ DataTable.propTypes = {
      * total number of rows in table, if not specified pagination will not be set. It is used to calculate pagination pages
      */
     totalSize: PropTypes.number,
-
-    /**
-     * if total number is unknown size of fetched data can be provided, pagination pages will be added dynamically until fetchSize is not equal to page size
-     */
-    fetchSize: PropTypes.number,
 
     /**
      * number of displayed rows on page
@@ -302,7 +288,6 @@ DataTable.propTypes = {
 DataTable.defaultProps = {
     fetchData: () => Promise.resolve(),
     totalSize: -1,
-    fetchSize: -1,
     pageSize: 0,
     sortColumn: '',
     sortAscending: true,

@@ -59,7 +59,7 @@ import './Form.css';
  * - `Form.Group` = Form group, see `FormGroup`
  * - `Form.Input` = Form input, see [Form.Input](https://react.semantic-ui.com/collections/form/)
  * - `Form.Json` = Form JSON input, see `JsonInput`
- * - `Form.Radio` = Form radio button, see [Input](https://react.semantic-ui.com/addons/radio)
+ * - `Form.Radio` = Form radio button, see [Radio](https://react.semantic-ui.com/addons/radio)
  * - `Form.TextArea` = Form text area input, see [TextArea](https://react.semantic-ui.com/addons/text-area)
  * - `Form.Time` = Time picker input, see `TimeInput`
  * - `Form.UrlOrFile` = Form URL or file input, see `UrlOrFileInput`

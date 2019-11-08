@@ -45,20 +45,29 @@ const logs = {
     }
 };
 
-export const pagination = () => (
-    <DataTable fetchData={() => {}} totalSize={logs.metadata.pagination.total} pageSize={logs.metadata.pagination.size}>
-        <DataTable.Column label="ID" />
-        <DataTable.Column label="Blueprint" name="blueprint_id" />
-        <DataTable.Column label="Deployment" name="deployment_id" />
-        {logs.items.map(item => (
-            <DataTable.Row key={item.id} onClick={() => {}}>
-                <DataTable.Data>{item.id}</DataTable.Data>
-                <DataTable.Data>{item.blueprint_id}</DataTable.Data>
-                <DataTable.Data>{item.deployment_id}</DataTable.Data>
-            </DataTable.Row>
-        ))}
-    </DataTable>
-);
+const Pagination = () => {
+    const [pageSize, setPageSize] = React.useState(5);
+
+    return (
+        <DataTable
+            fetchData={({ gridParams: { pageSize: ps } }) => setPageSize(ps)}
+            totalSize={logs.metadata.pagination.total}
+            pageSize={pageSize}
+        >
+            <DataTable.Column label="ID" />
+            <DataTable.Column label="Blueprint" name="blueprint_id" />
+            <DataTable.Column label="Deployment" name="deployment_id" />
+            {logs.items.map(item => (
+                <DataTable.Row key={item.id} onClick={() => {}}>
+                    <DataTable.Data>{item.id}</DataTable.Data>
+                    <DataTable.Data>{item.blueprint_id}</DataTable.Data>
+                    <DataTable.Data>{item.deployment_id}</DataTable.Data>
+                </DataTable.Row>
+            ))}
+        </DataTable>
+    );
+};
+export const pagination = () => <Pagination />;
 
 const Selectable = () => {
     const [selected, setSelected] = React.useState(logs.items[0].id);

@@ -404,8 +404,9 @@ exports[`Storyshots Data/DataSegment Pagination 1`] = `
       <div
         className="column"
       >
-        <div
-          className="ui small form"
+        <form
+          className="ui form"
+          onSubmit={[Function]}
         >
           Page size: 
           <div
@@ -439,7 +440,7 @@ exports[`Storyshots Data/DataSegment Pagination 1`] = `
               className="text"
               role="alert"
             >
-              4
+              3
             </div>
             <i
               aria-hidden="true"
@@ -454,25 +455,6 @@ exports[`Storyshots Data/DataSegment Pagination 1`] = `
                 aria-checked={true}
                 aria-selected={true}
                 className="active selected item"
-                onClick={[Function]}
-                option-value="4"
-                role="option"
-                style={
-                  Object {
-                    "pointerEvents": "all",
-                  }
-                }
-              >
-                <span
-                  className="text"
-                >
-                  4
-                </span>
-              </div>
-              <div
-                aria-checked={false}
-                aria-selected={false}
-                className="item"
                 onClick={[Function]}
                 option-value="3"
                 role="option"
@@ -569,59 +551,133 @@ exports[`Storyshots Data/DataSegment Pagination 1`] = `
             
           1
            to 
-          4
+          3
           <span>
              of 
             10
              entries
           </span>
-        </div>
+        </form>
       </div>
       <div
         className="right aligned column"
       >
         <div
-          className="ui small pagination right floated menu"
+          aria-label="Pagination Navigation"
+          className="ui pagination menu"
+          role="navigation"
         >
           <a
-            className="icon link item disabled"
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="firstItem"
+            value={1}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double left icon"
+              onClick={[Function]}
+            />
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="prevItem"
+            value={1}
           >
             <i
               aria-hidden="true"
               className="angle left icon"
               onClick={[Function]}
             />
-            
           </a>
           <a
+            aria-current={true}
+            aria-disabled={false}
             className="active item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={1}
           >
             1
           </a>
           <a
+            aria-current={false}
+            aria-disabled={false}
             className="item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={2}
           >
             2
           </a>
           <a
+            aria-current={false}
+            aria-disabled={false}
             className="item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={3}
           >
             3
           </a>
           <a
-            className="icon link item"
+            aria-current={false}
+            aria-disabled={false}
+            className="item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={4}
+          >
+            4
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="nextItem"
+            value={2}
           >
             <i
               aria-hidden="true"
               className="angle right icon"
               onClick={[Function]}
             />
-            
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="lastItem"
+            value={4}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double right icon"
+              onClick={[Function]}
+            />
           </a>
         </div>
       </div>
@@ -1756,8 +1812,9 @@ exports[`Storyshots Data/DataTable Pagination 1`] = `
       <div
         className="column"
       >
-        <div
-          className="ui small form"
+        <form
+          className="ui form"
+          onSubmit={[Function]}
         >
           Page size: 
           <div
@@ -1908,47 +1965,103 @@ exports[`Storyshots Data/DataTable Pagination 1`] = `
             10
              entries
           </span>
-        </div>
+        </form>
       </div>
       <div
         className="right aligned column"
       >
         <div
-          className="ui small pagination right floated menu"
+          aria-label="Pagination Navigation"
+          className="ui pagination menu"
+          role="navigation"
         >
           <a
-            className="icon link item disabled"
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="firstItem"
+            value={1}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double left icon"
+              onClick={[Function]}
+            />
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="prevItem"
+            value={1}
           >
             <i
               aria-hidden="true"
               className="angle left icon"
               onClick={[Function]}
             />
-            
           </a>
           <a
+            aria-current={true}
+            aria-disabled={false}
             className="active item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={1}
           >
             1
           </a>
           <a
+            aria-current={false}
+            aria-disabled={false}
             className="item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={2}
           >
             2
           </a>
           <a
-            className="icon link item"
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="nextItem"
+            value={2}
           >
             <i
               aria-hidden="true"
               className="angle right icon"
               onClick={[Function]}
             />
-            
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="lastItem"
+            value={2}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double right icon"
+              onClick={[Function]}
+            />
           </a>
         </div>
       </div>
@@ -2182,8 +2295,9 @@ exports[`Storyshots Data/DataTable Search Filter 1`] = `
       <div
         className="column"
       >
-        <div
-          className="ui small form"
+        <form
+          className="ui form"
+          onSubmit={[Function]}
         >
           Page size: 
           <div
@@ -2334,47 +2448,103 @@ exports[`Storyshots Data/DataTable Search Filter 1`] = `
             10
              entries
           </span>
-        </div>
+        </form>
       </div>
       <div
         className="right aligned column"
       >
         <div
-          className="ui small pagination right floated menu"
+          aria-label="Pagination Navigation"
+          className="ui pagination menu"
+          role="navigation"
         >
           <a
-            className="icon link item disabled"
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="firstItem"
+            value={1}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double left icon"
+              onClick={[Function]}
+            />
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="prevItem"
+            value={1}
           >
             <i
               aria-hidden="true"
               className="angle left icon"
               onClick={[Function]}
             />
-            
           </a>
           <a
+            aria-current={true}
+            aria-disabled={false}
             className="active item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={1}
           >
             1
           </a>
           <a
+            aria-current={false}
+            aria-disabled={false}
             className="item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={2}
           >
             2
           </a>
           <a
-            className="icon link item"
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="nextItem"
+            value={2}
           >
             <i
               aria-hidden="true"
               className="angle right icon"
               onClick={[Function]}
             />
-            
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="lastItem"
+            value={2}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double right icon"
+              onClick={[Function]}
+            />
           </a>
         </div>
       </div>
@@ -2576,8 +2746,9 @@ exports[`Storyshots Data/DataTable Selectable 1`] = `
       <div
         className="column"
       >
-        <div
-          className="ui small form"
+        <form
+          className="ui form"
+          onSubmit={[Function]}
         >
           Page size: 
           <div
@@ -2728,47 +2899,103 @@ exports[`Storyshots Data/DataTable Selectable 1`] = `
             10
              entries
           </span>
-        </div>
+        </form>
       </div>
       <div
         className="right aligned column"
       >
         <div
-          className="ui small pagination right floated menu"
+          aria-label="Pagination Navigation"
+          className="ui pagination menu"
+          role="navigation"
         >
           <a
-            className="icon link item disabled"
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="firstItem"
+            value={1}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double left icon"
+              onClick={[Function]}
+            />
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="prevItem"
+            value={1}
           >
             <i
               aria-hidden="true"
               className="angle left icon"
               onClick={[Function]}
             />
-            
           </a>
           <a
+            aria-current={true}
+            aria-disabled={false}
             className="active item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={1}
           >
             1
           </a>
           <a
+            aria-current={false}
+            aria-disabled={false}
             className="item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="pageItem"
+            value={2}
           >
             2
           </a>
           <a
-            className="icon link item"
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
             onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="nextItem"
+            value={2}
           >
             <i
               aria-hidden="true"
               className="angle right icon"
               onClick={[Function]}
             />
-            
+          </a>
+          <a
+            aria-current={false}
+            aria-disabled={false}
+            className="icon item"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={0}
+            type="lastItem"
+            value={2}
+          >
+            <i
+              aria-hidden="true"
+              className="angle double right icon"
+              onClick={[Function]}
+            />
           </a>
         </div>
       </div>

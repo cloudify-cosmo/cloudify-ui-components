@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
-import { Icon, Message } from 'semantic-ui-react';
+import { Icon, Grid, Message, Pagination as PaginationNavigation } from 'semantic-ui-react';
 import Popup from '../../../popups/Popup';
 import PaginationInfo from './PaginationInfo';
-import TotalSizePaginator from './TotalSizePaginator';
-import FetchSizePaginator from './FetchSizePaginator';
 
 import './Pagination.css';
 
@@ -80,23 +78,22 @@ export default class Pagination extends Component {
     }
 
     render() {
-        const { children, totalSize, fetchSize, sizeMultiplier } = this.props;
+        const { children, totalSize, sizeMultiplier } = this.props;
         const { currentPage, pageSize: pageSizeState, showWarningPopup } = this.state;
 
         return (
             <div>
                 {children}
 
-                {(totalSize > Pagination.PAGE_SIZE_LIST(sizeMultiplier)[0] || fetchSize > 0 || currentPage > 1) && (
-                    <div className="ui two column grid gridPagination">
-                        <div className="column">
+                {(totalSize > Pagination.PAGE_SIZE_LIST(sizeMultiplier)[0] || currentPage > 1) && (
+                    <Grid columns={2} className="gridPagination">
+                        <Grid.Column>
                             <Popup open={showWarningPopup} wide="very">
                                 <Popup.Trigger>
                                     <PaginationInfo
                                         currentPage={currentPage}
                                         pageSize={pageSizeState}
                                         totalSize={totalSize}
-                                        fetchSize={fetchSize}
                                         onPageSizeChange={this.changePageSize}
                                         sizeMultiplier={sizeMultiplier}
                                     />
@@ -108,25 +105,23 @@ export default class Pagination extends Component {
                                     </Message>
                                 </Popup.Content>
                             </Popup>
-                        </div>
-                        <div className="right aligned column">
-                            {totalSize > 0 ? (
-                                <TotalSizePaginator
-                                    currentPage={currentPage}
-                                    pageSize={pageSizeState}
-                                    totalSize={totalSize}
-                                    onPageChange={this.changePage}
-                                />
-                            ) : (
-                                <FetchSizePaginator
-                                    currentPage={currentPage}
-                                    pageSize={pageSizeState}
-                                    fetchSize={fetchSize}
-                                    onPageChange={this.changePage}
+                        </Grid.Column>
+                        <Grid.Column textAlign="right">
+                            {totalSize > 0 && (
+                                <PaginationNavigation
+                                    activePage={currentPage}
+                                    totalPages={Math.ceil(totalSize / pageSizeState)}
+                                    onPageChange={(e, { activePage }) => this.changePage(activePage)}
+                                    siblingRange={0}
+                                    ellipsisItem={{ content: <Icon name="ellipsis horizontal" />, icon: true }}
+                                    firstItem={{ content: <Icon name="angle double left" />, icon: true }}
+                                    lastItem={{ content: <Icon name="angle double right" />, icon: true }}
+                                    prevItem={{ content: <Icon name="angle left" />, icon: true }}
+                                    nextItem={{ content: <Icon name="angle right" />, icon: true }}
                                 />
                             )}
-                        </div>
-                    </div>
+                        </Grid.Column>
+                    </Grid>
                 )}
             </div>
         );
@@ -138,15 +133,13 @@ Pagination.PAGE_SIZE_LIST = PaginationInfo.pageSizes;
 Pagination.propTypes = {
     children: PropTypes.node.isRequired,
     fetchData: PropTypes.func.isRequired,
-    pageSize: PropTypes.number,
     totalSize: PropTypes.number,
-    fetchSize: PropTypes.number,
+    pageSize: PropTypes.number,
     sizeMultiplier: PropTypes.number
 };
 
 Pagination.defaultProps = {
     totalSize: 0,
-    fetchSize: 0,
-    sizeMultiplier: 5,
-    pageSize: Pagination.PAGE_SIZE_LIST(5)[0]
+    pageSize: Pagination.PAGE_SIZE_LIST(5)[0],
+    sizeMultiplier: 5
 };
