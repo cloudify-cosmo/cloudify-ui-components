@@ -1,9 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import DataTable from '../src/components/data/DataTable';
-import DataSegment from '../src/components/data/DataSegment';
 import { Button, Input } from 'semantic-ui-react';
+import DataTable from '../src/components/data/DataTable';
 
 describe('<DataTable />', () => {
     const clickRowMock = jest.fn();
