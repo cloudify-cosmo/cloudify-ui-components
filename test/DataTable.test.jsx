@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import _ from 'lodash';
 
 import { Button, Input } from 'semantic-ui-react';
 import DataTable from '../src/components/data/DataTable';
@@ -134,6 +135,7 @@ describe('<DataTable />', () => {
 
     it('renders search box', () => {
         const fetchDataMock = jest.fn();
+        const debounceSpy = jest.spyOn(_, 'debounce').mockImplementation(f => f);
         const wrapper = mount(
             <DataTable fetchData={fetchDataMock} pageSize={25} sortColumn="col1" sortAscending={false}>
                 {tableContent}
@@ -145,7 +147,6 @@ describe('<DataTable />', () => {
         wrapper.setProps({ searchable: true });
         expect(wrapper.find('.gridTable i.search').length).toEqual(1);
 
-        jest.useFakeTimers();
         wrapper.find('input[placeholder="Search..."]').simulate('change', { target: { value: 'test' } });
         expect(wrapper.state()).toEqual({
             searchText: 'test',
@@ -154,11 +155,12 @@ describe('<DataTable />', () => {
             sortColumn: 'col1'
         });
 
-        jest.runAllTimers();
         expect(fetchDataMock).toHaveBeenCalledTimes(1);
         expect(fetchDataMock).toHaveBeenCalledWith({
             gridParams: { _search: 'test', currentPage: 1, pageSize: 25, sortAscending: false, sortColumn: 'col1' }
         });
+
+        debounceSpy.mockRestore();
     });
 
     it('renders action/filter items', () => {
