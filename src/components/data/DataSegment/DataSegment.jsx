@@ -9,6 +9,8 @@ import Pagination from '../common/Pagination';
 
 import SegmentItem from './SegmentItem';
 
+import './DataSegment.css';
+
 /**
  * `DataSegment` component enables fetching data using predefined function and showing segmented data in a simple manner.
  *
