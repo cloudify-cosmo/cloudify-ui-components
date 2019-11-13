@@ -32,8 +32,46 @@ jobs:
           paths:
             - repo
 
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/repo/.npmrc
+
+      - run:
+          name: Publish package
+          command: npm publish
+
+      - run:
+          name: Setup git user
+          command: |
+            git config user.email "cosmo-admin@github.com"
+            git config user.name "cosmo-admin-CircleCI"
+
+      - run:
+          name: Update main branch
+          command: |
+            git checkout ${MAIN_BRANCH}
+            git merge --ff-only ${CIRCLE_BRANCH}
+            git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git ${MAIN_BRANCH}
+
+      - run:
+          name: Remove publish branch
+          command: |
+            git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${CIRCLE_BRANCH}
+
 workflows:
   version: 2
   build-test-deploy:
     jobs:
       - build-test
+      - deploy:
+          requires:
+            - build-test
+          filters:
+            branches:
+              only: /^publish-v.*/
