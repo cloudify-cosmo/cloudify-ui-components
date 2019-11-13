@@ -20,7 +20,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production babel ./src --ignore '**/*.stories.jsx' --copy-files --delete-dir-on-start --out-dir es",
     "lint": "eslint --ext js,jsx src test",
-    "test": "jest test --coverage",
+    "test:only": "jest test --coverage",
+    "test": "npm run lint && npm run test:only",
     "storybook": "start-storybook --docs -p 9001",
     "build-storybook": "build-storybook --docs -c .storybook",
     "publish:major": "sh scripts/publish-version.sh major",
