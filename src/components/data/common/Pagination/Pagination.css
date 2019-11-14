@@ -3,6 +3,10 @@
     padding-bottom: 0.78571429em !important;
 }
 
+.gridPagination .pagination.menu .item:hover {
+    text-decoration: none !important;
+}
+
 .gridPagination .compact.dropdown {
     min-width: 50px !important;
 }
