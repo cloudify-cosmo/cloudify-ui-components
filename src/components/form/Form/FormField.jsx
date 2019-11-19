@@ -13,7 +13,7 @@ import FieldLabel from '../FieldLabel/FieldLabel';
  * so all properties of that component can be used here.
  */
 export function FormFieldWithoutMemo({ children, error, help, label, required, ...fieldProps }) {
-    const FieldWrapper = () => (
+    const getFieldWrapper = () => (
         // eslint-disable-next-line react/jsx-props-no-spreading
         <Form.Field {...fieldProps} required={required} error={!!error}>
             <FieldLabel help={help} label={label} />
@@ -22,9 +22,9 @@ export function FormFieldWithoutMemo({ children, error, help, label, required, .
     );
 
     return _.isEmpty(label) && !_.isEmpty(help) ? (
-        <PopupHelp trigger={<FieldWrapper />} content={help} />
+        <PopupHelp trigger={getFieldWrapper()} content={help} />
     ) : (
-        <FieldWrapper />
+        getFieldWrapper()
     );
 }
 

@@ -96,15 +96,5 @@
     "react-dom": "^16.10.2",
     "semantic-ui-react": "^0.84.0",
     "semantic-ui-css": "^2.4.1"
-  },
-  "bundledDependencies": [
-    "rc-tree",
-    "react-color",
-    "react-copy-to-clipboard",
-    "react-datepicker",
-    "react-json-view",
-    "react-transition-group",
-    "react-syntax-highlighter",
-    "tinycolor2"
-  ]
+  }
 }

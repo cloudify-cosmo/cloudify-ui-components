@@ -152,7 +152,10 @@ Form.UrlOrFile = UrlOrFileInput;
 Form.Time = TimeInput;
 
 Form.propTypes = {
-    ...FormSemanticUiReact.propTypes,
+    /**
+     * primary content
+     */
+    children: PropTypes.node.isRequired,
 
     /**
      * string with error message or object with fields error messages (syntax described above)
