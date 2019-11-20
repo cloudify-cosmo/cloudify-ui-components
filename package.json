@@ -16,6 +16,7 @@
   "files": [
     "es"
   ],
+  "main": "es/index.js",
   "module": "es/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production babel ./src --ignore '**/*.stories.jsx' --copy-files --delete-dir-on-start --out-dir es",
