@@ -1,10 +1,12 @@
 import React from 'react';
 
+import liveEditDecorator from '../../../../.storybook/decorators/liveEditDecorator';
 import HighlightText from './HighlightText';
 
 export default {
     title: 'Data/HighlightText',
-    component: HighlightText
+    component: HighlightText,
+    decorators: liveEditDecorator()
 };
 export const basic = () => (
     <HighlightText>
