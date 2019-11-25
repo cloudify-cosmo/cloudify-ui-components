@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { Icon } from 'semantic-ui-react';
 
-import Popup from '../../../popups/Popup';
+import Popup from 'components/popups/Popup';
 import { visibilities, visibilityPropType } from '../consts';
 
 /**

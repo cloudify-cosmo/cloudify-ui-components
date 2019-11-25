@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 
 import { Button, Input } from 'semantic-ui-react';
-import Popup from '../../popups/Popup';
+import Popup from 'components/popups/Popup';
 
 /**
  * FileInput is a component showing file input field. Can be displayed as normal input field containing name of the chosen file

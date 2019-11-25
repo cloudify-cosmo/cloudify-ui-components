@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 import ReactJsonView from 'react-json-view';
 import { Icon, Label, TextArea, List } from 'semantic-ui-react';
-import Popup from '../../popups/Popup';
+import Popup from 'components/popups/Popup';
 import { getStringValue, getTypedValue } from './utils';
 import './JsonInput.css';
 

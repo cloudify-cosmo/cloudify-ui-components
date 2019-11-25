@@ -1,6 +1,6 @@
 import React from 'react';
+import Menu from 'components/elements/Menu';
 import PopupMenu from './PopupMenu';
-import Menu from '../../elements/Menu';
 
 export default {
     title: 'Popups/PopupMenu',
