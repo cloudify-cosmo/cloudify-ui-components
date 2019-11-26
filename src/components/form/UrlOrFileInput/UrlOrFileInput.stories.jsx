@@ -1,10 +1,13 @@
 import React from 'react';
 import { Label } from 'semantic-ui-react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Form from '../Form/Form';
 
 export default {
     title: 'Form.UrlOrFile',
-    component: Form.UrlOrFile
+    component: Form.UrlOrFile,
+    decorators: [LiveEditDecorator({ Label, Form })]
 };
 
 export const basic = () => (

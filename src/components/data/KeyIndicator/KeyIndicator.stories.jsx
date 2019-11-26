@@ -1,14 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Button } from 'semantic-ui-react';
 
+import DivContainer from 'decorators/DivContainer';
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import KeyIndicator from './KeyIndicator';
-
-const DivContainer = ({ children }) => <div style={{ position: 'relative', height: 150 }}>{children}</div>;
-DivContainer.propTypes = {
-    children: PropTypes.node.isRequired
-};
 
 export default {
     title: 'Data/KeyIndicator',

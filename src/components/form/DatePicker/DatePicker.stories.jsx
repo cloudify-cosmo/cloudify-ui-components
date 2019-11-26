@@ -1,28 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import moment from 'moment';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import StoryWithHooks from 'decorators/StoryWithHooks';
 import Form from '../Form/Form';
 import { DatePickerWithoutMemo } from './DatePicker';
 
 export default {
     title: 'Form.DatePicker',
-    component: DatePickerWithoutMemo
+    component: DatePickerWithoutMemo,
+    decorators: [LiveEditDecorator({ Form, moment })]
 };
 
-// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-const Basic = () => {
-    const [date, setDate] = useState(null);
+export const basic = StoryWithHooks(() => {
+    const [date, setDate] = React.useState(null);
+
     return <Form.DatePicker name="date" value={date} onChange={(e, { value }) => setDate(value)} />;
-};
-export const basic = () => <Basic />;
+});
 
-const SelectedDate = () => {
-    const [date, setDate] = useState(moment());
+export const selectedDate = StoryWithHooks(() => {
+    const [date, setDate] = React.useState(moment());
+
     return <Form.DatePicker name="date" value={date} onChange={(e, { value }) => setDate(value)} />;
-};
-export const selectedDate = () => <SelectedDate />;
+});
 
-const MinimalAndMaximalDate = () => {
-    const [date, setDate] = useState(moment());
+export const minimalAndMaximalDate = StoryWithHooks(() => {
+    const [date, setDate] = React.useState(moment());
+
     return (
         <Form.DatePicker
             name="date"
@@ -32,11 +36,10 @@ const MinimalAndMaximalDate = () => {
             onChange={(e, { value }) => setDate(value)}
         />
     );
-};
-export const minimalAndMaximalDate = () => <MinimalAndMaximalDate />;
+});
 
-const CustomTimeIntervals = () => {
-    const [date, setDate] = useState(moment());
+export const customTimeIntervals = StoryWithHooks(() => {
+    const [date, setDate] = React.useState(moment());
+
     return <Form.DatePicker name="date" value={date} onChange={(e, { value }) => setDate(value)} timeIntervals={1} />;
-};
-export const customTimeIntervals = () => <CustomTimeIntervals />;
+});

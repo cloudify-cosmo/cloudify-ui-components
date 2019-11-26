@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import moment from 'moment';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import StoryWithHooks from 'decorators/StoryWithHooks';
 import Form from '../Form/Form';
 import DateRangeInput from './DateRangeInput';
 
 export default {
     title: 'Form.DateRange',
-    component: DateRangeInput
+    component: DateRangeInput,
+    decorators: [LiveEditDecorator({ Form, moment })]
 };
 
-// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-const Basic = () => {
-    const [timeFilter, setTimeFilter] = useState(Form.DateRange.EMPTY_VALUE);
+export const basic = StoryWithHooks(() => {
+    const [timeFilter, setTimeFilter] = React.useState(Form.DateRange.EMPTY_VALUE);
+
     return <Form.DateRange name="timeFilter" value={timeFilter} onChange={(e, { value }) => setTimeFilter(value)} />;
-};
-export const basic = () => <Basic />;
+});
 
-const DefaultValue = () => {
+export const defaultValue = StoryWithHooks(() => {
     const dV = {
         start: moment()
             .subtract(1, 'W')
@@ -25,7 +28,7 @@ const DefaultValue = () => {
             .format(DateRangeInput.DATETIME_FORMAT),
         range: 'Custom default value range text'
     };
-    const [timeFilter, setTimeFilter] = useState(dV);
+    const [timeFilter, setTimeFilter] = React.useState(dV);
     return (
         <Form.DateRange
             name="timeFilter"
@@ -34,11 +37,10 @@ const DefaultValue = () => {
             onChange={(e, { value }) => setTimeFilter(value)}
         />
     );
-};
-export const defaultValue = () => <DefaultValue />;
+});
 
-const CustomRanges = () => {
-    const [timeFilter, setTimeFilter] = useState(Form.DateRange.EMPTY_VALUE);
+export const customRanges = StoryWithHooks(() => {
+    const [timeFilter, setTimeFilter] = React.useState(Form.DateRange.EMPTY_VALUE);
     const ranges = {
         'Last 4 Hours': {
             start: moment()
@@ -67,5 +69,4 @@ const CustomRanges = () => {
             onChange={(e, { value }) => setTimeFilter(value)}
         />
     );
-};
-export const customRanges = () => <CustomRanges />;
+});

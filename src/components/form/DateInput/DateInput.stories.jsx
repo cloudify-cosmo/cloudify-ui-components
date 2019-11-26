@@ -1,24 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import moment from 'moment';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import StoryWithHooks from 'decorators/StoryWithHooks';
 import Form from '../Form/Form';
 import DateInput from './DateInput';
 
 export default {
     title: 'Form.Date',
-    component: DateInput
+    component: DateInput,
+    decorators: [LiveEditDecorator({ DateInput, Form, moment })]
 };
 
-// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-const Basic = () => {
-    const [date, setDate] = useState('');
+export const basic = StoryWithHooks(() => {
+    const [date, setDate] = React.useState('');
 
     return <Form.Date name="date" value={date} onChange={(event, { value }) => setDate(value)} />;
-};
-export const basic = () => <Basic />;
+});
 
-const DefaultValue = () => {
+export const defaultValue = StoryWithHooks(() => {
     const defaultDate = `${moment().format(DateInput.DATE_FORMAT)} 00:00`;
-    const [date, setDate] = useState(defaultDate);
+    const [date, setDate] = React.useState(defaultDate);
 
     return (
         <Form.Date
@@ -28,11 +30,10 @@ const DefaultValue = () => {
             onChange={(event, { value }) => setDate(value)}
         />
     );
-};
-export const defaultValue = () => <DefaultValue />;
+});
 
-const MinimalAndMaximalDate = () => {
-    const [date, setDate] = useState('');
+export const minimalAndMaximalDate = StoryWithHooks(() => {
+    const [date, setDate] = React.useState('');
 
     return (
         <Form.Date
@@ -43,14 +44,12 @@ const MinimalAndMaximalDate = () => {
             onChange={(event, { value }) => setDate(value)}
         />
     );
-};
-export const minimalAndMaximalDate = () => <MinimalAndMaximalDate />;
+});
 
-const CustomTimeIntervals = () => {
-    const [date, setDate] = useState('');
+export const customTimeIntervals = StoryWithHooks(() => {
+    const [date, setDate] = React.useState('');
 
     return <Form.Date name="date" value={date} onChange={(event, { value }) => setDate(value)} timeIntervals={30} />;
-};
-export const customTimeIntervals = () => <CustomTimeIntervals />;
+});
 
 export const invalidValue = () => <Form.Date name="date" value="Invalid value" />;

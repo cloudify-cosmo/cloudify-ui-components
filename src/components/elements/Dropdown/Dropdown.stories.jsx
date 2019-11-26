@@ -1,14 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
+import DivContainer from 'decorators/DivContainer';
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import StoryWithHooks from 'decorators/StoryWithHooks';
 import Dropdown from './Dropdown';
-
-const DivContainer = ({ children }) => <div style={{ position: 'relative', height: 200 }}>{children}</div>;
-DivContainer.propTypes = {
-    children: PropTypes.node.isRequired
-};
 
 export default {
     title: 'Elements/Dropdown',
