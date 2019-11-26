@@ -1,13 +1,35 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Button } from 'semantic-ui-react';
 
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import KeyIndicator from './KeyIndicator';
+
+const DivContainer = ({ children }) => <div style={{ position: 'relative', height: 150 }}>{children}</div>;
+DivContainer.propTypes = {
+    children: PropTypes.node.isRequired
+};
 
 export default {
     title: 'Data/KeyIndicator',
     component: KeyIndicator,
-    // eslint-disable-next-line react/display-name
-    decorators: [storyFn => <div style={{ height: 150 }}>{storyFn()}</div>]
+    decorators: [LiveEditDecorator({ Button, KeyIndicator, DivContainer })]
 };
-export const userStars = () => <KeyIndicator title="User Stars" icon="star" number={54} />;
-export const executions = () => <KeyIndicator title="Running Executions" icon="cogs" number={6} />;
-export const plugins = () => <KeyIndicator title="Plugins" icon="plug" number={3} />;
+
+export const userStars = () => (
+    <DivContainer>
+        <KeyIndicator title="User Stars" icon="star" number={54} />
+    </DivContainer>
+);
+
+export const executions = () => (
+    <DivContainer>
+        <KeyIndicator title="Running Executions" icon="cogs" number={6} />
+    </DivContainer>
+);
+
+export const plugins = () => (
+    <DivContainer>
+        <KeyIndicator title="Plugins" icon="plug" number={3} />
+    </DivContainer>
+);

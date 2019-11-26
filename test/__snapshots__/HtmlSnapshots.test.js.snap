@@ -3727,6 +3727,7 @@ exports[`Storyshots Data/KeyIndicator Executions 1`] = `
   style={
     Object {
       "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -3780,6 +3781,7 @@ exports[`Storyshots Data/KeyIndicator Plugins 1`] = `
   style={
     Object {
       "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -3833,6 +3835,7 @@ exports[`Storyshots Data/KeyIndicator User Stars 1`] = `
   style={
     Object {
       "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -4513,6 +4516,7 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
   style={
     Object {
       "height": 200,
+      "position": "relative",
     }
   }
 >
@@ -4621,38 +4625,30 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
 
 exports[`Storyshots Elements/Dropdown Empty 1`] = `
 <div
-  style={
-    Object {
-      "height": 200,
-    }
-  }
+  aria-expanded={false}
+  className="ui dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="listbox"
+  tabIndex={0}
 >
   <div
-    aria-expanded={false}
-    className="ui dropdown"
-    onBlur={[Function]}
-    onChange={[Function]}
+    aria-atomic={true}
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="dropdown icon"
     onClick={[Function]}
-    onFocus={[Function]}
-    onMouseDown={[Function]}
-    role="listbox"
-    tabIndex={0}
-  >
-    <div
-      aria-atomic={true}
-      aria-live="polite"
-      className="text"
-      role="alert"
-    />
-    <i
-      aria-hidden="true"
-      className="dropdown icon"
-      onClick={[Function]}
-    />
-    <div
-      className="menu transition"
-    />
-  </div>
+  />
+  <div
+    className="menu transition"
+  />
 </div>
 `;
 
@@ -4661,6 +4657,7 @@ exports[`Storyshots Elements/Dropdown With Empty Option 1`] = `
   style={
     Object {
       "height": 200,
+      "position": "relative",
     }
   }
 >

@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from 'semantic-ui-react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import StoryWithHooks from 'decorators/StoryWithHooks';
 import ReadmeModal from './ReadmeModal';
 
 export default {
     title: 'Modal/ReadmeModal',
-    component: ReadmeModal
+    component: ReadmeModal,
+    decorators: [LiveEditDecorator({ Button, ReadmeModal })]
 };
 
-// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-function ReadmeModalStoryWithHook() {
+export const basic = StoryWithHooks(() => {
     const html =
         '<h1>HTML Ipsum Presents</h1>\n' +
         '\n' +
@@ -37,7 +40,7 @@ function ReadmeModalStoryWithHook() {
         '  height: 80px;\n' +
         '}\n' +
         '</code></pre>';
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = React.useState(false);
 
     return (
         <div>
@@ -45,5 +48,4 @@ function ReadmeModalStoryWithHook() {
             <ReadmeModal content={html} open={open} onHide={() => setOpen(false)} />
         </div>
     );
-}
-export const basic = () => <ReadmeModalStoryWithHook />;
+});

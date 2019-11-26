@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from 'semantic-ui-react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import StoryWithHooks from 'decorators/StoryWithHooks';
 import Confirm from './Confirm';
 
 export default {
     title: 'Modal/Confirm',
-    component: Confirm
+    component: Confirm,
+    decorators: [LiveEditDecorator({ Button, Confirm })]
 };
 
-// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-function ConfirmStoryWithHook() {
-    const [open, setOpen] = useState(false);
+export const basic = StoryWithHooks(() => {
+    const [open, setOpen] = React.useState(false);
     return (
         <div>
             <Button onClick={() => setOpen(true)} content="Show Confirm" />
@@ -21,5 +24,4 @@ function ConfirmStoryWithHook() {
             />
         </div>
     );
-}
-export const basic = () => <ConfirmStoryWithHook />;
+});

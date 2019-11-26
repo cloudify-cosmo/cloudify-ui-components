@@ -1,11 +1,15 @@
 import React from 'react';
+
 import Menu from 'components/elements/Menu';
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import PopupMenu from './PopupMenu';
 
 export default {
     title: 'Popups/PopupMenu',
-    component: PopupMenu
+    component: PopupMenu,
+    decorators: [LiveEditDecorator({ PopupMenu })]
 };
+
 export const basic = () => (
     <PopupMenu>
         <Menu pointing vertical>
@@ -18,6 +22,7 @@ export const basic = () => (
 basic.story = {
     name: 'Default'
 };
+
 export const helpPopup = () => (
     <PopupMenu help="Choose your favourite fruit">
         <Menu pointing vertical>
@@ -27,6 +32,7 @@ export const helpPopup = () => (
         </Menu>
     </PopupMenu>
 );
+
 export const customIcon = () => (
     <PopupMenu icon="arrow down" bordered>
         <Menu pointing vertical>

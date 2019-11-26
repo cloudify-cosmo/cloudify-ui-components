@@ -1,10 +1,14 @@
 import React from 'react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Popup from './Popup';
 
 export default {
     title: 'Popups/Popup',
-    component: Popup
+    component: Popup,
+    decorators: [LiveEditDecorator({ Popup })]
 };
+
 export const basic = () => (
     <Popup>
         <Popup.Trigger>

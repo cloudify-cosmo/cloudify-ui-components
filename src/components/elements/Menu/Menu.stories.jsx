@@ -1,10 +1,12 @@
 import React from 'react';
 
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Menu from './Menu';
 
 export default {
     title: 'Elements/Menu',
-    component: Menu
+    component: Menu,
+    decorators: [LiveEditDecorator({ Menu })]
 };
 
 export const example = () => (

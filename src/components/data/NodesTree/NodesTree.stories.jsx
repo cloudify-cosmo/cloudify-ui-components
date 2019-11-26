@@ -1,11 +1,14 @@
 import React from 'react';
 
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import NodesTree from './NodesTree';
 
 export default {
     title: 'Data/NodesTree',
-    component: NodesTree
+    component: NodesTree,
+    decorators: [LiveEditDecorator({ NodesTree })]
 };
+
 export const expanded = () => (
     <NodesTree defaultExpandAll>
         <NodesTree.Node title="Encyclopaedia" key="encyclopaedia">
@@ -17,6 +20,7 @@ export const expanded = () => (
         </NodesTree.Node>
     </NodesTree>
 );
+
 export const collapsed = () => (
     <NodesTree>
         <NodesTree.Node title="Encyclopaedia" key="encyclopaedia">
@@ -28,6 +32,7 @@ export const collapsed = () => (
         </NodesTree.Node>
     </NodesTree>
 );
+
 export const selectable = () => (
     <NodesTree defaultExpandAll selectable>
         <NodesTree.Node title="Encyclopaedia" key="encyclopaedia">
@@ -50,6 +55,7 @@ export const withIcons = () => (
         </NodesTree.Node>
     </NodesTree>
 );
+
 export const withTreeData = () => (
     <NodesTree
         defaultExpandAll

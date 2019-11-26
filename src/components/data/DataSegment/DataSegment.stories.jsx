@@ -1,11 +1,14 @@
 import React from 'react';
 
 import { Button } from 'semantic-ui-react';
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import StoryWithHooks from 'decorators/StoryWithHooks';
 import DataSegment from './DataSegment';
 
 export default {
     title: 'Data/DataSegment',
-    component: DataSegment
+    component: DataSegment,
+    decorators: [LiveEditDecorator({ Button, DataSegment })]
 };
 export const simple = () => (
     <DataSegment>
@@ -17,8 +20,7 @@ export const simple = () => (
     </DataSegment>
 );
 
-// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-const Selectable = () => {
+export const selectable = StoryWithHooks(() => {
     const [selected, setSelected] = React.useState(1);
     return (
         <DataSegment>
@@ -29,11 +31,9 @@ const Selectable = () => {
             ))}
         </DataSegment>
     );
-};
-export const selectable = () => <Selectable />;
+});
 
-// FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-const Pagination = () => {
+export const pagination = StoryWithHooks(() => {
     const [pageSize, setPageSize] = React.useState(3);
 
     return (
@@ -49,8 +49,7 @@ const Pagination = () => {
             ))}
         </DataSegment>
     );
-};
-export const pagination = () => <Pagination />;
+});
 
 export const searchFilter = () => (
     <DataSegment searchable>

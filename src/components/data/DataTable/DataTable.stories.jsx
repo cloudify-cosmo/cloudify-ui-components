@@ -1,12 +1,9 @@
 import React from 'react';
 import { Button, Input, Segment } from 'semantic-ui-react';
 
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import StoryWithHooks from 'decorators/StoryWithHooks';
 import DataTable from './DataTable';
-
-export default {
-    title: 'Data/DataTable',
-    component: DataTable
-};
 
 const logs = {
     items: [
@@ -45,7 +42,13 @@ const logs = {
     }
 };
 
-const Pagination = () => {
+export default {
+    title: 'Data/DataTable',
+    component: DataTable,
+    decorators: [LiveEditDecorator({ Button, Input, Segment, DataTable, logs })]
+};
+
+export const pagination = StoryWithHooks(() => {
     const [pageSize, setPageSize] = React.useState(5);
 
     return (
@@ -66,10 +69,9 @@ const Pagination = () => {
             ))}
         </DataTable>
     );
-};
-export const pagination = () => <Pagination />;
+});
 
-const Selectable = () => {
+export const selectable = StoryWithHooks(() => {
     const [selected, setSelected] = React.useState(logs.items[0].id);
     return (
         <DataTable totalSize={logs.metadata.pagination.total} pageSize={logs.metadata.pagination.size}>
@@ -85,8 +87,7 @@ const Selectable = () => {
             ))}
         </DataTable>
     );
-};
-export const selectable = () => <Selectable />;
+});
 
 export const searchFilter = () => (
     <DataTable totalSize={logs.metadata.pagination.total} pageSize={logs.metadata.pagination.size} searchable>
@@ -143,7 +144,7 @@ export const filterInputs = () => (
     </DataTable>
 );
 
-const ExpandableRow = () => {
+export const expandableRow = StoryWithHooks(() => {
     const [selected, setSelected] = React.useState('prestashop');
 
     return (
@@ -186,8 +187,7 @@ const ExpandableRow = () => {
             </DataTable.RowExpandable>
         </DataTable>
     );
-};
-export const expandableRow = () => <ExpandableRow />;
+});
 
 export const empty = () => (
     <DataTable totalSize={0}>

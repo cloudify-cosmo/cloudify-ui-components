@@ -1,11 +1,15 @@
 import React from 'react';
+import { Button } from 'semantic-ui-react';
 
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import HighlightText from './HighlightText';
 
 export default {
     title: 'Data/HighlightText',
-    component: HighlightText
+    component: HighlightText,
+    decorators: [LiveEditDecorator({ Button, HighlightText })]
 };
+
 export const basic = () => (
     <HighlightText>
         {`{
@@ -20,6 +24,7 @@ export const basic = () => (
 basic.story = {
     name: 'Default'
 };
+
 export const bash = () => (
     <HighlightText language="bash">
         {`#!/bin/bash
@@ -29,6 +34,7 @@ STRING="Hello World"
 echo $STRING`}
     </HighlightText>
 );
+
 export const javaScript = () => (
     <HighlightText language="javascript">
         {`function ask(question, yes, no) {
@@ -48,6 +54,7 @@ function showCancel() {
 ask("Do you agree?", showOk, showCancel);`}
     </HighlightText>
 );
+
 export const JSON = () => (
     <HighlightText language="json">
         {`{
@@ -59,6 +66,7 @@ export const JSON = () => (
 }`}
     </HighlightText>
 );
+
 export const python = () => (
     <HighlightText language="python">
         {`import whois
@@ -69,6 +77,7 @@ w = whois.whois(data)
 print w`}
     </HighlightText>
 );
+
 export const YAML = () => (
     <HighlightText language="yaml">
         {`tosca_definitions_version: cloudify_dsl_1_3
