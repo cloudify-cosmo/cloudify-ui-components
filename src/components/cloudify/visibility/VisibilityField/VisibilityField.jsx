@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
-import Popup from '../../../popups/Popup';
+import Popup from 'components/popups/Popup';
 import VisibilityIcon from '../VisibilityIcon';
 import { visibilities, visibilityPropType } from '../consts';
 

@@ -3727,6 +3727,7 @@ exports[`Storyshots Data/KeyIndicator Executions 1`] = `
   style={
     Object {
       "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -3780,6 +3781,7 @@ exports[`Storyshots Data/KeyIndicator Plugins 1`] = `
   style={
     Object {
       "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -3833,6 +3835,7 @@ exports[`Storyshots Data/KeyIndicator User Stars 1`] = `
   style={
     Object {
       "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -4512,7 +4515,8 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
 <div
   style={
     Object {
-      "height": 200,
+      "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -4621,38 +4625,30 @@ exports[`Storyshots Elements/Dropdown Basic 1`] = `
 
 exports[`Storyshots Elements/Dropdown Empty 1`] = `
 <div
-  style={
-    Object {
-      "height": 200,
-    }
-  }
+  aria-expanded={false}
+  className="ui dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="listbox"
+  tabIndex={0}
 >
   <div
-    aria-expanded={false}
-    className="ui dropdown"
-    onBlur={[Function]}
-    onChange={[Function]}
+    aria-atomic={true}
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="dropdown icon"
     onClick={[Function]}
-    onFocus={[Function]}
-    onMouseDown={[Function]}
-    role="listbox"
-    tabIndex={0}
-  >
-    <div
-      aria-atomic={true}
-      aria-live="polite"
-      className="text"
-      role="alert"
-    />
-    <i
-      aria-hidden="true"
-      className="dropdown icon"
-      onClick={[Function]}
-    />
-    <div
-      className="menu transition"
-    />
-  </div>
+  />
+  <div
+    className="menu transition"
+  />
 </div>
 `;
 
@@ -4660,7 +4656,8 @@ exports[`Storyshots Elements/Dropdown With Empty Option 1`] = `
 <div
   style={
     Object {
-      "height": 200,
+      "height": 150,
+      "position": "relative",
     }
   }
 >
@@ -4787,30 +4784,31 @@ exports[`Storyshots Elements/Dropdown With Empty Option 1`] = `
 `;
 
 exports[`Storyshots Elements/EditableLabel Basic 1`] = `
-<label
-  className=" editPlaceholder"
+<div
+  className="ui label null editPlaceholder"
   onClick={[Function]}
->
-  Click to edit
-</label>
-`;
-
-exports[`Storyshots Elements/EditableLabel Editable 1`] = `
-<label
-  className=" editPlaceholder"
-  onClick={[Function]}
+  style={
+    Object {
+      "background": "none",
+      "cursor": "pointer",
+    }
+  }
 >
   Enter your text here...
-</label>
+</div>
 `;
 
 exports[`Storyshots Elements/EditableLabel Read Only 1`] = `
-<label
-  className=" "
+<div
+  className="ui label null "
   onClick={[Function]}
->
-  Sample Text
-</label>
+  style={
+    Object {
+      "background": "none",
+      "cursor": "inherit",
+    }
+  }
+/>
 `;
 
 exports[`Storyshots Elements/ErrorMessage Auto Hide 1`] = `
@@ -4969,6 +4967,53 @@ exports[`Storyshots Elements/Loading Custom Message 1`] = `
     }
   }
 >
+  <div
+    className="ui active transition visible inverted dimmer"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="ui text loader"
+      >
+        Loading files
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/LoadingOverlay Basic 1`] = `
+<div
+  className="ui segment"
+>
+  Covered text
+  <div
+    className="ui active transition visible inverted dimmer"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="ui loader"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/LoadingOverlay Custom Message 1`] = `
+<div
+  className="ui segment"
+  style={
+    Object {
+      "height": 80,
+    }
+  }
+>
+  Covered text
   <div
     className="ui active transition visible inverted dimmer"
     onClick={[Function]}
@@ -9226,9 +9271,14 @@ exports[`Storyshots Form.File Basic 1`] = `
       </button>
     </div>
     <input
-      hidden={true}
+      multiple={false}
       name="file1"
       onChange={[Function]}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
       type="file"
     />
   </div>
@@ -9249,11 +9299,75 @@ Array [
     Load File
   </button>,
   <input
-    hidden={true}
+    multiple={false}
     name="file3"
     onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
     type="file"
   />,
+]
+`;
+
+exports[`Storyshots Form.File Controlled 1`] = `
+Array [
+  <div
+    className="ui action input"
+  >
+    <input
+      disabled={false}
+      name="fileNamefile3"
+      onChange={[Function]}
+      onClick={[Function]}
+      placeholder=""
+      readOnly={true}
+      type="text"
+      value=""
+    />
+    <button
+      className="ui icon button"
+      onClick={[Function]}
+    >
+      <i
+        aria-hidden="true"
+        className="folder open icon"
+        onClick={[Function]}
+      />
+    </button>
+    <button
+      className="ui icon disabled button"
+      disabled={true}
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      <i
+        aria-hidden="true"
+        className="remove icon"
+        onClick={[Function]}
+      />
+    </button>
+  </div>,
+  <input
+    multiple={false}
+    name="file3"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />,
+  " ",
+  <button
+    className="ui button"
+    onClick={[Function]}
+  >
+    Reset
+  </button>,
 ]
 `;
 
@@ -9294,9 +9408,14 @@ exports[`Storyshots Form.File No Reset 1`] = `
       </button>
     </div>
     <input
-      hidden={true}
+      multiple={false}
       name="file2"
       onChange={[Function]}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
       type="file"
     />
   </div>
@@ -10720,6 +10839,7 @@ exports[`Storyshots Form.Time Basic 1`] = `
   style={
     Object {
       "height": 250,
+      "position": "relative",
     }
   }
 >
@@ -12332,17 +12452,17 @@ exports[`Storyshots Form.UrlOrFile Basic 1`] = `
     className="field"
   >
     <label>
-      File
+      File or URL
        
     </label>
     <div
-      className="ui action left labeled input"
+      className="ui action left labeled input fileOrUrl"
     >
       <div
         className="ui label"
         onClick={[Function]}
       >
-        URL or File
+        URL
       </div>
       <input
         name="blueprintUrl"
@@ -12376,9 +12496,14 @@ exports[`Storyshots Form.UrlOrFile Basic 1`] = `
         />
       </button>
       <input
-        hidden={true}
+        multiple={false}
         name="blueprintFile"
         onChange={[Function]}
+        style={
+          Object {
+            "display": "none",
+          }
+        }
         type="file"
       />
     </div>

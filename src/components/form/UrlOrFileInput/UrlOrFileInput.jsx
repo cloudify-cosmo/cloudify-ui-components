@@ -1,44 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
 
-import { Input } from 'semantic-ui-react';
+import { Input, Label } from 'semantic-ui-react';
 import FileInput from '../FileInput';
+
+import './UrlOrFileInput.css';
 
 /**
  * UrlOrFileInput is a component showing URL and file input field
  *
  * Accessible as `UrlOrFileInput` or `Form.UrlOrFile`.
  */
-export default function UrlOrFileInput({
-    name,
-    value,
-    placeholder,
-    label,
-    onChangeUrl,
-    onFocusUrl,
-    onBlurUrl,
-    onChangeFile,
-    onResetFile,
-    fileInputRef
-}) {
+export default function UrlOrFileInput({ name, placeholder, onChangeUrl, onBlurUrl, onChangeFile }) {
+    const [fileValue, setFileValue] = useState();
+    const [value, setValue] = useState('');
+
+    function handleUrlChange(url) {
+        setValue(url);
+        onChangeUrl(url);
+    }
+
+    function handleFileChange(file) {
+        setFileValue(file);
+        onChangeFile(file);
+    }
+
+    function reset() {
+        handleFileChange(null);
+        handleUrlChange('');
+    }
+
     return (
         <Input
-            value={value}
+            value={_.get(fileValue, 'name', value)}
             name={`${name}Url`}
             placeholder={placeholder}
-            onChange={onChangeUrl}
-            onFocus={onFocusUrl}
+            onChange={(e, data) => handleUrlChange(data.value)}
+            onFocus={() => fileValue && reset()}
             onBlur={onBlurUrl}
             action
             labelPosition="left"
+            className="fileOrUrl"
         >
-            {label}
+            <Label>{fileValue ? 'File' : 'URL'}</Label>
             <input />
             <FileInput
+                value={_.get(fileValue, 'name', '')}
                 name={`${name}File`}
-                ref={fileInputRef}
-                onChange={onChangeFile}
-                onReset={onResetFile}
+                onChange={handleFileChange}
+                onReset={reset}
                 showInput={false}
             />
         </Input>
@@ -51,20 +62,10 @@ UrlOrFileInput.propTypes = {
      */
     name: PropTypes.string.isRequired,
 
-    /*
-     * text input field value
-     */
-    value: PropTypes.string.isRequired,
-
     /**
      * input field placeholder
      */
     placeholder: PropTypes.string.isRequired,
-
-    /**
-     * label to be added to URL input field on the left side
-     */
-    label: PropTypes.node,
 
     /**
      * function to be called on URL change
@@ -72,32 +73,16 @@ UrlOrFileInput.propTypes = {
     onChangeUrl: PropTypes.func.isRequired,
 
     /**
-     * function to be called on URL input focus
-     */
-    onFocusUrl: PropTypes.func.isRequired,
-
-    /**
      * function to be called on URL input blur
      */
-    onBlurUrl: PropTypes.func.isRequired,
+    onBlurUrl: PropTypes.func,
 
     /**
      * function to be called on file change
      */
-    onChangeFile: PropTypes.func.isRequired,
-
-    /**
-     * function to be called on file reset
-     */
-    onResetFile: PropTypes.func.isRequired,
-
-    /**
-     * ref attached to file input
-     */
-    fileInputRef: PropTypes.shape({ current: PropTypes.object })
+    onChangeFile: PropTypes.func.isRequired
 };
 
 UrlOrFileInput.defaultProps = {
-    label: null,
-    fileInputRef: null
+    onBlurUrl: _.noop
 };

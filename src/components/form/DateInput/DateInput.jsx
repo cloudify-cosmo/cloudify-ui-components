@@ -4,7 +4,7 @@ import moment from 'moment';
 import _ from 'lodash';
 
 import { Button, Input } from 'semantic-ui-react';
-import Popup from '../../popups/Popup';
+import Popup from 'components/popups/Popup';
 import DatePicker from '../DatePicker';
 
 /**

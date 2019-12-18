@@ -1,19 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Segment, Dimmer, Loader } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
+import LoadingOverlay from '../LoadingOverlay';
 
 /**
- * Loading is a component which uses [Loader](https://react.semantic-ui.com/elements/loader) component from Semantic-UI-React
+ * Loading is a block component which uses LoadingOverlay component
  * to display loader in center of parent component.
  */
-function Loading(props) {
-    const { message } = props;
-
+function Loading({ message }) {
     return (
         <Segment basic style={{ height: '100%', zIndex: 5 }}>
-            <Dimmer active inverted>
-                <Loader>{message}</Loader>
-            </Dimmer>
+            <LoadingOverlay message={message} />
         </Segment>
     );
 }
@@ -24,6 +21,7 @@ Loading.propTypes = {
      */
     message: PropTypes.string
 };
+
 Loading.defaultProps = {
     message: 'Loading'
 };

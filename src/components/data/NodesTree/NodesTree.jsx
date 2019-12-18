@@ -3,7 +3,7 @@ import _ from 'lodash';
 import Tree, { TreeNode } from 'rc-tree';
 import 'rc-tree/assets/index.css';
 
-import Loading from '../../elements/Loading';
+import Loading from 'components/elements/Loading';
 import './NodesTree.css';
 
 /**

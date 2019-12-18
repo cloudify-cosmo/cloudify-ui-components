@@ -4,9 +4,9 @@ import _ from 'lodash';
 import moment from 'moment';
 
 import { Button, Grid, Input, Label, List, Segment } from 'semantic-ui-react';
-import ApproveButton from '../../buttons/ApproveButton';
-import CancelButton from '../../buttons/CancelButton';
-import Popup from '../../popups/Popup';
+import ApproveButton from 'components/buttons/ApproveButton';
+import CancelButton from 'components/buttons/CancelButton';
+import Popup from 'components/popups/Popup';
 import DateInput from '../DateInput';
 import DatePicker from '../DatePicker';
 

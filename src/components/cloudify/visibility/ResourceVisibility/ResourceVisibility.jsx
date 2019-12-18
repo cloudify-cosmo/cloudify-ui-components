@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { Button, Icon, Message } from 'semantic-ui-react';
-import Confirm from '../../../modal/Confirm';
-import Popup from '../../../popups/Popup';
+import Confirm from 'components/modal/Confirm';
+import Popup from 'components/popups/Popup';
 import VisibilityIcon from '../VisibilityIcon';
 import { visibilities, visibilityPropType } from '../consts';
 

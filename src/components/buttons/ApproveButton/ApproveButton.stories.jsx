@@ -1,9 +1,12 @@
 import React from 'react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import ApproveButton from './ApproveButton';
 
 export default {
     title: 'Buttons/ApproveButton',
-    component: ApproveButton
+    component: ApproveButton,
+    decorators: [LiveEditDecorator({ ApproveButton })]
 };
 export const basic = () => <ApproveButton />;
 basic.story = {

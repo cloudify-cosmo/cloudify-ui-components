@@ -1,9 +1,12 @@
 import React from 'react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Form from './Form';
 
 export default {
     title: 'Form.Form',
-    component: Form
+    component: Form,
+    decorators: [LiveEditDecorator({ Form })]
 };
 
 export const basic = () => (

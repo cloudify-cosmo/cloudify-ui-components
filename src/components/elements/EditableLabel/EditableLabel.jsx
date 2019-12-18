@@ -1,99 +1,149 @@
-import React, { useState } from 'react';
+import { Input, Label } from 'semantic-ui-react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
 /**
  * EditableLabel component shows an editable label.
- * Label can have an optional placeholder and/or default text.
+ * Label can have an optional placeholder and/or initial value.
  */
-export default function EditableLabel(props) {
-    const { text, placeholder, className, isEditEnable, onEditDone } = props;
-    const [editing, setEditing] = useState(false);
-    const [editableText, setEditableText] = useState(text);
+export default function EditableLabel({
+    invalidValues,
+    value,
+    placeholder,
+    enabled,
+    onChange,
+    onError,
+    labelSize,
+    inputSize,
+    className
+}) {
+    const [editing, setEditing] = useState();
+    const [currentValue, setCurrentValue] = useState();
+    const [isError, setError] = useState();
 
-    const labelClicked = () => {
-        if (isEditEnable) {
-            setEditing(true);
-        }
-    };
-
-    const textChanged = event => setEditableText(event.target.value);
-
-    const inputLostFocus = () => {
-        if (isEditEnable) {
-            onEditDone(editableText);
+    function submitChange() {
+        if (currentValue === value) {
             setEditing(false);
+            return;
         }
-    };
 
-    const keyPressed = event => {
-        if (event.key === 'Enter') {
-            inputLostFocus();
+        if (invalidValues.indexOf(currentValue) >= 0 && currentValue !== value) {
+            setError(true);
+            onError();
+            return;
         }
-    };
 
-    const calculatedClassName = `${className} ${_.isEmpty(text) ? 'editPlaceholder' : ''}`;
-    const readOnlyText = isEditEnable ? text || placeholder : text;
+        setEditing(false);
+        onChange(currentValue);
+    }
+
+    useEffect(() => {
+        setCurrentValue(value);
+    }, [value]);
+
+    const calculatedClassName = `${className} ${_.isEmpty(value) ? 'editPlaceholder' : ''}`;
+
     return editing ? (
-        <input
-            type="text"
-            value={editableText}
-            // eslint-disable-next-line jsx-a11y/no-autofocus
-            autoFocus
-            onClick={event => {
-                event.stopPropagation();
-                labelClicked();
+        <Input
+            value={currentValue}
+            error={isError}
+            onChange={(e, data) => {
+                setCurrentValue(data.value);
+                setError(false);
             }}
-            onChange={textChanged}
-            onBlur={inputLostFocus}
-            onKeyPress={keyPressed}
+            onKeyDown={e => {
+                if (e.key === 'Escape') {
+                    e.stopPropagation();
+                    setError(false);
+                    setEditing(false);
+                    setCurrentValue(value);
+                }
+                if (e.key === 'Enter' && currentValue) {
+                    submitChange();
+                }
+            }}
+            onBlur={submitChange}
+            size={inputSize}
+            style={{ verticalAlign: 'top' }}
+            input={
+                <input
+                    // eslint-disable-next-line jsx-a11y/no-autofocus
+                    autoFocus
+                />
+            }
             className={calculatedClassName}
         />
     ) : (
-        // eslint-disable-next-line jsx-a11y/label-has-associated-control
-        <label
-            onClick={event => {
-                event.stopPropagation();
-                labelClicked();
+        <Label
+            size={labelSize}
+            style={{ background: 'none', cursor: enabled ? 'pointer' : 'inherit' }}
+            onClick={() => {
+                if (enabled) setEditing(true);
             }}
             className={calculatedClassName}
         >
-            {readOnlyText}
-        </label>
+            {enabled ? currentValue || placeholder : currentValue}
+        </Label>
     );
 }
 
 EditableLabel.propTypes = {
     /**
-     * Label's default value
+     * Label's initial value
      */
-    text: PropTypes.string,
+    value: PropTypes.string,
 
     /**
-     * Label's value if text value is not set
+     * Label's displayed text when value is not set or empty
      */
     placeholder: PropTypes.string,
 
     /**
-     * Name of the style class to be added
-     */
-    className: PropTypes.string,
-
-    /**
      * If 'true' make the label editable
      */
-    isEditEnable: PropTypes.bool,
+    enabled: PropTypes.bool,
 
     /**
-     * Function to call when value has changed (returns label's text as attribute)
+     * Function to call when value has changed (receives input's value as argument)
      */
-    onEditDone: PropTypes.func
+    onChange: PropTypes.func,
+
+    /**
+     * Function to call when invalid value is entered (i.e. one of values specified by invalidValues prop)
+     */
+    onError: PropTypes.func,
+
+    /**
+     * List of values that are invalid for input.
+     * `onError` callback is called when of of these values is entered.
+     */
+    invalidValues: PropTypes.arrayOf(PropTypes.string),
+
+    /**
+     * Label size
+     */
+    labelSize: PropTypes.string,
+
+    /**
+     * Input size
+     */
+    inputSize: PropTypes.string,
+
+    /**
+     * Name of the style class to be added
+     */
+    className: PropTypes.string
 };
 
 EditableLabel.defaultProps = {
-    text: '',
-    placeholder: 'Click to edit',
-    className: '',
-    isEditEnable: true,
-    onEditDone: () => {}
+    value: '',
+    className: null,
+    enabled: true,
+    onChange: _.noop,
+    onError: _.noop,
+    invalidValues: [],
+    labelSize: null,
+    inputSize: null,
+    placeholder: ''
 };

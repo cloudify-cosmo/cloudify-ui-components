@@ -1,10 +1,13 @@
 import React from 'react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Form from './Form';
 import { FormFieldWithoutMemo } from './FormField';
 
 export default {
     title: 'Form/FormField',
-    component: FormFieldWithoutMemo
+    component: FormFieldWithoutMemo,
+    decorators: [LiveEditDecorator({ Form })]
 };
 
 export const required = () => (
@@ -14,6 +17,7 @@ export const required = () => (
         </Form.Field>
     </Form>
 );
+
 export const error = () => (
     <Form>
         <Form.Field error>
@@ -21,6 +25,7 @@ export const error = () => (
         </Form.Field>
     </Form>
 );
+
 export const label = () => (
     <Form>
         <Form.Field label="Username">
@@ -28,6 +33,7 @@ export const label = () => (
         </Form.Field>
     </Form>
 );
+
 export const help = () => (
     <Form>
         <Form.Field label="Username" help="Use only alphanumeric characters">

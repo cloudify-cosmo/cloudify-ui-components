@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 
 import { Form } from 'semantic-ui-react';
-import PopupHelp from '../../popups/PopupHelp';
+import PopupHelp from 'components/popups/PopupHelp';
 import FieldLabel from '../FieldLabel/FieldLabel';
 
 /**

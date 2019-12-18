@@ -1,9 +1,11 @@
 import React from 'react';
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import CopyToClipboardButton from './CopyToClipboardButton';
 
 export default {
     title: 'Buttons/CopyToClipboardButton',
-    component: CopyToClipboardButton
+    component: CopyToClipboardButton,
+    decorators: [LiveEditDecorator({ CopyToClipboardButton })]
 };
 export const basic = () => <CopyToClipboardButton />;
 basic.story = {

@@ -21,6 +21,7 @@ export { default as Dropdown } from './elements/Dropdown';
 export { default as EditableLabel } from './elements/EditableLabel';
 export { default as ErrorMessage } from './elements/ErrorMessage';
 export { default as Loading } from './elements/Loading';
+export { default as LoadingOverlay } from './elements/LoadingOverlay';
 export { default as Menu } from './elements/Menu';
 
 /* Form */

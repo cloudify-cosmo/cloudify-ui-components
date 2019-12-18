@@ -5,14 +5,14 @@ import _ from 'lodash';
 
 import { Form as FormSemanticUiReact, Radio } from 'semantic-ui-react';
 
-import ErrorMessage from '../../elements/ErrorMessage';
+import ErrorMessage from 'components/elements/ErrorMessage';
+import FormDropdown from 'components/elements/Dropdown';
 import Checkbox from '../Checkbox';
 import ColorPicker from '../ColorPicker';
 import DateInput from '../DateInput';
 import DatePicker from '../DatePicker';
 import DateRangeInput from '../DateRangeInput';
 import FormDivider from './FormDivider';
-import FormDropdown from '../../elements/Dropdown';
 import FormField from './FormField';
 import FileInput from '../FileInput';
 import JsonInput from '../JsonInput';

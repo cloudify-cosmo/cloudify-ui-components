@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import StoryWithHooks from 'decorators/StoryWithHooks';
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import ResourceVisibility from './ResourceVisibility';
 
 export default {
     title: 'Cloudify/ResourceVisibility',
-    component: ResourceVisibility
+    component: ResourceVisibility,
+    decorators: [LiveEditDecorator({ ResourceVisibility })]
 };
 
-// // FIXME: When https://github.com/storybookjs/storybook/issues/8177 is solved, remove this wrapper and render component with hooks directly in the story export
-function ResourceVisibilityWithHook() {
-    const [visibility, setVisibility] = useState('private');
-    // eslint-disable-next-line react/jsx-props-no-spreading
+export const unchangeable = () => <ResourceVisibility visibility="tenant" />;
+export const changeable = StoryWithHooks(() => {
+    const [visibility, setVisibility] = React.useState('private');
+
     return (
         <ResourceVisibility
             visibility={visibility}
@@ -17,6 +20,4 @@ function ResourceVisibilityWithHook() {
             allowedSettingTo={['tenant', 'global']}
         />
     );
-}
-export const unchangeable = () => <ResourceVisibility visibility="tenant" />;
-export const changeable = () => <ResourceVisibilityWithHook />;
+});

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal } from 'semantic-ui-react';
 
-import ApproveButton from '../../buttons/ApproveButton';
+import ApproveButton from 'components/buttons/ApproveButton';
 
 /**
  * Alert is component to present simple message in modal window with OK button.

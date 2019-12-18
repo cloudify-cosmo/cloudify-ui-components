@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 
 import { Button, Input } from 'semantic-ui-react';
-import Popup from '../../popups/Popup';
+import Popup from 'components/popups/Popup';
 
 /**
  * FileInput is a component showing file input field. Can be displayed as normal input field containing name of the chosen file
@@ -12,6 +12,7 @@ import Popup from '../../popups/Popup';
  * Accessible as `FileInput` or `Form.File`.
  */
 export default function FileInput({
+    value,
     name,
     placeholder,
     onChange,
@@ -21,10 +22,11 @@ export default function FileInput({
     showInput,
     showReset,
     openButtonParams,
-    help
+    help,
+    multiple
 }) {
     const inputRef = createRef();
-    const [value, setValue] = useState('');
+    const [internalValue, setInternalValue] = useState('');
 
     const openFileSelection = e => {
         e.preventDefault();
@@ -32,12 +34,8 @@ export default function FileInput({
         return false;
     };
 
-    const getFile = () => {
-        return inputRef.current.files[0];
-    };
-
     const resetInput = () => {
-        setValue('');
+        setInternalValue('');
         onChange(null, '');
     };
 
@@ -55,8 +53,10 @@ export default function FileInput({
             return;
         }
 
-        setValue(filename);
-        onChange(getFile(), filename);
+        setInternalValue(filename);
+        const { files } = inputRef.current;
+        if (multiple) onChange(files);
+        else onChange(files[0], filename);
     };
 
     const OpenFolderButton = () => {
@@ -74,16 +74,33 @@ export default function FileInput({
         return !_.isEmpty(help) ? <Popup trigger={<FolderButton />} content={help} /> : <FolderButton />;
     };
 
-    const ResetFileButton = () =>
-        showReset ? <Button icon="remove" onClick={resetFileSelection} disabled={!value || disabled} /> : null;
+    function getValue() {
+        if (value === null) {
+            return internalValue;
+        }
 
-    const HiddenInput = () => <input type="file" name={name} hidden onChange={fileChanged} ref={inputRef} />;
+        return value;
+    }
+
+    const ResetFileButton = () =>
+        showReset ? <Button icon="remove" onClick={resetFileSelection} disabled={!getValue() || disabled} /> : null;
+
+    const HiddenInput = () => (
+        <input
+            type="file"
+            multiple={multiple}
+            name={name}
+            style={{ display: 'none' }}
+            onChange={fileChanged}
+            ref={inputRef}
+        />
+    );
 
     return showInput ? (
         <>
             <Input
                 readOnly
-                value={value}
+                value={getValue()}
                 name={`fileName${name}`}
                 placeholder={placeholder}
                 onClick={openFileSelection}
@@ -106,6 +123,11 @@ export default function FileInput({
 }
 
 FileInput.propTypes = {
+    /**
+     * string value to be displayed, creates controlled component if specified
+     */
+    value: PropTypes.string,
+
     /**
      * name of the field appended to 'fileName' string
      */
@@ -154,10 +176,16 @@ FileInput.propTypes = {
     /**
      * additional help information shown in Popup
      */
-    help: PropTypes.string
+    help: PropTypes.string,
+
+    /**
+     * if set to true multiple files can be selected
+     */
+    multiple: PropTypes.bool
 };
 
 FileInput.defaultProps = {
+    value: null,
     name: '',
     placeholder: '',
     onChange: () => {},
@@ -167,5 +195,6 @@ FileInput.defaultProps = {
     showInput: true,
     showReset: true,
     openButtonParams: {},
-    help: ''
+    help: '',
+    multiple: false
 };
