@@ -37,7 +37,14 @@ export default function LiveEdit({ source, scope }) {
                             </Segment>
                             <Segment inverted color="black">
                                 <LiveEditor style={{ color: 'white', backgroundColor: 'black' }} />
-                                <LiveError style={{ color: 'white', backgroundColor: 'indianred', padding: 10 }} />
+                                <LiveError
+                                    style={{
+                                        color: 'white',
+                                        backgroundColor: 'indianred',
+                                        padding: 10,
+                                        whiteSpace: 'pre-wrap'
+                                    }}
+                                />
                             </Segment>
                         </Segment.Group>
                     </>

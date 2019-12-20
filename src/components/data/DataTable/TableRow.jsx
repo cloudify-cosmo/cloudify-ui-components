@@ -22,7 +22,7 @@ export default function TableRow({ id, children, selected, onClick, onMouseOver,
     const computedChildren = [];
 
     React.Children.forEach(children, (child, index) => {
-        if (child.type === TableDataCell && showData(index)) {
+        if (child && child.type === TableDataCell && showData(index)) {
             computedChildren.push(child);
         }
     });

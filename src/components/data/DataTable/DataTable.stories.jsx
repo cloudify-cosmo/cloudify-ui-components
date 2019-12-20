@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import { Button, Input, Segment } from 'semantic-ui-react';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
@@ -143,6 +144,29 @@ export const filterInputs = () => (
         ))}
     </DataTable>
 );
+export const rowSpanAndStyle = () => {
+    const grouped = _(logs.items)
+        .groupBy('blueprint_id')
+        .map((items, blueprintId) => ({ blueprintId, items }))
+        .value();
+
+    return (
+        <DataTable>
+            <DataTable.Column label="ID" />
+            <DataTable.Column label="Blueprint" name="blueprint_id" />
+            <DataTable.Column label="Deployment" name="deployment_id" />
+            {_.map(grouped, ({ items, blueprintId }) =>
+                _.map(items, ({ id, deployment_id: deploymentId }, index) => (
+                    <DataTable.Row key={id} onClick={() => {}}>
+                        <DataTable.Data style={{ fontWeight: 'bold' }}>{id}</DataTable.Data>
+                        {index === 0 && <DataTable.Data rowSpan={items.length}>{blueprintId}</DataTable.Data>}
+                        <DataTable.Data>{deploymentId}</DataTable.Data>
+                    </DataTable.Row>
+                ))
+            )}
+        </DataTable>
+    );
+};
 
 export const expandableRow = StoryWithHooks(() => {
     const [selected, setSelected] = React.useState('prestashop');
