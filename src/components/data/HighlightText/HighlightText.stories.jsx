@@ -11,7 +11,7 @@ export default {
 };
 
 export const basic = () => (
-    <HighlightText font="Courier">
+    <HighlightText>
         {`{
     "employee": {
         "name":       "sonoo",
@@ -26,7 +26,7 @@ basic.story = {
 };
 
 export const bash = () => (
-    <HighlightText font="Courier" language="bash">
+    <HighlightText language="bash">
         {`#!/bin/bash
 # declare STRING variable
 STRING="Hello World"
@@ -36,7 +36,7 @@ echo $STRING`}
 );
 
 export const javaScript = () => (
-    <HighlightText font="Courier" language="javascript">
+    <HighlightText language="javascript">
         {`function ask(question, yes, no) {
   if (confirm(question)) yes()
   else no();
@@ -56,7 +56,7 @@ ask("Do you agree?", showOk, showCancel);`}
 );
 
 export const JSON = () => (
-    <HighlightText font="Courier" language="json">
+    <HighlightText language="json">
         {`{
     "employee": {
         "name":       "sonoo",
@@ -68,7 +68,7 @@ export const JSON = () => (
 );
 
 export const python = () => (
-    <HighlightText font="Courier" language="python">
+    <HighlightText language="python">
         {`import whois
 
 data = raw_input("Enter a domain: ")
@@ -79,7 +79,7 @@ print w`}
 );
 
 export const YAML = () => (
-    <HighlightText font="Courier" language="yaml">
+    <HighlightText language="yaml">
         {`tosca_definitions_version: cloudify_dsl_1_3
 
 description: >
