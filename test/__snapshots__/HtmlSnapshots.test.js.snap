@@ -2070,6 +2070,209 @@ exports[`Storyshots Data/DataTable Pagination 1`] = `
 </div>
 `;
 
+exports[`Storyshots Data/DataTable Row Span And Style 1`] = `
+<div
+  className="gridTable "
+>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            68
+          </td>
+          <td
+            className=""
+            rowSpan={2}
+          >
+            hello-world
+          </td>
+          <td
+            className=""
+          >
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            62
+          </td>
+          <td
+            className=""
+          >
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            8
+          </td>
+          <td
+            className=""
+            rowSpan={3}
+          >
+            nodecellar
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            55
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            className=""
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            14
+          </td>
+          <td
+            className=""
+          >
+            nodecellar-local
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Data/DataTable Search Filter 1`] = `
 <div
   className="gridTable "

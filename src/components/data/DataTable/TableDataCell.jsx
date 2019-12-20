@@ -35,6 +35,6 @@ TableDataCell.propTypes = {
 TableDataCell.defaultProps = {
     children: '',
     className: '',
-    rowSpan: 1,
-    style: {}
+    rowSpan: undefined,
+    style: undefined
 };
