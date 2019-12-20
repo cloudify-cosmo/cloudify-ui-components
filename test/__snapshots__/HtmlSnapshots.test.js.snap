@@ -3019,7 +3019,8 @@ exports[`Storyshots Data/HighlightText Bash 1`] = `
   <code
     style={
       Object {
-        "fontFamily": "Courier",
+        "fontFamily": "DejaVu Sans Mono",
+        "letterSpacing": 0,
         "whiteSpace": "pre-wrap",
         "wordBreak": "break-word",
       }
@@ -3107,7 +3108,8 @@ exports[`Storyshots Data/HighlightText Basic 1`] = `
   <code
     style={
       Object {
-        "fontFamily": "Courier",
+        "fontFamily": "DejaVu Sans Mono",
+        "letterSpacing": 0,
         "whiteSpace": "pre-wrap",
         "wordBreak": "break-word",
       }
@@ -3200,7 +3202,8 @@ exports[`Storyshots Data/HighlightText JSON 1`] = `
   <code
     style={
       Object {
-        "fontFamily": "Courier",
+        "fontFamily": "DejaVu Sans Mono",
+        "letterSpacing": 0,
         "whiteSpace": "pre-wrap",
         "wordBreak": "break-word",
       }
@@ -3293,7 +3296,8 @@ exports[`Storyshots Data/HighlightText Java Script 1`] = `
   <code
     style={
       Object {
-        "fontFamily": "Courier",
+        "fontFamily": "DejaVu Sans Mono",
+        "letterSpacing": 0,
         "whiteSpace": "pre-wrap",
         "wordBreak": "break-word",
       }
@@ -3499,7 +3503,8 @@ exports[`Storyshots Data/HighlightText Python 1`] = `
   <code
     style={
       Object {
-        "fontFamily": "Courier",
+        "fontFamily": "DejaVu Sans Mono",
+        "letterSpacing": 0,
         "whiteSpace": "pre-wrap",
         "wordBreak": "break-word",
       }
@@ -3562,7 +3567,8 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
   <code
     style={
       Object {
-        "fontFamily": "Courier",
+        "fontFamily": "DejaVu Sans Mono",
+        "letterSpacing": 0,
         "whiteSpace": "pre-wrap",
         "wordBreak": "break-word",
       }
