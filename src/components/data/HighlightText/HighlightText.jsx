@@ -26,14 +26,12 @@ SyntaxHighlighter.registerLanguage('yaml', yaml);
  * * Python
  * * YAML
  */
-export default function HighlightText(props) {
-    const { children, language } = props;
-
+export default function HighlightText({ children, language, font }) {
     return (
         <SyntaxHighlighter
             language={language}
             style={idea}
-            codeTagProps={{ style: { whiteSpace: 'pre-wrap', wordBreak: 'break-word', fontFamily: 'Consolas' } }}
+            codeTagProps={{ style: { whiteSpace: 'pre-wrap', wordBreak: 'break-word', fontFamily: font } }}
         >
             {children}
         </SyntaxHighlighter>
@@ -48,10 +46,15 @@ HighlightText.propTypes = {
     /**
      * Language name to be used as a base for syntax highlighter
      */
-    language: PropTypes.oneOf(['bash', 'javascript', 'json', 'python', 'yaml'])
+    language: PropTypes.oneOf(['bash', 'javascript', 'json', 'python', 'yaml']),
+    /**
+     * Font family to be used
+     */
+    font: PropTypes.string
 };
 
 HighlightText.defaultProps = {
     children: '',
-    language: 'json'
+    language: 'json',
+    font: 'inherit'
 };
