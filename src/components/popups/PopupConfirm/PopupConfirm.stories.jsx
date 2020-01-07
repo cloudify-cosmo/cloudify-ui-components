@@ -17,3 +17,9 @@ basic.story = {
 export const noCancelButton = () => (
     <PopupConfirm trigger={<button type="button">Delete</button>} onCanConfirm={() => 'Delete this file?'} />
 );
+
+export const initiallyOpen = () => (
+    <div style={{ paddingTop: 80 }}>
+        <PopupConfirm trigger={<button type="button">Delete</button>} defaultOpen content="Delete this file?" />
+    </div>
+);

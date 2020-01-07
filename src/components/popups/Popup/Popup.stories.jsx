@@ -21,3 +21,15 @@ export const basic = () => (
 basic.story = {
     name: 'Default'
 };
+
+export const forceOpen = () => (
+    <div style={{ paddingTop: 100 }}>
+        <Popup open>
+            <Popup.Trigger>
+                <span>Trigger</span>
+            </Popup.Trigger>
+            <Popup.Header>Popup header</Popup.Header>
+            <Popup.Content>This is the popup content</Popup.Content>
+        </Popup>
+    </div>
+);

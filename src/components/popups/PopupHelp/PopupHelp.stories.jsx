@@ -19,3 +19,9 @@ export const customHeader = () => <PopupHelp header="Types" content="We recogniz
 export const customTrigger = () => (
     <PopupHelp trigger={<span>Show Help</span>} content="Select the color from the list." />
 );
+
+export const forceOpen = () => (
+    <div style={{ paddingTop: 50 }}>
+        <PopupHelp open content="Help information" />
+    </div>
+);

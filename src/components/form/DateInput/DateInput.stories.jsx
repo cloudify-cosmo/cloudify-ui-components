@@ -19,7 +19,7 @@ export const basic = StoryWithHooks(() => {
 });
 
 export const defaultValue = StoryWithHooks(() => {
-    const defaultDate = `${moment().format(DateInput.DATE_FORMAT)} 00:00`;
+    const defaultDate = '2019-12-15 00:00';
     const [date, setDate] = React.useState(defaultDate);
 
     return (
@@ -53,3 +53,13 @@ export const customTimeIntervals = StoryWithHooks(() => {
 });
 
 export const invalidValue = () => <Form.Date name="date" value="Invalid value" />;
+
+export const initiallyOpen = StoryWithHooks(() => {
+    const [date, setDate] = React.useState('2019-11-15 00:00');
+
+    return (
+        <div style={{ paddingTop: 280 }}>
+            <Form.Date defaultOpen name="date" value={date} onChange={(event, { value }) => setDate(value)} />
+        </div>
+    );
+});

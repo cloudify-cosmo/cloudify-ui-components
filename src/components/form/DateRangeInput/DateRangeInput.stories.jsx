@@ -70,3 +70,15 @@ export const customRanges = StoryWithHooks(() => {
         />
     );
 });
+
+export const initiallyOpen = StoryWithHooks(() => {
+    return (
+        <div style={{ paddingTop: 440 }}>
+            <Form.DateRange
+                name="timeFilter"
+                defaultOpen
+                value={{ start: '2019-11-10 00:00', end: '2019-11-15 00:00', range: '' }}
+            />
+        </div>
+    );
+});

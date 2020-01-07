@@ -51,3 +51,14 @@ export const customPosition = () => (
         </Menu>
     </PopupMenu>
 );
+export const initiallyOpen = () => (
+    <div style={{ paddingBottom: 120 }}>
+        <PopupMenu defaultOpen>
+            <Menu pointing vertical>
+                <Menu.Item icon="users" content="Edit group's users" />
+                <Menu.Item icon="user" content="Edit group's tenants" />
+                <Menu.Item icon="trash" content="Delete" />
+            </Menu>
+        </PopupMenu>
+    </div>
+);

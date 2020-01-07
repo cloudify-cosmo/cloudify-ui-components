@@ -7307,7 +7307,7 @@ exports[`Storyshots Form.Date Default Value 1`] = `
     onMouseLeave={[Function]}
     placeholder="YYYY-MM-DD HH:mm"
     type="text"
-    value="2019-10-31 00:00"
+    value="2019-12-15 00:00"
   />
   <button
     className="ui icon button"
@@ -7331,6 +7331,553 @@ exports[`Storyshots Form.Date Default Value 1`] = `
       onClick={[Function]}
     />
   </button>
+</div>
+`;
+
+exports[`Storyshots Form.Date Initially Open 1`] = `
+<div
+  style={
+    Object {
+      "paddingTop": 280,
+    }
+  }
+>
+  <div
+    className="ui flowing popup transition visible"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "right": "auto",
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="react-datepicker input-time-filter"
+    >
+      <div
+        className="react-datepicker__triangle"
+      />
+      <button
+        className="react-datepicker__navigation react-datepicker__navigation--previous"
+        onClick={[Function]}
+        type="button"
+      >
+        Previous Month
+      </button>
+      <button
+        className="react-datepicker__navigation react-datepicker__navigation--next react-datepicker__navigation--next--with-time"
+        onClick={[Function]}
+        type="button"
+      >
+        Next month
+      </button>
+      <div
+        className="react-datepicker__month-container"
+      >
+        <div
+          className="react-datepicker__header"
+        >
+          <div
+            className="react-datepicker__current-month"
+          >
+            November 2019
+          </div>
+          <div
+            className="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
+            onFocus={[Function]}
+          />
+          <div
+            className="react-datepicker__day-names"
+          >
+            <div
+              className="react-datepicker__day-name"
+            >
+              Su
+            </div>
+            <div
+              className="react-datepicker__day-name"
+            >
+              Mo
+            </div>
+            <div
+              className="react-datepicker__day-name"
+            >
+              Tu
+            </div>
+            <div
+              className="react-datepicker__day-name"
+            >
+              We
+            </div>
+            <div
+              className="react-datepicker__day-name"
+            >
+              Th
+            </div>
+            <div
+              className="react-datepicker__day-name"
+            >
+              Fr
+            </div>
+            <div
+              className="react-datepicker__day-name"
+            >
+              Sa
+            </div>
+          </div>
+        </div>
+        <div
+          aria-label="month-2019-11"
+          className="react-datepicker__month"
+          onMouseLeave={[Function]}
+          role="listbox"
+        >
+          <div
+            className="react-datepicker__week"
+          >
+            <div
+              aria-label="day-27"
+              className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              27
+            </div>
+            <div
+              aria-label="day-28"
+              className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              28
+            </div>
+            <div
+              aria-label="day-29"
+              className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              29
+            </div>
+            <div
+              aria-label="day-30"
+              className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              30
+            </div>
+            <div
+              aria-label="day-31"
+              className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              31
+            </div>
+            <div
+              aria-label="day-1"
+              className="react-datepicker__day react-datepicker__day--fri"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              1
+            </div>
+            <div
+              aria-label="day-2"
+              className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="react-datepicker__week"
+          >
+            <div
+              aria-label="day-3"
+              className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              3
+            </div>
+            <div
+              aria-label="day-4"
+              className="react-datepicker__day react-datepicker__day--mon"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              4
+            </div>
+            <div
+              aria-label="day-5"
+              className="react-datepicker__day react-datepicker__day--tue"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              5
+            </div>
+            <div
+              aria-label="day-6"
+              className="react-datepicker__day react-datepicker__day--wed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              6
+            </div>
+            <div
+              aria-label="day-7"
+              className="react-datepicker__day react-datepicker__day--thu"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              7
+            </div>
+            <div
+              aria-label="day-8"
+              className="react-datepicker__day react-datepicker__day--fri"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              8
+            </div>
+            <div
+              aria-label="day-9"
+              className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              9
+            </div>
+          </div>
+          <div
+            className="react-datepicker__week"
+          >
+            <div
+              aria-label="day-10"
+              className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              10
+            </div>
+            <div
+              aria-label="day-11"
+              className="react-datepicker__day react-datepicker__day--mon"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              11
+            </div>
+            <div
+              aria-label="day-12"
+              className="react-datepicker__day react-datepicker__day--tue"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              12
+            </div>
+            <div
+              aria-label="day-13"
+              className="react-datepicker__day react-datepicker__day--wed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              13
+            </div>
+            <div
+              aria-label="day-14"
+              className="react-datepicker__day react-datepicker__day--thu"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              14
+            </div>
+            <div
+              aria-label="day-15"
+              className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--selected"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              15
+            </div>
+            <div
+              aria-label="day-16"
+              className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              16
+            </div>
+          </div>
+          <div
+            className="react-datepicker__week"
+          >
+            <div
+              aria-label="day-17"
+              className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              17
+            </div>
+            <div
+              aria-label="day-18"
+              className="react-datepicker__day react-datepicker__day--mon"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              18
+            </div>
+            <div
+              aria-label="day-19"
+              className="react-datepicker__day react-datepicker__day--tue"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              19
+            </div>
+            <div
+              aria-label="day-20"
+              className="react-datepicker__day react-datepicker__day--wed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              20
+            </div>
+            <div
+              aria-label="day-21"
+              className="react-datepicker__day react-datepicker__day--thu"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              21
+            </div>
+            <div
+              aria-label="day-22"
+              className="react-datepicker__day react-datepicker__day--fri"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              22
+            </div>
+            <div
+              aria-label="day-23"
+              className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              23
+            </div>
+          </div>
+          <div
+            className="react-datepicker__week"
+          >
+            <div
+              aria-label="day-24"
+              className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              24
+            </div>
+            <div
+              aria-label="day-25"
+              className="react-datepicker__day react-datepicker__day--mon"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              25
+            </div>
+            <div
+              aria-label="day-26"
+              className="react-datepicker__day react-datepicker__day--tue"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              26
+            </div>
+            <div
+              aria-label="day-27"
+              className="react-datepicker__day react-datepicker__day--wed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              27
+            </div>
+            <div
+              aria-label="day-28"
+              className="react-datepicker__day react-datepicker__day--thu"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              28
+            </div>
+            <div
+              aria-label="day-29"
+              className="react-datepicker__day react-datepicker__day--fri"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              29
+            </div>
+            <div
+              aria-label="day-30"
+              className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              30
+            </div>
+          </div>
+          <div
+            className="react-datepicker__week"
+          >
+            <div
+              aria-label="day-1"
+              className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              1
+            </div>
+            <div
+              aria-label="day-2"
+              className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              2
+            </div>
+            <div
+              aria-label="day-3"
+              className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              3
+            </div>
+            <div
+              aria-label="day-4"
+              className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              4
+            </div>
+            <div
+              aria-label="day-5"
+              className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              5
+            </div>
+            <div
+              aria-label="day-6"
+              className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              6
+            </div>
+            <div
+              aria-label="day-7"
+              className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend react-datepicker__day--outside-month"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="option"
+            >
+              7
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ui fluid action input"
+  >
+    <input
+      name="value"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      placeholder="YYYY-MM-DD HH:mm"
+      type="text"
+      value="2019-11-15 00:00"
+    />
+    <button
+      className="ui icon button"
+      onClick={[Function]}
+    >
+      <i
+        aria-hidden="true"
+        className="calendar icon"
+        onClick={[Function]}
+      />
+    </button>
+    <button
+      className="ui icon button"
+      onClick={[Function]}
+    >
+      <i
+        aria-hidden="true"
+        className="cancel icon"
+        onClick={[Function]}
+      />
+    </button>
+  </div>
 </div>
 `;
 
@@ -7444,7 +7991,7 @@ exports[`Storyshots Form.DatePicker Basic 1`] = `
       <div
         className="react-datepicker__current-month"
       >
-        October 2019
+        January 2019
       </div>
       <div
         className="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
@@ -7491,7 +8038,7 @@ exports[`Storyshots Form.DatePicker Basic 1`] = `
       </div>
     </div>
     <div
-      aria-label="month-2019-10"
+      aria-label="month-2019-01"
       className="react-datepicker__month"
       onMouseLeave={[Function]}
       role="listbox"
@@ -7500,17 +8047,8 @@ exports[`Storyshots Form.DatePicker Basic 1`] = `
         className="react-datepicker__week"
       >
         <div
-          aria-label="day-29"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          29
-        </div>
-        <div
           aria-label="day-30"
-          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -7518,8 +8056,17 @@ exports[`Storyshots Form.DatePicker Basic 1`] = `
           30
         </div>
         <div
+          aria-label="day-31"
+          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="option"
+        >
+          31
+        </div>
+        <div
           aria-label="day-1"
-          className="react-datepicker__day react-datepicker__day--tue"
+          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--selected"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -7805,7 +8352,7 @@ exports[`Storyshots Form.DatePicker Basic 1`] = `
         </div>
         <div
           aria-label="day-31"
-          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--today"
+          className="react-datepicker__day react-datepicker__day--thu"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -7933,7 +8480,7 @@ exports[`Storyshots Form.DatePicker Custom Time Intervals 1`] = `
       <div
         className="react-datepicker__current-month"
       >
-        October 2019
+        January 2019
       </div>
       <div
         className="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
@@ -7980,7 +8527,7 @@ exports[`Storyshots Form.DatePicker Custom Time Intervals 1`] = `
       </div>
     </div>
     <div
-      aria-label="month-2019-10"
+      aria-label="month-2019-01"
       className="react-datepicker__month"
       onMouseLeave={[Function]}
       role="listbox"
@@ -7989,17 +8536,8 @@ exports[`Storyshots Form.DatePicker Custom Time Intervals 1`] = `
         className="react-datepicker__week"
       >
         <div
-          aria-label="day-29"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          29
-        </div>
-        <div
           aria-label="day-30"
-          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8007,8 +8545,17 @@ exports[`Storyshots Form.DatePicker Custom Time Intervals 1`] = `
           30
         </div>
         <div
+          aria-label="day-31"
+          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="option"
+        >
+          31
+        </div>
+        <div
           aria-label="day-1"
-          className="react-datepicker__day react-datepicker__day--tue"
+          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--selected"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8294,7 +8841,7 @@ exports[`Storyshots Form.DatePicker Custom Time Intervals 1`] = `
         </div>
         <div
           aria-label="day-31"
-          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--selected react-datepicker__day--today"
+          className="react-datepicker__day react-datepicker__day--thu"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8408,7 +8955,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
       <div
         className="react-datepicker__current-month"
       >
-        October 2019
+        January 2019
       </div>
       <div
         className="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
@@ -8455,7 +9002,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
       </div>
     </div>
     <div
-      aria-label="month-2019-10"
+      aria-label="month-2019-01"
       className="react-datepicker__month"
       onMouseLeave={[Function]}
       role="listbox"
@@ -8464,22 +9011,22 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         className="react-datepicker__week"
       >
         <div
-          aria-label="day-29"
+          aria-label="day-30"
           className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--disabled react-datepicker__day--weekend react-datepicker__day--outside-month"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
         >
-          29
+          30
         </div>
         <div
-          aria-label="day-30"
+          aria-label="day-31"
           className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--disabled react-datepicker__day--outside-month"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
         >
-          30
+          31
         </div>
         <div
           aria-label="day-1"
@@ -8519,7 +9066,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-5"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--disabled react-datepicker__day--weekend"
+          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8532,7 +9079,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
       >
         <div
           aria-label="day-6"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--disabled react-datepicker__day--weekend"
+          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8541,7 +9088,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-7"
-          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--disabled"
+          className="react-datepicker__day react-datepicker__day--mon"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8550,7 +9097,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-8"
-          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--disabled"
+          className="react-datepicker__day react-datepicker__day--tue"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8559,7 +9106,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-9"
-          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--disabled"
+          className="react-datepicker__day react-datepicker__day--wed"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8568,7 +9115,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-10"
-          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--disabled"
+          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--selected"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8577,7 +9124,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-11"
-          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--disabled"
+          className="react-datepicker__day react-datepicker__day--fri"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8586,7 +9133,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-12"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--disabled react-datepicker__day--weekend"
+          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8599,7 +9146,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
       >
         <div
           aria-label="day-13"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--disabled react-datepicker__day--weekend"
+          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8608,7 +9155,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-14"
-          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--disabled"
+          className="react-datepicker__day react-datepicker__day--mon"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8617,7 +9164,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-15"
-          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--disabled"
+          className="react-datepicker__day react-datepicker__day--tue"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8702,7 +9249,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-24"
-          className="react-datepicker__day react-datepicker__day--thu"
+          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--disabled"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8711,7 +9258,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-25"
-          className="react-datepicker__day react-datepicker__day--fri"
+          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--disabled"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8720,7 +9267,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-26"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--disabled react-datepicker__day--weekend"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8733,7 +9280,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
       >
         <div
           aria-label="day-27"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--disabled react-datepicker__day--weekend"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8742,7 +9289,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-28"
-          className="react-datepicker__day react-datepicker__day--mon"
+          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--disabled"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8751,7 +9298,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-29"
-          className="react-datepicker__day react-datepicker__day--tue"
+          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--disabled"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8760,7 +9307,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-30"
-          className="react-datepicker__day react-datepicker__day--wed"
+          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--disabled"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8769,7 +9316,7 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
         </div>
         <div
           aria-label="day-31"
-          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--disabled react-datepicker__day--selected react-datepicker__day--today"
+          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--disabled"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="option"
@@ -8867,495 +9414,6 @@ exports[`Storyshots Form.DatePicker Minimal And Maximal Date 1`] = `
 </div>
 `;
 
-exports[`Storyshots Form.DatePicker Selected Date 1`] = `
-<div
-  className="react-datepicker input-time-filter"
->
-  <div
-    className="react-datepicker__triangle"
-  />
-  <button
-    className="react-datepicker__navigation react-datepicker__navigation--previous"
-    onClick={[Function]}
-    type="button"
-  >
-    Previous Month
-  </button>
-  <button
-    className="react-datepicker__navigation react-datepicker__navigation--next react-datepicker__navigation--next--with-time"
-    onClick={[Function]}
-    type="button"
-  >
-    Next month
-  </button>
-  <div
-    className="react-datepicker__month-container"
-  >
-    <div
-      className="react-datepicker__header"
-    >
-      <div
-        className="react-datepicker__current-month"
-      >
-        October 2019
-      </div>
-      <div
-        className="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
-        onFocus={[Function]}
-      />
-      <div
-        className="react-datepicker__day-names"
-      >
-        <div
-          className="react-datepicker__day-name"
-        >
-          Su
-        </div>
-        <div
-          className="react-datepicker__day-name"
-        >
-          Mo
-        </div>
-        <div
-          className="react-datepicker__day-name"
-        >
-          Tu
-        </div>
-        <div
-          className="react-datepicker__day-name"
-        >
-          We
-        </div>
-        <div
-          className="react-datepicker__day-name"
-        >
-          Th
-        </div>
-        <div
-          className="react-datepicker__day-name"
-        >
-          Fr
-        </div>
-        <div
-          className="react-datepicker__day-name"
-        >
-          Sa
-        </div>
-      </div>
-    </div>
-    <div
-      aria-label="month-2019-10"
-      className="react-datepicker__month"
-      onMouseLeave={[Function]}
-      role="listbox"
-    >
-      <div
-        className="react-datepicker__week"
-      >
-        <div
-          aria-label="day-29"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          29
-        </div>
-        <div
-          aria-label="day-30"
-          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          30
-        </div>
-        <div
-          aria-label="day-1"
-          className="react-datepicker__day react-datepicker__day--tue"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          1
-        </div>
-        <div
-          aria-label="day-2"
-          className="react-datepicker__day react-datepicker__day--wed"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          2
-        </div>
-        <div
-          aria-label="day-3"
-          className="react-datepicker__day react-datepicker__day--thu"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          3
-        </div>
-        <div
-          aria-label="day-4"
-          className="react-datepicker__day react-datepicker__day--fri"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          4
-        </div>
-        <div
-          aria-label="day-5"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          5
-        </div>
-      </div>
-      <div
-        className="react-datepicker__week"
-      >
-        <div
-          aria-label="day-6"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          6
-        </div>
-        <div
-          aria-label="day-7"
-          className="react-datepicker__day react-datepicker__day--mon"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          7
-        </div>
-        <div
-          aria-label="day-8"
-          className="react-datepicker__day react-datepicker__day--tue"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          8
-        </div>
-        <div
-          aria-label="day-9"
-          className="react-datepicker__day react-datepicker__day--wed"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          9
-        </div>
-        <div
-          aria-label="day-10"
-          className="react-datepicker__day react-datepicker__day--thu"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          10
-        </div>
-        <div
-          aria-label="day-11"
-          className="react-datepicker__day react-datepicker__day--fri"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          11
-        </div>
-        <div
-          aria-label="day-12"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          12
-        </div>
-      </div>
-      <div
-        className="react-datepicker__week"
-      >
-        <div
-          aria-label="day-13"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          13
-        </div>
-        <div
-          aria-label="day-14"
-          className="react-datepicker__day react-datepicker__day--mon"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          14
-        </div>
-        <div
-          aria-label="day-15"
-          className="react-datepicker__day react-datepicker__day--tue"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          15
-        </div>
-        <div
-          aria-label="day-16"
-          className="react-datepicker__day react-datepicker__day--wed"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          16
-        </div>
-        <div
-          aria-label="day-17"
-          className="react-datepicker__day react-datepicker__day--thu"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          17
-        </div>
-        <div
-          aria-label="day-18"
-          className="react-datepicker__day react-datepicker__day--fri"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          18
-        </div>
-        <div
-          aria-label="day-19"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          19
-        </div>
-      </div>
-      <div
-        className="react-datepicker__week"
-      >
-        <div
-          aria-label="day-20"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          20
-        </div>
-        <div
-          aria-label="day-21"
-          className="react-datepicker__day react-datepicker__day--mon"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          21
-        </div>
-        <div
-          aria-label="day-22"
-          className="react-datepicker__day react-datepicker__day--tue"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          22
-        </div>
-        <div
-          aria-label="day-23"
-          className="react-datepicker__day react-datepicker__day--wed"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          23
-        </div>
-        <div
-          aria-label="day-24"
-          className="react-datepicker__day react-datepicker__day--thu"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          24
-        </div>
-        <div
-          aria-label="day-25"
-          className="react-datepicker__day react-datepicker__day--fri"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          25
-        </div>
-        <div
-          aria-label="day-26"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          26
-        </div>
-      </div>
-      <div
-        className="react-datepicker__week"
-      >
-        <div
-          aria-label="day-27"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          27
-        </div>
-        <div
-          aria-label="day-28"
-          className="react-datepicker__day react-datepicker__day--mon"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          28
-        </div>
-        <div
-          aria-label="day-29"
-          className="react-datepicker__day react-datepicker__day--tue"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          29
-        </div>
-        <div
-          aria-label="day-30"
-          className="react-datepicker__day react-datepicker__day--wed"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          30
-        </div>
-        <div
-          aria-label="day-31"
-          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--selected react-datepicker__day--today"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          31
-        </div>
-        <div
-          aria-label="day-1"
-          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          1
-        </div>
-        <div
-          aria-label="day-2"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          2
-        </div>
-      </div>
-      <div
-        className="react-datepicker__week"
-      >
-        <div
-          aria-label="day-3"
-          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          3
-        </div>
-        <div
-          aria-label="day-4"
-          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          4
-        </div>
-        <div
-          aria-label="day-5"
-          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          5
-        </div>
-        <div
-          aria-label="day-6"
-          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          6
-        </div>
-        <div
-          aria-label="day-7"
-          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          7
-        </div>
-        <div
-          aria-label="day-8"
-          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          8
-        </div>
-        <div
-          aria-label="day-9"
-          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend react-datepicker__day--outside-month"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          role="option"
-        >
-          9
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Form.DateRange Basic 1`] = `
 <div
   className="ui fluid icon input"
@@ -9422,6 +9480,1168 @@ exports[`Storyshots Form.DateRange Default Value 1`] = `
     className="dropdown icon"
     onClick={[Function]}
   />
+</div>
+`;
+
+exports[`Storyshots Form.DateRange Initially Open 1`] = `
+<div
+  style={
+    Object {
+      "paddingTop": 440,
+    }
+  }
+>
+  <div
+    className="ui basic flowing popup transition visible"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "right": "auto",
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="ui grid"
+      style={Object {}}
+    >
+      <div
+        className="two column row"
+      >
+        <div
+          className="eight wide column"
+        >
+          <div
+            className="ui padded segment start-date"
+          >
+            <div
+              className="ui top attached label"
+              onClick={[Function]}
+            >
+              From:
+            </div>
+            <div
+              className="ui list"
+              role="list"
+            >
+              <div
+                className="item"
+                onClick={[Function]}
+                role="listitem"
+              >
+                <div
+                  className="ui fluid input"
+                >
+                  <input
+                    name="start"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    placeholder="Start date/time"
+                    type="text"
+                    value="2019-11-10 00:00"
+                  />
+                </div>
+              </div>
+              <div
+                className="item"
+                onClick={[Function]}
+                role="listitem"
+              >
+                <div
+                  className="react-datepicker input-time-filter"
+                >
+                  <div
+                    className="react-datepicker__triangle"
+                  />
+                  <button
+                    className="react-datepicker__navigation react-datepicker__navigation--previous"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Previous Month
+                  </button>
+                  <button
+                    className="react-datepicker__navigation react-datepicker__navigation--next react-datepicker__navigation--next--with-time"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Next month
+                  </button>
+                  <div
+                    className="react-datepicker__month-container"
+                  >
+                    <div
+                      className="react-datepicker__header"
+                    >
+                      <div
+                        className="react-datepicker__current-month"
+                      >
+                        November 2019
+                      </div>
+                      <div
+                        className="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
+                        onFocus={[Function]}
+                      />
+                      <div
+                        className="react-datepicker__day-names"
+                      >
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Su
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Mo
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Tu
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          We
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Th
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Fr
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Sa
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-label="month-2019-11"
+                      className="react-datepicker__month"
+                      onMouseLeave={[Function]}
+                      role="listbox"
+                    >
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-27"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          27
+                        </div>
+                        <div
+                          aria-label="day-28"
+                          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          28
+                        </div>
+                        <div
+                          aria-label="day-29"
+                          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          29
+                        </div>
+                        <div
+                          aria-label="day-30"
+                          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          30
+                        </div>
+                        <div
+                          aria-label="day-31"
+                          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          31
+                        </div>
+                        <div
+                          aria-label="day-1"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          1
+                        </div>
+                        <div
+                          aria-label="day-2"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          2
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-3"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          3
+                        </div>
+                        <div
+                          aria-label="day-4"
+                          className="react-datepicker__day react-datepicker__day--mon"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          4
+                        </div>
+                        <div
+                          aria-label="day-5"
+                          className="react-datepicker__day react-datepicker__day--tue"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          5
+                        </div>
+                        <div
+                          aria-label="day-6"
+                          className="react-datepicker__day react-datepicker__day--wed"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          6
+                        </div>
+                        <div
+                          aria-label="day-7"
+                          className="react-datepicker__day react-datepicker__day--thu"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          7
+                        </div>
+                        <div
+                          aria-label="day-8"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          8
+                        </div>
+                        <div
+                          aria-label="day-9"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          9
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-10"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--selected react-datepicker__day--range-start react-datepicker__day--in-range react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          10
+                        </div>
+                        <div
+                          aria-label="day-11"
+                          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          11
+                        </div>
+                        <div
+                          aria-label="day-12"
+                          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          12
+                        </div>
+                        <div
+                          aria-label="day-13"
+                          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          13
+                        </div>
+                        <div
+                          aria-label="day-14"
+                          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          14
+                        </div>
+                        <div
+                          aria-label="day-15"
+                          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--range-end react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          15
+                        </div>
+                        <div
+                          aria-label="day-16"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          16
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-17"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          17
+                        </div>
+                        <div
+                          aria-label="day-18"
+                          className="react-datepicker__day react-datepicker__day--mon"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          18
+                        </div>
+                        <div
+                          aria-label="day-19"
+                          className="react-datepicker__day react-datepicker__day--tue"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          19
+                        </div>
+                        <div
+                          aria-label="day-20"
+                          className="react-datepicker__day react-datepicker__day--wed"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          20
+                        </div>
+                        <div
+                          aria-label="day-21"
+                          className="react-datepicker__day react-datepicker__day--thu"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          21
+                        </div>
+                        <div
+                          aria-label="day-22"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          22
+                        </div>
+                        <div
+                          aria-label="day-23"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          23
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-24"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          24
+                        </div>
+                        <div
+                          aria-label="day-25"
+                          className="react-datepicker__day react-datepicker__day--mon"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          25
+                        </div>
+                        <div
+                          aria-label="day-26"
+                          className="react-datepicker__day react-datepicker__day--tue"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          26
+                        </div>
+                        <div
+                          aria-label="day-27"
+                          className="react-datepicker__day react-datepicker__day--wed"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          27
+                        </div>
+                        <div
+                          aria-label="day-28"
+                          className="react-datepicker__day react-datepicker__day--thu"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          28
+                        </div>
+                        <div
+                          aria-label="day-29"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          29
+                        </div>
+                        <div
+                          aria-label="day-30"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          30
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-1"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          1
+                        </div>
+                        <div
+                          aria-label="day-2"
+                          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          2
+                        </div>
+                        <div
+                          aria-label="day-3"
+                          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          3
+                        </div>
+                        <div
+                          aria-label="day-4"
+                          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          4
+                        </div>
+                        <div
+                          aria-label="day-5"
+                          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          5
+                        </div>
+                        <div
+                          aria-label="day-6"
+                          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          6
+                        </div>
+                        <div
+                          aria-label="day-7"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          7
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="eight wide column"
+        >
+          <div
+            className="ui padded segment end-date"
+          >
+            <div
+              className="ui top attached label"
+              onClick={[Function]}
+            >
+              To:
+            </div>
+            <div
+              className="ui list"
+              role="list"
+            >
+              <div
+                className="item"
+                onClick={[Function]}
+                role="listitem"
+              >
+                <div
+                  className="ui fluid input"
+                >
+                  <input
+                    name="end"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    placeholder="End date/time"
+                    type="text"
+                    value="2019-11-15 00:00"
+                  />
+                </div>
+              </div>
+              <div
+                className="item"
+                onClick={[Function]}
+                role="listitem"
+              >
+                <div
+                  className="react-datepicker input-time-filter"
+                >
+                  <div
+                    className="react-datepicker__triangle"
+                  />
+                  <button
+                    className="react-datepicker__navigation react-datepicker__navigation--previous"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Previous Month
+                  </button>
+                  <button
+                    className="react-datepicker__navigation react-datepicker__navigation--next react-datepicker__navigation--next--with-time"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Next month
+                  </button>
+                  <div
+                    className="react-datepicker__month-container"
+                  >
+                    <div
+                      className="react-datepicker__header"
+                    >
+                      <div
+                        className="react-datepicker__current-month"
+                      >
+                        November 2019
+                      </div>
+                      <div
+                        className="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
+                        onFocus={[Function]}
+                      />
+                      <div
+                        className="react-datepicker__day-names"
+                      >
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Su
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Mo
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Tu
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          We
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Th
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Fr
+                        </div>
+                        <div
+                          className="react-datepicker__day-name"
+                        >
+                          Sa
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-label="month-2019-11"
+                      className="react-datepicker__month"
+                      onMouseLeave={[Function]}
+                      role="listbox"
+                    >
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-27"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          27
+                        </div>
+                        <div
+                          aria-label="day-28"
+                          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          28
+                        </div>
+                        <div
+                          aria-label="day-29"
+                          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          29
+                        </div>
+                        <div
+                          aria-label="day-30"
+                          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          30
+                        </div>
+                        <div
+                          aria-label="day-31"
+                          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          31
+                        </div>
+                        <div
+                          aria-label="day-1"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          1
+                        </div>
+                        <div
+                          aria-label="day-2"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          2
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-3"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          3
+                        </div>
+                        <div
+                          aria-label="day-4"
+                          className="react-datepicker__day react-datepicker__day--mon"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          4
+                        </div>
+                        <div
+                          aria-label="day-5"
+                          className="react-datepicker__day react-datepicker__day--tue"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          5
+                        </div>
+                        <div
+                          aria-label="day-6"
+                          className="react-datepicker__day react-datepicker__day--wed"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          6
+                        </div>
+                        <div
+                          aria-label="day-7"
+                          className="react-datepicker__day react-datepicker__day--thu"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          7
+                        </div>
+                        <div
+                          aria-label="day-8"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          8
+                        </div>
+                        <div
+                          aria-label="day-9"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          9
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-10"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--range-start react-datepicker__day--in-range react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          10
+                        </div>
+                        <div
+                          aria-label="day-11"
+                          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          11
+                        </div>
+                        <div
+                          aria-label="day-12"
+                          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          12
+                        </div>
+                        <div
+                          aria-label="day-13"
+                          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          13
+                        </div>
+                        <div
+                          aria-label="day-14"
+                          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          14
+                        </div>
+                        <div
+                          aria-label="day-15"
+                          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--selected react-datepicker__day--range-end react-datepicker__day--in-range"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          15
+                        </div>
+                        <div
+                          aria-label="day-16"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          16
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-17"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          17
+                        </div>
+                        <div
+                          aria-label="day-18"
+                          className="react-datepicker__day react-datepicker__day--mon"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          18
+                        </div>
+                        <div
+                          aria-label="day-19"
+                          className="react-datepicker__day react-datepicker__day--tue"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          19
+                        </div>
+                        <div
+                          aria-label="day-20"
+                          className="react-datepicker__day react-datepicker__day--wed"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          20
+                        </div>
+                        <div
+                          aria-label="day-21"
+                          className="react-datepicker__day react-datepicker__day--thu"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          21
+                        </div>
+                        <div
+                          aria-label="day-22"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          22
+                        </div>
+                        <div
+                          aria-label="day-23"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          23
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-24"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          24
+                        </div>
+                        <div
+                          aria-label="day-25"
+                          className="react-datepicker__day react-datepicker__day--mon"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          25
+                        </div>
+                        <div
+                          aria-label="day-26"
+                          className="react-datepicker__day react-datepicker__day--tue"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          26
+                        </div>
+                        <div
+                          aria-label="day-27"
+                          className="react-datepicker__day react-datepicker__day--wed"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          27
+                        </div>
+                        <div
+                          aria-label="day-28"
+                          className="react-datepicker__day react-datepicker__day--thu"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          28
+                        </div>
+                        <div
+                          aria-label="day-29"
+                          className="react-datepicker__day react-datepicker__day--fri"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          29
+                        </div>
+                        <div
+                          aria-label="day-30"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          30
+                        </div>
+                      </div>
+                      <div
+                        className="react-datepicker__week"
+                      >
+                        <div
+                          aria-label="day-1"
+                          className="react-datepicker__day react-datepicker__day--sun react-datepicker__day--weekend react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          1
+                        </div>
+                        <div
+                          aria-label="day-2"
+                          className="react-datepicker__day react-datepicker__day--mon react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          2
+                        </div>
+                        <div
+                          aria-label="day-3"
+                          className="react-datepicker__day react-datepicker__day--tue react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          3
+                        </div>
+                        <div
+                          aria-label="day-4"
+                          className="react-datepicker__day react-datepicker__day--wed react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          4
+                        </div>
+                        <div
+                          aria-label="day-5"
+                          className="react-datepicker__day react-datepicker__day--thu react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          5
+                        </div>
+                        <div
+                          aria-label="day-6"
+                          className="react-datepicker__day react-datepicker__day--fri react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          6
+                        </div>
+                        <div
+                          aria-label="day-7"
+                          className="react-datepicker__day react-datepicker__day--sat react-datepicker__day--weekend react-datepicker__day--outside-month"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          role="option"
+                        >
+                          7
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "float": "right",
+          "marginTop": 10,
+        }
+      }
+    >
+      <button
+        className="ui button"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="undo icon"
+          onClick={[Function]}
+        />
+        Reset
+      </button>
+      <button
+        className="ui button cancel"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="remove icon"
+          onClick={[Function]}
+        />
+        Cancel
+      </button>
+      <button
+        className="ui positive button ok"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="checkmark icon"
+          onClick={[Function]}
+        />
+        Apply
+      </button>
+    </div>
+  </div>
+  <div
+    className="ui fluid icon input"
+  >
+    <input
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      placeholder=""
+      type="text"
+      value=""
+    />
+    <i
+      aria-hidden="true"
+      className="dropdown icon"
+      onClick={[Function]}
+    />
+  </div>
 </div>
 `;
 
@@ -12890,6 +14110,50 @@ exports[`Storyshots Popups/Popup Basic 1`] = `
 </span>
 `;
 
+exports[`Storyshots Popups/Popup Force Open 1`] = `
+<div
+  style={
+    Object {
+      "paddingTop": 100,
+    }
+  }
+>
+  <div
+    className="ui popup transition visible"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "right": "auto",
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="header"
+    >
+      Popup header
+    </div>
+    <div
+      className="content"
+    >
+      This is the popup content
+    </div>
+  </div>
+  <span
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Trigger
+  </span>
+</div>
+`;
+
 exports[`Storyshots Popups/PopupConfirm Basic 1`] = `
 <button
   onBlur={[Function]}
@@ -12901,6 +14165,76 @@ exports[`Storyshots Popups/PopupConfirm Basic 1`] = `
 >
   Delete
 </button>
+`;
+
+exports[`Storyshots Popups/PopupConfirm Initially Open 1`] = `
+<div
+  style={
+    Object {
+      "paddingTop": 80,
+    }
+  }
+>
+  <div
+    className="ui very wide popup transition visible"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "right": "auto",
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="ui header"
+    >
+      Delete this file?
+    </div>
+    <div
+      style={
+        Object {
+          "float": "right",
+        }
+      }
+    >
+      <button
+        className="ui basic button"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="remove icon"
+          onClick={[Function]}
+        />
+        Cancel
+      </button>
+      <button
+        className="ui green button"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="checkmark icon"
+          onClick={[Function]}
+        />
+        Ok
+      </button>
+    </div>
+  </div>
+  <button
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    type="button"
+  >
+    Delete
+  </button>
+</div>
 `;
 
 exports[`Storyshots Popups/PopupConfirm No Cancel Button 1`] = `
@@ -12950,6 +14284,45 @@ exports[`Storyshots Popups/PopupHelp Custom Trigger 1`] = `
 >
   Show Help
 </span>
+`;
+
+exports[`Storyshots Popups/PopupHelp Force Open 1`] = `
+<div
+  style={
+    Object {
+      "paddingTop": 50,
+    }
+  }
+>
+  <div
+    className="ui very wide popup transition visible"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "right": "auto",
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="content"
+    >
+      Help information
+    </div>
+  </div>
+  <i
+    aria-hidden="true"
+    className="help circle icon"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  />
+</div>
 `;
 
 exports[`Storyshots Popups/PopupMenu Basic 1`] = `
@@ -13006,4 +14379,76 @@ exports[`Storyshots Popups/PopupMenu Help Popup 1`] = `
     onMouseLeave={[Function]}
   />
 </span>
+`;
+
+exports[`Storyshots Popups/PopupMenu Initially Open 1`] = `
+<div
+  style={
+    Object {
+      "paddingBottom": 120,
+    }
+  }
+>
+  <div
+    className="ui popup transition visible popupMenu"
+    onClick={[Function]}
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "right": "auto",
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="ui pointing vertical menu"
+    >
+      <div
+        className="item"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="users icon"
+          onClick={[Function]}
+        />
+        Edit group's users
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="user icon"
+          onClick={[Function]}
+        />
+        Edit group's tenants
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="trash icon"
+          onClick={[Function]}
+        />
+        Delete
+      </div>
+    </div>
+  </div>
+  <i
+    aria-hidden="true"
+    className="content link icon"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  />
+</div>
 `;

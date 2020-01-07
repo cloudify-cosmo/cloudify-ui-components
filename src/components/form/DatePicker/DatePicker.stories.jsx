@@ -13,25 +13,19 @@ export default {
 };
 
 export const basic = StoryWithHooks(() => {
-    const [date, setDate] = React.useState(null);
-
-    return <Form.DatePicker name="date" value={date} onChange={(e, { value }) => setDate(value)} />;
-});
-
-export const selectedDate = StoryWithHooks(() => {
-    const [date, setDate] = React.useState(moment());
+    const [date, setDate] = React.useState(moment('20190101'));
 
     return <Form.DatePicker name="date" value={date} onChange={(e, { value }) => setDate(value)} />;
 });
 
 export const minimalAndMaximalDate = StoryWithHooks(() => {
-    const [date, setDate] = React.useState(moment());
+    const [date, setDate] = React.useState(moment('20190110'));
 
     return (
         <Form.DatePicker
             name="date"
-            minDate={moment().subtract(1, 'w')}
-            maxDate={moment().subtract(1, 'd')}
+            minDate={moment('20190105')}
+            maxDate={moment('20190115')}
             value={date}
             onChange={(e, { value }) => setDate(value)}
         />
@@ -39,7 +33,7 @@ export const minimalAndMaximalDate = StoryWithHooks(() => {
 });
 
 export const customTimeIntervals = StoryWithHooks(() => {
-    const [date, setDate] = React.useState(moment());
+    const [date, setDate] = React.useState(moment('20190101'));
 
     return <Form.DatePicker name="date" value={date} onChange={(e, { value }) => setDate(value)} timeIntervals={1} />;
 });

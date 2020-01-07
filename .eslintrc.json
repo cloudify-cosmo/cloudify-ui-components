@@ -1,18 +1,12 @@
 {
     "extends": [
-        "airbnb",
-        "prettier",
-        "prettier/react",
         "plugin:jest/recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "./node_modules/cloudify-ui-common/eslint/eslint-common-react.json"
     ],
     "plugins": [
-        "jest",
-        "prettier"
+        "jest"
     ],
-    "rules": {
-        "prettier/prettier": ["error"]
-    },
     "settings": {
         "import/resolver": {
             "babel-module": {}

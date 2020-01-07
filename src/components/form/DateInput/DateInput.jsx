@@ -14,7 +14,7 @@ export default class DateInput extends React.PureComponent {
     constructor(props, context) {
         super(props, context);
 
-        this.state = DateInput.initialState;
+        this.state = { ...DateInput.initialState, isOpen: props.defaultOpen };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleResetButtonClick = this.handleResetButtonClick.bind(this);
         this.handleDataPickerChange = this.handleDataPickerChange.bind(this);
@@ -125,6 +125,11 @@ DateInput.propTypes = {
     defaultValue: PropTypes.string,
 
     /**
+     * if set then the component renders initially open
+     */
+    defaultOpen: PropTypes.bool,
+
+    /**
      * moment object for minimal date available in picker
      */
     minDate: PropTypes.instanceOf(moment),
@@ -152,6 +157,7 @@ DateInput.propTypes = {
 
 DateInput.defaultProps = {
     defaultValue: '',
+    defaultOpen: false,
     minDate: undefined,
     maxDate: undefined,
     onChange: _.noop,
@@ -162,6 +168,5 @@ DateInput.defaultProps = {
 DateInput.initialState = {
     dateError: false,
     dateValue: null,
-    dirty: false,
-    isOpen: false
+    dirty: false
 };

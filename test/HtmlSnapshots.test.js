@@ -1,12 +1,7 @@
 import initStoryshots from '@storybook/addon-storyshots';
+import ReactDOM from 'react-dom';
+import _ from 'lodash';
 
-let dateNowSpy;
-beforeAll(() => {
-    dateNowSpy = jest.spyOn(Date, 'now').mockImplementation(() => new Date(2019, 9, 31).valueOf());
-});
-
-afterAll(() => {
-    dateNowSpy.mockRestore();
-});
-
+ReactDOM.createPortal = _.identity;
+ReactDOM.findDOMNode = () => ({ addEventListener: _.noop });
 initStoryshots();

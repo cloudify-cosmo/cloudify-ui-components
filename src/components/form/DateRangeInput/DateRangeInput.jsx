@@ -382,6 +382,12 @@ DateRangeInput.propTypes = {
     }),
 
     /**
+     * if set then the component renders initially open
+     */
+    // eslint-disable-next-line react/no-unused-prop-types
+    defaultOpen: PropTypes.bool,
+
+    /**
      * text to be displayed in the input field when there's no range set
      */
     placeholder: PropTypes.string,
@@ -407,6 +413,7 @@ DateRangeInput.propTypes = {
 DateRangeInput.defaultProps = {
     defaultValue: DateRangeInput.EMPTY_VALUE,
     value: DateRangeInput.EMPTY_VALUE,
+    defaultOpen: false,
     placeholder: '',
     ranges: {},
     onChange: () => {},
@@ -418,6 +425,6 @@ DateRangeInput.initialState = props => ({
     ...props.value, // { range, start, end }
     ...DateRangeInput.getStartDateState(props.value.start), // { startError, startDate }
     ...DateRangeInput.getEndDateState(props.value.end), // { endError, endDate }
-    isOpen: false,
+    isOpen: props.defaultOpen,
     dirty: false
 });

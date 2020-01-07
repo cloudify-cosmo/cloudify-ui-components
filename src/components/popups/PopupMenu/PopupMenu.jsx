@@ -9,9 +9,18 @@ import './PopupMenu.css';
  * PopupMenu is a component which uses [Popup](https://react.semantic-ui.com/modules/popup) component to create
  * dropdown menu triggered by [Icon](https://react.semantic-ui.com/elements/icon) button.
  */
-export default function PopupMenu(props) {
-    const { className, children, position, offset, icon, disabled, bordered, help } = props;
-    const [opened, setOpened] = useState(false);
+export default function PopupMenu({
+    className,
+    children,
+    position,
+    offset,
+    icon,
+    disabled,
+    bordered,
+    help,
+    defaultOpen
+}) {
+    const [opened, setOpened] = useState(defaultOpen);
 
     const trigger = _.isEmpty(help) ? (
         <Icon
@@ -84,7 +93,11 @@ PopupMenu.propTypes = {
     /**
      * additional popup help message shown on trigger hover
      */
-    help: PropTypes.string
+    help: PropTypes.string,
+    /**
+     * if set then the component renders initially open
+     */
+    defaultOpen: PropTypes.bool
 };
 
 PopupMenu.defaultProps = {
@@ -94,5 +107,6 @@ PopupMenu.defaultProps = {
     icon: 'content',
     disabled: false,
     bordered: false,
-    help: ''
+    help: '',
+    defaultOpen: false
 };

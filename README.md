@@ -65,7 +65,7 @@ General guidelines for adding new components:
 
 ### Internal
 
-You can debug components with use of [StoryBook](https://storybook.js.org/) application (`npm run storybook`) or Jest unit tests (`npm run test:only`).
+You can debug components with use of [StoryBook](https://storybook.js.org/) application (`npm run storybook`) or Jest unit tests (`npm run test:jest`).
 
 ### External
 

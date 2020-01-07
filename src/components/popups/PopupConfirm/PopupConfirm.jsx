@@ -6,9 +6,8 @@ import { Popup, Button, Header } from 'semantic-ui-react';
  * PopupConfirm is a component which uses [Popup](https://react.semantic-ui.com/modules/popup) component to display
  * popup with content enhanced by two buttons - OK and Cancel.
  */
-export default function PopupConfirm(props) {
-    const { content, trigger, onCancel, onCanConfirm, onConfirm } = props;
-    const [showPopup, setShowPopup] = useState(false);
+export default function PopupConfirm({ content, trigger, onCancel, onCanConfirm, onConfirm, defaultOpen }) {
+    const [showPopup, setShowPopup] = useState(defaultOpen);
     const [canConfirm, setCanConfirm] = useState('');
     const openPopup = () => {
         setCanConfirm(onCanConfirm());
@@ -75,7 +74,11 @@ PopupConfirm.propTypes = {
     /**
      * function called to determine if Cancel button should be displayed
      */
-    onCanConfirm: PropTypes.func
+    onCanConfirm: PropTypes.func,
+    /**
+     * if set then the component renders initially open
+     */
+    defaultOpen: PropTypes.bool
 };
 
 PopupConfirm.defaultProps = {
@@ -83,5 +86,6 @@ PopupConfirm.defaultProps = {
     content: '',
     onCancel: () => {},
     onConfirm: () => {},
-    onCanConfirm: () => {}
+    onCanConfirm: () => {},
+    defaultOpen: false
 };
