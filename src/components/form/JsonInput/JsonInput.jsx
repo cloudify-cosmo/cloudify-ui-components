@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import { types } from 'cloudify-ui-common';
 
 import ReactJsonView from 'react-json-view';
 import { Icon, Label, TextArea, List } from 'semantic-ui-react';
 import Popup from 'components/popups/Popup';
-import { getStringValue, getTypedValue } from './utils';
 import './JsonInput.css';
 
 function ReactJsonViewWrapper({ value, divStyle, onChange }) {
@@ -91,7 +91,7 @@ export default class JsonInput extends React.PureComponent {
 
         onChange(null, {
             name,
-            value: getStringValue(value)
+            value: types.getStringValue(value)
         });
     }
 
@@ -129,8 +129,8 @@ export default class JsonInput extends React.PureComponent {
         const { name, value, error } = this.props;
         const { isRawView, isParsableToJson, isMouseOver } = this.state;
 
-        const stringValue = getStringValue(value);
-        const jsonValue = getTypedValue(value);
+        const stringValue = types.getStringValue(value);
+        const jsonValue = types.getTypedValue(value);
 
         const style = {
             backgroundColor: error ? '#fff6f6' : '',
