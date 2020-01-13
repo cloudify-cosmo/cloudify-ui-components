@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Buttons/ApproveButton Basic 1`] = `
-<button
-  className="ui button ok"
-  onClick={[Function]}
->
-  <i
-    aria-hidden="true"
-    className="checkmark icon"
-    onClick={[Function]}
-  />
-  Save
-</button>
-`;
-
-exports[`Storyshots Buttons/ApproveButton Custom 1`] = `
+exports[`Storyshots Buttons/ApproveButton Custom content 1`] = `
 <button
   className="ui green button ok"
   onClick={[Function]}
@@ -28,21 +14,21 @@ exports[`Storyshots Buttons/ApproveButton Custom 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons/CancelButton Basic 1`] = `
+exports[`Storyshots Buttons/ApproveButton Default 1`] = `
 <button
-  className="ui button basic cancel"
+  className="ui button ok"
   onClick={[Function]}
 >
   <i
     aria-hidden="true"
-    className="remove icon"
+    className="checkmark icon"
     onClick={[Function]}
   />
-  Cancel
+  Save
 </button>
 `;
 
-exports[`Storyshots Buttons/CancelButton Custom 1`] = `
+exports[`Storyshots Buttons/CancelButton Custom content 1`] = `
 <button
   className="ui red button basic cancel"
   onClick={[Function]}
@@ -56,20 +42,21 @@ exports[`Storyshots Buttons/CancelButton Custom 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons/CopyToClipboardButton Basic 1`] = `
+exports[`Storyshots Buttons/CancelButton Default 1`] = `
 <button
-  className="ui basic compact icon button"
+  className="ui button basic cancel"
   onClick={[Function]}
 >
   <i
     aria-hidden="true"
-    className="copy icon"
+    className="remove icon"
     onClick={[Function]}
   />
+  Cancel
 </button>
 `;
 
-exports[`Storyshots Buttons/CopyToClipboardButton Custom 1`] = `
+exports[`Storyshots Buttons/CopyToClipboardButton Custom content 1`] = `
 <button
   className="ui basic vertical animated button"
   onClick={[Function]}
@@ -88,6 +75,19 @@ exports[`Storyshots Buttons/CopyToClipboardButton Custom 1`] = `
       onClick={[Function]}
     />
   </div>
+</button>
+`;
+
+exports[`Storyshots Buttons/CopyToClipboardButton Default 1`] = `
+<button
+  className="ui basic compact icon button"
+  onClick={[Function]}
+>
+  <i
+    aria-hidden="true"
+    className="copy icon"
+    onClick={[Function]}
+  />
 </button>
 `;
 
@@ -3294,7 +3294,7 @@ STRING=
 </pre>
 `;
 
-exports[`Storyshots Data/HighlightText Basic 1`] = `
+exports[`Storyshots Data/HighlightText Default 1`] = `
 <pre
   style={
     Object {
@@ -4687,21 +4687,21 @@ exports[`Storyshots Data/NodesTree With Tree Data 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Elements/Checkmark Basic 1`] = `
-<i
-  aria-hidden="true"
-  className="square outline icon"
-  onClick={[Function]}
-  title="No"
-/>
-`;
-
 exports[`Storyshots Elements/Checkmark Checked 1`] = `
 <i
   aria-hidden="true"
   className="checkmark box icon"
   onClick={[Function]}
   title="Yes"
+/>
+`;
+
+exports[`Storyshots Elements/Checkmark Default 1`] = `
+<i
+  aria-hidden="true"
+  className="square outline icon"
+  onClick={[Function]}
+  title="No"
 />
 `;
 
@@ -4714,7 +4714,7 @@ exports[`Storyshots Elements/Checkmark Unchecked 1`] = `
 />
 `;
 
-exports[`Storyshots Elements/Dropdown Basic 1`] = `
+exports[`Storyshots Elements/Dropdown Default 1`] = `
 <div
   style={
     Object {
@@ -4986,7 +4986,7 @@ exports[`Storyshots Elements/Dropdown With Empty Option 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elements/EditableLabel Basic 1`] = `
+exports[`Storyshots Elements/EditableLabel Default 1`] = `
 <div
   className="ui label null editPlaceholder"
   onClick={[Function]}
@@ -5036,28 +5036,6 @@ exports[`Storyshots Elements/ErrorMessage Auto Hide 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elements/ErrorMessage Basic 1`] = `
-<div
-  className="ui error message"
->
-  <i
-    aria-hidden="true"
-    className="close icon"
-    onClick={[Function]}
-  />
-  <div
-    className="header"
-  >
-    Error Occured
-  </div>
-  <div
-    className="content"
-  >
-    Invalid Blueprint ID provided
-  </div>
-</div>
-`;
-
 exports[`Storyshots Elements/ErrorMessage Custom Header 1`] = `
 <div
   className="ui error message"
@@ -5076,6 +5054,28 @@ exports[`Storyshots Elements/ErrorMessage Custom Header 1`] = `
     className="content"
   >
     Please provide value according to blueprint naming rules.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/ErrorMessage Default 1`] = `
+<div
+  className="ui error message"
+>
+  <i
+    aria-hidden="true"
+    className="close icon"
+    onClick={[Function]}
+  />
+  <div
+    className="header"
+  >
+    Error Occured
+  </div>
+  <div
+    className="content"
+  >
+    Invalid Blueprint ID provided
   </div>
 </div>
 `;
@@ -5133,33 +5133,6 @@ exports[`Storyshots Elements/ErrorMessage Errors List 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elements/Loading Basic 1`] = `
-<div
-  className="ui basic segment"
-  style={
-    Object {
-      "height": "100%",
-      "zIndex": 5,
-    }
-  }
->
-  <div
-    className="ui active transition visible inverted dimmer"
-    onClick={[Function]}
-  >
-    <div
-      className="content"
-    >
-      <div
-        className="ui text loader"
-      >
-        Loading
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Elements/Loading Custom Message 1`] = `
 <div
   className="ui basic segment"
@@ -5187,11 +5160,16 @@ exports[`Storyshots Elements/Loading Custom Message 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elements/LoadingOverlay Basic 1`] = `
+exports[`Storyshots Elements/Loading Default 1`] = `
 <div
-  className="ui segment"
+  className="ui basic segment"
+  style={
+    Object {
+      "height": "100%",
+      "zIndex": 5,
+    }
+  }
 >
-  Covered text
   <div
     className="ui active transition visible inverted dimmer"
     onClick={[Function]}
@@ -5200,8 +5178,10 @@ exports[`Storyshots Elements/LoadingOverlay Basic 1`] = `
       className="content"
     >
       <div
-        className="ui loader"
-      />
+        className="ui text loader"
+      >
+        Loading
+      </div>
     </div>
   </div>
 </div>
@@ -5229,6 +5209,26 @@ exports[`Storyshots Elements/LoadingOverlay Custom Message 1`] = `
       >
         Loading files
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/LoadingOverlay Default 1`] = `
+<div
+  className="ui segment"
+>
+  Covered text
+  <div
+    className="ui active transition visible inverted dimmer"
+    onClick={[Function]}
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="ui loader"
+      />
     </div>
   </div>
 </div>
@@ -5381,7 +5381,7 @@ exports[`Storyshots Form.Checkbox Without Help 1`] = `
 </div>
 `;
 
-exports[`Storyshots Form.ColorPicker Basic 1`] = `
+exports[`Storyshots Form.ColorPicker Default 1`] = `
 <div
   style={
     Object {
@@ -10845,7 +10845,7 @@ exports[`Storyshots Form.File No Reset 1`] = `
 </form>
 `;
 
-exports[`Storyshots Form.Form Basic 1`] = `
+exports[`Storyshots Form.Form Default 1`] = `
 <form
   className="ui form"
   onSubmit={[Function]}
@@ -14098,7 +14098,7 @@ exports[`Storyshots Modal/ReadmeModal Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Popups/Popup Basic 1`] = `
+exports[`Storyshots Popups/Popup Default 1`] = `
 <span
   onBlur={[Function]}
   onClick={[Function]}
@@ -14154,7 +14154,7 @@ exports[`Storyshots Popups/Popup Force Open 1`] = `
 </div>
 `;
 
-exports[`Storyshots Popups/PopupConfirm Basic 1`] = `
+exports[`Storyshots Popups/PopupConfirm Default 1`] = `
 <button
   onBlur={[Function]}
   onClick={[Function]}
@@ -14250,18 +14250,6 @@ exports[`Storyshots Popups/PopupConfirm No Cancel Button 1`] = `
 </button>
 `;
 
-exports[`Storyshots Popups/PopupHelp Basic 1`] = `
-<i
-  aria-hidden="true"
-  className="help circle icon"
-  onBlur={[Function]}
-  onClick={[Function]}
-  onFocus={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
-/>
-`;
-
 exports[`Storyshots Popups/PopupHelp Custom Header 1`] = `
 <i
   aria-hidden="true"
@@ -14284,6 +14272,18 @@ exports[`Storyshots Popups/PopupHelp Custom Trigger 1`] = `
 >
   Show Help
 </span>
+`;
+
+exports[`Storyshots Popups/PopupHelp Default 1`] = `
+<i
+  aria-hidden="true"
+  className="help circle icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
 `;
 
 exports[`Storyshots Popups/PopupHelp Force Open 1`] = `
@@ -14325,18 +14325,6 @@ exports[`Storyshots Popups/PopupHelp Force Open 1`] = `
 </div>
 `;
 
-exports[`Storyshots Popups/PopupMenu Basic 1`] = `
-<i
-  aria-hidden="true"
-  className="content link icon"
-  onBlur={[Function]}
-  onClick={[Function]}
-  onFocus={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
-/>
-`;
-
 exports[`Storyshots Popups/PopupMenu Custom Icon 1`] = `
 <i
   aria-hidden="true"
@@ -14350,6 +14338,18 @@ exports[`Storyshots Popups/PopupMenu Custom Icon 1`] = `
 `;
 
 exports[`Storyshots Popups/PopupMenu Custom Position 1`] = `
+<i
+  aria-hidden="true"
+  className="content link icon"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;
+
+exports[`Storyshots Popups/PopupMenu Default 1`] = `
 <i
   aria-hidden="true"
   className="content link icon"
