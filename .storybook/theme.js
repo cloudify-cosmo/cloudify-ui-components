@@ -1,38 +1,26 @@
 import { create } from '@storybook/theming';
+
+import typography from 'cloudify-ui-common/styles/_typography.scss';
+import colors from 'cloudify-ui-common/styles/_colors.scss';
 import 'semantic-ui-css/semantic.min.css';
 
 export default create({
     base: 'light',
 
-    // colorPrimary: 'hotpink',
-    // colorSecondary: 'deepskyblue',
+    colorPrimary: colors.greyLight,
+    colorSecondary: colors.blueNormal,
 
     // UI
-    // appBg: 'white',
-    // appContentBg: 'silver',
-    // appBorderColor: 'grey',
-    // appBorderRadius: 4,
+    appBg: colors.greyVeryLight,
+    appBorderColor: colors.greyLight,
+    appBorderRadius: 4,
 
     // Typography
-    // fontBase: '"Open Sans", sans-serif',
-    // fontCode: 'monospace',
+    fontBase: typography.bodyFontFamily,
 
     // Text colors
-    // textColor: 'black',
-    // textInverseColor: 'rgba(255,255,255,0.9)',
+    textColor: colors.darkest,
+    textInverseColor: colors.white,
 
-    // Toolbar default and active colors
-    // barTextColor: 'silver',
-    // barSelectedColor: 'black',
-    // barBg: 'hotpink',
-
-    // Form colors
-    // inputBg: 'white',
-    // inputBorder: 'silver',
-    // inputTextColor: 'black',
-    // inputBorderRadius: 4,
-
-    brandTitle: 'Cloudify UI Components',
-    brandUrl: 'https://cloudify.co',
-    // brandImage: 'https://cloudify.co/wp-content/uploads/2019/05/Cloudify-Logo-2019_2-01-1.svg',
+    brandTitle: 'Cloudify UI Components'
 });
