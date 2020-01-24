@@ -4,7 +4,7 @@ import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Form from './Form';
 
 export default {
-    title: 'Form.Form',
+    title: 'Form/Form',
     component: Form,
     decorators: [LiveEditDecorator({ Form })]
 };

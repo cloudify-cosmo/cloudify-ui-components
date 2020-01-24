@@ -6,7 +6,7 @@ import StoryWithHooks from 'decorators/StoryWithHooks';
 import Form from '../Form';
 
 export default {
-    title: 'Form.Time',
+    title: 'Form/Time',
     component: Form.Time,
     decorators: [LiveEditDecorator({ Form, DivContainer })]
 };

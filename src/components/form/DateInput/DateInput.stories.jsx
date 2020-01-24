@@ -7,7 +7,7 @@ import Form from '../Form/Form';
 import DateInput from './DateInput';
 
 export default {
-    title: 'Form.Date',
+    title: 'Form/Date',
     component: DateInput,
     decorators: [LiveEditDecorator({ DateInput, Form, moment })]
 };

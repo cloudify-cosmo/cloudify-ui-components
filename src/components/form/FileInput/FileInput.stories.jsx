@@ -7,7 +7,7 @@ import StoryWithHooks from 'decorators/StoryWithHooks';
 import Form from '../Form/Form';
 
 export default {
-    title: 'Form.File',
+    title: 'Form/File',
     component: Form.File,
     decorators: [LiveEditDecorator({ Button })]
 };

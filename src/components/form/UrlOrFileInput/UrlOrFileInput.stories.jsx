@@ -5,7 +5,7 @@ import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Form from '../Form/Form';
 
 export default {
-    title: 'Form.UrlOrFile',
+    title: 'Form/UrlOrFile',
     component: Form.UrlOrFile,
     decorators: [LiveEditDecorator({ Label, Form })]
 };

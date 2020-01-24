@@ -4,7 +4,7 @@ import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Form from '../Form/Form';
 
 export default {
-    title: 'Form.ColorPicker',
+    title: 'Form/ColorPicker',
     component: Form.ColorPicker,
     decorators: [LiveEditDecorator({ Form })]
 };

@@ -7,7 +7,7 @@ import Form from '../Form/Form';
 import DateRangeInput from './DateRangeInput';
 
 export default {
-    title: 'Form.DateRange',
+    title: 'Form/DateRange',
     component: DateRangeInput,
     decorators: [LiveEditDecorator({ Form, moment })]
 };

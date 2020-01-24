@@ -4,7 +4,7 @@ import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import Form from '../Form/Form';
 
 export default {
-    title: 'Form.Checkbox',
+    title: 'Form/Checkbox',
     component: Form.Checkbox,
     decorators: [LiveEditDecorator({ Form })]
 };

@@ -6,7 +6,7 @@ import Form from '../Form/Form';
 import JsonInput from './JsonInput';
 
 export default {
-    title: 'Form.Json',
+    title: 'Form/Json',
     component: JsonInput,
     decorators: [LiveEditDecorator({ Form })]
 };

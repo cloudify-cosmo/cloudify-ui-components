@@ -7,7 +7,7 @@ import Form from '../Form/Form';
 import { DatePickerWithoutMemo } from './DatePicker';
 
 export default {
-    title: 'Form.DatePicker',
+    title: 'Form/DatePicker',
     component: DatePickerWithoutMemo,
     decorators: [LiveEditDecorator({ Form, moment })]
 };
