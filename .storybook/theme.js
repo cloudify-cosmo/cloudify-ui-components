@@ -11,7 +11,7 @@ export default create({
     colorSecondary: colors.blueNormal,
 
     // UI
-    appBg: colors.greyVeryLight,
+    appBg: colors.greyLight,
     appBorderColor: colors.greyLight,
     appBorderRadius: 4,
 
