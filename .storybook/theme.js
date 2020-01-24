@@ -19,7 +19,7 @@ export default create({
     fontBase: typography.bodyFontFamily,
 
     // Text colors
-    textColor: colors.darkest,
+    textColor: colors.greyDarkest,
     textInverseColor: colors.white,
 
     brandTitle: 'Cloudify UI Components'
