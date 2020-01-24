@@ -15,6 +15,8 @@ const minutesOptions = generateOptions(0, 60, 1, 2);
 
 /**
  * InputTime is a component showing time picker in form of hours/minutes input field
+ *
+ * Accessible as `Form.Time`.
  */
 export default function TimeInput({ name, value, onChange }) {
     const [hours, minutes] = _.split(value, ':');

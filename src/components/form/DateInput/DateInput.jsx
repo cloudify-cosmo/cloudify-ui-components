@@ -9,6 +9,8 @@ import DatePicker from '../DatePicker';
 
 /**
  * `DateInput` is a component showing calendar input with datetime picker in popup
+ *
+ * Accessible as `Form.Date`.
  */
 export default class DateInput extends React.PureComponent {
     constructor(props, context) {

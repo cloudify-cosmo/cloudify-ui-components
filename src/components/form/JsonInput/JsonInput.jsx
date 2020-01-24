@@ -51,6 +51,8 @@ ReactJsonViewWrapper.defaultProps = {
 
 /**
  * `JsonInput` is a component providing text or rich editor for JSON-like data
+ *
+ * Accessible as `Form.Json`.
  */
 export default class JsonInput extends React.PureComponent {
     constructor(props, context) {

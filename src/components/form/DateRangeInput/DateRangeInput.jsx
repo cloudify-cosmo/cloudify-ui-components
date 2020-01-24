@@ -22,6 +22,8 @@ import DatePicker from '../DatePicker';
  *   end:''         // datetime string representing time range end, eg. '2017-08-06 18:00'
  * }
  * ```
+ *
+ * Accessible as `Form.DateRange`.
  */
 export default class DateRangeInput extends React.PureComponent {
     static isValidDate(dateTimeString) {
