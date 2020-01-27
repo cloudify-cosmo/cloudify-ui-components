@@ -32,7 +32,7 @@ jobs:
           paths:
             - repo
 
-  deploy:
+  publish:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -61,17 +61,44 @@ jobs:
 
       - run:
           name: Remove publish branch
-          command: |
-            git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${CIRCLE_BRANCH}
+          command: git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${CIRCLE_BRANCH}
+
+  deploy:
+    docker:
+      - image: xueshanf/awscli:latest
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run:
+          name: Building static version of StoryBook
+          command: npm run build-storybook
+
+      - run:
+          name: Setting Signature Version 4 for S3 Request Authentication
+          command: aws configure set default.s3.signature_version s3v4
+
+      - run:
+          name: Deploy to S3
+          command:  |
+            export VERSION=${CIRCLE_BRANCH/publish-v/}
+            aws s3 sync public s3://docs.cloudify.co/ui-components/$VERSION --delete --acl public-read storybook-static
 
 workflows:
   version: 2
   build-test-deploy:
     jobs:
       - build-test
-      - deploy:
+      - publish:
           requires:
             - build-test
+          filters:
+            branches:
+              only: /^publish-v.*/
+      - deploy
+          requires:
+            - publish
           filters:
             branches:
               only: /^publish-v.*/
