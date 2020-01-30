@@ -96,7 +96,7 @@ workflows:
           filters:
             branches:
               only: /^publish-v.*/
-      - deploy
+      - deploy:
           requires:
             - publish
           filters:
