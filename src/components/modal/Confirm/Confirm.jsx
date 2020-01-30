@@ -34,7 +34,7 @@ Confirm.propTypes = {
     /**
      * confirm modal message
      */
-    content: PropTypes.string.isRequired,
+    content: PropTypes.node.isRequired,
     /**
      * display confirm modal window
      */

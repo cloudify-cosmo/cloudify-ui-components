@@ -27,7 +27,7 @@ Alert.propTypes = {
     /**
      * alert header content
      */
-    content: PropTypes.string.isRequired,
+    content: PropTypes.node.isRequired,
     /**
      * action executed on OK button click
      */
