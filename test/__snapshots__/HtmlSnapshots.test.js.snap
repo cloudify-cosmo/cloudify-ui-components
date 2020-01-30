@@ -11211,6 +11211,915 @@ exports[`Storyshots Form/FormField Required 1`] = `
 </form>
 `;
 
+exports[`Storyshots Form/GenericField Boolean Field 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="field booleanTest"
+  >
+    <label>
+      Boolean Test
+       
+    </label>
+    <div
+      className="ui checked toggle checkbox"
+      onChange={[Function]}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+    >
+      <input
+        checked={true}
+        className="hidden"
+        name="booleanTest"
+        readOnly={true}
+        tabIndex={0}
+        type="checkbox"
+      />
+      <label>
+         
+         
+      </label>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/GenericField Boolean List Field 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="field booleanListTest"
+  >
+    <label>
+      Boolean List
+       
+    </label>
+    <div
+      aria-expanded={false}
+      aria-multiselectable={false}
+      className="ui fluid selection dropdown"
+      name="booleanListTest"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      tabIndex={0}
+    >
+      <div
+        aria-atomic={true}
+        aria-live="polite"
+        className="text"
+        role="alert"
+      />
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+      >
+        <div
+          aria-checked={false}
+          aria-selected={true}
+          className="selected item"
+          onClick={[Function]}
+          option-value="false"
+          role="option"
+          style={
+            Object {
+              "pointerEvents": "all",
+            }
+          }
+        >
+          <span
+            className="text"
+          >
+            false
+          </span>
+        </div>
+        <div
+          aria-checked={false}
+          aria-selected={false}
+          className="item"
+          onClick={[Function]}
+          option-value="true"
+          role="option"
+          style={
+            Object {
+              "pointerEvents": "all",
+            }
+          }
+        >
+          <span
+            className="text"
+          >
+            true
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/GenericField Custom Field 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "position": "relative",
+    }
+  }
+>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field timeFilterTest"
+    >
+      <label>
+        Time Filter
+         
+      </label>
+      <div
+        className="ui fluid action input"
+      >
+        <input
+          name="value"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          placeholder="YYYY-MM-DD HH:mm"
+          type="text"
+          value=""
+        />
+        <button
+          className="ui icon button"
+          onClick={[Function]}
+        >
+          <i
+            aria-hidden="true"
+            className="calendar icon"
+            onClick={[Function]}
+          />
+        </button>
+        <button
+          className="ui icon disabled button"
+          disabled={true}
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <i
+            aria-hidden="true"
+            className="cancel icon"
+            onClick={[Function]}
+          />
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Form/GenericField Editable List Field 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "position": "relative",
+    }
+  }
+>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field editableListTest"
+    >
+      <label>
+        Editable List
+         
+      </label>
+      <div
+        aria-expanded={false}
+        className="ui fluid search selection dropdown"
+        name="editableListTest"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        role="combobox"
+      >
+        <input
+          aria-autocomplete="list"
+          autoComplete="off"
+          className="search"
+          onChange={[Function]}
+          style={
+            Object {
+              "width": undefined,
+            }
+          }
+          tabIndex={0}
+          type="text"
+          value=""
+        />
+        <div
+          aria-atomic={true}
+          aria-live="polite"
+          className="text"
+          role="alert"
+        >
+          b
+        </div>
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          aria-multiselectable={false}
+          className="menu transition"
+          role="listbox"
+        >
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="a"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              a
+            </span>
+          </div>
+          <div
+            aria-checked={true}
+            aria-selected={true}
+            className="active selected item"
+            onClick={[Function]}
+            option-value="b"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              b
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="c"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              c
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Form/GenericField List Field 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "position": "relative",
+    }
+  }
+>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field listTest"
+    >
+      <label>
+        List
+         
+      </label>
+      <div
+        aria-expanded={false}
+        aria-multiselectable={false}
+        className="ui fluid selection dropdown"
+        name="listTest"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        tabIndex={0}
+      >
+        <div
+          aria-atomic={true}
+          aria-live="polite"
+          className="text"
+          role="alert"
+        >
+          b
+        </div>
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="a"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              a
+            </span>
+          </div>
+          <div
+            aria-checked={true}
+            aria-selected={true}
+            className="active selected item"
+            onClick={[Function]}
+            option-value="b"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              b
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="c"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              c
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Form/GenericField Multi Select List Field 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "position": "relative",
+    }
+  }
+>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field multiSelectListTest"
+    >
+      <label>
+        Multiselect List
+         
+      </label>
+      <div
+        aria-expanded={false}
+        aria-multiselectable={true}
+        className="ui fluid multiple selection dropdown"
+        name="multiSelectListTest"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        tabIndex={0}
+      >
+        <a
+          className="ui label"
+          onClick={[Function]}
+          value={2}
+        >
+          2
+          <i
+            aria-hidden="true"
+            className="delete icon"
+            onClick={[Function]}
+          />
+        </a>
+        <a
+          className="ui label"
+          onClick={[Function]}
+          value={3}
+        >
+          3
+          <i
+            aria-hidden="true"
+            className="delete icon"
+            onClick={[Function]}
+          />
+        </a>
+        <a
+          className="ui label"
+          onClick={[Function]}
+          value={4}
+        >
+          four
+          <i
+            aria-hidden="true"
+            className="delete icon"
+            onClick={[Function]}
+          />
+        </a>
+        <div
+          aria-atomic={true}
+          aria-live="polite"
+          className="text"
+          role="alert"
+        />
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            aria-checked={false}
+            aria-selected={true}
+            className="selected item"
+            onClick={[Function]}
+            option-value="1"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              1
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="5"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              five
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Form/GenericField No Custom Type Field 1`] = `
+<div
+  className="ui error message"
+>
+  <i
+    aria-hidden="true"
+    className="close icon"
+    onClick={[Function]}
+  />
+  <div
+    className="header"
+  >
+    Error Occured
+  </div>
+  <div
+    className="content"
+  >
+    \`component\` prop have to be provided when \`custom\` type is set.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form/GenericField Number Editable List Field 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "position": "relative",
+    }
+  }
+>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field numberEditableListTest"
+    >
+      <label>
+        Number Editable List
+         
+      </label>
+      <div
+        aria-expanded={false}
+        className="ui fluid search selection dropdown"
+        name="numberEditableListTest"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        role="combobox"
+      >
+        <input
+          aria-autocomplete="list"
+          autoComplete="off"
+          className="search"
+          onChange={[Function]}
+          style={
+            Object {
+              "width": undefined,
+            }
+          }
+          tabIndex={0}
+          type="text"
+          value=""
+        />
+        <div
+          aria-atomic={true}
+          aria-live="polite"
+          className="text"
+          role="alert"
+        >
+          2
+        </div>
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          aria-multiselectable={false}
+          className="menu transition"
+          role="listbox"
+        >
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="1"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              1
+            </span>
+          </div>
+          <div
+            aria-checked={true}
+            aria-selected={true}
+            className="active selected item"
+            onClick={[Function]}
+            option-value="2"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              2
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="3"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Form/GenericField Number Field 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="field numberTest"
+  >
+    <label>
+      Number
+       
+    </label>
+    <div
+      className="ui input"
+    >
+      <input
+        max={10}
+        min={1}
+        name="numberTest"
+        onChange={[Function]}
+        placeholder=""
+        type="number"
+        value={5}
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/GenericField Number List Field 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "position": "relative",
+    }
+  }
+>
+  <form
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field numberListTest"
+    >
+      <label>
+        Number List
+         
+      </label>
+      <div
+        aria-expanded={false}
+        aria-multiselectable={false}
+        className="ui fluid selection dropdown"
+        name="numberListTest"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        tabIndex={0}
+      >
+        <div
+          aria-atomic={true}
+          aria-live="polite"
+          className="text"
+          role="alert"
+        >
+          2
+        </div>
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="1"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              1
+            </span>
+          </div>
+          <div
+            aria-checked={true}
+            aria-selected={true}
+            className="active selected item"
+            onClick={[Function]}
+            option-value="2"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              2
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            option-value="3"
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Form/GenericField Password Field 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="field passwordTest"
+  >
+    <label>
+      Password
+       
+    </label>
+    <div
+      className="ui icon input"
+    >
+      <input
+        max={null}
+        min={null}
+        name="passwordTest"
+        onChange={[Function]}
+        placeholder=""
+        type="password"
+        value=""
+      />
+      <i
+        aria-hidden="true"
+        className="key icon"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form/GenericField String Field 1`] = `
+<form
+  className="ui form"
+  onSubmit={[Function]}
+>
+  <div
+    className="required field stringTest"
+  >
+    <label>
+      String
+       
+    </label>
+    <div
+      className="ui icon input"
+    >
+      <input
+        max={null}
+        min={null}
+        name="stringTest"
+        onChange={[Function]}
+        placeholder="Write text..."
+        type="text"
+        value=""
+      />
+      <i
+        aria-hidden="true"
+        className="rocket icon"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</form>
+`;
+
 exports[`Storyshots Form/Json JSON Value 1`] = `
 <form
   className="ui form"
