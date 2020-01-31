@@ -3,10 +3,11 @@ version: 2.1
 defaults: &defaults
   docker:
     - image: circleci/node:10.15-stretch
+    - image: xueshanf/awscli:latest
   working_directory: ~/repo
 
 jobs:
-  build-test:
+  deploy:
     <<: *defaults
     steps:
       - checkout
@@ -14,62 +15,6 @@ jobs:
       - run:
           name: Install dependencies
           command: npm ci
-
-      - run:
-          name: Build application
-          command: npm run build
-
-      - run:
-          name: Run static analysis and check code style
-          command: npm run lint
-
-      - run:
-          name: Run tests
-          command: npm run test
-
-      - persist_to_workspace:
-          root: ~/
-          paths:
-            - repo
-
-  publish:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/
-
-      - run:
-          name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/repo/.npmrc
-
-      - run:
-          name: Publish package
-          command: npm publish
-
-      - run:
-          name: Setup git user
-          command: |
-            git config user.email "cosmo-admin@github.com"
-            git config user.name "cosmo-admin-CircleCI"
-
-      - run:
-          name: Update main branch
-          command: |
-            git checkout ${MAIN_BRANCH}
-            git merge --ff-only ${CIRCLE_BRANCH}
-            git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git ${MAIN_BRANCH}
-
-      - run:
-          name: Remove publish branch
-          command: git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${CIRCLE_BRANCH}
-
-  deploy:
-    docker:
-      - image: xueshanf/awscli:latest
-    working_directory: ~/repo
-    steps:
-      - attach_workspace:
-          at: ~/
 
       - run:
           name: Building static version of StoryBook
@@ -82,23 +27,15 @@ jobs:
       - run:
           name: Deploy to S3
           command:  |
-            export VERSION=${CIRCLE_BRANCH/publish-v/}
+            #export VERSION=${CIRCLE_BRANCH/publish-v/}
+            export VERSION=0.0.13
             aws s3 sync public s3://docs.cloudify.co/ui-components/$VERSION --delete --acl public-read storybook-static
 
 workflows:
   version: 2
   build-test-deploy:
     jobs:
-      - build-test
-      - publish:
-          requires:
-            - build-test
-          filters:
-            branches:
-              only: /^publish-v.*/
       - deploy:
-          requires:
-            - publish
           filters:
             branches:
-              only: /^publish-v.*/
+              only: CY-1485
