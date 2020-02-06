@@ -24,7 +24,7 @@
     "lint": "eslint --ext js,jsx src test",
     "test:jest": "jest test --coverage",
     "test:loki": "build-storybook && loki --diffingEngine gm --chromeTolerance 0.9 --requireReference --reactUri file:./storybook-static",
-    "test": "npm run lint && npm run test:jest && npm run test:loki",
+    "test": "npm run lint && npm run test:jest",
     "storybook": "start-storybook --docs -p 9001",
     "build-storybook": "build-storybook --docs -c .storybook",
     "publish:major": "sh scripts/publish-version.sh major",
