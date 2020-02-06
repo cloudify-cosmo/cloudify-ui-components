@@ -61,7 +61,7 @@ jobs:
           command:  |
             #export VERSION=${CIRCLE_BRANCH/publish-v/}
             export VERSION=0.0.13
-            aws s3 sync public s3://docs.cloudify.co/ui-components/$VERSION --delete --acl public-read storybook-static
+            aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/$VERSION --delete --acl public-read
 
 workflows:
   version: 2
