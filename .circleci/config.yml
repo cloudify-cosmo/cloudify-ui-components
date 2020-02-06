@@ -42,6 +42,37 @@ jobs:
           name: Run tests
           command: npm run test:jest
 
+  publish:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/repo/.npmrc
+
+      - run:
+          name: Publish package
+          command: npm publish
+
+      - run:
+          name: Setup git user
+          command: |
+            git config user.email "cosmo-admin@github.com"
+            git config user.name "cosmo-admin-CircleCI"
+
+      - run:
+          name: Update main branch
+          command: |
+            git checkout ${MAIN_BRANCH}
+            git merge --ff-only ${CIRCLE_BRANCH}
+            git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git ${MAIN_BRANCH}
+
+      - run:
+          name: Remove publish branch
+          command: git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${CIRCLE_BRANCH}
+
   deploy:
     docker:
       - image: xueshanf/awscli:latest
@@ -59,8 +90,7 @@ jobs:
       - run:
           name: Deploy to S3
           command:  |
-            #export VERSION=${CIRCLE_BRANCH/publish-v/}
-            export VERSION=0.0.13
+            export VERSION=${CIRCLE_BRANCH/publish-v/}
             aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/$VERSION --delete --acl public-read
 
 workflows:
@@ -71,9 +101,12 @@ workflows:
       - test:
           requires:
             - build
-      - deploy:
-          filters:
-            branches:
-              only: CY-1485
+      - publish:
           requires:
             - test
+          filters:
+            branches:
+              only: /^publish-v.*/
+      - deploy:
+          requires:
+            - publish
