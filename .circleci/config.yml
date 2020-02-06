@@ -3,11 +3,10 @@ version: 2.1
 defaults: &defaults
   docker:
     - image: circleci/node:10.15-stretch
-    - image: xueshanf/awscli:latest
   working_directory: ~/repo
 
 jobs:
-  deploy:
+  build:
     <<: *defaults
     steps:
       - checkout
@@ -17,25 +16,69 @@ jobs:
           command: npm ci
 
       - run:
-          name: Building static version of StoryBook
-          command: npm run build-storybook
+          name: Build application
+          command: npm run build
+
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/
 
       - run:
-          name: Setting Signature Version 4 for S3 Request Authentication
-          command: aws configure set default.s3.signature_version s3v4
+          name: Run static analysis and check code style
+          command: npm run lint
 
       - run:
-          name: Deploy to S3
-          command:  |
-            #export VERSION=${CIRCLE_BRANCH/publish-v/}
-            export VERSION=0.0.13
-            aws s3 sync public s3://docs.cloudify.co/ui-components/$VERSION --delete --acl public-read storybook-static
+          name: Run Jest tests
+          command: npm run test:jest
+
+      - run:
+          name: Run Loki tests
+          command: npm run test:loki
+
+      - store_artifacts:
+          path: .loki
+
+  publish:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/repo/.npmrc
+
+      - run:
+          name: Publish package
+          command: npm publish
+
+      - run:
+          name: Setup git user
+          command: |
+            git config user.email "cosmo-admin@github.com"
+            git config user.name "cosmo-admin-CircleCI"
+
+      - run:
+          name: Update main branch
+          command: |
+            git checkout ${MAIN_BRANCH}
+            git merge --ff-only ${CIRCLE_BRANCH}
+            git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git ${MAIN_BRANCH}
+
+      - run:
+          name: Remove publish branch
+          command: git push -q https://${GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${CIRCLE_BRANCH}
 
 workflows:
   version: 2
   build-test-deploy:
     jobs:
-      - deploy:
+      - build-test
+      - publish:
+          requires:
+            - build-test
           filters:
             branches:
-              only: CY-1485
+              only: /^publish-v.*/
