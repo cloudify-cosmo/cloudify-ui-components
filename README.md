@@ -14,6 +14,7 @@ This repository contains React components reusable across Cloudify UI applicatio
   * [Usage](#usage)
   * [Documentation](#documentation)
   * [Development](#development)
+  * [Testing](#testing)
   * [Debugging](#debugging)
     + [Internal](#internal)
     + [External](#external)
@@ -60,6 +61,14 @@ General guidelines for adding new components:
 - document your code by providing general description for component at the top of the component definition and description for all component props ([StoryBook](https://storybook.js.org/) recognize [react-docgen](https://github.com/reactjs/react-docgen) format)
 - write [StoryBook](https://storybook.js.org/) stories for every newly added component
 
+## Testing
+
+There are few different types of tests in this package:
+
+1. Static analysis and code style checks - `npm run lint`)
+1. Unit tests - `npm run test:jest` (checks components logic)
+1. Snapshot tests - `npm run test:jest` (checks components HTML structure)
+1. Visual regression tests - `npm run test:loki` (run only in CircleCI and use `npm run test:loki:download` command to fetch tests outputs)
 
 ## Debugging
 

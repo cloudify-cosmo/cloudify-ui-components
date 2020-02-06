@@ -2,7 +2,7 @@ version: 2.1
 
 defaults: &defaults
   docker:
-    - image: circleci/node:10.15-stretch
+    - image: circleci/node:10.15-stretch-browsers
   working_directory: ~/repo
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
           command: npm run build
 
       - run:
-          name: Build static version of StoryBook
+          name: Build Storybook
           command: npm run build-storybook
 
       - persist_to_workspace:
@@ -39,8 +39,20 @@ jobs:
           command: npm run lint
 
       - run:
-          name: Run tests
+          name: Run Jest tests
           command: npm run test:jest
+
+      - run:
+          name: Run Loki tests
+          command: |
+            sudo apt-get update && sudo apt-get install graphicsmagick
+            npm run test:loki
+
+      - store_artifacts:
+          path: .loki/current
+
+      - store_artifacts:
+          path: .loki/difference
 
   publish:
     <<: *defaults

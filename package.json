@@ -23,6 +23,8 @@
     "buildDev": "babel ./src --ignore '**/*.stories.jsx' --copy-files --delete-dir-on-start --out-dir es --watch",
     "lint": "eslint --ext js,jsx src test",
     "test:jest": "jest test --coverage --maxWorkers=2",
+    "test:loki": "loki --diffingEngine gm --chromeTolerance 0.9 --requireReference --reactUri file:./storybook-static",
+    "test:loki:download": "sh scripts/download-loki-files.sh",
     "test": "npm run lint && npm run test:jest",
     "storybook": "start-storybook --docs -p 9001",
     "build-storybook": "build-storybook --docs -c .storybook",
@@ -75,6 +77,7 @@
     "eslint-plugin-security": "^1.4.0",
     "jest": "^24.9.0",
     "lodash": "^4.17.15",
+    "loki": "^0.18.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.1",
     "prettier": "^1.18.2",
@@ -107,5 +110,18 @@
     "react-dom": "^16.10.2",
     "semantic-ui-react": "^0.84.0",
     "semantic-ui-css": "^2.4.1"
+  },
+  "loki": {
+    "verboseRenderer": true,
+    "chromeSelector": "body > *",
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      }
+    }
   }
 }
