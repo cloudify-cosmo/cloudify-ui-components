@@ -19,6 +19,11 @@ jobs:
           name: Build application
           command: npm run build
 
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - repo
+
   test:
     <<: *defaults
     steps:
