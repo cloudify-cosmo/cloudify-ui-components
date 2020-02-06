@@ -75,10 +75,13 @@ workflows:
   version: 2
   build-test-deploy:
     jobs:
-      - build-test
+      - build
+      - test
+          requires:
+            - build
       - publish:
           requires:
-            - build-test
+            - test
           filters:
             branches:
               only: /^publish-v.*/
