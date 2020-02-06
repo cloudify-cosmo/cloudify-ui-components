@@ -31,6 +31,9 @@ jobs:
   test:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/
+
       - run:
           name: Run static analysis and check code style
           command: npm run lint
@@ -46,6 +49,9 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      - attach_workspace:
+          at: ~/
+
       - run:
           name: Setting Signature Version 4 for S3 Request Authentication
           command: aws configure set default.s3.signature_version s3v4
