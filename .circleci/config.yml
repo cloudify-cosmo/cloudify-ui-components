@@ -3,11 +3,10 @@ version: 2.1
 defaults: &defaults
   docker:
     - image: circleci/node:10.15-stretch
-    - image: xueshanf/awscli:latest
   working_directory: ~/repo
 
 jobs:
-  deploy:
+  build-test:
     <<: *defaults
     steps:
       - checkout
@@ -17,9 +16,33 @@ jobs:
           command: npm ci
 
       - run:
+          name: Build application
+          command: npm run build
+
+      - run:
           name: Building static version of StoryBook
           command: npm run build-storybook
 
+      - run:
+          name: Run static analysis and check code style
+          command: npm run lint
+
+      - run:
+          name: Run tests
+          command: npm run test
+
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - repo
+
+  deploy:
+    docker:
+      - image: xueshanf/awscli:latest
+
+    working_directory: ~/repo
+
+    steps:
       - run:
           name: Setting Signature Version 4 for S3 Request Authentication
           command: aws configure set default.s3.signature_version s3v4
@@ -35,7 +58,10 @@ workflows:
   version: 2
   build-test-deploy:
     jobs:
+      - build-test
       - deploy:
           filters:
             branches:
               only: CY-1485
+          requires:
+            - build-test
