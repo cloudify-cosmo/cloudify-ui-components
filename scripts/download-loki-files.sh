@@ -9,4 +9,4 @@ fi
 curl https://circleci.com/api/v1.1/project/github/cloudify-cosmo/cloudify-ui-components/latest/artifacts?circle-token=${CIRCLE_TOKEN} \
    | grep -o 'https://[^"]*' \
    | sed -e "s/\(.*\(.loki.*\)\)/curl \1?circle-token=${CIRCLE_TOKEN} --create-dirs --output \2/" \
-   | while read i; do echo "$i"; $i; done
+   | while read line; do echo "$line"; $line; done
