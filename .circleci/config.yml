@@ -49,7 +49,10 @@ jobs:
             npm run test:loki
 
       - store_artifacts:
-          path: .loki
+          path: .loki/current
+
+      - store_artifacts:
+          path: .loki/difference
 
   publish:
     <<: *defaults
