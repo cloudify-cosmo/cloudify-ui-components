@@ -23,14 +23,6 @@ jobs:
           name: Build static version of StoryBook
           command: npm run build-storybook
 
-      - run:
-          name: Run static analysis and check code style
-          command: npm run lint
-
-      - run:
-          name: Run tests
-          command: npm run test
-
       - persist_to_workspace:
           root: ~/
           paths:
@@ -45,7 +37,7 @@ jobs:
 
       - run:
           name: Run tests
-          command: npm run test
+          command: npm run test:jest
 
   deploy:
     docker:
