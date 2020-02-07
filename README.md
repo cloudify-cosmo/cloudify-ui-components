@@ -43,13 +43,13 @@ export function MyButton() {
 
 ## Documentation
 
-Execute `npm run storybook` to get [StoryBook](https://storybook.js.org/) documentation of the components.
+Documentation of released versions can be found at `https://docs.cloudify.co/ui-components/<version>`.  
 
-There is [Cloudify Brandbook](https://drive.google.com/file/d/1KimyHFey_AoK2nKopRoo_CK-emZs7Pr_/view) containing Cloudify Brand Guidelines we should follow creating new components.
+You can get the same [StoryBook](https://storybook.js.org/) documentation of the components locally by executing `npm run build-storybook`.
 
 ## Development
 
-Development environment is set up to enforce good practices in JS development (static code analysis, style formatting, code coverage check). 
+Development environment is set up to enforce good practices in JS development (static code analysis, style formatting, code test coverage check, visual regression testing). 
 
 General guidelines for adding new components:
 - add new code to `src/components` folder
@@ -60,6 +60,7 @@ General guidelines for adding new components:
 - use [prettier](https://prettier.io/) and [eslint](https://eslint.org/) during development
 - document your code by providing general description for component at the top of the component definition and description for all component props ([StoryBook](https://storybook.js.org/) recognize [react-docgen](https://github.com/reactjs/react-docgen) format)
 - write [StoryBook](https://storybook.js.org/) stories for every newly added component
+- follow [Cloudify Brandbook](https://drive.google.com/file/d/1KimyHFey_AoK2nKopRoo_CK-emZs7Pr_/view) containing Cloudify Brand Guidelines
 
 ## Testing
 
@@ -67,7 +68,7 @@ There are few different types of tests in this package:
 
 1. Static analysis and code style checks - `npm run lint`)
 1. Unit tests - `npm run test:jest` (checks components logic)
-1. Snapshot tests - `npm run test:jest` (checks components HTML structure)
+1. Snapshot tests - `jest ./test/HtmlSnapshots.test.js` (checks components HTML structure)
 1. Visual regression tests - `npm run test:loki` (run only in CircleCI and use `npm run test:loki:download` command to fetch tests outputs)
 
 ## Debugging
@@ -88,7 +89,7 @@ If you want to develop/debug `cloudify-ui-components` from the package user side
 
 Cloudify UI Components library is published in [NPM](https://www.npmjs.com) registry. See [cloudify-ui-components@npm](https://www.npmjs.com/package/cloudify-ui-components).
 
-Cloudify UI Components uses the same mechanism as Cloudify UI Common repository for deployment. Check [Deplyoment section @ cloudify-ui-common](https://github.com/cloudify-cosmo/cloudify-ui-common#deployment) for details.
+Cloudify UI Components uses the same mechanism as Cloudify UI Common repository for deployment. Check [Deployment section @ cloudify-ui-common](https://github.com/cloudify-cosmo/cloudify-ui-common#deployment) for details.
 
 ### Useful links
 
