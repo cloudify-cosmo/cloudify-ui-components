@@ -102,7 +102,7 @@ jobs:
       - run:
           name: Deploy to S3
           command:  |
-            export VERSION="test"
+            export VERSION=${CIRCLE_BRANCH/publish-v/}
             aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/$VERSION --delete --acl public-read
 
 workflows:
@@ -121,4 +121,4 @@ workflows:
               only: /^publish-v.*/
       - deploy:
           requires:
-            - build
+            - publish
