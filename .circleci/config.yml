@@ -10,11 +10,17 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-
+      - restore_cache:
+          keys:
+            - v1-npm-{{ checksum "package-lock.json" }}
+            - v1-npm-
       - run:
           name: Install dependencies
           command: npm ci
-
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-npm-{{ checksum "package-lock.json" }}
       - run:
           name: Build UI components
           command: npm run build
