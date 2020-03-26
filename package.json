@@ -19,18 +19,18 @@
   "main": "es/index.js",
   "module": "es/index.js",
   "scripts": {
-    "build": "sh scripts/build-components.sh",
+    "build": "bash scripts/build-components.sh",
     "buildDev": "babel ./src --ignore '**/*.stories.jsx' --copy-files --delete-dir-on-start --out-dir es --watch",
     "lint": "eslint --ext js,jsx src test",
     "test:jest": "jest test --coverage --maxWorkers=2",
     "test:loki": "loki --diffingEngine gm --chromeTolerance 0.9 --requireReference --reactUri file:./storybook-static",
-    "test:loki:download": "sh scripts/download-loki-files.sh",
+    "test:loki:download": "bash scripts/download-loki-files.sh",
     "test": "npm run lint && npm run test:jest",
     "storybook": "start-storybook --docs -p 9001",
     "build-storybook": "build-storybook --docs -c .storybook",
-    "publish:major": "sh scripts/publish-version.sh major",
-    "publish:minor": "sh scripts/publish-version.sh minor",
-    "publish:patch": "sh scripts/publish-version.sh patch"
+    "publish:major": "bash scripts/publish-version.sh major",
+    "publish:minor": "bash scripts/publish-version.sh minor",
+    "publish:patch": "bash scripts/publish-version.sh patch"
   },
   "keywords": [
     "react",
