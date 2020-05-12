@@ -19,6 +19,7 @@
   "main": "es/index.js",
   "module": "es/index.js",
   "scripts": {
+    "audit": "npm audit --production",
     "build": "bash scripts/build-components.sh",
     "buildDev": "babel ./src --ignore '**/*.stories.jsx' --copy-files --delete-dir-on-start --out-dir es --watch",
     "lint": "eslint --ext js,jsx src test",
