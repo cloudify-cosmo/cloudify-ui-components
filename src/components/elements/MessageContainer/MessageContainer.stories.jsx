@@ -1,0 +1,26 @@
+import React from 'react';
+import { Segment } from 'semantic-ui-react';
+
+import LiveEditDecorator from 'decorators/LiveEditDecorator';
+import MessageContainer from './MessageContainer';
+
+export default {
+    title: 'Elements/MessageContainer',
+    component: MessageContainer,
+    decorators: [LiveEditDecorator({ MessageContainer })]
+};
+
+export const basic = () => <MessageContainer />;
+basic.story = {
+    name: 'Default'
+};
+
+export const loading = () => <MessageContainer loading>Message</MessageContainer>;
+
+export const small = () => <MessageContainer size="small">Message</MessageContainer>;
+
+export const wide = () => <MessageContainer wide>Message</MessageContainer>;
+
+export const alignedLeft = () => <MessageContainer testAlign="left">Message</MessageContainer>;
+
+export const withMargin = () => <MessageContainer margin={50}>Message</MessageContainer>;

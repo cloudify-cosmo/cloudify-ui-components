@@ -23,6 +23,7 @@ export { default as ErrorMessage } from './elements/ErrorMessage';
 export { default as Loading } from './elements/Loading';
 export { default as LoadingOverlay } from './elements/LoadingOverlay';
 export { default as Menu } from './elements/Menu';
+export { default as MessageContainer } from './elements/MessageContainer';
 
 /* Form */
 export { default as Checkbox } from './form/Checkbox';
@@ -37,6 +38,10 @@ export { default as GenericField } from './form/GenericField';
 export { default as JsonInput } from './form/JsonInput';
 export { default as TimeInput } from './form/TimeInput';
 export { default as UrlOrFileInput } from './form/UrlOrFileInput';
+
+/* Layout */
+export { default as FullScreenSegment } from './layout/FullScreenSegment';
+export { default as Logo } from './layout/Logo';
 
 /* Modals */
 export { default as Alert } from './modal/Alert';

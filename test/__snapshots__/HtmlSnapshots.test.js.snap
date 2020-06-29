@@ -3929,6 +3929,7 @@ exports[`Storyshots Data/KeyIndicator Executions 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 150,
       "position": "relative",
     }
@@ -3983,6 +3984,7 @@ exports[`Storyshots Data/KeyIndicator Plugins 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 150,
       "position": "relative",
     }
@@ -4037,6 +4039,7 @@ exports[`Storyshots Data/KeyIndicator User Stars 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 150,
       "position": "relative",
     }
@@ -4718,6 +4721,7 @@ exports[`Storyshots Elements/Dropdown Default 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 150,
       "position": "relative",
     }
@@ -4859,6 +4863,7 @@ exports[`Storyshots Elements/Dropdown With Empty Option 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 150,
       "position": "relative",
     }
@@ -5299,6 +5304,136 @@ exports[`Storyshots Elements/Menu Example 1`] = `
       >
         Php
       </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/MessageContainer Aligned Left 1`] = `
+<div
+  className="ui centered container one column grid"
+>
+  <div
+    className="six wide computer twelve wide mobile eight wide tablet column"
+  >
+    <div
+      className="ui big raised padded segment"
+      style={
+        Object {
+          "margin": "80px auto",
+          "textAlign": "center",
+        }
+      }
+    >
+      Message
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/MessageContainer Default 1`] = `
+<div
+  className="ui centered container one column grid"
+>
+  <div
+    className="six wide computer twelve wide mobile eight wide tablet column"
+  >
+    <div
+      className="ui big raised padded segment"
+      style={
+        Object {
+          "margin": "80px auto",
+          "textAlign": "center",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/MessageContainer Loading 1`] = `
+<div
+  className="ui centered container one column grid"
+>
+  <div
+    className="six wide computer twelve wide mobile eight wide tablet column"
+  >
+    <div
+      className="ui big loading raised padded segment"
+      style={
+        Object {
+          "margin": "80px auto",
+          "textAlign": "center",
+        }
+      }
+    >
+      Message
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/MessageContainer Small 1`] = `
+<div
+  className="ui centered container one column grid"
+>
+  <div
+    className="six wide computer twelve wide mobile eight wide tablet column"
+  >
+    <div
+      className="ui small raised padded segment"
+      style={
+        Object {
+          "margin": "80px auto",
+          "textAlign": "center",
+        }
+      }
+    >
+      Message
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/MessageContainer Wide 1`] = `
+<div
+  className="ui centered container one column grid"
+>
+  <div
+    className="twelve wide computer fourteen wide mobile fourteen wide tablet column"
+  >
+    <div
+      className="ui big raised padded segment"
+      style={
+        Object {
+          "margin": "80px auto",
+          "textAlign": "center",
+        }
+      }
+    >
+      Message
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/MessageContainer With Margin 1`] = `
+<div
+  className="ui centered container one column grid"
+>
+  <div
+    className="six wide computer twelve wide mobile eight wide tablet column"
+  >
+    <div
+      className="ui big raised padded segment"
+      style={
+        Object {
+          "margin": 50,
+          "textAlign": "center",
+        }
+      }
+    >
+      Message
     </div>
   </div>
 </div>
@@ -11334,6 +11469,7 @@ exports[`Storyshots Form/GenericField Custom Field 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 200,
       "position": "relative",
     }
@@ -11397,6 +11533,7 @@ exports[`Storyshots Form/GenericField Editable List Field 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 200,
       "position": "relative",
     }
@@ -11524,6 +11661,7 @@ exports[`Storyshots Form/GenericField List Field 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 200,
       "position": "relative",
     }
@@ -11637,6 +11775,7 @@ exports[`Storyshots Form/GenericField Multi Select List Field 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 200,
       "position": "relative",
     }
@@ -11787,6 +11926,7 @@ exports[`Storyshots Form/GenericField Number Editable List Field 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 200,
       "position": "relative",
     }
@@ -11943,6 +12083,7 @@ exports[`Storyshots Form/GenericField Number List Field 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 200,
       "position": "relative",
     }
@@ -13301,6 +13442,7 @@ exports[`Storyshots Form/Time Basic 1`] = `
 <div
   style={
     Object {
+      "backgroundColor": "white",
       "height": 250,
       "position": "relative",
     }
@@ -14972,6 +15114,200 @@ exports[`Storyshots Form/UrlOrFile Basic 1`] = `
     </div>
   </div>
 </form>
+`;
+
+exports[`Storyshots Layout/FullScreenSegment Colored 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="ui segment"
+    style={
+      Object {
+        "backgroundColor": "green",
+        "border": "none",
+        "borderRadius": 0,
+        "bottom": 0,
+        "left": 0,
+        "margin": 0,
+        "overflow": "auto",
+        "padding": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    Test
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/FullScreenSegment Default 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="ui segment"
+    style={
+      Object {
+        "backgroundColor": undefined,
+        "border": "none",
+        "borderRadius": 0,
+        "bottom": 0,
+        "left": 0,
+        "margin": 0,
+        "overflow": "auto",
+        "padding": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    Test
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/FullScreenSegment Styled 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="ui segment"
+    style={
+      Object {
+        "backgroundColor": undefined,
+        "border": "none",
+        "borderRadius": 10,
+        "bottom": 0,
+        "left": 0,
+        "margin": 0,
+        "overflow": "auto",
+        "padding": 0,
+        "position": "absolute",
+        "right": 0,
+        "textAlign": "center",
+        "top": 0,
+      }
+    }
+  >
+    Test
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Logo Custom Style 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url([object Object])",
+        "backgroundPositionX": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "height": "100%",
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": "100%",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Layout/Logo Custom Url 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/a/a7/Wikipedia_logo_v3.svg)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Layout/Logo Default 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url([object Object])",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+</div>
 `;
 
 exports[`Storyshots Modal/Alert Basic 1`] = `

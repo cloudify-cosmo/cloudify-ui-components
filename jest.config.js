@@ -14,7 +14,8 @@ module.exports = {
     },
     moduleNameMapper: {
         '\\.css$': stubLink,
-        '\\.scss$': stubLink
+        '\\.scss$': stubLink,
+        '\\.png$': stubLink
     },
     transformIgnorePatterns: ['node_modules/(?!react-syntax-highlighter)'],
     setupFiles: [path.resolve(__dirname, '.jest/register-context.js')],
