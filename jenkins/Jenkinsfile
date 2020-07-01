@@ -111,7 +111,7 @@ pipeline {
               sh "aws configure set default.s3.signature_version s3v4"
               
               echo "Deploy to S3"
-              sh "aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/${env.BRANCH/publish-v/} --delete --acl public-read"
+              // sh "aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/${env.BRANCH/publish-v/} --delete --acl public-read"
             }
           }
         }
