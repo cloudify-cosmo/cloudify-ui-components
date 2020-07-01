@@ -58,7 +58,7 @@ pipeline {
 
             echo "Run Loki tests"
             sh '''
-              apt-get update && apt-get install graphicsmagick
+              apt-get update && apt-get -y install graphicsmagick
               npm run test:loki
             '''
           }
