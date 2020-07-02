@@ -1,11 +1,15 @@
 def secrets = [
   [path: 'secret/jenkins/github', engineVersion: 2, secretValues: [
-    [envVar: 'PRIVATE_REPO_GITHUB_TOKEN', vaultKey: 'private_token']]],
+    [envVar: 'GITHUB_TOKEN', vaultKey: 'public_token']]],
   [path: 'secret/jenkins/npm', engineVersion: 2, secretValues: [
     [envVar: 'NPM_TOKEN', vaultKey: 'token']]],
 ]
 
 def configuration = [vaultUrl: "${env.VAULT_URL}",  vaultCredentialId: 'vault-app-role', engineVersion: 2]
+
+def getPublishVersion(String branch){
+  return branch.replace('publish-v','')
+}
 
 pipeline {
   agent {
@@ -89,11 +93,11 @@ pipeline {
               sh """
                 git checkout ${env.MAIN_BRANCH}
                 git merge --ff-only ${env.BRANCH}
-                git push -q https://${env.PRIVATE_REPO_GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git ${env.MAIN_BRANCH}
+                git push -q https://${env.GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git ${env.MAIN_BRANCH}
               """
 
               echo "Remove publish branch"
-              sh "git push -q https://${env.PRIVATE_REPO_GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${env.BRANCH}"
+              sh "git push -q https://${env.GITHUB_TOKEN}@github.com/cloudify-cosmo/cloudify-ui-components.git --delete ${env.BRANCH}"
             }
           }
         }
@@ -111,7 +115,9 @@ pipeline {
               sh "aws configure set default.s3.signature_version s3v4"
               
               echo "Deploy to S3"
-              // sh "aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/${env.BRANCH/publish-v/} --delete --acl public-read"
+              sh """
+                aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/${getPublishVersion(BRANCH)} --delete --acl public-read"
+              """
             }
           }
         }
