@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: node
+    image: circleci/node:12.16-browsers
+    resources:
+      requests:
+        cpu: 0.8
+    command:
+    - cat
+    tty: true
+    securityContext:
+      runAsUser: 0
+      privileged: true
+  - name: awscli
+    image: amazon/aws-cli
+    command:
+    - cat
+    tty: true
+  nodeSelector:
+    instance-type: spot
