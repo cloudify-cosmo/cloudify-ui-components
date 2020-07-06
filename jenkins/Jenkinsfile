@@ -69,8 +69,8 @@ pipeline {
             dir(".loki") {
               echo "Saving Loki generated files"
               sh 'tar czf current.tar.gz current'
-              archiveArtifacts artifacts: 'current.tar.gz', onlyIfSuccessful: true
-              archiveArtifacts artifacts: 'difference/*.png'
+              archiveArtifacts artifacts: 'current.tar.gz'
+              archiveArtifacts artifacts: 'difference/*.png', allowEmptyArchive: true
             }
           }
         }
