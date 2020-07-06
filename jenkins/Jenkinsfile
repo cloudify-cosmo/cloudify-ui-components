@@ -19,7 +19,7 @@ pipeline {
       yamlFile 'jenkins/build-pod.yaml'
     }
   }
-  
+
   environment {
     MAIN_BRANCH = 'master'
     WORKSPACE = "${env.WORKSPACE}"
@@ -40,7 +40,7 @@ pipeline {
           dir("${env.WORKSPACE}/${env.PROJECT}") {
             echo "Install dependencies"
             sh 'npm ci --prefer-offline'
-            
+
             echo "Build UI components"
             sh 'npm run build'
 
@@ -56,7 +56,7 @@ pipeline {
           dir("${env.WORKSPACE}/${env.PROJECT}") {
             echo "Run static analysis and check code style"
             sh 'npm run lint'
-            
+
             echo "Run Jest tests"
             sh 'npm run test:jest'
 
@@ -65,6 +65,13 @@ pipeline {
               apt-get update && apt-get -y install graphicsmagick
               npm run test:loki
             '''
+
+            dir(".loki") {
+              echo "Saving Loki generated files"
+              sh 'tar czf current.tar.gz current'
+              archiveArtifacts artifacts: 'current.tar.gz', onlyIfSuccessful: true
+              archiveArtifacts artifacts: 'difference/*.png'
+            }
           }
         }
       }
@@ -79,7 +86,7 @@ pipeline {
             withVault([configuration: configuration, vaultSecrets: secrets]) {
               echo "Authenticate with registry"
               sh "echo '//registry.npmjs.org/:_authToken=${env.NPM_TOKEN}' > .npmrc"
-              
+
               echo "Publish package"
               sh 'npm publish'
 
@@ -103,7 +110,7 @@ pipeline {
         }
       }
     }
-    stage('Deploy') { 
+    stage('Deploy') {
       when {
         expression { return branch =~ /^publish-v.*/ }
       }
@@ -113,7 +120,7 @@ pipeline {
             withVault([configuration: configuration, vaultSecrets: secrets]) {
               echo "Setting Signature Version 4 for S3 Request Authentication"
               sh "aws configure set default.s3.signature_version s3v4"
-              
+
               echo "Deploy to S3"
               sh """
                 aws s3 sync storybook-static s3://docs.cloudify.co/ui-components/${getPublishVersion(BRANCH)} --delete --acl public-read"
