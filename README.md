@@ -1,4 +1,4 @@
-# fkdsjn Cloudify UI Components
+# Cloudify UI Components
 
 [![npm](https://img.shields.io/npm/v/cloudify-ui-components.svg?style=flat)](https://circleci.com/gh/cloudify-cosmo/cloudify-ui-components)
 [![CircleCI](https://img.shields.io/circleci/project/github/cloudify-cosmo/cloudify-ui-components.svg?style=svg)](https://circleci.com/gh/cloudify-cosmo/cloudify-ui-components)
