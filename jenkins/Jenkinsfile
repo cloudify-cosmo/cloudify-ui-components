@@ -36,8 +36,9 @@ pipeline {
   stages {
     stage('BUILD') {
       steps {
+        echo "BRANCH: ${env.BRANCH}"
         container('node'){
-          echo "BRANCH: ${env.BRANCH}"
+          echo "BRANCH: ${BRANCH}"
         }
       }
     }
