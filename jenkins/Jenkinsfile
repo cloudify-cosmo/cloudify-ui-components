@@ -23,7 +23,7 @@ pipeline {
   environment {
     MAIN_BRANCH = 'master'
     WORKSPACE = "${env.WORKSPACE}"
-    BRANCH = "${env.BRANCH}"
+    BRANCH = "${env.BRANCH_NAME}"
     PROJECT = "cloudify-ui-components"
   }
 
@@ -36,9 +36,9 @@ pipeline {
   stages {
     stage('BUILD') {
       steps {
-        echo "BRANCH: ${env}"
+        sh ""
         container('node'){
-          echo "BRANCH: ${BRANCH}"
+          echo "BRANCH: ${env.BRANCH}"
         }
       }
     }
