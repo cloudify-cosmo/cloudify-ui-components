@@ -1,7 +1,6 @@
 # Cloudify UI Components
 
-[![npm](https://img.shields.io/npm/v/cloudify-ui-components.svg?style=flat)](https://circleci.com/gh/cloudify-cosmo/cloudify-ui-components)
-[![CircleCI](https://img.shields.io/circleci/project/github/cloudify-cosmo/cloudify-ui-components.svg?style=svg)](https://circleci.com/gh/cloudify-cosmo/cloudify-ui-components)
+[![npm](https://img.shields.io/npm/v/cloudify-ui-components.svg?style=flat)](https://www.npmjs.com/package/cloudify-ui-components)
 [![jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand/badge/badge-storybook.svg)](https://github.com/storybooks/storybook)
 
@@ -69,7 +68,7 @@ There are few different types of tests in this package:
 1. Static analysis and code style checks - `npm run lint`)
 1. Unit tests - `npm run test:jest` (checks components logic)
 1. Snapshot tests - `jest ./test/HtmlSnapshots.test.js` (checks components HTML structure)
-1. Visual regression tests - `npm run test:loki` (run only in CircleCI and use `npm run test:loki:download` command to fetch tests outputs)
+1. Visual regression tests - `npm run test:loki` (run only in Jenkins and download artifacts generated during execution to update screenshots)
 
 ## Debugging
 
@@ -93,6 +92,6 @@ Cloudify UI Components uses the same mechanism as Cloudify UI Common repository 
 
 ### Useful links
 
-- [cloudify-ui-components @ CircleCI](https://circleci.com/gh/cloudify-cosmo/cloudify-ui-components)
+- [cloudify-ui-components @ Jenkins](https://jenkins.eks.cloudify.co/blue/organizations/jenkins/Component-Multibranch)
 - [cloudify-ui-components @ NPM](https://www.npmjs.com/package/cloudify-ui-components)
 - [cloudify-ui-components releases](https://github.com/cloudify-cosmo/cloudify-ui-components/releases)

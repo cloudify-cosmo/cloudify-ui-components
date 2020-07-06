@@ -25,7 +25,6 @@
     "lint": "eslint --ext js,jsx src test",
     "test:jest": "jest test --coverage --maxWorkers=2",
     "test:loki": "loki --diffingEngine gm --chromeTolerance 0.9 --requireReference --reactUri file:./storybook-static",
-    "test:loki:download": "bash scripts/download-loki-files.sh",
     "test": "npm run lint && npm run test:jest",
     "storybook": "start-storybook --docs -p 9001",
     "build-storybook": "build-storybook --docs -c .storybook",
