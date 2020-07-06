@@ -1,5 +1,4 @@
 import React from 'react';
-import { Segment } from 'semantic-ui-react';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import MessageContainer from './MessageContainer';
