@@ -6,18 +6,6 @@ import { Grid, Segment } from 'semantic-ui-react';
  * MessageContainer is a component which uses [Grid](https://react.semantic-ui.com/collections/grid) and
  * [Segment](https://react.semantic-ui.com/elements/segment) components from Semantic-UI-React to display message box.
  * Can be displayed in full screen or inside another container.
- *
- * ## Usage
- * ### Full screen message - eg. Error Page
- * ```
- * <MessageContainer/>
- * ```
- *
- * ### In widget message - eg. Sites Map notification
- * ```
- * <MessageContainer wide={true} margin='30px auto'/>
- * ```
- *
  */
 export default function MessageContainer({ children, loading, margin, size, textAlign, wide, onRender }) {
     useEffect(() => onRender(), []);
