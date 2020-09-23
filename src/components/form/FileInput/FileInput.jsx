@@ -59,20 +59,18 @@ export default function FileInput({
         else onChange(files[0], filename);
     };
 
-    const OpenFolderButton = () => {
-        const FolderButton = () => (
-            <Button
-                icon="folder open"
-                onClick={openFileSelection}
-                loading={loading}
-                disabled={disabled}
-                /* eslint-disable-next-line react/jsx-props-no-spreading */
-                {...openButtonParams}
-            />
-        );
+    const folderButton = (
+        <Button
+            icon="folder open"
+            onClick={openFileSelection}
+            loading={loading}
+            disabled={disabled}
+            /* eslint-disable-next-line react/jsx-props-no-spreading */
+            {...openButtonParams}
+        />
+    );
 
-        return !_.isEmpty(help) ? <Popup trigger={<FolderButton />} content={help} /> : <FolderButton />;
-    };
+    const openFolderButton = !_.isEmpty(help) ? <Popup trigger={folderButton} content={help} /> : folderButton;
 
     function getValue() {
         if (value === null) {
@@ -82,42 +80,40 @@ export default function FileInput({
         return value;
     }
 
-    const ResetFileButton = () =>
-        showReset ? <Button icon="remove" onClick={resetFileSelection} disabled={!getValue() || disabled} /> : null;
+    const resetFileButton = showReset ? (
+        <Button icon="remove" onClick={resetFileSelection} disabled={!getValue() || disabled} />
+    ) : null;
 
-    const HiddenInput = () => (
-        <input
-            type="file"
-            multiple={multiple}
-            name={name}
-            style={{ display: 'none' }}
-            onChange={fileChanged}
-            ref={inputRef}
-        />
-    );
-
-    return showInput ? (
+    return (
         <>
-            <Input
-                readOnly
-                value={getValue()}
-                name={`fileName${name}`}
-                placeholder={placeholder}
-                onClick={openFileSelection}
-                disabled={disabled}
-                action
-            >
-                <input />
-                <OpenFolderButton />
-                <ResetFileButton />
-            </Input>
-            <HiddenInput />
-        </>
-    ) : (
-        <>
-            <OpenFolderButton />
-            <ResetFileButton />
-            <HiddenInput />
+            {showInput ? (
+                <Input
+                    readOnly
+                    value={getValue()}
+                    name={`fileName${name}`}
+                    placeholder={placeholder}
+                    onClick={openFileSelection}
+                    disabled={disabled}
+                    action
+                >
+                    <input />
+                    {openFolderButton}
+                    {resetFileButton}
+                </Input>
+            ) : (
+                <>
+                    {openFolderButton}
+                    {resetFileButton}
+                </>
+            )}
+            <input
+                type="file"
+                multiple={multiple}
+                name={name}
+                style={{ display: 'none' }}
+                onChange={fileChanged}
+                ref={inputRef}
+            />
         </>
     );
 }
