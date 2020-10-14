@@ -1,11 +1,7 @@
 {
     "extends": [
-        "plugin:jest/recommended",
         "plugin:react/recommended",
-        "./node_modules/cloudify-ui-common/eslint/eslint-common-react.json"
-    ],
-    "plugins": [
-        "jest"
+        "./node_modules/cloudify-ui-common/configs/eslint-common-react.json"
     ],
     "settings": {
         "import/resolver": {
