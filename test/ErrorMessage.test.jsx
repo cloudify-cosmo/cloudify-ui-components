@@ -31,10 +31,7 @@ describe('<ErrorMessage />', () => {
         const onDismissCallback = jest.fn();
         const wrapper = mount(<ErrorMessage error="test" onDismiss={onDismissCallback} />);
 
-        wrapper
-            .find('i.close.icon')
-            .first()
-            .simulate('click', 1);
+        wrapper.find('i.close.icon').first().simulate('click', 1);
 
         expect(onDismissCallback).toHaveBeenCalled();
     });

@@ -16,16 +16,8 @@ describe('<PopupMenu />', () => {
         );
 
         // Click on popup trigger button
-        wrapper
-            .find('i.content')
-            .first()
-            .simulate('click');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(true);
+        wrapper.find('i.content').first().simulate('click');
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(true);
     });
 
     it('allows to open menu (with help)', () => {
@@ -40,16 +32,8 @@ describe('<PopupMenu />', () => {
         );
 
         // Click on popup trigger button
-        wrapper
-            .find('span')
-            .first()
-            .simulate('click');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(true);
+        wrapper.find('span').first().simulate('click');
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(true);
     });
 
     it('allows to close menu', () => {
@@ -62,22 +46,11 @@ describe('<PopupMenu />', () => {
                 </Menu>
             </PopupMenu>
         );
-        wrapper
-            .find('i.content')
-            .first()
-            .simulate('click');
+        wrapper.find('i.content').first().simulate('click');
 
         // Click inside the Popup component to close popup
-        wrapper
-            .find('Popup')
-            .first()
-            .simulate('click');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(false);
+        wrapper.find('Popup').first().simulate('click');
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(false);
     });
 
     it('allows to click menu item', () => {
@@ -93,16 +66,10 @@ describe('<PopupMenu />', () => {
         );
 
         // Click on popup trigger button
-        wrapper
-            .find('i.content')
-            .first()
-            .simulate('click');
+        wrapper.find('i.content').first().simulate('click');
 
         // Click menu option
-        wrapper
-            .find('a[option-value="users"]')
-            .first()
-            .simulate('click');
+        wrapper.find('a[option-value="users"]').first().simulate('click');
         expect(usersOptionClickFn).toHaveBeenCalled();
     });
 });

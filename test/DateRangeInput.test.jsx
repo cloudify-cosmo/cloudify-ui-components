@@ -29,12 +29,7 @@ describe('<DateRangeInput />', () => {
         const wrapper = mount(<DateRangeInput name="date" onChange={onChangeMock} />);
 
         wrapper.find('input').simulate('focus');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(true);
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(true);
 
         wrapper
             .find('DatePicker')
@@ -51,10 +46,7 @@ describe('<DateRangeInput />', () => {
         expect(onChangeMock).not.toHaveBeenCalled();
         expect(wrapper.state().end).toEqual('2019-11-20 00:00');
 
-        wrapper
-            .find('button.ok')
-            .first()
-            .simulate('click'); // Apply button
+        wrapper.find('button.ok').first().simulate('click'); // Apply button
         expect(onChangeMock).toHaveBeenCalledWith(expect.any(Object), {
             name: 'date',
             value: {
@@ -68,9 +60,7 @@ describe('<DateRangeInput />', () => {
     it('handles date change from predefined range buttons', () => {
         const ranges = {
             'Last 4 Hours': {
-                start: moment()
-                    .subtract(4, 'hours')
-                    .format(DateRangeInput.DATETIME_FORMAT),
+                start: moment().subtract(4, 'hours').format(DateRangeInput.DATETIME_FORMAT),
                 end: ''
             }
         };
@@ -78,18 +68,10 @@ describe('<DateRangeInput />', () => {
         const wrapper = mount(<DateRangeInput name="date" ranges={ranges} onChange={onChangeMock} />);
 
         wrapper.find('input').simulate('focus');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(true);
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(true);
 
         wrapper.find('button[name="Last 4 Hours"]').simulate('click');
-        wrapper
-            .find('button.ok')
-            .first()
-            .simulate('click'); // Apply button
+        wrapper.find('button.ok').first().simulate('click'); // Apply button
 
         expect(onChangeMock).toHaveBeenCalledWith(expect.any(Object), {
             name: 'date',
@@ -105,9 +87,7 @@ describe('<DateRangeInput />', () => {
         const rangeName = 'Last 4 Hours';
         const ranges = {
             [rangeName]: {
-                start: moment()
-                    .subtract(4, 'hours')
-                    .format(DateRangeInput.DATETIME_FORMAT),
+                start: moment().subtract(4, 'hours').format(DateRangeInput.DATETIME_FORMAT),
                 end: ''
             }
         };
@@ -132,12 +112,7 @@ describe('<DateRangeInput />', () => {
         const wrapper = mount(<DateRangeInput name="date" onChange={onChangeMock} />);
 
         wrapper.find('input').simulate('focus');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(true);
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(true);
 
         wrapper
             .find('Input')
@@ -154,10 +129,7 @@ describe('<DateRangeInput />', () => {
         expect(onChangeMock).not.toHaveBeenCalled();
         expect(wrapper.state().end).toEqual('2019-11-20 00:00');
 
-        wrapper
-            .find('button.ok')
-            .first()
-            .simulate('click'); // Apply button
+        wrapper.find('button.ok').first().simulate('click'); // Apply button
         expect(onChangeMock).toHaveBeenCalledWith(expect.any(Object), {
             name: 'date',
             value: {
@@ -178,12 +150,7 @@ describe('<DateRangeInput />', () => {
         expect(wrapper.state().dirty).toEqual(true);
 
         wrapper.find('input').simulate('focus');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(true);
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(true);
 
         wrapper
             .find('Button')
@@ -206,12 +173,7 @@ describe('<DateRangeInput />', () => {
         expect(wrapper.state().dirty).toEqual(false);
 
         wrapper.find('input').simulate('focus');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .prop('open')
-        ).toEqual(true);
+        expect(wrapper.find('Popup').first().prop('open')).toEqual(true);
 
         wrapper
             .find('Input')

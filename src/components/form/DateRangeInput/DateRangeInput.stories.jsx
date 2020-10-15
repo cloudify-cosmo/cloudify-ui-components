@@ -20,12 +20,8 @@ export const basic = StoryWithHooks(() => {
 
 export const defaultValue = StoryWithHooks(() => {
     const dV = {
-        start: moment()
-            .subtract(1, 'W')
-            .format(DateRangeInput.DATETIME_FORMAT),
-        end: moment()
-            .subtract(1, 'W')
-            .format(DateRangeInput.DATETIME_FORMAT),
+        start: moment().subtract(1, 'W').format(DateRangeInput.DATETIME_FORMAT),
+        end: moment().subtract(1, 'W').format(DateRangeInput.DATETIME_FORMAT),
         range: 'Custom default value range text'
     };
     const [timeFilter, setTimeFilter] = React.useState(dV);
@@ -43,21 +39,15 @@ export const customRanges = StoryWithHooks(() => {
     const [timeFilter, setTimeFilter] = React.useState(Form.DateRange.EMPTY_VALUE);
     const ranges = {
         'Last 4 Hours': {
-            start: moment()
-                .subtract(4, 'hours')
-                .format(DateRangeInput.DATETIME_FORMAT),
+            start: moment().subtract(4, 'hours').format(DateRangeInput.DATETIME_FORMAT),
             end: ''
         },
         'Last Month': {
-            start: moment()
-                .subtract(1, 'month')
-                .format(DateRangeInput.DATETIME_FORMAT),
+            start: moment().subtract(1, 'month').format(DateRangeInput.DATETIME_FORMAT),
             end: ''
         },
         'Last Year': {
-            start: moment()
-                .subtract(1, 'year')
-                .format(DateRangeInput.DATETIME_FORMAT),
+            start: moment().subtract(1, 'year').format(DateRangeInput.DATETIME_FORMAT),
             end: ''
         }
     };

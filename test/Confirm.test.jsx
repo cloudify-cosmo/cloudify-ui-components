@@ -31,10 +31,7 @@ describe('<Confirm />', () => {
         const wrapper = mount(<Confirm content="test title" open />);
         const cancelCallback = jest.fn();
         wrapper.setProps({ onCancel: cancelCallback, onConfirm: () => {} });
-        wrapper
-            .find('.modal .actions .ui.button')
-            .first()
-            .simulate('click');
+        wrapper.find('.modal .actions .ui.button').first().simulate('click');
         expect(cancelCallback).toHaveBeenCalled();
     });
 

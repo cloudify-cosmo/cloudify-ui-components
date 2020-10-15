@@ -43,12 +43,7 @@ describe('<DataSegment />', () => {
         );
 
         expect(wrapper.find('.segmentList .secondary.segment').length).toEqual(1);
-        expect(
-            wrapper
-                .find('.segmentList .secondary.segment')
-                .childAt(0)
-                .text()
-        ).toEqual('Data 3');
+        expect(wrapper.find('.segmentList .secondary.segment').childAt(0).text()).toEqual('Data 3');
     });
 
     it('allows to handle segment click', () => {

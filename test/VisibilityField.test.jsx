@@ -12,24 +12,15 @@ describe('<VisibilityField />', () => {
         const setVisibility = jest.fn();
         let wrapper = mount(<VisibilityField allowChange visibility="tenant" onVisibilityChange={setVisibility} />);
 
-        wrapper
-            .find('VisibilityField')
-            .first()
-            .simulate('click');
+        wrapper.find('VisibilityField').first().simulate('click');
         expect(setVisibility).toHaveBeenCalledWith('private');
 
         wrapper = mount(<VisibilityField allowChange visibility="private" onVisibilityChange={setVisibility} />);
-        wrapper
-            .find('VisibilityField')
-            .first()
-            .simulate('click');
+        wrapper.find('VisibilityField').first().simulate('click');
         expect(setVisibility).toHaveBeenCalledWith('global');
 
         wrapper = mount(<VisibilityField allowChange visibility="global" onVisibilityChange={setVisibility} />);
-        wrapper
-            .find('VisibilityField')
-            .first()
-            .simulate('click');
+        wrapper.find('VisibilityField').first().simulate('click');
         expect(setVisibility).toHaveBeenCalledWith('tenant');
     });
 
@@ -39,19 +30,13 @@ describe('<VisibilityField />', () => {
             <VisibilityField allowChange disallowGlobal visibility="tenant" onVisibilityChange={setVisibility} />
         );
 
-        wrapper
-            .find('VisibilityField')
-            .first()
-            .simulate('click');
+        wrapper.find('VisibilityField').first().simulate('click');
         expect(setVisibility).toHaveBeenCalledWith('private');
 
         wrapper = mount(
             <VisibilityField allowChange disallowGlobal visibility="private" onVisibilityChange={setVisibility} />
         );
-        wrapper
-            .find('VisibilityField')
-            .first()
-            .simulate('click');
+        wrapper.find('VisibilityField').first().simulate('click');
         expect(setVisibility).toHaveBeenCalledWith('tenant');
     });
 });

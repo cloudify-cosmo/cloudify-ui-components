@@ -22,10 +22,7 @@ describe('<PopupConfirm />', () => {
 
         // Click on popup trigger button
         expect(wrapper.exists('.popup')).toEqual(false);
-        wrapper
-            .find('button')
-            .first()
-            .simulate('click');
+        wrapper.find('button').first().simulate('click');
         expect(wrapper.exists('.popup')).toEqual(true);
         expect(wrapper.find('.popup button').length).toEqual(2);
 
@@ -47,10 +44,7 @@ describe('<PopupConfirm />', () => {
 
         expect(wrapper.exists('.popup')).toEqual(false);
         // Click on popup trigger button
-        wrapper
-            .find('button')
-            .first()
-            .simulate('click');
+        wrapper.find('button').first().simulate('click');
         expect(wrapper.exists('.popup')).toEqual(true);
         expect(wrapper.find('.popup button').length).toEqual(2);
 
@@ -67,10 +61,7 @@ describe('<PopupConfirm />', () => {
 
         expect(wrapper.exists('.popup')).toEqual(false);
         // Click on popup trigger button
-        wrapper
-            .find('button')
-            .first()
-            .simulate('click');
+        wrapper.find('button').first().simulate('click');
         expect(wrapper.exists('.popup')).toEqual(true);
         expect(wrapper.find('.popup button').length).toEqual(1);
     });
