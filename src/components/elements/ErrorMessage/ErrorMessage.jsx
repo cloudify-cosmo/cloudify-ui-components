@@ -50,14 +50,10 @@ export default function ErrorMessage(props) {
     }
 
     return (
-        error && (
+        !_.isEmpty(error) && (
             <Message error className={className} hidden={hidden} onDismiss={handleDismiss}>
                 <Message.Header>{errorHeader}</Message.Header>
-                {_.isArray(error) && !_.isEmpty(error) ? (
-                    <Message.List items={error} />
-                ) : (
-                    <Message.Content>{errorMessage}</Message.Content>
-                )}
+                {_.isArray(error) ? <Message.List items={error} /> : <Message.Content>{errorMessage}</Message.Content>}
             </Message>
         )
     );
