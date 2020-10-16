@@ -39,7 +39,7 @@
     "url": "https://cloudify.co/slack/"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.0",
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.8.0",
     "@babel/preset-env": "^7.8.2",
     "@babel/preset-react": "^7.8.0",
