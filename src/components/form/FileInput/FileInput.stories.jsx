@@ -3,7 +3,7 @@ import { Button } from 'semantic-ui-react';
 import _ from 'lodash';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import Form from '../Form/Form';
 
 export default {
@@ -37,7 +37,7 @@ export const button = () => (
     />
 );
 
-export const controlled = StoryWithHooks(() => {
+export const controlled = () => {
     const [value, setValue] = React.useState();
 
     return (
@@ -50,4 +50,4 @@ export const controlled = StoryWithHooks(() => {
             <Button onClick={_.ary(setValue, 0)}>Reset</Button>
         </>
     );
-});
+};

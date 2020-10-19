@@ -18,9 +18,7 @@ export const basic = () => (
         <Popup.Content>This is the popup content</Popup.Content>
     </Popup>
 );
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const forceOpen = () => (
     <div style={{ paddingTop: 100 }}>

@@ -10,6 +10,4 @@ export default {
 };
 
 export const basic = () => <Form.ColorPicker />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';

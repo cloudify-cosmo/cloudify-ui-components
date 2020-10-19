@@ -1,7 +1,7 @@
 import React from 'react';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import DivContainer from 'decorators/DivContainer';
 import GenericField from './GenericField';
 import Form from '../Form';
@@ -16,7 +16,7 @@ export default {
     decorators: [LiveEditDecorator({ DivContainer, GenericField, Form })]
 };
 
-export const stringField = StoryWithHooks(() => {
+export const stringField = () => {
     const [value, setValue] = React.useState('');
 
     return (
@@ -33,9 +33,9 @@ export const stringField = StoryWithHooks(() => {
             />
         </Form>
     );
-});
+};
 
-export const passwordField = StoryWithHooks(() => {
+export const passwordField = () => {
     const [value, setValue] = React.useState('');
 
     return (
@@ -50,9 +50,9 @@ export const passwordField = StoryWithHooks(() => {
             />
         </Form>
     );
-});
+};
 
-export const numberField = StoryWithHooks(() => {
+export const numberField = () => {
     const [value, setValue] = React.useState(5);
 
     return (
@@ -68,9 +68,9 @@ export const numberField = StoryWithHooks(() => {
             />
         </Form>
     );
-});
+};
 
-export const booleanField = StoryWithHooks(() => {
+export const booleanField = () => {
     const [value, setValue] = React.useState(true);
 
     return (
@@ -84,9 +84,9 @@ export const booleanField = StoryWithHooks(() => {
             />
         </Form>
     );
-});
+};
 
-export const booleanListField = StoryWithHooks(() => {
+export const booleanListField = () => {
     const [value, setValue] = React.useState('true');
 
     return (
@@ -100,12 +100,10 @@ export const booleanListField = StoryWithHooks(() => {
             />
         </Form>
     );
-});
-booleanListField.story = {
-    parameters: { storyshots: false }
 };
+booleanListField.parameters = { storyshots: false };
 
-export const listField = StoryWithHooks(() => {
+export const listField = () => {
     const [value, setValue] = React.useState('b');
 
     return (
@@ -122,12 +120,10 @@ export const listField = StoryWithHooks(() => {
             </Form>
         </DivContainer>
     );
-});
-listField.story = {
-    parameters: { storyshots: false }
 };
+listField.parameters = { storyshots: false };
 
-export const numberListField = StoryWithHooks(() => {
+export const numberListField = () => {
     const [value, setValue] = React.useState(2);
 
     return (
@@ -144,12 +140,10 @@ export const numberListField = StoryWithHooks(() => {
             </Form>
         </DivContainer>
     );
-});
-numberListField.story = {
-    parameters: { storyshots: false }
 };
+numberListField.parameters = { storyshots: false };
 
-export const multiSelectListField = StoryWithHooks(() => {
+export const multiSelectListField = () => {
     const [value, setValue] = React.useState([2, 3, 4]);
 
     return (
@@ -166,12 +160,10 @@ export const multiSelectListField = StoryWithHooks(() => {
             </Form>
         </DivContainer>
     );
-});
-multiSelectListField.story = {
-    parameters: { storyshots: false }
 };
+multiSelectListField.parameters = { storyshots: false };
 
-export const editableListField = StoryWithHooks(() => {
+export const editableListField = () => {
     const [value, setValue] = React.useState('b');
 
     return (
@@ -188,12 +180,10 @@ export const editableListField = StoryWithHooks(() => {
             </Form>
         </DivContainer>
     );
-});
-editableListField.story = {
-    parameters: { storyshots: false }
 };
+editableListField.parameters = { storyshots: false };
 
-export const numberEditableListField = StoryWithHooks(() => {
+export const numberEditableListField = () => {
     const [value, setValue] = React.useState(2);
 
     return (
@@ -210,12 +200,10 @@ export const numberEditableListField = StoryWithHooks(() => {
             </Form>
         </DivContainer>
     );
-});
-numberEditableListField.story = {
-    parameters: { storyshots: false }
 };
+numberEditableListField.parameters = { storyshots: false };
 
-export const customField = StoryWithHooks(() => {
+export const customField = () => {
     const [value, setValue] = React.useState();
 
     return (
@@ -232,7 +220,7 @@ export const customField = StoryWithHooks(() => {
             </Form>
         </DivContainer>
     );
-});
+};
 
 export const noCustomTypeField = () => (
     <GenericField name="timeFilterTest" label="No component prop specified" type={GenericField.CUSTOM_TYPE} />

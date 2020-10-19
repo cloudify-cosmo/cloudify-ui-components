@@ -8,11 +8,9 @@ export default {
     component: ApproveButton,
     decorators: [LiveEditDecorator({ ApproveButton })]
 };
+
 export const basic = () => <ApproveButton />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
+
 export const custom = () => <ApproveButton content="Add" icon="add user" color="green" />;
-custom.story = {
-    name: 'Custom content'
-};
+custom.storyName = 'Custom content';

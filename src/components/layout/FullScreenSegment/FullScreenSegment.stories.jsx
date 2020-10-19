@@ -15,9 +15,7 @@ export const basic = () => (
         <FullScreenSegment>Test</FullScreenSegment>
     </DivContainer>
 );
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const colored = () => (
     <DivContainer height={250}>

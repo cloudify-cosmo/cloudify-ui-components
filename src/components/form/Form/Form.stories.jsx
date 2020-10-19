@@ -40,6 +40,4 @@ export const basic = () => (
         </Form.Field>
     </Form>
 );
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';

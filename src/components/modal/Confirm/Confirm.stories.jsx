@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'semantic-ui-react';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import Confirm from './Confirm';
 
 export default {
@@ -11,7 +11,7 @@ export default {
     decorators: [LiveEditDecorator({ Button, Confirm })]
 };
 
-export const basic = StoryWithHooks(() => {
+export const basic = () => {
     const [open, setOpen] = React.useState(false);
     return (
         <div>
@@ -24,4 +24,4 @@ export const basic = StoryWithHooks(() => {
             />
         </div>
     );
-});
+};

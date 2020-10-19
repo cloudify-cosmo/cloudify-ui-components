@@ -7,11 +7,9 @@ export default {
     component: CopyToClipboardButton,
     decorators: [LiveEditDecorator({ CopyToClipboardButton })]
 };
+
 export const basic = () => <CopyToClipboardButton />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
+
 export const custom = () => <CopyToClipboardButton text="Text to copy" content="Copy ID" />;
-custom.story = {
-    name: 'Custom content'
-};
+custom.storyName = 'Custom content';

@@ -21,9 +21,7 @@ export const basic = () => (
 }`}
     </HighlightText>
 );
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const bash = () => (
     <HighlightText language="bash">

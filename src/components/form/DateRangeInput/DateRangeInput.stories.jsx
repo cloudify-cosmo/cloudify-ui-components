@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import Form from '../Form/Form';
 import DateRangeInput from './DateRangeInput';
 
@@ -12,13 +12,13 @@ export default {
     decorators: [LiveEditDecorator({ Form, moment })]
 };
 
-export const basic = StoryWithHooks(() => {
+export const basic = () => {
     const [timeFilter, setTimeFilter] = React.useState(Form.DateRange.EMPTY_VALUE);
 
     return <Form.DateRange name="timeFilter" value={timeFilter} onChange={(e, { value }) => setTimeFilter(value)} />;
-});
+};
 
-export const defaultValue = StoryWithHooks(() => {
+export const defaultValue = () => {
     const dV = {
         start: moment()
             .subtract(1, 'W')
@@ -37,9 +37,9 @@ export const defaultValue = StoryWithHooks(() => {
             onChange={(e, { value }) => setTimeFilter(value)}
         />
     );
-});
+};
 
-export const customRanges = StoryWithHooks(() => {
+export const customRanges = () => {
     const [timeFilter, setTimeFilter] = React.useState(Form.DateRange.EMPTY_VALUE);
     const ranges = {
         'Last 4 Hours': {
@@ -69,9 +69,9 @@ export const customRanges = StoryWithHooks(() => {
             onChange={(e, { value }) => setTimeFilter(value)}
         />
     );
-});
+};
 
-export const initiallyOpen = StoryWithHooks(() => {
+export const initiallyOpen = () => {
     return (
         <div style={{ paddingTop: 440 }}>
             <Form.DateRange
@@ -81,4 +81,4 @@ export const initiallyOpen = StoryWithHooks(() => {
             />
         </div>
     );
-});
+};

@@ -10,9 +10,7 @@ export default {
 };
 
 export const basic = () => <ErrorMessage error="Invalid Blueprint ID provided" />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const autoHide = () => <ErrorMessage autoHide error="This error will disappear soon." />;
 

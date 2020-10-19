@@ -10,9 +10,7 @@ export default {
 };
 
 export const basic = () => <MessageContainer />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const loading = () => <MessageContainer loading>Message</MessageContainer>;
 

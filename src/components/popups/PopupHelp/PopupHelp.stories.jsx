@@ -10,9 +10,7 @@ export default {
 };
 
 export const basic = () => <PopupHelp content="Help information" />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const customHeader = () => <PopupHelp header="Types" content="We recognize string, integer and object types." />;
 

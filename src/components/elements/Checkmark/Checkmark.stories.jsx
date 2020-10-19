@@ -10,9 +10,7 @@ export default {
 };
 
 export const basic = () => <Checkmark />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const checked = () => <Checkmark value />;
 

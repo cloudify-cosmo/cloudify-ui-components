@@ -10,8 +10,6 @@ export default {
 };
 
 export const basic = () => <Loading />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const customMessage = () => <Loading message="Loading files" />;

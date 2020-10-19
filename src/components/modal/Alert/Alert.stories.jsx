@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'semantic-ui-react';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import Alert from './Alert';
 
 export default {
@@ -11,7 +11,7 @@ export default {
     decorators: [LiveEditDecorator({ Button, Alert })]
 };
 
-export const basic = StoryWithHooks(() => {
+export const basic = () => {
     const [open, setOpen] = React.useState(false);
     return (
         <div>
@@ -19,4 +19,4 @@ export const basic = StoryWithHooks(() => {
             <Alert content="This is the message" open={open} onDismiss={() => setOpen(false)} />
         </div>
     );
-});
+};

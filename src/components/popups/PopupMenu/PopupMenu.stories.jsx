@@ -19,9 +19,7 @@ export const basic = () => (
         </Menu>
     </PopupMenu>
 );
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const helpPopup = () => (
     <PopupMenu help="Choose your favourite fruit">

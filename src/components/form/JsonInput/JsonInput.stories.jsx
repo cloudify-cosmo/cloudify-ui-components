@@ -1,7 +1,7 @@
 import React from 'react';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import Form from '../Form/Form';
 import JsonInput from './JsonInput';
 
@@ -11,7 +11,7 @@ export default {
     decorators: [LiveEditDecorator({ Form })]
 };
 
-export const JSONValue = StoryWithHooks(() => {
+export const JSONValue = () => {
     const [value, setValue] = React.useState('{"webserver_port2":6,"webserver_port1":5}');
 
     return (
@@ -19,9 +19,9 @@ export const JSONValue = StoryWithHooks(() => {
             <Form.Json name="port_conf" value={value} onChange={(event, { value: v }) => setValue(v)} />
         </Form>
     );
-});
+};
 
-export const textValue = StoryWithHooks(() => {
+export const textValue = () => {
     const [value, setValue] = React.useState('Text\nScript\nSomething');
 
     return (
@@ -29,9 +29,9 @@ export const textValue = StoryWithHooks(() => {
             <Form.Json name="port_conf" value={value} onChange={(event, { value: v }) => setValue(v)} />
         </Form>
     );
-});
+};
 
-export const markedAsError = StoryWithHooks(() => {
+export const markedAsError = () => {
     const [value, setValue] = React.useState('{"webserver_port2":6,"webserver_port1":5}');
 
     return (
@@ -39,4 +39,4 @@ export const markedAsError = StoryWithHooks(() => {
             <Form.Json name="port_conf" error value={value} onChange={(event, { value: v }) => setValue(v)} />
         </Form>
     );
-});
+};

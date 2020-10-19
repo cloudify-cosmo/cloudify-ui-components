@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import Form from '../Form/Form';
 import DateInput from './DateInput';
 
@@ -12,13 +12,13 @@ export default {
     decorators: [LiveEditDecorator({ DateInput, Form, moment })]
 };
 
-export const basic = StoryWithHooks(() => {
+export const basic = () => {
     const [date, setDate] = React.useState('');
 
     return <Form.Date name="date" value={date} onChange={(event, { value }) => setDate(value)} />;
-});
+};
 
-export const defaultValue = StoryWithHooks(() => {
+export const defaultValue = () => {
     const defaultDate = '2019-12-15 00:00';
     const [date, setDate] = React.useState(defaultDate);
 
@@ -30,9 +30,9 @@ export const defaultValue = StoryWithHooks(() => {
             onChange={(event, { value }) => setDate(value)}
         />
     );
-});
+};
 
-export const minimalAndMaximalDate = StoryWithHooks(() => {
+export const minimalAndMaximalDate = () => {
     const [date, setDate] = React.useState('');
 
     return (
@@ -44,17 +44,17 @@ export const minimalAndMaximalDate = StoryWithHooks(() => {
             onChange={(event, { value }) => setDate(value)}
         />
     );
-});
+};
 
-export const customTimeIntervals = StoryWithHooks(() => {
+export const customTimeIntervals = () => {
     const [date, setDate] = React.useState('');
 
     return <Form.Date name="date" value={date} onChange={(event, { value }) => setDate(value)} timeIntervals={30} />;
-});
+};
 
 export const invalidValue = () => <Form.Date name="date" value="Invalid value" />;
 
-export const initiallyOpen = StoryWithHooks(() => {
+export const initiallyOpen = () => {
     const [date, setDate] = React.useState('2019-11-15 00:00');
 
     return (
@@ -62,4 +62,4 @@ export const initiallyOpen = StoryWithHooks(() => {
             <Form.Date defaultOpen name="date" value={date} onChange={(event, { value }) => setDate(value)} />
         </div>
     );
-});
+};

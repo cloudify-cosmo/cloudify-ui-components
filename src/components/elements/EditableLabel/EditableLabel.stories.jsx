@@ -10,8 +10,6 @@ export default {
 };
 
 export const basic = () => <EditableLabel placeholder="Enter your text here..." />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const readOnly = () => <EditableLabel enabled={false} value="Sample Text" />;

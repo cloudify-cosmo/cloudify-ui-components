@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from 'semantic-ui-react';
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import DataSegment from './DataSegment';
 
 export default {
@@ -20,7 +20,7 @@ export const simple = () => (
     </DataSegment>
 );
 
-export const selectable = StoryWithHooks(() => {
+export const selectable = () => {
     const [selected, setSelected] = React.useState(1);
     return (
         <DataSegment>
@@ -31,9 +31,9 @@ export const selectable = StoryWithHooks(() => {
             ))}
         </DataSegment>
     );
-});
+};
 
-export const pagination = StoryWithHooks(() => {
+export const pagination = () => {
     const [pageSize, setPageSize] = React.useState(3);
 
     return (
@@ -49,7 +49,7 @@ export const pagination = StoryWithHooks(() => {
             ))}
         </DataSegment>
     );
-});
+};
 
 export const searchFilter = () => (
     <DataSegment searchable>

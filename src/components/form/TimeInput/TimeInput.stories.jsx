@@ -2,7 +2,7 @@ import React from 'react';
 
 import DivContainer from 'decorators/DivContainer';
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import Form from '../Form';
 
 export default {
@@ -11,7 +11,7 @@ export default {
     decorators: [LiveEditDecorator({ Form, DivContainer })]
 };
 
-export const basic = StoryWithHooks(() => {
+export const basic = () => {
     const [time, setTime] = React.useState('04:30');
 
     return (
@@ -19,4 +19,4 @@ export const basic = StoryWithHooks(() => {
             <Form.Time name="time" value={time} onChange={(e, { value }) => setTime(value)} />
         </DivContainer>
     );
-});
+};

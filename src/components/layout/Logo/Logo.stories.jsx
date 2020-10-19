@@ -15,9 +15,7 @@ export const basic = () => (
         <Logo />
     </DivContainer>
 );
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const customUrl = () => (
     <DivContainer height={250}>

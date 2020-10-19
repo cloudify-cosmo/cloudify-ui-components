@@ -10,9 +10,7 @@ export default {
 };
 
 export const basic = () => <PopupConfirm trigger={<button type="button">Delete</button>} content="Delete this file?" />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
 
 export const noCancelButton = () => (
     <PopupConfirm trigger={<button type="button">Delete</button>} onCanConfirm={() => 'Delete this file?'} />

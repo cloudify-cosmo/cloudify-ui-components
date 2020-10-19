@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'semantic-ui-react';
 
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import ReadmeModal from './ReadmeModal';
 
 export default {
@@ -11,7 +11,7 @@ export default {
     decorators: [LiveEditDecorator({ Button, ReadmeModal })]
 };
 
-export const basic = StoryWithHooks(() => {
+export const basic = () => {
     const html =
         '<h1>HTML Ipsum Presents</h1>\n' +
         '\n' +
@@ -48,4 +48,4 @@ export const basic = StoryWithHooks(() => {
             <ReadmeModal content={html} open={open} onHide={() => setOpen(false)} />
         </div>
     );
-});
+};

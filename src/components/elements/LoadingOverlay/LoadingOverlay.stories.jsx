@@ -16,9 +16,8 @@ export const basic = () => (
         <LoadingOverlay />
     </Segment>
 );
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
+
 export const customMessage = () => (
     <Segment style={{ height: 80 }}>
         Covered text

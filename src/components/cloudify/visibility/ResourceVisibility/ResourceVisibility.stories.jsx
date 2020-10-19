@@ -1,5 +1,5 @@
 import React from 'react';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
 import ResourceVisibility from './ResourceVisibility';
 
@@ -10,7 +10,7 @@ export default {
 };
 
 export const unchangeable = () => <ResourceVisibility visibility="tenant" />;
-export const changeable = StoryWithHooks(() => {
+export const changeable = () => {
     const [visibility, setVisibility] = React.useState('private');
 
     return (
@@ -20,4 +20,4 @@ export const changeable = StoryWithHooks(() => {
             allowedSettingTo={['tenant', 'global']}
         />
     );
-});
+};

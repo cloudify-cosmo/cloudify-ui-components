@@ -8,11 +8,9 @@ export default {
     component: CancelButton,
     decorators: [LiveEditDecorator({ CancelButton })]
 };
+
 export const basic = () => <CancelButton />;
-basic.story = {
-    name: 'Default'
-};
+basic.storyName = 'Default';
+
 export const custom = () => <CancelButton content="Stop" icon="stop" color="red" />;
-custom.story = {
-    name: 'Custom content'
-};
+custom.storyName = 'Custom content';

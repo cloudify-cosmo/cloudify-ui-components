@@ -1,6 +1,6 @@
 import React from 'react';
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
-import StoryWithHooks from 'decorators/StoryWithHooks';
+
 import VisibilityField from './VisibilityField';
 
 export default {
@@ -10,11 +10,11 @@ export default {
 };
 
 export const unchangeable = () => <VisibilityField visibility="global" allowChange={false} />;
-export const changeable = StoryWithHooks(() => {
+export const changeable = () => {
     const [visibility, setVisibility] = React.useState('private');
     return <VisibilityField visibility={visibility} onVisibilityChange={setVisibility} />;
-});
-export const disallowGlobal = StoryWithHooks(() => {
+};
+export const disallowGlobal = () => {
     const [visibility, setVisibility] = React.useState('private');
     return <VisibilityField visibility={visibility} onVisibilityChange={setVisibility} disallowGlobal />;
-});
+};
