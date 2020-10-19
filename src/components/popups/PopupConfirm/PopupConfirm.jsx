@@ -40,16 +40,16 @@ export default function PopupConfirm({ content, trigger, onCancel, onCanConfirm,
         >
             <Header>{canConfirm || content}</Header>
 
-            {canConfirm ? (
-                <div style={{ float: 'right' }}>
+            <div style={{ textAlign: 'right' }}>
+                {canConfirm ? (
                     <Button icon="checkmark" content="Ok" color="green" onClick={handleCancel} />
-                </div>
-            ) : (
-                <div style={{ float: 'right' }}>
-                    <Button icon="remove" content="Cancel" basic onClick={handleCancel} />
-                    <Button icon="checkmark" content="Ok" color="green" onClick={handleConfirm} />
-                </div>
-            )}
+                ) : (
+                    <>
+                        <Button icon="remove" content="Cancel" basic onClick={handleCancel} />
+                        <Button icon="checkmark" content="Ok" color="green" onClick={handleConfirm} />
+                    </>
+                )}
+            </div>
         </Popup>
     );
 }

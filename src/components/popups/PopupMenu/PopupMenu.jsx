@@ -75,9 +75,11 @@ PopupMenu.propTypes = {
      */
     position: PropTypes.string,
     /**
-     * horizontal offset in pixels to be applied to popup
+     * Offset values in px unit to apply to rendered popup. The basic offset accepts
+     * an array with two numbers in the form `[skidding, distance]`. See
+     * [Popup in Semantic UI React](https://react.semantic-ui.com/modules/popup) for details.
      */
-    offset: PropTypes.number,
+    offset: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.number), PropTypes.func]),
     /**
      * popup trigger icon name (see [Icon](https://react.semantic-ui.com/elements/icon))
      */
@@ -103,7 +105,7 @@ PopupMenu.propTypes = {
 PopupMenu.defaultProps = {
     className: '',
     position: 'bottom right',
-    offset: 12,
+    offset: [12, 0],
     icon: 'content',
     disabled: false,
     bordered: false,

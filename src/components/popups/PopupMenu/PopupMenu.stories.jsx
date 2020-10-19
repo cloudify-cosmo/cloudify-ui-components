@@ -43,7 +43,7 @@ export const customIcon = () => (
     </PopupMenu>
 );
 export const customPosition = () => (
-    <PopupMenu position="top center" offset={0}>
+    <PopupMenu position="top center" offset={[50, 50]}>
         <Menu pointing vertical>
             <Menu.Item content="Orange" name="orange" onClick={() => {}} />
             <Menu.Item content="Apple" name="apple" onClick={() => {}} />

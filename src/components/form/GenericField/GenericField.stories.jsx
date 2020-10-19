@@ -6,6 +6,10 @@ import DivContainer from 'decorators/DivContainer';
 import GenericField from './GenericField';
 import Form from '../Form';
 
+/*
+Some stories are disabled for Storyshots tests due to:
+https://github.com/Semantic-Org/Semantic-UI-React/issues/4061
+ */
 export default {
     title: 'Form/GenericField',
     component: GenericField,
@@ -97,6 +101,9 @@ export const booleanListField = StoryWithHooks(() => {
         </Form>
     );
 });
+booleanListField.story = {
+    parameters: { storyshots: false }
+};
 
 export const listField = StoryWithHooks(() => {
     const [value, setValue] = React.useState('b');
@@ -116,6 +123,9 @@ export const listField = StoryWithHooks(() => {
         </DivContainer>
     );
 });
+listField.story = {
+    parameters: { storyshots: false }
+};
 
 export const numberListField = StoryWithHooks(() => {
     const [value, setValue] = React.useState(2);
@@ -135,6 +145,9 @@ export const numberListField = StoryWithHooks(() => {
         </DivContainer>
     );
 });
+numberListField.story = {
+    parameters: { storyshots: false }
+};
 
 export const multiSelectListField = StoryWithHooks(() => {
     const [value, setValue] = React.useState([2, 3, 4]);
@@ -154,6 +167,9 @@ export const multiSelectListField = StoryWithHooks(() => {
         </DivContainer>
     );
 });
+multiSelectListField.story = {
+    parameters: { storyshots: false }
+};
 
 export const editableListField = StoryWithHooks(() => {
     const [value, setValue] = React.useState('b');
@@ -173,6 +189,9 @@ export const editableListField = StoryWithHooks(() => {
         </DivContainer>
     );
 });
+editableListField.story = {
+    parameters: { storyshots: false }
+};
 
 export const numberEditableListField = StoryWithHooks(() => {
     const [value, setValue] = React.useState(2);
@@ -192,6 +211,9 @@ export const numberEditableListField = StoryWithHooks(() => {
         </DivContainer>
     );
 });
+numberEditableListField.story = {
+    parameters: { storyshots: false }
+};
 
 export const customField = StoryWithHooks(() => {
     const [value, setValue] = React.useState();

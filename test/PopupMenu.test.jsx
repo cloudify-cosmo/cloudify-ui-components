@@ -67,9 +67,9 @@ describe('<PopupMenu />', () => {
             .first()
             .simulate('click');
 
-        // Click inside the Popup component to close popup
+        // Click inside the Popup component on first option to close popup
         wrapper
-            .find('Popup')
+            .find('MenuItem')
             .first()
             .simulate('click');
         expect(
