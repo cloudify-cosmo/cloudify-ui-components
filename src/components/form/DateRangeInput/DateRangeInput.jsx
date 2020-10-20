@@ -339,7 +339,7 @@ export default class DateRangeInput extends React.PureComponent {
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-                <div style={{ float: 'right', marginTop: 10 }}>
+                <div style={{ textAlign: 'right', marginTop: 10 }}>
                     <Button onClick={this.handleResetButtonClick} content="Reset" icon="undo" disabled={!dirty} />
                     <CancelButton onClick={this.handleCancelButtonClick} className="cancel" />
                     <ApproveButton onClick={this.handleApplyButtonClick} content="Apply" positive />
