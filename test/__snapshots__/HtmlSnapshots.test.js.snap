@@ -10733,8 +10733,8 @@ exports[`Storyshots Form/DateRange Initially Open 1`] = `
       <div
         style={
           Object {
-            "float": "right",
             "marginTop": 10,
+            "textAlign": "right",
           }
         }
       >
