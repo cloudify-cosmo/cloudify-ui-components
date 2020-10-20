@@ -66,15 +66,21 @@ pipeline {
             echo "Run Loki tests"
             sh '''
               apt-get update && apt-get -y install graphicsmagick
-              npm run test:loki
+              google-chrome --version
             '''
-
-            dir(".loki") {
-              echo "Saving Loki generated files"
-              sh 'tar czf current.tar.gz current'
-              archiveArtifacts artifacts: 'current.tar.gz'
-              archiveArtifacts artifacts: 'difference/*.png', allowEmptyArchive: true
+            try {
+              sh 'npm run test:loki'
+            } catch (err) {
+              echo "Visual regression test with Loki failed. Error: ${err}"
+              currentBuild.result = 'FAILURE'
+              dir(".loki") {
+                echo "Saving Loki generated files"
+                sh 'tar czf current.tar.gz current'
+                archiveArtifacts artifacts: 'current.tar.gz'
+                archiveArtifacts artifacts: 'difference/*.png', allowEmptyArchive: true
+              }
             }
+
           }
         }
       }
