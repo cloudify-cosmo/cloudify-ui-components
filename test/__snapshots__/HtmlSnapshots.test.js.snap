@@ -11002,23 +11002,6 @@ exports[`Storyshots Form/Form Default 1`] = `
   className="ui form"
   onSubmit={[Function]}
 >
-  <div
-    className="ui error message"
-  >
-    <i
-      aria-hidden="true"
-      className="close icon"
-      onClick={[Function]}
-    />
-    <div
-      className="header"
-    >
-      Errors in the form
-    </div>
-    <div
-      className="content"
-    />
-  </div>
   <h4
     className="ui dividing header"
   >

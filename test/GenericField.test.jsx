@@ -49,18 +49,8 @@ describe('<GenericField />', () => {
         expect(wrapper.find('div[role="option"].selected span').text()).toEqual('true');
         expect(wrapper.exists('div[role="listbox"].multiple')).toEqual(false);
         expect(wrapper.find('div[role="listbox"] div[role="option"]').length).toEqual(2);
-        expect(
-            wrapper
-                .find('div[role="listbox"] div.menu')
-                .childAt(0)
-                .text()
-        ).toEqual('false');
-        expect(
-            wrapper
-                .find('div[role="listbox"] div.menu')
-                .childAt(1)
-                .text()
-        ).toEqual('true');
+        expect(wrapper.find('div[role="listbox"] div.menu').childAt(0).text()).toEqual('false');
+        expect(wrapper.find('div[role="listbox"] div.menu').childAt(1).text()).toEqual('true');
     });
 
     it('renders list type input field', () => {
@@ -78,22 +68,16 @@ describe('<GenericField />', () => {
         expect(wrapper.find('div[role="option"].selected span').text()).toEqual('2');
         expect(wrapper.exists('div[role="listbox"].multiple')).toEqual(false);
         expect(wrapper.find('div[role="listbox"] div[role="option"]').length).toEqual(3);
-        expect(
-            wrapper
-                .find('div[role="listbox"] div.menu')
-                .childAt(1)
-                .text()
-        ).toEqual('2');
+        expect(wrapper.find('div[role="listbox"] div.menu').childAt(1).text()).toEqual('2');
 
         wrapper.setProps({
-            items: [{ value: '1', name: 'one' }, { value: '2', name: 'two' }, { value: '3', name: 'three' }]
+            items: [
+                { value: '1', name: 'one' },
+                { value: '2', name: 'two' },
+                { value: '3', name: 'three' }
+            ]
         });
-        expect(
-            wrapper
-                .find('div[role="listbox"] div.menu')
-                .childAt(1)
-                .text()
-        ).toEqual('two');
+        expect(wrapper.find('div[role="listbox"] div.menu').childAt(1).text()).toEqual('two');
     });
 
     it('renders multi selection list type input field', () => {
@@ -111,38 +95,13 @@ describe('<GenericField />', () => {
         expect(wrapper.exists('div[role="listbox"].multiple')).toEqual(true);
 
         expect(wrapper.find('div[role="listbox"] div[role="option"]').length).toEqual(2);
-        expect(
-            wrapper
-                .find('div[role="listbox"] div.menu')
-                .childAt(0)
-                .text()
-        ).toEqual('1');
-        expect(
-            wrapper
-                .find('div[role="listbox"] div.menu')
-                .childAt(1)
-                .text()
-        ).toEqual('five');
+        expect(wrapper.find('div[role="listbox"] div.menu').childAt(0).text()).toEqual('1');
+        expect(wrapper.find('div[role="listbox"] div.menu').childAt(1).text()).toEqual('five');
 
         expect(wrapper.find('a').length).toEqual(3);
-        expect(
-            wrapper
-                .find('a')
-                .at(0)
-                .text()
-        ).toEqual('2');
-        expect(
-            wrapper
-                .find('a')
-                .at(1)
-                .text()
-        ).toEqual('3');
-        expect(
-            wrapper
-                .find('a')
-                .at(2)
-                .text()
-        ).toEqual('four');
+        expect(wrapper.find('a').at(0).text()).toEqual('2');
+        expect(wrapper.find('a').at(1).text()).toEqual('3');
+        expect(wrapper.find('a').at(2).text()).toEqual('four');
     });
 
     it('renders custom type input field', () => {

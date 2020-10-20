@@ -11,7 +11,11 @@ export default {
 };
 
 export const basic = () => {
-    const options = [{ text: 'Blue', value: 'blue' }, { text: 'Red', value: 'red' }, { text: 'White', value: 'white' }];
+    const options = [
+        { text: 'Blue', value: 'blue' },
+        { text: 'Red', value: 'red' },
+        { text: 'White', value: 'white' }
+    ];
     const [value, setValue] = React.useState(options[0].value);
 
     return (

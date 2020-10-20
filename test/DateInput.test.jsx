@@ -21,14 +21,8 @@ describe('<DateInput />', () => {
     it('handles date change from picker', () => {
         const onChangeMock = jest.fn();
         const wrapper = mount(<DateInput name="date" value="2019-11-11 11:11" onChange={onChangeMock} />);
-        wrapper
-            .find('i.calendar.icon')
-            .first()
-            .simulate('click');
-        wrapper
-            .find('[aria-label="day-10"]')
-            .first()
-            .simulate('click'); // 10th Nov
+        wrapper.find('i.calendar.icon').first().simulate('click');
+        wrapper.find('[aria-label="day-10"]').first().simulate('click'); // 10th Nov
         expect(onChangeMock).toHaveBeenCalledWith(expect.any(Object), { name: 'date', value: '2019-11-10 11:11' });
     });
 
@@ -44,10 +38,7 @@ describe('<DateInput />', () => {
         const wrapper = mount(
             <DateInput name="date" value="2019-11-11 11:11" defaultValue="2019-12-12 12:12" onChange={onChangeMock} />
         );
-        wrapper
-            .find('i.cancel.icon')
-            .first()
-            .simulate('click');
+        wrapper.find('i.cancel.icon').first().simulate('click');
 
         expect(onChangeMock).toHaveBeenCalledWith(expect.any(Object), { name: 'date', value: '2019-12-12 12:12' });
     });

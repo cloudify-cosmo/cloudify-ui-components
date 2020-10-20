@@ -6,8 +6,32 @@ import { Message } from 'semantic-ui-react';
 import ErrorMessage from '../src/components/elements/ErrorMessage';
 
 describe('<ErrorMessage />', () => {
-    it("doesn't render if error empty", () => {
+    it("doesn't render if no error passed", () => {
         const wrapper = shallow(<ErrorMessage />);
+
+        expect(wrapper.find(Message).exists()).toEqual(false);
+    });
+
+    it("doesn't render if error is empty object", () => {
+        const wrapper = shallow(<ErrorMessage error={{}} />);
+
+        expect(wrapper.find(Message).exists()).toEqual(false);
+    });
+
+    it("doesn't render if error is empty array", () => {
+        const wrapper = shallow(<ErrorMessage error={[]} />);
+
+        expect(wrapper.find(Message).exists()).toEqual(false);
+    });
+
+    it("doesn't render if error is empty string", () => {
+        const wrapper = shallow(<ErrorMessage error="" />);
+
+        expect(wrapper.find(Message).exists()).toEqual(false);
+    });
+
+    it("doesn't render if error is null", () => {
+        const wrapper = shallow(<ErrorMessage error={null} />);
 
         expect(wrapper.find(Message).exists()).toEqual(false);
     });
@@ -31,10 +55,7 @@ describe('<ErrorMessage />', () => {
         const onDismissCallback = jest.fn();
         const wrapper = mount(<ErrorMessage error="test" onDismiss={onDismissCallback} />);
 
-        wrapper
-            .find('i.close.icon')
-            .first()
-            .simulate('click', 1);
+        wrapper.find('i.close.icon').first().simulate('click', 1);
 
         expect(onDismissCallback).toHaveBeenCalled();
     });

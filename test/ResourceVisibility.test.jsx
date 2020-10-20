@@ -19,21 +19,11 @@ describe('<ResourceVisibility />', () => {
         );
 
         wrapper.find('VisibilityIcon').simulate('click');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .props().open
-        ).toEqual(true);
+        expect(wrapper.find('Popup').first().props().open).toEqual(true);
 
         // Click on Tenant button
         wrapper.find('button.green').simulate('click');
-        expect(
-            wrapper
-                .find('Confirm')
-                .first()
-                .props().open
-        ).toEqual(true);
+        expect(wrapper.find('Confirm').first().props().open).toEqual(true);
 
         // Click on Yes button
         wrapper.find('button.ui.primary').simulate('click');
@@ -51,27 +41,14 @@ describe('<ResourceVisibility />', () => {
         );
 
         wrapper.find('VisibilityIcon').simulate('click');
-        expect(
-            wrapper
-                .find('Popup')
-                .first()
-                .props().open
-        ).toEqual(true);
+        expect(wrapper.find('Popup').first().props().open).toEqual(true);
 
         // Click on Global button
         wrapper.find('button.blue').simulate('click');
-        expect(
-            wrapper
-                .find('Confirm')
-                .first()
-                .props().open
-        ).toEqual(true);
+        expect(wrapper.find('Confirm').first().props().open).toEqual(true);
 
         // Click on No button
-        wrapper
-            .find('button.ui')
-            .first()
-            .simulate('click');
+        wrapper.find('button.ui').first().simulate('click');
         expect(setVisibility).not.toHaveBeenCalled();
     });
 });

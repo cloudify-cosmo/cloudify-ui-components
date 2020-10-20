@@ -68,7 +68,10 @@ export const withTreeData = () => (
                     {
                         key: 'culture',
                         title: 'Culture',
-                        children: [{ key: 'art', title: 'Art' }, { key: 'craft', title: 'Craft' }]
+                        children: [
+                            { key: 'art', title: 'Art' },
+                            { key: 'craft', title: 'Craft' }
+                        ]
                     }
                 ]
             }

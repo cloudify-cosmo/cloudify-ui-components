@@ -75,12 +75,13 @@ describe('<Form />', () => {
     it('provides Form.fieldNameValue function handling field without name set', () => {
         const wrapper = mount(<Form.Input onChange={(e, f) => Form.fieldNameValue(f)} />);
 
-        expect.assertions(2);
-        try {
-            wrapper.find('input').simulate('change', { target: { value: 'something' } });
-        } catch (error) {
-            expect(error).toBeInstanceOf(Error);
-            expect(error).toHaveProperty('message', 'Required name attribute is not provided!');
-        }
+        expect.assertions(1);
+        expect(() =>
+            wrapper.find('input').simulate('change', {
+                target: {
+                    value: 'something'
+                }
+            })
+        ).toThrowError(new Error('Required name attribute is not provided!'));
     });
 });

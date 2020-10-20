@@ -33,7 +33,10 @@ export default class GenericField extends React.PureComponent {
     initOptions(props) {
         if (props.type === GenericField.BOOLEAN_LIST_TYPE) {
             this.setState({
-                options: [{ text: 'false', value: false }, { text: 'true', value: true }]
+                options: [
+                    { text: 'false', value: false },
+                    { text: 'true', value: true }
+                ]
             });
         } else if (GenericField.isListType(props.type) && props.items) {
             let valueAlreadyInOptions = false;

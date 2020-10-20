@@ -14,18 +14,10 @@ describe('<Pagination />', () => {
         wrapper.setProps({ totalSize: 10 });
         wrapper.setProps({ pageSize: 5 });
 
-        expect(
-            wrapper
-                .find('.gridPagination .dropdown .text')
-                .first()
-                .text()
-        ).toEqual('5');
-        expect(
-            wrapper
-                .find('div.gridPagination')
-                .childAt(0)
-                .text()
-        ).toEqual('Page size: 5510152550  1 to 5 of 10 entries');
+        expect(wrapper.find('.gridPagination .dropdown .text').first().text()).toEqual('5');
+        expect(wrapper.find('div.gridPagination').childAt(0).text()).toEqual(
+            'Page size: 5510152550  1 to 5 of 10 entries'
+        );
     });
 
     it('allows changing page size', () => {
@@ -55,12 +47,7 @@ describe('<Pagination />', () => {
         });
         expect(fetchDataMock).toHaveBeenCalledTimes(1);
         expect(fetchDataMock).toHaveBeenCalledWith();
-        expect(
-            wrapper
-                .find('.gridPagination .dropdown .text')
-                .first()
-                .text()
-        ).toEqual('10');
+        expect(wrapper.find('.gridPagination .dropdown .text').first().text()).toEqual('10');
     });
 
     it('is shown/hidden depending on total size', () => {

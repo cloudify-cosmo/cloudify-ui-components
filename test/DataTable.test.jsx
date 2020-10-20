@@ -49,18 +49,8 @@ describe('<DataTable />', () => {
         );
 
         expect(wrapper.find('.gridTable tr.active').length).toEqual(1);
-        expect(
-            wrapper
-                .find('.gridTable tr.active')
-                .childAt(0)
-                .text()
-        ).toEqual('Data 3.1');
-        expect(
-            wrapper
-                .find('.gridTable tr.active')
-                .childAt(1)
-                .text()
-        ).toEqual('Data 3.2');
+        expect(wrapper.find('.gridTable tr.active').childAt(0).text()).toEqual('Data 3.1');
+        expect(wrapper.find('.gridTable tr.active').childAt(1).text()).toEqual('Data 3.2');
     });
 
     it('clicks selected row', () => {
@@ -93,13 +83,7 @@ describe('<DataTable />', () => {
             </DataTable>
         );
 
-        expect(
-            wrapper
-                .find('.gridTable thead tr')
-                .childAt(1)
-                .find('th')
-                .prop('className')
-        ).toContain('disabled');
+        expect(wrapper.find('.gridTable thead tr').childAt(1).find('th').prop('className')).toContain('disabled');
     });
 
     it('sorts column by default props', () => {
@@ -109,10 +93,7 @@ describe('<DataTable />', () => {
             </DataTable>
         );
 
-        const col = wrapper
-            .find('.gridTable thead tr')
-            .childAt(0)
-            .find('th');
+        const col = wrapper.find('.gridTable thead tr').childAt(0).find('th');
         expect(col.prop('className')).toContain('sorted');
         expect(col.prop('className')).toContain('descending');
     });
@@ -125,12 +106,7 @@ describe('<DataTable />', () => {
         );
 
         expect(wrapper.find('.gridTable th').length).toEqual(2);
-        expect(
-            wrapper
-                .find('.gridTable tbody')
-                .childAt(0)
-                .find('td').length
-        ).toEqual(2);
+        expect(wrapper.find('.gridTable tbody').childAt(0).find('td').length).toEqual(2);
     });
 
     it('renders search box', () => {
@@ -189,19 +165,13 @@ describe('<DataTable />', () => {
         );
         wrapper.setProps({ fetchData: fetchDataMock });
 
-        wrapper
-            .find('.gridTable thead tr')
-            .childAt(0)
-            .simulate('click');
+        wrapper.find('.gridTable thead tr').childAt(0).simulate('click');
         expect(fetchDataMock).toHaveBeenCalledTimes(1);
         expect(fetchDataMock).toHaveBeenCalledWith({
             gridParams: { _search: '', currentPage: 1, pageSize: 25, sortAscending: true, sortColumn: 'col1' }
         });
 
-        wrapper
-            .find('.gridTable thead tr')
-            .childAt(0)
-            .simulate('click');
+        wrapper.find('.gridTable thead tr').childAt(0).simulate('click');
         expect(fetchDataMock).toHaveBeenCalledTimes(2);
         expect(fetchDataMock).toHaveBeenCalledWith({
             gridParams: { _search: '', currentPage: 1, pageSize: 25, sortAscending: false, sortColumn: 'col1' }

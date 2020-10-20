@@ -12,10 +12,12 @@ describe('<FileInput />', () => {
     it('allows opening file browser', () => {
         const wrapper = mount(<FileInput name="file" />);
 
-        wrapper
-            .find('Button')
-            .filterWhere(button => button.prop('icon') === 'folder open')
-            .simulate('click');
+        expect(() =>
+            wrapper
+                .find('Button')
+                .filterWhere(button => button.prop('icon') === 'folder open')
+                .simulate('click')
+        ).not.toThrow();
     });
 
     it('allows changing file', () => {
