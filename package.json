@@ -23,7 +23,7 @@
     "test:loki": "loki --diffingEngine gm --chromeTolerance 0.9 --requireReference --reactUri file:./storybook-static",
     "test": "npm run lint && npm run test:jest",
     "storybook": "start-storybook --docs -p 9001",
-    "build-storybook": "build-storybook --docs -c .storybook",
+    "build-storybook": "build-storybook --docs -c .storybook --quiet",
     "publish:major": "bash scripts/publish-version.sh major",
     "publish:minor": "bash scripts/publish-version.sh minor",
     "publish:patch": "bash scripts/publish-version.sh patch"
@@ -109,7 +109,7 @@
   },
   "loki": {
     "verboseRenderer": true,
-    "chromeSelector": "body > *",
+    "chromeSelector": "body > div#root > div > *",
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.app",
