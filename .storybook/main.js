@@ -1,9 +1,6 @@
-const stories = ['../src/components/**/*.stories.jsx'];
-if (process.env.NODE_ENV !== 'test') {
-    stories.push('../src/**/*.stories.mdx')
-}
+const _ = require('lodash');
 
 module.exports = {
-    stories,
+    stories: _.compact([process.env.NODE_ENV !== 'test' && '../src/**/*.stories.mdx', '../src/components/**/*.stories.jsx']),
     addons: ['@storybook/addon-docs/preset', '@storybook/preset-scss'],
 };
