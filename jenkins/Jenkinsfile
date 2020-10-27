@@ -99,7 +99,7 @@ pipeline {
               echo "Setup git user"
               sh '''
                 git config user.email "cosmo-admin@github.com"
-                git config user.name "cosmo-admin-CircleCI"
+                git config user.name "cosmo-admin-CI"
               '''
 
               echo "Update main branch"
