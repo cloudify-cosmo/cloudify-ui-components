@@ -7483,6 +7483,7 @@ exports[`Storyshots Form/Date Initially Open 1`] = `
   <div
     style={
       Object {
+        "display": "flex",
         "left": "0",
         "position": "absolute",
         "top": "0",
@@ -9639,6 +9640,7 @@ exports[`Storyshots Form/DateRange Initially Open 1`] = `
   <div
     style={
       Object {
+        "display": "flex",
         "left": "0",
         "position": "absolute",
         "top": "0",
@@ -14680,6 +14682,7 @@ exports[`Storyshots Popups/Popup Force Open 1`] = `
   <div
     style={
       Object {
+        "display": "flex",
         "left": "0",
         "position": "absolute",
         "top": "0",
@@ -14744,6 +14747,7 @@ exports[`Storyshots Popups/PopupConfirm Initially Open 1`] = `
   <div
     style={
       Object {
+        "display": "flex",
         "left": "0",
         "position": "absolute",
         "top": "0",
@@ -14870,6 +14874,7 @@ exports[`Storyshots Popups/PopupHelp Force Open 1`] = `
   <div
     style={
       Object {
+        "display": "flex",
         "left": "0",
         "position": "absolute",
         "top": "0",
@@ -14972,6 +14977,7 @@ exports[`Storyshots Popups/PopupMenu Initially Open 1`] = `
   <div
     style={
       Object {
+        "display": "flex",
         "left": "0",
         "position": "absolute",
         "top": "0",
