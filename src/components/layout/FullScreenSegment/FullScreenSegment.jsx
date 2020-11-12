@@ -1,9 +1,19 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Segment } from 'semantic-ui-react';
+import { ThemeContext } from 'styled-components';
 import colors from 'cloudify-ui-common/styles/_colors.scss';
 
-export default function FullScreenSegment({ children, backgroundColor, className, style }) {
+/**
+ * FullScreenSegment is a block component which can be used as a single color background.
+ */
+export default function FullScreenSegment({ children, className, style }) {
+    const theme = useContext(ThemeContext);
+    let backgroundColor = colors.blueNormal;
+    if (theme && theme.mainColor) {
+        backgroundColor = theme.mainColor;
+    }
+
     return (
         <Segment
             className={className}
@@ -28,14 +38,21 @@ export default function FullScreenSegment({ children, backgroundColor, className
 }
 
 FullScreenSegment.propTypes = {
+    /**
+     * elements displayed inside the Segment
+     */
     children: PropTypes.node.isRequired,
-    backgroundColor: PropTypes.string,
+    /**
+     * class name to be assigned to Segment component
+     */
     className: PropTypes.string,
+    /**
+     * style to be assigned to Segment component
+     */
     style: PropTypes.shape({})
 };
 
 FullScreenSegment.defaultProps = {
-    backgroundColor: colors.blueNormal,
     className: '',
     style: {}
 };

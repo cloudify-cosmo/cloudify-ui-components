@@ -1,4 +1,5 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
 import DivContainer from 'decorators/DivContainer';
 import LiveEditDecorator from 'decorators/LiveEditDecorator';
@@ -7,7 +8,7 @@ import FullScreenSegment from './FullScreenSegment';
 export default {
     title: 'Layout/FullScreenSegment',
     component: FullScreenSegment,
-    decorators: [LiveEditDecorator({ FullScreenSegment, DivContainer })]
+    decorators: [LiveEditDecorator({ FullScreenSegment, DivContainer, ThemeProvider })]
 };
 
 export const basic = () => (
@@ -19,7 +20,9 @@ basic.storyName = 'Default';
 
 export const colored = () => (
     <DivContainer height={250}>
-        <FullScreenSegment backgroundColor="green">Test</FullScreenSegment>
+        <ThemeProvider theme={{ mainColor: 'green' }}>
+            <FullScreenSegment>Test</FullScreenSegment>
+        </ThemeProvider>
     </DivContainer>
 );
 
