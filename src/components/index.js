@@ -41,7 +41,11 @@ export { default as UrlOrFileInput } from './form/UrlOrFileInput';
 
 /* Layout */
 export { default as FullScreenSegment } from './layout/FullScreenSegment';
+export { default as HeaderBanner } from './layout/HeaderBanner';
+export { default as HeaderBar } from './layout/HeaderBar';
+export { default as HeaderMenu } from './layout/HeaderMenu';
 export { default as Logo } from './layout/Logo';
+export { default as MenusBar } from './layout/MenusBar';
 
 /* Modals */
 export { default as Alert } from './modal/Alert';

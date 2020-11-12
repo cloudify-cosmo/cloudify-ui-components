@@ -14532,6 +14532,647 @@ exports[`Storyshots Layout/FullScreenSegment Styled 1`] = `
 </div>
 `;
 
+exports[`Storyshots Layout/HeaderBanner Custom Logo 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "black",
+      "height": 55,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/a/a7/Wikipedia_logo_v3.svg)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header"
+    style={
+      Object {
+        "color": undefined,
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      My Product
+    </span>
+    <span
+      style={
+        Object {
+          "color": undefined,
+          "verticalAlign": "middle",
+        }
+      }
+    >
+       
+      2.3
+    </span>
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderBanner Default 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "black",
+      "height": 55,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url([object Object])",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header"
+    style={
+      Object {
+        "color": undefined,
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      My Product
+    </span>
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+       
+      Premium
+    </span>
+    <span
+      style={
+        Object {
+          "color": undefined,
+          "verticalAlign": "middle",
+        }
+      }
+    >
+       
+      2.3
+    </span>
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderBanner No Version Details 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "black",
+      "height": 55,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url([object Object])",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header"
+    style={
+      Object {
+        "color": undefined,
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      My Product
+    </span>
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
+<div
+  className="sc-bdfBwQ cpjHsn"
+  color="white"
+  height="100px"
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url([object Object])",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header"
+    style={
+      Object {
+        "color": "white",
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      Product
+    </span>
+  </h1>
+  <div
+    className="ui inverted secondary right floated sc-dlfnbm bZplZF menu"
+    style={
+      Object {
+        "height": "100%",
+        "marginLeft": "auto",
+      }
+    }
+    textColor="white"
+  >
+    <div
+      aria-expanded={false}
+      className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      style={
+        Object {
+          "height": "100%",
+          "padding": "5px 10px",
+        }
+      }
+      tabIndex={0}
+    >
+      User
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Profile
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Logout
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderBar Default 1`] = `
+<div
+  className="sc-bdfBwQ hkjYnb"
+  color="white"
+  height="55px"
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url([object Object])",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header"
+    style={
+      Object {
+        "color": "white",
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      Product
+    </span>
+  </h1>
+  <div
+    className="ui inverted secondary right floated sc-dlfnbm bZplZF menu"
+    style={
+      Object {
+        "height": "100%",
+        "marginLeft": "auto",
+      }
+    }
+    textColor="white"
+  >
+    <div
+      aria-expanded={false}
+      className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      style={
+        Object {
+          "height": "100%",
+          "padding": "5px 10px",
+        }
+      }
+      tabIndex={0}
+    >
+      User
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Profile
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Logout
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderBar No Theme 1`] = `
+<div
+  className="sc-bdfBwQ kdpXrv"
+  height="55px"
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url([object Object])",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header"
+    style={
+      Object {
+        "color": undefined,
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      Product
+    </span>
+  </h1>
+  <div
+    className="ui inverted secondary right floated sc-dlfnbm hcSRum menu"
+    style={
+      Object {
+        "height": "100%",
+        "marginLeft": "auto",
+      }
+    }
+  >
+    <div
+      aria-expanded={false}
+      className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      style={
+        Object {
+          "height": "100%",
+          "padding": "5px 10px",
+        }
+      }
+      tabIndex={0}
+    >
+      User
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Profile
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Logout
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderMenu Custom Trigger 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "height": 30,
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      aria-expanded={false}
+      className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      style={
+        Object {
+          "height": "100%",
+          "padding": "5px 10px",
+        }
+      }
+      tabIndex={0}
+    >
+      <i
+        aria-hidden="true"
+        className="cogs icon"
+        onClick={[Function]}
+      />
+       Options
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Option A
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Option B
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderMenu Default 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "height": 30,
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      aria-expanded={false}
+      className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      style={
+        Object {
+          "height": "100%",
+          "padding": "5px 10px",
+        }
+      }
+      tabIndex={0}
+    >
+      Options
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Option A
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Option B
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Layout/Logo Custom Style 1`] = `
 <div
   style={
@@ -14623,6 +15264,217 @@ exports[`Storyshots Layout/Logo Default 1`] = `
       }
     }
   />
+</div>
+`;
+
+exports[`Storyshots Layout/MenusBar Default 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "black",
+        "height": 55,
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      className="ui inverted secondary right floated sc-dlfnbm eRboKV menu"
+      style={
+        Object {
+          "height": "100%",
+          "marginLeft": "auto",
+        }
+      }
+      textColor="red"
+    >
+      <div
+        aria-expanded={false}
+        className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        style={
+          Object {
+            "height": "100%",
+            "padding": "5px 10px",
+          }
+        }
+        tabIndex={0}
+      >
+        <i
+          aria-hidden="true"
+          className="help icon"
+          onClick={[Function]}
+        />
+         Help
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Link A
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Link B
+          </div>
+        </div>
+      </div>
+      <div
+        aria-expanded={false}
+        className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        style={
+          Object {
+            "height": "100%",
+            "padding": "5px 10px",
+          }
+        }
+        tabIndex={0}
+      >
+        <i
+          aria-hidden="true"
+          className="user icon"
+          onClick={[Function]}
+        />
+         User
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Option A
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Option B
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/MenusBar No Theme 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 250,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "black",
+        "height": 55,
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      className="ui inverted secondary right floated sc-dlfnbm hcSRum menu"
+      style={
+        Object {
+          "height": "100%",
+          "marginLeft": "auto",
+        }
+      }
+    >
+      <div
+        aria-expanded={false}
+        className="ui item top right pointing dropdown sc-gsTCUz dvyEOA"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        style={
+          Object {
+            "height": "100%",
+            "padding": "5px 10px",
+          }
+        }
+        tabIndex={0}
+      >
+        <i
+          aria-hidden="true"
+          className="help icon"
+          onClick={[Function]}
+        />
+         Help
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Link A
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Link B
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
