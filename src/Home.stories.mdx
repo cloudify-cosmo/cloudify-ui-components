@@ -4,11 +4,25 @@
 
 Welcome to Cloudify UI Components documentation!
 
-You can find here a visual documentation for all external [React](https://reactjs.org/) components developed by Cloudify team. Each component is presented with short general description of the components main purpose, list of available props and possible use cases. 
+You can find here a visual documentation for all external [React](https://reactjs.org/) components developed by Cloudify team. Each component is presented with short general description of the components main purpose, list of available props and possible use cases.
 
 These components are intended to be used in development of:
- - Cloudify UI ([cloudify-stage](https://github.com/cloudify-cosmo/cloudify-stage)), 
- - Cloudify Blueprint Composer ([cloudify-blueprint-composer](https://github.com/cloudify-cosmo/cloudify-blueprint-composer)), 
+ - Cloudify UI ([cloudify-stage](https://github.com/cloudify-cosmo/cloudify-stage)),
+ - Cloudify Blueprint Composer ([cloudify-blueprint-composer](https://github.com/cloudify-cosmo/cloudify-blueprint-composer)),
  - [custom UI widgets](http://docs.cloudify.co/latest/developer/writing_widgets/).
 
 Most of the components were built basing on [Semantic-UI-React](http://react.semantic-ui.com/) development framework.
+
+## Theming
+
+We are using [styled-components](https://styled-components.com) library and some of our components support theming
+ provided by this library. To provide your custom theme for components you can use one of the
+ [accepted methods](https://styled-components.com/docs/advanced#theming).
+
+Theme should have the following format:
+```
+{
+    mainColor: <string>,
+    headerTextColor: <string>
+}
+```
