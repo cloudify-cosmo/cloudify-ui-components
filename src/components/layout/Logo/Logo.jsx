@@ -2,6 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import logo from 'cloudify-ui-common/images/logo.png';
 
+/**
+ * Logo is a component displaying 45px x 45x image in div block.
+ * If `url` prop is not provided, then by default it shows Cloudify logo.
+ */
 export default function Logo({ className, style, url }) {
     return (
         <div
@@ -25,8 +29,19 @@ export default function Logo({ className, style, url }) {
 }
 
 Logo.propTypes = {
+    /**
+     * name of the style class to be added to logo div block
+     */
     className: PropTypes.string,
+
+    /**
+     * styles to be added to logo div block
+     */
     style: PropTypes.shape({}),
+
+    /**
+     * URL from which logo image should be fetched
+     */
     url: PropTypes.string
 };
 
