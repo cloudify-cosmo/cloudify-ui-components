@@ -23,16 +23,16 @@ const StyledDiv = styled.div`
  *
  * It supports theming:
  *
- * * `mainColor` parameter is used as background color
+ * * `mainColor` parameter is used as a background color
  * * `headerTextColor` parameter is used as a text color
  */
-export default function HeaderBar({ height, children }) {
+export default function HeaderBar({ height, children, className }) {
     const theme = useContext(ThemeContext);
     const backgroundColor = theme ? theme.mainColor : colors.blueNormal;
     const color = theme ? theme.headerTextColor : colors.white;
 
     return (
-        <StyledDiv height={height} backgroundColor={backgroundColor} color={color}>
+        <StyledDiv height={height} backgroundColor={backgroundColor} color={color} className={className}>
             {children}
         </StyledDiv>
     );
@@ -45,11 +45,17 @@ HeaderBar.propTypes = {
     children: PropTypes.node.isRequired,
 
     /**
+     * name of the style class to be added to header bar div block
+     */
+    className: PropTypes.string,
+
+    /**
      * height of the header bar, provided as string (passed directly to CSS)
      */
     height: PropTypes.string
 };
 
 HeaderBar.defaultProps = {
+    className: '',
     height: '55px'
 };

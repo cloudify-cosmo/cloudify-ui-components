@@ -7,7 +7,7 @@ import colors from 'cloudify-ui-common/styles/_colors.scss';
 const StyledMenu = styled(Menu)`
     .item,
     .item .dropdown.icon {
-        color: ${props => props.textColor} !important;
+        color: ${props => props.textcolor} !important;
     }
     /* TODO: add hover styling */
 `;
@@ -31,7 +31,7 @@ export default function MenusBar({ className, children }) {
             className={className}
             style={{ marginLeft: 'auto', height: '100%' }}
             floated="right"
-            textColor={color}
+            textcolor={color}
         >
             {children}
         </StyledMenu>
