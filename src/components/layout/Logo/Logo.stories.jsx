@@ -32,9 +32,16 @@ export const logoFromTheme = () => (
 );
 
 export const logoFromUrl = () => (
-    <DivContainer height={60}>
-        <Logo url="https://upload.wikimedia.org/wikipedia/commons/a/a7/Wikipedia_logo_v3.svg" />
-    </DivContainer>
+    <ThemeProvider
+        theme={{
+            logoUrl:
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1920px-Coca-Cola_logo.svg.png'
+        }}
+    >
+        <DivContainer height={60}>
+            <Logo url="https://upload.wikimedia.org/wikipedia/commons/a/a7/Wikipedia_logo_v3.svg" />
+        </DivContainer>
+    </ThemeProvider>
 );
 
 export const customStyle = () => (

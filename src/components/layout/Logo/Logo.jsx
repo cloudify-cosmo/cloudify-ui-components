@@ -10,14 +10,14 @@ import logo from 'cloudify-ui-common/images/logo.png';
  *
  * The logo selection is done the following way:
  *
- * 1. If theme is provided with non-empty `logoUrl` parameter, then it is selected
- * 1. If first condition is not met and non-empty `url` prop is provided, then it is selected
+ * 1. If non-empty `url` prop is provided, then it is selected
+ * 1. If first condition is not met and theme is provided with non-empty `logoUrl` parameter, then it is selected
  * 1. In all other cases, the default Cloudify logo will be selected
  *
  */
 export default function Logo({ className, style, url }) {
     const theme = useContext(ThemeContext) || {};
-    const logoUrl = theme.logoUrl || url || logo;
+    const logoUrl = url || theme.logoUrl || logo;
 
     return (
         <div
