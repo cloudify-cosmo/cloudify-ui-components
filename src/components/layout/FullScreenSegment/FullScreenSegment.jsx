@@ -16,7 +16,7 @@ export default function FullScreenSegment({ children, className, style }) {
 
     return (
         <Segment
-            className={className}
+            className={`fullScreenSegment ${className}`}
             style={{
                 margin: 0,
                 padding: 0,

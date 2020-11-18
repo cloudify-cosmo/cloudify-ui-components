@@ -57,7 +57,7 @@ export default function HeaderBanner({
                     height: '100%',
                     color
                 }}
-                className={className}
+                className={`headerBanner ${className}`}
             >
                 <ProductName name={productName} />
                 {showDetails && (

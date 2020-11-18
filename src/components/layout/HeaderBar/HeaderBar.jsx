@@ -32,7 +32,7 @@ export default function HeaderBar({ height, children, className }) {
     const color = theme ? theme.headerTextColor : colors.white;
 
     return (
-        <StyledDiv height={height} backgroundColor={backgroundColor} color={color} className={className}>
+        <StyledDiv height={height} backgroundColor={backgroundColor} color={color} className={`headerBar ${className}`}>
             {children}
         </StyledDiv>
     );

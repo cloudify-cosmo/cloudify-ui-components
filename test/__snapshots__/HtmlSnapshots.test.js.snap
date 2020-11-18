@@ -14443,7 +14443,7 @@ exports[`Storyshots Layout/FullScreenSegment Colored 1`] = `
   }
 >
   <div
-    className="ui segment"
+    className="ui segment fullScreenSegment "
     style={
       Object {
         "backgroundColor": "green",
@@ -14476,7 +14476,7 @@ exports[`Storyshots Layout/FullScreenSegment Default 1`] = `
   }
 >
   <div
-    className="ui segment"
+    className="ui segment fullScreenSegment "
     style={
       Object {
         "backgroundColor": undefined,
@@ -14509,7 +14509,7 @@ exports[`Storyshots Layout/FullScreenSegment Styled 1`] = `
   }
 >
   <div
-    className="ui segment"
+    className="ui segment fullScreenSegment "
     style={
       Object {
         "backgroundColor": undefined,
@@ -14562,7 +14562,7 @@ exports[`Storyshots Layout/HeaderBanner Custom Logo 1`] = `
     }
   />
   <h1
-    className="ui header"
+    className="ui header headerBanner "
     style={
       Object {
         "color": undefined,
@@ -14627,7 +14627,7 @@ exports[`Storyshots Layout/HeaderBanner Data From Theme 1`] = `
     }
   />
   <h1
-    className="ui header"
+    className="ui header headerBanner "
     style={
       Object {
         "color": "red",
@@ -14702,7 +14702,7 @@ exports[`Storyshots Layout/HeaderBanner Default 1`] = `
     }
   />
   <h1
-    className="ui header"
+    className="ui header headerBanner "
     style={
       Object {
         "color": undefined,
@@ -14777,7 +14777,7 @@ exports[`Storyshots Layout/HeaderBanner No Version Details 1`] = `
     }
   />
   <h1
-    className="ui header"
+    className="ui header headerBanner "
     style={
       Object {
         "color": undefined,
@@ -14803,7 +14803,7 @@ exports[`Storyshots Layout/HeaderBanner No Version Details 1`] = `
 
 exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
 <div
-  className="sc-bdfBwQ cpjHsn"
+  className="sc-bdfBwQ cpjHsn headerBar "
   color="white"
   height="100px"
 >
@@ -14827,7 +14827,7 @@ exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
     }
   />
   <h1
-    className="ui header"
+    className="ui header headerBanner "
     style={
       Object {
         "color": "white",
@@ -14849,14 +14849,13 @@ exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
     </span>
   </h1>
   <div
-    className="ui inverted secondary right floated sc-dlfnbm bZplZF menu"
+    className="ui inverted secondary right floated menusBar  menu"
     style={
       Object {
         "height": "100%",
         "marginLeft": "auto",
       }
     }
-    textcolor="white"
   >
     <div
       aria-expanded={false}
@@ -14907,7 +14906,7 @@ exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
 
 exports[`Storyshots Layout/HeaderBar Default 1`] = `
 <div
-  className="sc-bdfBwQ hkjYnb"
+  className="sc-bdfBwQ hkjYnb headerBar "
   color="white"
   height="55px"
 >
@@ -14931,7 +14930,7 @@ exports[`Storyshots Layout/HeaderBar Default 1`] = `
     }
   />
   <h1
-    className="ui header"
+    className="ui header headerBanner "
     style={
       Object {
         "color": "white",
@@ -14953,14 +14952,13 @@ exports[`Storyshots Layout/HeaderBar Default 1`] = `
     </span>
   </h1>
   <div
-    className="ui inverted secondary right floated sc-dlfnbm bZplZF menu"
+    className="ui inverted secondary right floated menusBar  menu"
     style={
       Object {
         "height": "100%",
         "marginLeft": "auto",
       }
     }
-    textcolor="white"
   >
     <div
       aria-expanded={false}
@@ -15011,7 +15009,7 @@ exports[`Storyshots Layout/HeaderBar Default 1`] = `
 
 exports[`Storyshots Layout/HeaderBar No Theme 1`] = `
 <div
-  className="sc-bdfBwQ kdpXrv"
+  className="sc-bdfBwQ kdpXrv headerBar "
   height="55px"
 >
   <div
@@ -15034,7 +15032,7 @@ exports[`Storyshots Layout/HeaderBar No Theme 1`] = `
     }
   />
   <h1
-    className="ui header"
+    className="ui header headerBanner "
     style={
       Object {
         "color": undefined,
@@ -15056,7 +15054,7 @@ exports[`Storyshots Layout/HeaderBar No Theme 1`] = `
     </span>
   </h1>
   <div
-    className="ui inverted secondary right floated sc-dlfnbm hcSRum menu"
+    className="ui inverted secondary right floated menusBar  menu"
     style={
       Object {
         "height": "100%",
@@ -15393,14 +15391,13 @@ exports[`Storyshots Layout/MenusBar Default 1`] = `
     }
   >
     <div
-      className="ui inverted secondary right floated sc-dlfnbm eRboKV menu"
+      className="ui inverted secondary right floated menusBar  menu"
       style={
         Object {
           "height": "100%",
           "marginLeft": "auto",
         }
       }
-      textcolor="red"
     >
       <div
         aria-expanded={false}
@@ -15523,7 +15520,7 @@ exports[`Storyshots Layout/MenusBar No Theme 1`] = `
     }
   >
     <div
-      className="ui inverted secondary right floated sc-dlfnbm hcSRum menu"
+      className="ui inverted secondary right floated menusBar  menu"
       style={
         Object {
           "height": "100%",
