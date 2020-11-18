@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 import { Header } from 'semantic-ui-react';
@@ -13,15 +14,40 @@ import LicenseEdition from './LicenseEdition';
  *
  * HeaderBanner is a component displaying application header.
  *
- * * contains: logo, product name, license edition and version
- * * supports theming: `headerTextColor` parameter is used as text color
+ * * contains: logo, product name, license edition and product version
+ * * supports theming:
+ *   * `headerTextColor` parameter is used as text color
+ *   * `logoUrl` parameter is used as URL for Logo component
+ *   * `showVersionDetails` parameter is used to determine if license edition and product version should be visible
  */
-export default function HeaderBanner({ licenseEdition, logoUrl, productName, productVersion, showVersionDetails }) {
+export default function HeaderBanner({
+    className,
+    licenseEdition,
+    logoUrl,
+    productName,
+    productVersion,
+    showVersionDetails
+}) {
     const theme = useContext(ThemeContext);
+
+    let color = colors.white;
+    if (theme && theme.headerTextColor) {
+        color = theme.headerTextColor;
+    }
+
+    let url = logoUrl;
+    if (theme && theme.logoUrl) {
+        url = theme.logoUrl;
+    }
+
+    let showDetails = showVersionDetails;
+    if (theme && _.isBoolean(theme.showVersionDetails)) {
+        showDetails = theme.showVersionDetails;
+    }
 
     return (
         <>
-            <Logo style={{ float: 'left' }} url={logoUrl} />
+            <Logo style={{ float: 'left' }} url={url} />
             <Header
                 as="h1"
                 style={{
@@ -29,11 +55,12 @@ export default function HeaderBanner({ licenseEdition, logoUrl, productName, pro
                     margin: '9px 0',
                     padding: 0,
                     height: '100%',
-                    color: theme ? theme.headerTextColor : colors.white
+                    color
                 }}
+                className={className}
             >
                 <ProductName name={productName} />
-                {showVersionDetails && (
+                {showDetails && (
                     <>
                         <LicenseEdition edition={licenseEdition} />
                         <ProductVersion version={productVersion} />
@@ -45,6 +72,11 @@ export default function HeaderBanner({ licenseEdition, logoUrl, productName, pro
 }
 
 HeaderBanner.propTypes = {
+    /**
+     * name of the style class to be added to header div block
+     */
+    className: PropTypes.string,
+
     /**
      * product license edition, displayed after the product name
      */
@@ -72,6 +104,7 @@ HeaderBanner.propTypes = {
 };
 
 HeaderBanner.defaultProps = {
+    className: '',
     licenseEdition: '',
     logoUrl: '',
     productName: '',

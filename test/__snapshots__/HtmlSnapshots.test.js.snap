@@ -14597,6 +14597,81 @@ exports[`Storyshots Layout/HeaderBanner Custom Logo 1`] = `
 </div>
 `;
 
+exports[`Storyshots Layout/HeaderBanner Data From Theme 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "black",
+      "height": 55,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1920px-Coca-Cola_logo.svg.png)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header"
+    style={
+      Object {
+        "color": "red",
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      Sugar Corps
+    </span>
+    <span
+      style={
+        Object {
+          "verticalAlign": "middle",
+        }
+      }
+    >
+       
+      Premium
+    </span>
+    <span
+      style={
+        Object {
+          "color": undefined,
+          "verticalAlign": "middle",
+        }
+      }
+    >
+       
+      20.10
+    </span>
+  </h1>
+</div>
+`;
+
 exports[`Storyshots Layout/HeaderBanner Default 1`] = `
 <div
   style={
@@ -14781,7 +14856,7 @@ exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
         "marginLeft": "auto",
       }
     }
-    textColor="white"
+    textcolor="white"
   >
     <div
       aria-expanded={false}
@@ -14885,7 +14960,7 @@ exports[`Storyshots Layout/HeaderBar Default 1`] = `
         "marginLeft": "auto",
       }
     }
-    textColor="white"
+    textcolor="white"
   >
     <div
       aria-expanded={false}
@@ -15205,11 +15280,11 @@ exports[`Storyshots Layout/Logo Custom Style 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout/Logo Custom Url 1`] = `
+exports[`Storyshots Layout/Logo Default 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "blue",
       "height": 250,
       "position": "relative",
     }
@@ -15219,7 +15294,7 @@ exports[`Storyshots Layout/Logo Custom Url 1`] = `
     className="logo"
     style={
       Object {
-        "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/a/a7/Wikipedia_logo_v3.svg)",
+        "backgroundImage": "url([object Object])",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "contain",
         "display": "inline-block",
@@ -15236,12 +15311,12 @@ exports[`Storyshots Layout/Logo Custom Url 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout/Logo Default 1`] = `
+exports[`Storyshots Layout/Logo Logo From Theme 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "blue",
-      "height": 250,
+      "backgroundColor": "white",
+      "height": 60,
       "position": "relative",
     }
   }
@@ -15250,7 +15325,38 @@ exports[`Storyshots Layout/Logo Default 1`] = `
     className="logo"
     style={
       Object {
-        "backgroundImage": "url([object Object])",
+        "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1920px-Coca-Cola_logo.svg.png)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Layout/Logo Logo From Url 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 60,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/a/a7/Wikipedia_logo_v3.svg)",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "contain",
         "display": "inline-block",
@@ -15294,7 +15400,7 @@ exports[`Storyshots Layout/MenusBar Default 1`] = `
           "marginLeft": "auto",
         }
       }
-      textColor="red"
+      textcolor="red"
     >
       <div
         aria-expanded={false}
