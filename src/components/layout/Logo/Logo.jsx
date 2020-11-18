@@ -16,14 +16,9 @@ import logo from 'cloudify-ui-common/images/logo.png';
  *
  */
 export default function Logo({ className, style, url }) {
-    const theme = useContext(ThemeContext);
-    let logoUrl = logo;
-    if (theme && theme.logoUrl) {
-        logoUrl = theme.logoUrl;
-    }
-    if (url) {
-        logoUrl = url;
-    }
+    const theme = useContext(ThemeContext) || {};
+    const logoUrl = theme.logoUrl || url || logo;
+
     return (
         <div
             className={className}

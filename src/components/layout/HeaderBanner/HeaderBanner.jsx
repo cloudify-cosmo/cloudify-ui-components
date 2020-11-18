@@ -28,22 +28,10 @@ export default function HeaderBanner({
     productVersion,
     showVersionDetails
 }) {
-    const theme = useContext(ThemeContext);
-
-    let color = colors.white;
-    if (theme && theme.headerTextColor) {
-        color = theme.headerTextColor;
-    }
-
-    let url = logoUrl;
-    if (theme && theme.logoUrl) {
-        url = theme.logoUrl;
-    }
-
-    let showDetails = showVersionDetails;
-    if (theme && _.isBoolean(theme.showVersionDetails)) {
-        showDetails = theme.showVersionDetails;
-    }
+    const theme = useContext(ThemeContext) || {};
+    const color = theme.headerTextColor || colors.white;
+    const url = theme.logoUrl || logoUrl;
+    const showDetails = _.isBoolean(theme.showVersionDetails) ? theme.showVersionDetails : showVersionDetails;
 
     return (
         <>
