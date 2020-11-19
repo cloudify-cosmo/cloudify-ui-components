@@ -16,7 +16,7 @@ import LicenseEdition from './LicenseEdition';
  *
  * * contains: logo, product name, license edition and product version
  * * supports theming:
- *   * `headerTextColor` parameter is used as text color
+ *   * `headerTextColor` parameter is used as text color, if not specified then `white` from default colors is chosen
  *   * `logoUrl` parameter is used as URL for Logo component
  *   * `showVersionDetails` parameter is used to determine if license edition and product version should be visible
  */
@@ -71,7 +71,7 @@ HeaderBanner.propTypes = {
     licenseEdition: PropTypes.string,
 
     /**
-     * URL for logo, displayed first from the left side, overrides theme `logoUrl` parameter
+     * URL for logo, displayed first from the left side, overrides theme parameter `logoUrl`
      */
     logoUrl: PropTypes.string,
 
@@ -86,7 +86,7 @@ HeaderBanner.propTypes = {
     productVersion: PropTypes.string,
 
     /**
-     * if set to true, then license edition and product version will be displayed, overrides theme `showVersionDetails` parameter
+     * if set to true, then license edition and product version will be displayed, overrides theme parameter `showVersionDetails`
      */
     showVersionDetails: PropTypes.bool
 };

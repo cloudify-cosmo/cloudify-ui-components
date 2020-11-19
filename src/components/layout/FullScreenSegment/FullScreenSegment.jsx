@@ -6,13 +6,14 @@ import colors from 'cloudify-ui-common/styles/_colors.scss';
 
 /**
  * FullScreenSegment is a block component which can be used as a single color background.
+ *
+ * It supports theming:
+ *
+ * * `mainColor` parameter is used as a background color, if not specified then `blueNormal` from default colors is chosen
  */
 export default function FullScreenSegment({ children, className, style }) {
-    const theme = useContext(ThemeContext);
-    let backgroundColor = colors.blueNormal;
-    if (theme && theme.mainColor) {
-        backgroundColor = theme.mainColor;
-    }
+    const theme = useContext(ThemeContext) || {};
+    const backgroundColor = theme.mainColor || colors.blueNormal;
 
     return (
         <Segment

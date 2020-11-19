@@ -10,9 +10,8 @@ const StyledDiv = styled.div`
   background-color: ${props => props.backgroundColor};
   color: ${props => props.color} !important;
   display: inline-flex;
-}
+}`;
 
-`;
 /**
  *
  * HeaderBar is a component block to be used as a container for all application header components.
@@ -23,13 +22,13 @@ const StyledDiv = styled.div`
  *
  * It supports theming:
  *
- * * `mainColor` parameter is used as a background color
- * * `headerTextColor` parameter is used as a text color
+ * * `mainColor` parameter is used as a background color, if not specified then `blueNormal` from default colors is chosen
+ * * `headerTextColor` parameter is used as a text color, if not specified then `white` from default colors is chosen
  */
 export default function HeaderBar({ height, children, className }) {
-    const theme = useContext(ThemeContext);
-    const backgroundColor = theme ? theme.mainColor : colors.blueNormal;
-    const color = theme ? theme.headerTextColor : colors.white;
+    const theme = useContext(ThemeContext) || {};
+    const backgroundColor = theme.mainColor || colors.blueNormal;
+    const color = theme.headerTextColor || colors.white;
 
     return (
         <StyledDiv height={height} backgroundColor={backgroundColor} color={color} className={`headerBar ${className}`}>

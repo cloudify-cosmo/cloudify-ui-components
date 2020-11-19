@@ -14846,7 +14846,7 @@ exports[`Storyshots Layout/HeaderBanner No Version Details 1`] = `
 
 exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
 <div
-  className="sc-bdfBwQ cpjHsn headerBar "
+  className="sc-bdfBwQ fcwrdz headerBar "
   color="white"
   height="100px"
 >
@@ -14949,7 +14949,7 @@ exports[`Storyshots Layout/HeaderBar Custom Height 1`] = `
 
 exports[`Storyshots Layout/HeaderBar Default 1`] = `
 <div
-  className="sc-bdfBwQ hkjYnb headerBar "
+  className="sc-bdfBwQ klpcPr headerBar "
   color="white"
   height="55px"
 >
@@ -15052,7 +15052,7 @@ exports[`Storyshots Layout/HeaderBar Default 1`] = `
 
 exports[`Storyshots Layout/HeaderBar No Theme 1`] = `
 <div
-  className="sc-bdfBwQ kdpXrv headerBar "
+  className="sc-bdfBwQ hqstez headerBar "
   height="55px"
 >
   <div

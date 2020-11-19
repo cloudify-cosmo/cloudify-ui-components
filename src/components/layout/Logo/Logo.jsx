@@ -52,7 +52,7 @@ Logo.propTypes = {
     style: PropTypes.shape({}),
 
     /**
-     * URL from which logo image should be fetched
+     * URL from which logo image should be fetched, overrides theme parameter `logoUrl`
      */
     url: PropTypes.string
 };
