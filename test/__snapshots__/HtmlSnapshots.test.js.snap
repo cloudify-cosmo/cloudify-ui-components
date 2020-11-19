@@ -14582,16 +14582,59 @@ exports[`Storyshots Layout/HeaderBanner Custom Logo 1`] = `
     >
       My Product
     </span>
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Layout/HeaderBanner Data From Props Overriding Theme 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "black",
+      "height": 55,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="logo"
+    style={
+      Object {
+        "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/a/a7/Wikipedia_logo_v3.svg)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "display": "inline-block",
+        "float": "left",
+        "height": 45,
+        "left": 0,
+        "margin": "5px 10px",
+        "position": "relative",
+        "top": 0,
+        "verticalAlign": "middle",
+        "width": 45,
+      }
+    }
+  />
+  <h1
+    className="ui header headerBanner "
+    style={
+      Object {
+        "color": "red",
+        "float": "left",
+        "height": "100%",
+        "margin": "9px 0",
+        "padding": 0,
+      }
+    }
+  >
     <span
       style={
         Object {
-          "color": undefined,
           "verticalAlign": "middle",
         }
       }
     >
-       
-      2.3
+      Sugar Corps
     </span>
   </h1>
 </div>

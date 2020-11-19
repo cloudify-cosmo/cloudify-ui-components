@@ -30,8 +30,8 @@ export default function HeaderBanner({
 }) {
     const theme = useContext(ThemeContext) || {};
     const color = theme.headerTextColor || colors.white;
-    const url = theme.logoUrl || logoUrl;
-    const showDetails = _.isBoolean(theme.showVersionDetails) ? theme.showVersionDetails : showVersionDetails;
+    const url = logoUrl || theme.logoUrl;
+    const showDetails = _.isBoolean(showVersionDetails) ? showVersionDetails : theme.showVersionDetails;
 
     return (
         <>
@@ -71,7 +71,7 @@ HeaderBanner.propTypes = {
     licenseEdition: PropTypes.string,
 
     /**
-     * URL for logo, displayed first from the left side
+     * URL for logo, displayed first from the left side, overrides theme `logoUrl` parameter
      */
     logoUrl: PropTypes.string,
 
@@ -86,7 +86,7 @@ HeaderBanner.propTypes = {
     productVersion: PropTypes.string,
 
     /**
-     * if set to true, then license edition and product version will be displayed
+     * if set to true, then license edition and product version will be displayed, overrides theme `showVersionDetails` parameter
      */
     showVersionDetails: PropTypes.bool
 };
@@ -97,5 +97,5 @@ HeaderBanner.defaultProps = {
     logoUrl: '',
     productName: '',
     productVersion: '',
-    showVersionDetails: true
+    showVersionDetails: undefined
 };
