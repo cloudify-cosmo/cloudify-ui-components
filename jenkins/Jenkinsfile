@@ -17,7 +17,6 @@ def getPublishVersion(String branch){
 pipeline {
   agent {
     kubernetes {
-      label 'components-ui'
       defaultContainer 'jnlp'
       yamlFile 'jenkins/build-pod.yaml'
     }
