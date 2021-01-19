@@ -3,8 +3,17 @@
 }
 
 .ui.modal.unlimited > .content {
-    max-height: none;
-    overflow: inherit;
+    overflow: auto;
+    max-height: 100%;
+    padding: 50px;
+}
+
+.ui.modal.readmeModal {
+    /* NOTE: 2rem for self vertical margins, 2rem for parent's vertical padding */
+    max-height: calc(100% - 4rem);
+
+    /* NOTE: Override display: block!important set by Semantic-UI */
+    display: flex !important;
 }
 
 /* FIXME: Remove this when Semantic-UI-CSS 2.4.2 it's ready */

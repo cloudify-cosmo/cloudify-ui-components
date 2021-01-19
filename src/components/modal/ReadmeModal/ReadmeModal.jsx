@@ -26,7 +26,7 @@ export default function ReadmeModal(props) {
             className={`readmeModal unlimited ${className}`}
             size="fullscreen"
         >
-            <Modal.Content style={{ padding: '50px' }}>
+            <Modal.Content>
                 {/* eslint-disable-next-line react/no-danger */}
                 <div dangerouslySetInnerHTML={getContent()} />
             </Modal.Content>
