@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Modal } from 'semantic-ui-react';
 import './ReadmeModal.css';
+import Modal from '../Modal';
 
 /**
  * ReadmeModal is a component to present HTML content in Modal component.
@@ -26,7 +26,7 @@ export default function ReadmeModal(props) {
             className={`readmeModal unlimited ${className}`}
             size="fullscreen"
         >
-            <Modal.Content>
+            <Modal.Content style={{ padding: '50px' }}>
                 {/* eslint-disable-next-line react/no-danger */}
                 <div dangerouslySetInnerHTML={getContent()} />
             </Modal.Content>

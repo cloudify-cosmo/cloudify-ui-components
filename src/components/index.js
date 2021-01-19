@@ -51,6 +51,7 @@ export { default as MenusBar } from './layout/MenusBar';
 export { default as Alert } from './modal/Alert';
 export { default as Confirm } from './modal/Confirm';
 export { default as ReadmeModal } from './modal/ReadmeModal';
+export { default as Modal } from './modal/Modal';
 
 /* Popups */
 export { default as Popup } from './popups/Popup';

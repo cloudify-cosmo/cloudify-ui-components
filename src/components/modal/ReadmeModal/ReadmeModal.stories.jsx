@@ -7,7 +7,6 @@ import ReadmeModal from './ReadmeModal';
 export default {
     title: 'Modal/ReadmeModal',
     component: ReadmeModal,
-    decorators: [],
     argTypes: {
         open: {
             control: {
