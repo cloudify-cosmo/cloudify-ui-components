@@ -36,19 +36,19 @@ export default function ReadmeModal(props) {
 
 ReadmeModal.propTypes = {
     /**
-     * HTML content of modal
+     * HTML content of the modal
      */
     content: PropTypes.string.isRequired,
     /**
-     * modal open state
+     * Modal's open state
      */
     open: PropTypes.bool.isRequired,
     /**
-     * function called when modal is closed
+     * A function called when the modal is closed
      */
     onHide: PropTypes.func.isRequired,
     /**
-     * modal classname
+     * Modal's classname
      */
     className: PropTypes.string
 };
