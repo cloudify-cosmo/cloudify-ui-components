@@ -28,7 +28,13 @@ export const basic = () => {
                 <Modal.Content>
                     <p>Content, possibly very long.</p>
 
-                    <Dropdown options={[{ text: 'Example 1' }, { text: 'Example 2' }]} selection />
+                    <Dropdown
+                        options={[
+                            { text: 'Example 1', value: 1 },
+                            { text: 'Example 2', value: 2 }
+                        ]}
+                        selection
+                    />
 
                     {Array.from({ length: 30 }).map((_, index) => (
                         // eslint-disable-next-line react/no-array-index-key
