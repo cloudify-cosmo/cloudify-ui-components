@@ -11618,6 +11618,8 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
           >
             <div
               className="object-key-val"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
             >
               <span>
                 <span
@@ -11704,6 +11706,7 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
                     className="click-to-add"
                     style={
                       Object {
+                        "display": "none",
                         "verticalAlign": "top",
                       }
                     }
@@ -11752,6 +11755,8 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
                 >
                   <div
                     className="variable-row"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
                     style={
                       Object {
                         ":hover": Object {
@@ -11863,6 +11868,7 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
                       className="click-to-edit"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
@@ -11900,6 +11906,7 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
                       className="click-to-remove"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
@@ -11936,6 +11943,8 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
                   </div>
                   <div
                     className="variable-row"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
                     style={
                       Object {
                         ":hover": Object {
@@ -12047,6 +12056,7 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
                       className="click-to-edit"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
@@ -12084,6 +12094,7 @@ exports[`Storyshots Form/Json JSON Value 1`] = `
                       className="click-to-remove"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
@@ -12189,6 +12200,8 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
           >
             <div
               className="object-key-val"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
             >
               <span>
                 <span
@@ -12275,6 +12288,7 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
                     className="click-to-add"
                     style={
                       Object {
+                        "display": "none",
                         "verticalAlign": "top",
                       }
                     }
@@ -12323,6 +12337,8 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
                 >
                   <div
                     className="variable-row"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
                     style={
                       Object {
                         ":hover": Object {
@@ -12434,6 +12450,7 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
                       className="click-to-edit"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
@@ -12471,6 +12488,7 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
                       className="click-to-remove"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
@@ -12507,6 +12525,8 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
                   </div>
                   <div
                     className="variable-row"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
                     style={
                       Object {
                         ":hover": Object {
@@ -12618,6 +12638,7 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
                       className="click-to-edit"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
@@ -12655,6 +12676,7 @@ exports[`Storyshots Form/Json Marked As Error 1`] = `
                       className="click-to-remove"
                       style={
                         Object {
+                          "display": "none",
                           "verticalAlign": "top",
                         }
                       }
