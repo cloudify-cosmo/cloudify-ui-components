@@ -15657,28 +15657,6 @@ exports[`Storyshots Modal/Modal Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Modal/ReadmeModal Basic 1`] = `
-<div>
-  <button
-    className="ui button"
-    onClick={[Function]}
-  >
-    Show Readme
-  </button>
-</div>
-`;
-
-exports[`Storyshots Modal/ReadmeModal Long Content 1`] = `
-<div>
-  <button
-    className="ui button"
-    onClick={[Function]}
-  >
-    Show Readme
-  </button>
-</div>
-`;
-
 exports[`Storyshots Popups/Popup Default 1`] = `
 <span
   onBlur={[Function]}
