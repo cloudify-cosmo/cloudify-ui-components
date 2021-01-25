@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Modal } from 'semantic-ui-react';
 import './ReadmeModal.css';
+import Modal from '../Modal';
 
 /**
  * ReadmeModal is a component to present HTML content in Modal component.
@@ -36,19 +36,19 @@ export default function ReadmeModal(props) {
 
 ReadmeModal.propTypes = {
     /**
-     * HTML content of modal
+     * HTML content of the modal
      */
     content: PropTypes.string.isRequired,
     /**
-     * modal open state
+     * Modal's open state
      */
     open: PropTypes.bool.isRequired,
     /**
-     * function called when modal is closed
+     * A function called when the modal is closed
      */
     onHide: PropTypes.func.isRequired,
     /**
-     * modal classname
+     * Modal's classname
      */
     className: PropTypes.string
 };
