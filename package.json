@@ -10,14 +10,19 @@
   "license": "Apache-2.0",
   "author": "Cloudify Platform Ltd. <cosmo-admin@cloudify.co>",
   "files": [
-    "es"
+    "es",
+    "src",
+    "typings"
   ],
   "main": "es/index.js",
   "module": "es/index.js",
+  "types": "typings/index.d.ts",
   "scripts": {
     "audit": "npm audit --production",
-    "build": "bash scripts/build-components.sh",
+    "build": "bash scripts/build-components.sh && npm run generate-type-declarations",
     "buildDev": "babel ./src --ignore '**/*.stories.jsx' --copy-files --delete-dir-on-start --out-dir es --watch",
+    "check-types": "cd src && tsc --noEmit --emitDeclarationOnly false && cd ../test && tsc --noEmit",
+    "generate-type-declarations": "cd src && tsc; echo Done",
     "lint": "eslint --cache --ignore-path .gitignore --ext js,jsx --max-warnings 10 .",
     "test:jest": "jest test --coverage --maxWorkers=2",
     "test:loki": "loki --diffingEngine gm --chromeTolerance 0.9 --requireReference --reactUri file:./storybook-static",
@@ -50,6 +55,7 @@
     "@storybook/theming": "^6.1.14",
     "@types/enzyme": "^3.10.3",
     "@types/jest": "^24.9.1",
+    "@types/lodash": "^4.14.168",
     "@types/prop-types": "^15.7.3",
     "babel-jest": "^26.6.0",
     "babel-loader": "^8.0.6",
@@ -84,10 +90,11 @@
     "semantic-ui-css-offline": "^1.0.4-2.4.2",
     "semantic-ui-react": "^2.0.1",
     "style-loader": "^1.1.3",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "typescript": "^4.1.3"
   },
   "dependencies": {
-    "cloudify-ui-common": "^2.0.0",
+    "cloudify-ui-common": "^2.2.2",
     "rc-tree": "^2.1.3",
     "react-color": "^2.17.3",
     "react-copy-to-clipboard": "^5.0.1",
