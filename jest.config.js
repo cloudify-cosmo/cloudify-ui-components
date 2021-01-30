@@ -1,9 +1,10 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
 
 const stubLink = path.resolve(__dirname, '.jest/stub.js');
 
 module.exports = {
-    collectCoverageFrom: ['./src/**/*.jsx', './src/**/*.js', '!./src/**/*.stories.jsx', '!./src/decorators/**'],
+    collectCoverageFrom: ['./src/**/*.{js,jsx,ts,tsx}', '!./src/**/*.stories.{jsx,tsx}', '!./src/decorators/**'],
     coverageThreshold: {
         global: {
             branches: 80,
