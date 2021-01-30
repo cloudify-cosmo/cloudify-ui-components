@@ -96,35 +96,6 @@ export default class DateRangeInput extends React.PureComponent {
         }
     }
 
-    getTimeFilterObject() {
-        const { ranges } = this.props;
-        const { range, start, end } = this.state;
-
-        const timeFilter = { range };
-
-        if (_.isEqual(range, DateRangeInput.CUSTOM_RANGE)) {
-            timeFilter.start = start;
-            timeFilter.end = end;
-        } else {
-            timeFilter.start = _.get(ranges[range], 'start', '');
-            timeFilter.end = _.get(ranges[range], 'end', '');
-        }
-
-        return timeFilter;
-    }
-
-    getResetState(toDefaults) {
-        const { defaultValue, value } = this.props;
-        const newValue = toDefaults ? defaultValue : value;
-        const date = moment();
-
-        return {
-            ...newValue,
-            startDate: date,
-            endDate: date
-        };
-    }
-
     handleInputChange(proxy, field, onStateUpdate) {
         this.setState({ [field.name]: field.value }, onStateUpdate);
     }
@@ -143,11 +114,6 @@ export default class DateRangeInput extends React.PureComponent {
             }
             this.setState(newState);
         });
-    }
-
-    isRangeSelected(checkedRange) {
-        const { range } = this.state;
-        return _.isEqual(range, checkedRange);
     }
 
     handleRangeButtonClick(proxy, field) {
@@ -205,6 +171,40 @@ export default class DateRangeInput extends React.PureComponent {
         this.setState({ ...resetState, isOpen: false }, () =>
             onCancel(event, { name, value: this.getTimeFilterObject() })
         );
+    }
+
+    getTimeFilterObject() {
+        const { ranges } = this.props;
+        const { range, start, end } = this.state;
+
+        const timeFilter = { range };
+
+        if (_.isEqual(range, DateRangeInput.CUSTOM_RANGE)) {
+            timeFilter.start = start;
+            timeFilter.end = end;
+        } else {
+            timeFilter.start = _.get(ranges[range], 'start', '');
+            timeFilter.end = _.get(ranges[range], 'end', '');
+        }
+
+        return timeFilter;
+    }
+
+    getResetState(toDefaults) {
+        const { defaultValue, value } = this.props;
+        const newValue = toDefaults ? defaultValue : value;
+        const date = moment();
+
+        return {
+            ...newValue,
+            startDate: date,
+            endDate: date
+        };
+    }
+
+    isRangeSelected(checkedRange) {
+        const { range } = this.state;
+        return _.isEqual(range, checkedRange);
     }
 
     render() {

@@ -30,6 +30,11 @@ export default class GenericField extends React.PureComponent {
         }
     }
 
+    handleInputChange(proxy, field) {
+        const { onChange, type } = this.props;
+        onChange(proxy, { ...field, genericType: type });
+    }
+
     initOptions(props) {
         if (props.type === GenericField.BOOLEAN_LIST_TYPE) {
             this.setState({
@@ -58,11 +63,6 @@ export default class GenericField extends React.PureComponent {
 
             this.setState({ options: _.uniqBy(options, 'value') });
         }
-    }
-
-    handleInputChange(proxy, field) {
-        const { onChange, type } = this.props;
-        onChange(proxy, { ...field, genericType: type });
     }
 
     render() {
