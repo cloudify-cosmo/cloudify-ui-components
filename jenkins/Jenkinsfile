@@ -62,6 +62,9 @@ pipeline {
             echo "Run Jest tests"
             sh 'npm run test:jest'
 
+            echo "Check TypeScript types"
+            sh "npm run check-types"
+
             echo "Run Loki tests"
             sh '''
               apt-get update && apt-get -y install graphicsmagick
