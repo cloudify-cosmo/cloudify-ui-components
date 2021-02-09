@@ -1,5 +1,4 @@
 import React, { ChangeEvent, FunctionComponent } from 'react';
-
 import { ColorChangeHandler, CompactPicker } from 'react-color';
 import tinycolor from 'tinycolor2';
 
