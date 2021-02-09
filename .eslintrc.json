@@ -1,11 +1,21 @@
 {
-    "extends": [
-        "plugin:react/recommended",
-        "./node_modules/cloudify-ui-common/configs/eslint-common-react.json"
-    ],
+    "extends": ["plugin:react/recommended", "./node_modules/cloudify-ui-common/configs/eslint-common-react.json"],
     "settings": {
         "import/resolver": {
             "babel-module": {}
         }
-    }
+    },
+    "overrides": [
+        {
+            "files": "**/*.stories.{jsx,tsx}",
+            "rules": {
+                "import/no-extraneous-dependencies": [
+                    "error",
+                    {
+                        "devDependencies": true
+                    }
+                ]
+            }
+        }
+    ]
 }
