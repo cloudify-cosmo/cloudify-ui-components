@@ -31,7 +31,7 @@ FieldLabel.propTypes = {
     /**
      * help description
      */
-    help: PropTypes.string
+    help: PropTypes.node
 };
 
 FieldLabel.defaultProps = {

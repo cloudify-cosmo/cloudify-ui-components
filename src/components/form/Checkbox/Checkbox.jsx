@@ -24,7 +24,7 @@ Checkbox.propTypes = {
     /**
      * help description
      */
-    help: PropTypes.string
+    help: PropTypes.node
 };
 
 Checkbox.defaultProps = {
