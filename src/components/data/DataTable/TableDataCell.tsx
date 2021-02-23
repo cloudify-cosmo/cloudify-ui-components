@@ -1,40 +1,44 @@
-import React from 'react';
+/* eslint-disable react/require-default-props */
+import React, { CSSProperties, FunctionComponent } from 'react';
 import PropTypes from 'prop-types';
 
-export default function TableDataCell({ children, className, rowSpan, style }) {
-    return (
-        <td className={className} rowSpan={rowSpan} style={style}>
-            {children}
-        </td>
-    );
-}
-
-TableDataCell.propTypes = {
-    /**
-     * cell content
-     */
-    children: PropTypes.node,
-
+export interface TableDataCellProps {
     /**
      * additional CSS classes for td element
      */
-    className: PropTypes.string,
+    className?: string;
 
     /**
      * rowSpan prop passed to td element
      */
-    rowSpan: PropTypes.number,
+    rowSpan?: number;
+
+    /**
+     * colSpan prop passed to td element
+     */
+    colSpan?: number;
 
     /**
      * style prop passed to td element
      */
+    style?: CSSProperties;
+}
+
+const TableDataCell: FunctionComponent<TableDataCellProps> = ({ children, className, rowSpan, colSpan, style }) => {
+    return (
+        <td className={className} rowSpan={rowSpan} colSpan={colSpan} style={style}>
+            {children}
+        </td>
+    );
+};
+export default TableDataCell;
+
+TableDataCell.propTypes = {
+    // @ts-expect-error Children props is provided by default
+    children: PropTypes.node,
+    className: PropTypes.string,
+    rowSpan: PropTypes.number,
+    colSpan: PropTypes.number,
     // eslint-disable-next-line react/forbid-prop-types
     style: PropTypes.object
-};
-
-TableDataCell.defaultProps = {
-    children: '',
-    className: '',
-    rowSpan: undefined,
-    style: undefined
 };
