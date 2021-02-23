@@ -132,7 +132,7 @@ export default class DataTable extends Component {
         React.Children.forEach(children, child => {
             if (child) {
                 if (child.type === TableColumn) {
-                    showCols.push(child.props.show);
+                    showCols.push(child.props.show ?? true);
                     headerColumns.push(child);
                 } else if (child.type === TableRow) {
                     bodyRows.push(React.cloneElement(child, { showCols }));
