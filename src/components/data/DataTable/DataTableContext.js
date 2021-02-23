@@ -3,7 +3,12 @@ import { createContext } from 'react';
 const DataTableContext = createContext({
     sortColumn: '',
     sortAscending: true,
-    setSortColumn: undefined
+    /**
+     * @type {((name: string) => void)}
+     */
+    setSortColumn: () => {
+        throw new Error('setSortColumn not implemented');
+    }
 });
 
 export default DataTableContext;
