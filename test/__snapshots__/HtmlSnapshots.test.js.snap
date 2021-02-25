@@ -1141,6 +1141,435 @@ exports[`Storyshots Data/DataTable Action Buttons 1`] = `
 </div>
 `;
 
+exports[`Storyshots Data/DataTable Col Span 1`] = `
+<div
+  className="gridTable "
+>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            68
+          </td>
+          <td>
+            hello-world
+          </td>
+          <td>
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            colSpan={3}
+          >
+            This row spans all columns
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            62
+          </td>
+          <td>
+            hello-world
+          </td>
+          <td>
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            colSpan={3}
+          >
+            This row spans all columns
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            8
+          </td>
+          <td>
+            nodecellar
+          </td>
+          <td>
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            colSpan={3}
+          >
+            This row spans all columns
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            55
+          </td>
+          <td>
+            nodecellar
+          </td>
+          <td>
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            colSpan={3}
+          >
+            This row spans all columns
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            14
+          </td>
+          <td>
+            nodecellar
+          </td>
+          <td>
+            nodecellar-local
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td
+            colSpan={3}
+          >
+            This row spans all columns
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data/DataTable Column Tooltips 1`] = `
+<div
+  className="gridTable "
+>
+  <div>
+    <table
+      className="ui sortable very compact table"
+    >
+      <thead
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <th
+            className="disabled"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={Object {}}
+          >
+            ID
+          </th>
+          <th
+            className=""
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={Object {}}
+          >
+            Blueprint
+          </th>
+          <th
+            className=""
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={Object {}}
+          >
+            Deployment
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            68
+          </td>
+          <td>
+            hello-world
+          </td>
+          <td>
+            hello-world-openstack
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            62
+          </td>
+          <td>
+            hello-world
+          </td>
+          <td>
+            hello-world-azure
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            8
+          </td>
+          <td>
+            nodecellar
+          </td>
+          <td>
+            nodecellar-gcp
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            55
+          </td>
+          <td>
+            nodecellar
+          </td>
+          <td>
+            nodecellar-aws
+          </td>
+        </tr>
+        <tr
+          className=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <td>
+            14
+          </td>
+          <td>
+            nodecellar
+          </td>
+          <td>
+            nodecellar-local
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Data/DataTable Empty 1`] = `
 <div
   className="gridTable "
