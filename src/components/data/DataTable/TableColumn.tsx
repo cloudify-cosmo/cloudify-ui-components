@@ -1,5 +1,3 @@
-// Default props are defined when destructuring
-/* eslint-disable react/require-default-props */
 import React, { FunctionComponent, ReactElement, ReactNode } from 'react';
 import PropTypes from 'prop-types';
 

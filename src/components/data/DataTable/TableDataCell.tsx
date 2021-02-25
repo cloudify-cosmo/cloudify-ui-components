@@ -1,4 +1,3 @@
-/* eslint-disable react/require-default-props */
 import React, { CSSProperties, FunctionComponent } from 'react';
 import PropTypes from 'prop-types';
 
