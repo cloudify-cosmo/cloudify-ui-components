@@ -168,6 +168,55 @@ export const rowSpanAndStyle = () => {
     );
 };
 
+export const colSpan = () => (
+    <DataTable>
+        <DataTable.Column label="ID" />
+        <DataTable.Column label="Blueprint" name="blueprint_id" />
+        <DataTable.Column label="Deployment" name="deployment_id" />
+        {logs.items.flatMap(item => [
+            <DataTable.Row key={item.id}>
+                <DataTable.Data>{item.id}</DataTable.Data>
+                <DataTable.Data>{item.blueprint_id}</DataTable.Data>
+                <DataTable.Data>{item.deployment_id}</DataTable.Data>
+            </DataTable.Row>,
+            <DataTable.Row key={`${item.id}-additional`}>
+                <DataTable.Data colSpan={3}>This row spans all columns</DataTable.Data>
+            </DataTable.Row>
+        ])}
+    </DataTable>
+);
+
+export const columnTooltips = () => (
+    <DataTable>
+        <DataTable.Column label="ID" tooltip="The ID of the deployment" />
+        <DataTable.Column
+            label="Blueprint"
+            name="blueprint_id"
+            tooltip={
+                <>
+                    The name of the <strong>blueprint</strong>
+                </>
+            }
+        />
+        <DataTable.Column
+            label="Deployment"
+            name="deployment_id"
+            tooltip={
+                <>
+                    The name of the <strong>deployment</strong>
+                </>
+            }
+        />
+        {logs.items.map(item => (
+            <DataTable.Row key={item.id}>
+                <DataTable.Data>{item.id}</DataTable.Data>
+                <DataTable.Data>{item.blueprint_id}</DataTable.Data>
+                <DataTable.Data>{item.deployment_id}</DataTable.Data>
+            </DataTable.Row>
+        ))}
+    </DataTable>
+);
+
 export const expandableRow = () => {
     const [selected, setSelected] = React.useState('prestashop');
 
