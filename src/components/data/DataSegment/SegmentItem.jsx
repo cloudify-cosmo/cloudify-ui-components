@@ -44,6 +44,6 @@ SegmentItem.propTypes = {
 
 SegmentItem.defaultProps = {
     selected: false,
-    onClick: () => {},
+    onClick: undefined,
     className: ''
 };

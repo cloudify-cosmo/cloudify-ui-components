@@ -88,9 +88,9 @@ TableRow.propTypes = {
 TableRow.defaultProps = {
     id: undefined,
     selected: false,
-    onClick: () => {},
-    onMouseOver: () => {},
-    onMouseOut: () => {},
+    onClick: undefined,
+    onMouseOver: undefined,
+    onMouseOut: undefined,
     showCols: [],
     className: ''
 };

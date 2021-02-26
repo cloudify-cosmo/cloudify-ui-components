@@ -62,7 +62,7 @@ export const pagination = () => {
             <DataTable.Column label="Blueprint" name="blueprint_id" />
             <DataTable.Column label="Deployment" name="deployment_id" />
             {logs.items.map(item => (
-                <DataTable.Row key={item.id} onClick={() => {}}>
+                <DataTable.Row key={item.id}>
                     <DataTable.Data>{item.id}</DataTable.Data>
                     <DataTable.Data>{item.blueprint_id}</DataTable.Data>
                     <DataTable.Data>{item.deployment_id}</DataTable.Data>
@@ -157,7 +157,7 @@ export const rowSpanAndStyle = () => {
             <DataTable.Column label="Deployment" name="deployment_id" />
             {_.map(grouped, ({ items, blueprintId }) =>
                 _.map(items, ({ id, deployment_id: deploymentId }, index) => (
-                    <DataTable.Row key={id} onClick={() => {}}>
+                    <DataTable.Row key={id}>
                         <DataTable.Data style={{ fontWeight: 'bold' }}>{id}</DataTable.Data>
                         {index === 0 && <DataTable.Data rowSpan={items.length}>{blueprintId}</DataTable.Data>}
                         <DataTable.Data>{deploymentId}</DataTable.Data>
