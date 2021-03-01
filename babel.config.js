@@ -12,6 +12,17 @@ module.exports = api => {
             ],
             testEnvironment && 'require-context-hook'
         ].filter(Boolean),
-        presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript']
+        presets: [
+            [
+                '@babel/preset-env',
+                {
+                    // Disables transpiling modules to CommonJS outside of tests
+                    // https://babeljs.io/docs/en/babel-preset-env#modules
+                    modules: testEnvironment ? 'auto' : false
+                }
+            ],
+            '@babel/preset-react',
+            '@babel/preset-typescript'
+        ]
     };
 };
