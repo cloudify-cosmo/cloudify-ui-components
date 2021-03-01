@@ -18,12 +18,14 @@ export default function PopupConfirm({ content, trigger, onCancel, onCanConfirm,
         setShowPopup(false);
     };
 
-    const handleCancel = () => {
+    const handleCancel = e => {
+        e.stopPropagation();
         closePopup();
         onCancel();
     };
 
-    const handleConfirm = () => {
+    const handleConfirm = e => {
+        e.stopPropagation();
         closePopup();
         onConfirm();
     };
