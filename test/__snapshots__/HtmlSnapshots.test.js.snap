@@ -2990,7 +2990,7 @@ exports[`Storyshots Data/HighlightText Bash 1`] = `
   <code
     style={
       Object {
-        "whiteSpace": "pre-wrap",
+        "whiteSpace": "pre",
         "wordBreak": "break-word",
       }
     }
@@ -3004,8 +3004,17 @@ exports[`Storyshots Data/HighlightText Bash 1`] = `
     >
       #!/bin/bash
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
 
+    </span>
+    <span
+      style={Object {}}
+    >
+      
+    </span>
     <span
       style={
         Object {
@@ -3016,8 +3025,17 @@ exports[`Storyshots Data/HighlightText Bash 1`] = `
     >
       # declare STRING variable
     </span>
-    
-STRING=
+    <span
+      style={Object {}}
+    >
+      
+
+    </span>
+    <span
+      style={Object {}}
+    >
+      STRING=
+    </span>
     <span
       style={
         Object {
@@ -3028,8 +3046,17 @@ STRING=
     >
       "Hello World"
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
 
+    </span>
+    <span
+      style={Object {}}
+    >
+      
+    </span>
     <span
       style={
         Object {
@@ -3040,15 +3067,28 @@ STRING=
     >
       #print variable on a screen
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
 
+    </span>
+    <span
+      style={Object {}}
+    >
+      
+    </span>
     <span
       className="hljs-built_in"
       style={Object {}}
     >
       echo
     </span>
-     
+    <span
+      style={Object {}}
+    >
+       
+    </span>
     <span
       style={
         Object {
@@ -3077,28 +3117,50 @@ exports[`Storyshots Data/HighlightText Default 1`] = `
   <code
     style={
       Object {
-        "whiteSpace": "pre-wrap",
+        "whiteSpace": "pre",
         "wordBreak": "break-word",
       }
     }
   >
-    {
-    
+    <span
+      style={Object {}}
+    >
+      {
+
+    </span>
+    <span
+      style={Object {}}
+    >
+          
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "employee"
     </span>
-    : {
-        
+    <span
+      style={Object {}}
+    >
+      : {
+
+    </span>
+    <span
+      style={Object {}}
+    >
+              
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "name"
     </span>
-    :       
+    <span
+      style={Object {}}
+    >
+      :       
+    </span>
     <span
       style={
         Object {
@@ -3109,15 +3171,28 @@ exports[`Storyshots Data/HighlightText Default 1`] = `
     >
       "sonoo"
     </span>
-    ,
-        
+    <span
+      style={Object {}}
+    >
+      ,
+
+    </span>
+    <span
+      style={Object {}}
+    >
+              
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "salary"
     </span>
-    :      
+    <span
+      style={Object {}}
+    >
+      :      
+    </span>
     <span
       style={
         Object {
@@ -3128,15 +3203,28 @@ exports[`Storyshots Data/HighlightText Default 1`] = `
     >
       56000
     </span>
-    ,
-        
+    <span
+      style={Object {}}
+    >
+      ,
+
+    </span>
+    <span
+      style={Object {}}
+    >
+              
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "married"
     </span>
-    :    
+    <span
+      style={Object {}}
+    >
+      :    
+    </span>
     <span
       style={
         Object {
@@ -3147,9 +3235,16 @@ exports[`Storyshots Data/HighlightText Default 1`] = `
     >
       true
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
+
+    </span>
+        }
+
     }
-}
+
   </code>
 </pre>
 `;
@@ -3169,28 +3264,50 @@ exports[`Storyshots Data/HighlightText JSON 1`] = `
   <code
     style={
       Object {
-        "whiteSpace": "pre-wrap",
+        "whiteSpace": "pre",
         "wordBreak": "break-word",
       }
     }
   >
-    {
-    
+    <span
+      style={Object {}}
+    >
+      {
+
+    </span>
+    <span
+      style={Object {}}
+    >
+          
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "employee"
     </span>
-    : {
-        
+    <span
+      style={Object {}}
+    >
+      : {
+
+    </span>
+    <span
+      style={Object {}}
+    >
+              
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "name"
     </span>
-    :       
+    <span
+      style={Object {}}
+    >
+      :       
+    </span>
     <span
       style={
         Object {
@@ -3201,15 +3318,28 @@ exports[`Storyshots Data/HighlightText JSON 1`] = `
     >
       "sonoo"
     </span>
-    ,
-        
+    <span
+      style={Object {}}
+    >
+      ,
+
+    </span>
+    <span
+      style={Object {}}
+    >
+              
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "salary"
     </span>
-    :      
+    <span
+      style={Object {}}
+    >
+      :      
+    </span>
     <span
       style={
         Object {
@@ -3220,15 +3350,28 @@ exports[`Storyshots Data/HighlightText JSON 1`] = `
     >
       56000
     </span>
-    ,
-        
+    <span
+      style={Object {}}
+    >
+      ,
+
+    </span>
+    <span
+      style={Object {}}
+    >
+              
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       "married"
     </span>
-    :    
+    <span
+      style={Object {}}
+    >
+      :    
+    </span>
     <span
       style={
         Object {
@@ -3239,9 +3382,16 @@ exports[`Storyshots Data/HighlightText JSON 1`] = `
     >
       true
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
+
+    </span>
+        }
+
     }
-}
+
   </code>
 </pre>
 `;
@@ -3261,47 +3411,68 @@ exports[`Storyshots Data/HighlightText Java Script 1`] = `
   <code
     style={
       Object {
-        "whiteSpace": "pre-wrap",
+        "whiteSpace": "pre",
         "wordBreak": "break-word",
       }
     }
   >
     <span
       className="hljs-function"
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      function
+    </span>
+    <span
+      className="hljs-function"
       style={Object {}}
     >
-      <span
-        style={
-          Object {
-            "color": "#000080",
-            "fontWeight": "bold",
-          }
-        }
-      >
-        function
-      </span>
        
-      <span
-        style={
-          Object {
-            "color": "#000",
-            "fontWeight": "normal",
-          }
+    </span>
+    <span
+      className="hljs-function"
+      style={
+        Object {
+          "color": "#000",
+          "fontWeight": "normal",
         }
-      >
-        ask
-      </span>
+      }
+    >
+      ask
+    </span>
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
       (
-      <span
-        className="hljs-params"
-        style={Object {}}
-      >
-        question, yes, no
-      </span>
+    </span>
+    <span
+      className="hljs-function hljs-params"
+      style={Object {}}
+    >
+      question, yes, no
+    </span>
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
       ) 
     </span>
-    {
-  
+    <span
+      style={Object {}}
+    >
+      {
+
+    </span>
+    <span
+      style={Object {}}
+    >
+        
+    </span>
     <span
       style={
         Object {
@@ -3312,8 +3483,17 @@ exports[`Storyshots Data/HighlightText Java Script 1`] = `
     >
       if
     </span>
-     (confirm(question)) yes()
-  
+    <span
+      style={Object {}}
+    >
+       (confirm(question)) yes()
+
+    </span>
+    <span
+      style={Object {}}
+    >
+        
+    </span>
     <span
       style={
         Object {
@@ -3324,44 +3504,72 @@ exports[`Storyshots Data/HighlightText Java Script 1`] = `
     >
       else
     </span>
-     no();
-}
+    <span
+      style={Object {}}
+    >
+       no();
 
+    </span>
+    }
 
+    
+
+    <span
+      style={Object {}}
+    >
+      
+    </span>
+    <span
+      className="hljs-function"
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      function
+    </span>
     <span
       className="hljs-function"
       style={Object {}}
     >
-      <span
-        style={
-          Object {
-            "color": "#000080",
-            "fontWeight": "bold",
-          }
-        }
-      >
-        function
-      </span>
        
-      <span
-        style={
-          Object {
-            "color": "#000",
-            "fontWeight": "normal",
-          }
+    </span>
+    <span
+      className="hljs-function"
+      style={
+        Object {
+          "color": "#000",
+          "fontWeight": "normal",
         }
-      >
-        showOk
-      </span>
+      }
+    >
+      showOk
+    </span>
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
       (
-      <span
-        className="hljs-params"
-        style={Object {}}
-      />
+    </span>
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
       ) 
     </span>
-    {
-  alert( 
+    <span
+      style={Object {}}
+    >
+      {
+
+    </span>
+    <span
+      style={Object {}}
+    >
+        alert( 
+    </span>
     <span
       style={
         Object {
@@ -3372,44 +3580,72 @@ exports[`Storyshots Data/HighlightText Java Script 1`] = `
     >
       "You agreed."
     </span>
-     );
-}
+    <span
+      style={Object {}}
+    >
+       );
 
+    </span>
+    }
 
+    
+
+    <span
+      style={Object {}}
+    >
+      
+    </span>
+    <span
+      className="hljs-function"
+      style={
+        Object {
+          "color": "#000080",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      function
+    </span>
     <span
       className="hljs-function"
       style={Object {}}
     >
-      <span
-        style={
-          Object {
-            "color": "#000080",
-            "fontWeight": "bold",
-          }
-        }
-      >
-        function
-      </span>
        
-      <span
-        style={
-          Object {
-            "color": "#000",
-            "fontWeight": "normal",
-          }
+    </span>
+    <span
+      className="hljs-function"
+      style={
+        Object {
+          "color": "#000",
+          "fontWeight": "normal",
         }
-      >
-        showCancel
-      </span>
+      }
+    >
+      showCancel
+    </span>
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
       (
-      <span
-        className="hljs-params"
-        style={Object {}}
-      />
+    </span>
+    <span
+      className="hljs-function"
+      style={Object {}}
+    >
       ) 
     </span>
-    {
-  alert( 
+    <span
+      style={Object {}}
+    >
+      {
+
+    </span>
+    <span
+      style={Object {}}
+    >
+        alert( 
+    </span>
     <span
       style={
         Object {
@@ -3420,10 +3656,21 @@ exports[`Storyshots Data/HighlightText Java Script 1`] = `
     >
       "You canceled the execution."
     </span>
-     );
-}
+    <span
+      style={Object {}}
+    >
+       );
 
+    </span>
+    }
 
+    
+
+    <span
+      style={Object {}}
+    >
+      
+    </span>
     <span
       style={
         Object {
@@ -3434,8 +3681,17 @@ exports[`Storyshots Data/HighlightText Java Script 1`] = `
     >
       // usage: functions showOk, showCancel are passed as arguments to ask
     </span>
-    
-ask(
+    <span
+      style={Object {}}
+    >
+      
+
+    </span>
+    <span
+      style={Object {}}
+    >
+      ask(
+    </span>
     <span
       style={
         Object {
@@ -3446,7 +3702,11 @@ ask(
     >
       "Do you agree?"
     </span>
-    , showOk, showCancel);
+    <span
+      style={Object {}}
+    >
+      , showOk, showCancel);
+    </span>
   </code>
 </pre>
 `;
@@ -3466,7 +3726,7 @@ exports[`Storyshots Data/HighlightText Python 1`] = `
   <code
     style={
       Object {
-        "whiteSpace": "pre-wrap",
+        "whiteSpace": "pre",
         "wordBreak": "break-word",
       }
     }
@@ -3481,9 +3741,19 @@ exports[`Storyshots Data/HighlightText Python 1`] = `
     >
       import
     </span>
-     whois
+    <span
+      style={Object {}}
+    >
+       whois
 
-data = raw_input(
+    </span>
+    
+
+    <span
+      style={Object {}}
+    >
+      data = raw_input(
+    </span>
     <span
       style={
         Object {
@@ -3494,21 +3764,32 @@ data = raw_input(
     >
       "Enter a domain: "
     </span>
-    )
-w = whois.whois(data)
+    <span
+      style={Object {}}
+    >
+      )
 
+    </span>
+    w = whois.whois(data)
+
+    
 
     <span
-      style={
-        Object {
-          "color": "#000080",
-          "fontWeight": "bold",
-        }
-      }
+      style={Object {}}
+    >
+      
+    </span>
+    <span
+      className="hljs-built_in"
+      style={Object {}}
     >
       print
     </span>
-     w
+    <span
+      style={Object {}}
+    >
+       w
+    </span>
   </code>
 </pre>
 `;
@@ -3528,7 +3809,7 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
   <code
     style={
       Object {
-        "whiteSpace": "pre-wrap",
+        "whiteSpace": "pre",
         "wordBreak": "break-word",
       }
     }
@@ -3539,7 +3820,11 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
     >
       tosca_definitions_version:
     </span>
-     
+    <span
+      style={Object {}}
+    >
+       
+    </span>
     <span
       style={
         Object {
@@ -3550,16 +3835,30 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
     >
       cloudify_dsl_1_3
     </span>
+    <span
+      style={Object {}}
+    >
+      
+
+    </span>
     
 
-
+    <span
+      style={Object {}}
+    >
+      
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       description:
     </span>
-     
+    <span
+      style={Object {}}
+    >
+       
+    </span>
     <span
       style={
         Object {
@@ -3569,9 +3868,39 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
       }
     >
       &gt;
-  This blueprint installs a simple web server on the manager VM using Cloudify's script plugin.
 
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+        This blueprint installs a simple web server on the manager VM using Cloudify's script plugin.
 
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      
+    </span>
+    <span
+      style={Object {}}
+    >
+      
+
+    </span>
+    <span
+      style={Object {}}
+    >
+      
     </span>
     <span
       className="hljs-attr"
@@ -3579,13 +3908,32 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
     >
       imports:
     </span>
-    
-
     <span
-      className="hljs-attr"
       style={Object {}}
     >
-        - http:
+      
+
+    </span>
+    <span
+      style={Object {}}
+    >
+        
+    </span>
+    <span
+      style={
+        Object {
+          "background": "#d0eded",
+          "color": "#000",
+          "fontStyle": "italic",
+        }
+      }
+    >
+      -
+    </span>
+    <span
+      style={Object {}}
+    >
+       
     </span>
     <span
       style={
@@ -3595,34 +3943,66 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
         }
       }
     >
-      //www.getcloudify.org/spec/cloudify/4.5.5.dev1/types.yaml
+      http://www.getcloudify.org/spec/cloudify/4.5.5.dev1/types.yaml
+    </span>
+    <span
+      style={Object {}}
+    >
+      
+
     </span>
     
 
-
+    <span
+      style={Object {}}
+    >
+      
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
       inputs:
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
 
+    </span>
+    <span
+      style={Object {}}
+    >
+        
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
-        server_ip:
+      server_ip:
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
 
+    </span>
+    <span
+      style={Object {}}
+    >
+          
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
-          description:
+      description:
     </span>
-     
+    <span
+      style={Object {}}
+    >
+       
+    </span>
     <span
       style={
         Object {
@@ -3632,24 +4012,62 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
       }
     >
       &gt;
-      The ip of the server the application will be deployed on.
 
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+            The ip of the server the application will be deployed on.
+
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      
+    </span>
+    <span
+      style={Object {}}
+    >
+        
     </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
-        agent_user:
+      agent_user:
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
 
+    </span>
+    <span
+      style={Object {}}
+    >
+          
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
-          description:
+      description:
     </span>
-     
+    <span
+      style={Object {}}
+    >
+       
+    </span>
     <span
       style={
         Object {
@@ -3659,24 +4077,62 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
       }
     >
       &gt;
-      User name used when SSH-ing into the started machine.
 
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+            User name used when SSH-ing into the started machine.
+
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      
+    </span>
+    <span
+      style={Object {}}
+    >
+        
     </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
-        agent_private_key_path:
+      agent_private_key_path:
     </span>
-    
+    <span
+      style={Object {}}
+    >
+      
 
+    </span>
+    <span
+      style={Object {}}
+    >
+          
+    </span>
     <span
       className="hljs-attr"
       style={Object {}}
     >
-          description:
+      description:
     </span>
-     
+    <span
+      style={Object {}}
+    >
+       
+    </span>
     <span
       style={
         Object {
@@ -3686,8 +4142,29 @@ exports[`Storyshots Data/HighlightText YAML 1`] = `
       }
     >
       &gt;
-      Path to a private key that resides on the management machine.
-      SSH-ing into agent machines will be done with this key.
+
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+            Path to a private key that resides on the management machine.
+
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#008000",
+          "fontWeight": "bold",
+        }
+      }
+    >
+            SSH-ing into agent machines will be done with this key.
+
     </span>
   </code>
 </pre>
