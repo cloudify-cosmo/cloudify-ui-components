@@ -16,6 +16,18 @@ describe('<Form />', () => {
         expect(wrapper.find('ErrorMessage').prop('error')).toEqual(['Invalid a', 'Invalid b']);
     });
 
+    it('scrolls to errors automatically', () => {
+        const wrapper = mount(<Form errors={null} scrollToError />);
+        const formElement = wrapper.getDOMNode();
+
+        expect(formElement).toBeDefined();
+        const scrollSpy = jest.fn();
+        formElement.scrollIntoView = scrollSpy;
+
+        wrapper.setProps({ errors: { a: 'Invalid a', b: 'Invalid b' } });
+        expect(scrollSpy).toHaveBeenCalledTimes(1);
+    });
+
     it('provides Form.fieldNameValue function handling field value', () => {
         let fieldNameValue;
         const wrapper = mount(

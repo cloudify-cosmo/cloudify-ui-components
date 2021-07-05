@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
-import { Form as FormSemanticUiReact, Radio } from 'semantic-ui-react';
+import { Form as FormSemanticUiReact, Radio, Ref } from 'semantic-ui-react';
 
 import ErrorMessage from 'components/elements/ErrorMessage';
 import FormDropdown from 'components/elements/Dropdown';
@@ -87,13 +87,10 @@ export default function Form({
     scrollToError,
     ...formProps
 }) {
+    const formRef = useRef();
     useEffect(() => {
         if (scrollToError && !_.isEmpty(errors)) {
-            // eslint-disable-next-line react/no-find-dom-node
-            const formElement = ReactDOM.findDOMNode(this);
-            if (formElement) {
-                formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            formRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
         }
     }, [errors]);
 
@@ -105,11 +102,13 @@ export default function Form({
     }
 
     return (
-        // eslint-disable-next-line react/jsx-props-no-spreading
-        <FormSemanticUiReact {...formProps} onSubmit={onSubmit} error={!_.isEmpty(errors)}>
-            <ErrorMessage header={errorMessageHeader} error={formattedErrors} onDismiss={onErrorsDismiss} />
-            {children}
-        </FormSemanticUiReact>
+        <Ref innerRef={formRef}>
+            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+            <FormSemanticUiReact {...formProps} onSubmit={onSubmit} error={!_.isEmpty(errors)}>
+                <ErrorMessage header={errorMessageHeader} error={formattedErrors} onDismiss={onErrorsDismiss} />
+                {children}
+            </FormSemanticUiReact>
+        </Ref>
     );
 }
 
